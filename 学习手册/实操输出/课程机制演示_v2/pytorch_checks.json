@@ -1,0 +1,26 @@
+{
+  "scope": "CPU教学算术与PyTorch独立对照；只有单个临时标量optimizer更新，不加载/修改正式模型。",
+  "torch_version": "2.11.0+cu128",
+  "autograd": {
+    "ce": 0.6931471805599453,
+    "gradient": -1.0,
+    "parameter_before_step": 0.0,
+    "parameter_after_step": 0.09999999900000002,
+    "matches_standard_library_adamw": true
+  },
+  "router": {
+    "old_gradient": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "straight_through_gradient": [
+      -0.06000000000000001,
+      0.24,
+      -0.12,
+      -0.06000000000000001
+    ]
+  },
+  "all_ignore_mean_ce_is_nan": true
+}

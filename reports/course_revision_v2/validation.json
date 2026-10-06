@@ -1,0 +1,122 @@
+{
+  "scope": "Rewrite learning chapters 01 and 03-10; integrate existing expanded chapter02. No formal model training/resume. Standard-library scalar mechanisms and small PyTorch checks only.",
+  "previous_local_commit": "b520c1a",
+  "previous_public_commit": "02d3c21080a979fc046ddb3b1059bde9c84cbe8f",
+  "chapter_stats": [
+    {
+      "path": "学习手册/01_实验和文件导航.md",
+      "lines": 161,
+      "characters": 5303
+    },
+    {
+      "path": "学习手册/02_数据到Batch.md",
+      "lines": 438,
+      "characters": 14550
+    },
+    {
+      "path": "学习手册/03_Hybrid和MoE原理.md",
+      "lines": 260,
+      "characters": 8010
+    },
+    {
+      "path": "学习手册/04_Forward到Optimizer.md",
+      "lines": 223,
+      "characters": 6274
+    },
+    {
+      "path": "学习手册/05_显存效率和Recipe.md",
+      "lines": 152,
+      "characters": 5535
+    },
+    {
+      "path": "学习手册/06_曲线和状态字典.md",
+      "lines": 150,
+      "characters": 4541
+    },
+    {
+      "path": "学习手册/07_Checkpoint和恢复.md",
+      "lines": 161,
+      "characters": 4667
+    },
+    {
+      "path": "学习手册/08_评估和Debug.md",
+      "lines": 166,
+      "characters": 5912
+    },
+    {
+      "path": "学习手册/09_训练阶段和实验设计.md",
+      "lines": 234,
+      "characters": 8304
+    },
+    {
+      "path": "学习手册/10_实操练习和答案.md",
+      "lines": 267,
+      "characters": 7629
+    },
+    {
+      "path": "学习手册/README.md",
+      "lines": 67,
+      "characters": 3302
+    }
+  ],
+  "links_checked_in_each_copy": 111,
+  "broken_links": [],
+  "standard_library_examples": "学习手册/实操输出/课程机制演示_v2/results.json",
+  "independent_pytorch_checks": "学习手册/实操输出/课程机制演示_v2/pytorch_checks.json",
+  "formal_model_config_data_weights_modified": false,
+  "sources": [
+    {
+      "path": "tools/lesson_examples.py",
+      "sha256": "6cb0c49144f3db48a0332632473d16c179510a1332b920b9a36252dc10990309"
+    },
+    {
+      "path": "lab/train.py",
+      "sha256": "2a25783ebe72087ec8b3f26c6008fdd05a08b8066e76d9be354bbc7c54aa0834"
+    },
+    {
+      "path": "lab/data.py",
+      "sha256": "b06bda98ac443510b4d92e3ef1c1060d4826b7d41e392595aa6d9003ea363602"
+    },
+    {
+      "path": "lab/checkpointing.py",
+      "sha256": "36809f843d94bc728278f4f5141387fc22e73429503f52769bde1349dd9f52ae"
+    },
+    {
+      "path": "models/02_hybrid_moe/src/model_hybrid.py",
+      "sha256": "cf83fb3f054b3dc9fc1da055a68cbc21ec973a6f63b1615ebc66c761bee8c503"
+    },
+    {
+      "path": "upstream/dataset/lm_dataset.py",
+      "sha256": "7e6eb82f760d2e7db3cfbc60a74bed9a179b7d8667fd8b49e4a3c010391707ab"
+    },
+    {
+      "path": "upstream/trainer/train_dpo.py",
+      "sha256": "a25c707baf672fff28d8a2776a0c3b621fe4a4bff1ad26eea340f204546d9286"
+    },
+    {
+      "path": "upstream/trainer/train_grpo.py",
+      "sha256": "449d070bc1e1fc43aeb5554fb132bc26a201458e5cbb563c918f85cc74f68406"
+    },
+    {
+      "path": "upstream/trainer/train_ppo.py",
+      "sha256": "813583b7d9cead9b303d467858011a5b4d8e2ef5e4ae141c1268d65cb801e19e"
+    },
+    {
+      "path": "upstream/trainer/train_agent.py",
+      "sha256": "b49dedee6eea12a3f588b71903b9b644504d5c6ec36f5cb7d257a2be707e311b"
+    },
+    {
+      "path": "sources/minimind-o/model/model_omni.py",
+      "sha256": "9a0de2b438b8927a170fe12636e01c00dbfec463ea5c4a81efdfc1cca6a6696c"
+    },
+    {
+      "path": "sources/experimental/dlm/model_dlm_author.py",
+      "sha256": "4e245aad38fcb227627b71c1620e83ad2cdf721810c489c568bb0e1f6620862f"
+    }
+  ],
+  "limits": [
+    "Arithmetic examples are not validation of all full-model GPU kernels.",
+    "Existing full205M trace is historical teaching evidence; not rerun as a new formal update.",
+    "Reading the course does not establish experience with unperformed RL, distributed or complete Omni training."
+  ]
+}

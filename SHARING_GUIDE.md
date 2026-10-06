@@ -17,6 +17,16 @@ python tools/study_minimind.py replay --step 12000
 
 使用Python3.10或以上；部分系统命令名是`python3`。这两条学习命令只用Python标准库和已提供的真实日志，不依赖作者的D盘、Python虚拟环境、GPU或完整数据集。
 
+01–10章已扩写为分步课程，请按每章要求先预测、再算/运行、最后解释与诊断。以下机制演示也只用标准库：
+
+```bash
+python tools/lesson_examples.py attention
+python tools/lesson_examples.py optimizer
+python tools/lesson_examples.py resume
+```
+
+这些示例只处理小数字，不训练正式模型；第10章会把它们接到真实205M的证据和可选CPU检查。
+
 ## 第二级：解码真实样本
 
 在仓库根目录建立自己的环境，Python3.10与本次实验一致：

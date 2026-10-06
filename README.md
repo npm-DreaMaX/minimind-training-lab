@@ -2,7 +2,7 @@
 
 从[十章学习手册](学习手册/README.md)开始；首次使用请读**[其他电脑怎样运行](SHARING_GUIDE.md)**。
 
-第一次接触训练，请跟着[第 02 章：一条对话怎样进入模型](学习手册/02_数据到Batch.md)，用一条短问答逐格理解文字编号、labels、错位预测和 batch，再对照正式训练的真实样本。
+**01–10 已更新为分步实操课程。** 从[第 01 章](学习手册/01_实验和文件导航.md)开始，用短问答、手算注意力与梯度，再接上真实模型、显存、曲线、恢复和debug；[第 10 章](学习手册/10_实操练习和答案.md)要求留下预测、操作、解释与诊断证据。看完链接不等于掌握。
 
 主案例：205M Hybrid MoE，6层Gated DeltaNet＋2层Full Attention＋每层4专家Top-1 MoE。官方198M SFT权重转换后执行完整两轮SFT：113,082次更新、735,833,934有效监督token。**没有Hybrid预训练，评估结果与生成样例已记录。** 这里保留学习过程、真实失败和排查证据。
 
@@ -15,9 +15,12 @@ git clone https://github.com/npm-DreaMaX/minimind-training-lab.git
 cd minimind-training-lab
 python tools/study_minimind.py summary
 python tools/study_minimind.py replay --step 12000
+python tools/lesson_examples.py attention
+python tools/lesson_examples.py optimizer
+python tools/lesson_examples.py resume
 ```
 
-这两项只用Python标准库，无需GPU、作者的D盘、完整数据集或虚拟环境。网页阅读教程和PNG甚至不需要安装Python。
+以上入口只用Python标准库，无需GPU、作者的D盘、完整数据集或虚拟环境。机制演示只处理教学数字；summary/replay只读真实历史。网页阅读教程和PNG不需要安装Python。
 
 想执行真实样本解码、完整模型CPU forward/backward或推理，按[分享指南](SHARING_GUIDE.md)在自己的电脑安装环境。仓库带一条真实T768样本；最终权重约421MB，下载时验证SHA：
 
@@ -27,7 +30,7 @@ python tools/study_minimind.py sample --index 51023
 python tools/study_minimind.py infer --prompt '你好，请介绍一下自己。' --max-new-tokens 64 --out 学习手册/实操输出/我的推理_01
 ```
 
-学习工具不创建optimizer，不更新模型。最后两项需要先安装分享指南中的依赖。
+这组sample/infer学习工具不创建optimizer，不更新模型。最后两项需要先安装分享指南中的依赖；前面的机制演示只计算临时教学标量，不修改正式模型。
 
 ## 导航
 

@@ -1,50 +1,161 @@
-# 07 权重、恢复与可复现
+# 07 为什么有权重还不够：保存、暂停和恢复
 
-## 两类文件解决不同问题
+第 04 章里，AdamW 不只使用当前参数，还使用梯度历史；第 06 章里，训练还在按某个数据顺序和LR位置前进。暂停后要接着同一条路径走，就必须保存这些状态。
 
-| 文件 | 内容 | 能做什么 |
+本章用一个实际执行的微型恢复演示，先让你看见“只加载权重”为什么不同，再对应正式 checkpoint。学习过程不恢复已停止的训练。
+
+## 1. 推理权重与训练恢复文件分别解决什么问题？
+
+推理只需模型结构、tokenizer和参数来计算输出。完整恢复还需要知道“怎么继续更新、下一批读什么、随机数从哪里继续”。因此两个文件的大小和内容不同。
+
+| 文件 | 本实验内容 | 合适用途 |
 |---|---|---|
-| `best_validation.pth` | 固定验证选择的FP16 state_dict | 加载结构后推理，或作为新阶段初始化 |
-| `model_step_0113082.pth` | 最后一步FP16导出 | 保存最终里程碑 |
-| `latest_resume.pt` | FP32模型、AdamW、RNG、cursor、step/config等 | 同一阶段完整恢复 |
-| `deliveries/.../training_resume.pt` | 完整恢复点硬链接快照 | 固定这次交付，不被后续原子替换覆盖 |
+| `best_validation.pth` | 固定验证选择的FP16参数字典 | 推理，或另一阶段的初始化 |
+| `model_step_0113082.pth` | 最后一步FP16参数导出 | 保留里程碑 |
+| `latest_resume.pt` | FP32模型、AdamW、随机状态、数据位置和配置 | 同一run恢复 |
+| 最终交付中的 `training_resume.pt` | 完整恢复点的固定快照 | 保存这次交付的状态 |
 
-Hybrid最终恢复文件约2.47GB，推理导出约421MB（十进制）。最终best恰好来自113082步，但best和last在一般实验中可能不同。两份导出文件的字节SHA不同，也不一定代表张量不同，序列化归档名称等会影响文件字节。
+推理文件约421MB，完整恢复文件约2.47GB，均为十进制。完整文件多了两份Adam moment等，而且模型用FP32。
 
-[最终文件大小与SHA](../models/02_hybrid_moe/deliveries/20261006_final_integrity_v1/files.json) · [完整状态审计](../models/02_hybrid_moe/deliveries/20261006_final_integrity_v1/report.json)
+best和last回答不同问题：一个按固定验证选择，一个按时间顺序选择。本次best恰好在最终113082步，不代表每个实验都如此。
 
-## 一个完整resume要保留什么
+## 2. 用一个标量看见“缺状态”的后果
 
-FP32参数；AdamW m/v/step；Python、NumPy、CPU Torch、CUDA RNG；当前epoch、shuffle seed与已消费cursor；当前optimizer step、config、LR调度公式；源码版本。这个训练器没有单独scheduler对象，位置由step和config重建，所以“没有scheduler state_dict”不等于漏了调度位置。
-
-`EpochBatchSampler`用私有generator以seed+epoch重建顺序，从cursor取下一批；DataLoader另有私有generator，避免worker初始化消耗训练主RNG。预处理增强已经固定离线，这也是恢复语义的一部分。
-
-评估前捕获RNG，eval后恢复RNG并回到train，减少评估对后续训练随机流的干扰。保存发生在optimizer边界，梯度已清空；如果在累积中间任意保存，就还需要未应用梯度和累积位置，本项目没有声称支持这种恢复。
-
-## 精度与一致性分层检查
-
-先检查刚load后的模型/moments是否相同，再比较下一步输入、loss、梯度和更新后参数。GPU非确定性和保存遗漏是两种不同问题；loss一样也不保证全部参数逐位一样。
-
-本项目第一次非确定性恢复hash不一致，确定性复测通过；记录见[硬件与恢复诊断](../reports/hardware_comparison_20261003.md)。Hybrid最终审计核对189个state键、188组AdamW和四类RNG完整有限，但它不是在最终状态重新训练一步的逐位恢复证明。
-
-FP16导出丢掉一部分FP32精度，并且没有AdamW。用导出重新启动一个阶段，应叫初始化或续训新实验，不要说成精确resume。实际导出重载CE差约0.00038，远小于相对官方基座的约0.357差距，说明导出误差不足以解释这次质量差距。
-
-## 查看与推理
-
-推荐第10章的CPU学习入口，模型源码、tokenizer、结构和权重自动对应，不需要猜文件名。核对字节可以在WSL执行：
+运行：
 
 ```bash
-sha256sum models/02_hybrid_moe/runs/hybrid_sft_official_mini_2ep_v1/checkpoints/best_validation.pth
+python -B tools/lesson_examples.py resume
 ```
 
-预期为`1fc422dfac3b784e319676e251a58fdb1eb0eea83def7936f6be4578a4cac896`。本地学习工具推理前后也校验这个文件没有改变。
+这段程序只在CPU用标准库更新一个教学标量，不加载205M权重。它使用带随机扰动的合成输入和AdamW，把运行分成两种方式：连续4步；执行2步、将状态经JSON序列化/还原、再执行2步。
 
-完整恢复命令存在于[原计划](../plans/formal_hybrid_official_mini_2ep_v1.json)和训练器参数中，但当前两轮已完成，普通MoE已由用户停止；学习练习不启动它们。学习“怎样恢复”不需要偷偷续跑长训练。
+随后故意漏掉不同状态，结果为：
 
-## 保留策略与磁盘
+| 恢复方式 | 第4步后的w | 与连续运行的完整状态一致？ |
+|---|---:|---|
+| 连续运行参考 | 0.2529820690 | 参考 |
+| 恢复全部状态 | 0.2529820690 | 是 |
+| 清掉Adam历史 | 0.2609502395 | 否 |
+| 数据cursor错误回到0 | 0.2580603548 | 否 |
+| 换一个随机状态 | 0.2533478303 | 否 |
 
-正式最终恢复点、全部正式里程碑、阶段转换初始化、关键恢复验证及失败现场都保留。清理仅针对审核通过的短资源预检冗余导出和缓存，并保留每次清理的路径/大小/原因。所有被删短测不再承诺能从当时的精确优化器状态resume，重新做同类预检需按保留的config/source运行。
+读 `next_indices`：正确继续消费下标2、3，cursor错误的分支重复0、1。参数即使在恢复瞬间完全相同，后续输入或更新历史不同，下一步就可能走开。
 
-硬链接的多个路径可以指向同一磁盘数据，不能将各路径文件大小简单求和成真实占用。删除其中一个链接也不一定释放空间；清理报告分别记录逻辑字节和最后链接释放估算。
+这里能逐项隔离原因，是因为只改变一个条件。它解释恢复语义，不替代正式GPU的中断一致性验证。
 
-练习：列出“拿best_validation.pth继续训练”与“加载latest_resume.pt”至少五项区别，并解释为什么模型参数相同仍可能在下一步走出不同轨迹。
+## 3. 一份完整恢复点逐项装什么？
+
+### 模型参数
+
+恢复FP32训练主参数，不能悄悄换成FP16导出再称精确接续。加载时要核对名称、shape和共享关系；`strict=False` 能隐藏缺失键，不能当作兼容性问题的通用修复。
+
+### 优化器
+
+每个参数的m、v、Adam更新计数及参数组设置。只加载w而重新建空m/v，就改变了更新历史。若更换优化器或LR分组，应明确是新实验配置。
+
+### 随机状态
+
+Python、NumPy、CPU Torch、CUDA各自有随机数发生器。仅把seed再设为最初值，通常会回到随机序列开头，而不是中断位置。需要恢复当时的状态。
+
+dropout、随机数据增强、采样和噪声注入都可能消耗随机数。验证如果也消耗主随机流，可能影响后续训练，所以本训练器评估前保存RNG，结束后恢复。
+
+### 数据位置
+
+记录epoch、shuffle种子和cursor。`EpochBatchSampler` 用私有generator的 `seed+epoch` 重建顺序，从cursor开始取下一批。DataLoader还有独立generator，避免worker初始化占用训练主随机流。
+
+只说“已经训练12000步”还不够；若batch、最后不满批次、过滤规则变了，step不能唯一决定数据位置。token缓存与划分也必须对应原版。
+
+### 学习率位置与配置
+
+本训练器没有独立scheduler对象，LR由step、total_steps、warmup和峰值重算。因此要保存这些配置和step，而不是机械要求文件里必须叫`scheduler_state_dict`。
+
+### 源码与环境记录
+
+同名模型类也可能已经改了计算。保存源码指纹、config、tokenizer及数据版本，才能解释恢复是否仍在做同一个实验。环境不同还可能改变数值内核或非确定性行为。
+
+## 4. 为什么在 optimizer 边界保存？
+
+假设G=4，只累积完前两批就随意保存。如果只存w、m/v和cursor，没有保存已经累积的梯度及组内位置，后面无法重建这一组完整更新。
+
+本项目选择在optimizer边界保存：这一组更新已经执行，梯度已清空，cursor指向下组数据。SIGTERM/SIGINT设置停止标记，程序完成当前必要边界后再写恢复点。
+
+因此“发出停止请求”到“checkpoint写好并退出”之间可能还要完成一步和保存文件。不能看到进程没瞬间消失就反复杀进程；也不能把任意时刻截下的一份模型文件叫完整暂停点。
+
+## 5. 文件保存到一半断电会怎样？
+
+直接覆盖唯一恢复点，写到一半失败，就可能连旧的完整文件也失去。本训练器先写临时文件，完成后原子替换正式路径：
+
+```text
+写 latest_resume.tmp
+     ↓ 写操作完成
+替换 latest_resume.pt
+```
+
+这降低半写文件被误当正式恢复点的风险，但不是对所有断电、文件系统持久化问题的绝对保证。恢复前仍应检查文件能否完整读取、结构与张量是否有限、必要元数据是否齐全。
+
+源码在[lab/train.py](../lab/train.py)的 `save()`、`export_weights()` 和 `if a.resume`。第一个保存训练payload，第二个只导出FP16权重，恢复入口则核对源码与配置后分别加载模型、optimizer和RNG。
+
+## 6. 怎样验证恢复正确，而不只看程序不报错？
+
+准备相同初始状态和固定数据，分两条执行：连续N步；K步后保存并在新进程恢复至N步。按下面顺序比较：
+
+1. 刚load后的参数和Adam状态是否相同。
+2. 下一批输入ID、labels与顺序是否相同。
+3. 当前step、LR及随机状态是否相同。
+4. 下一步loss、梯度和更新后参数是否在要求范围内相同。
+
+先查前几项再归因GPU。GPU非确定性可能造成计算顺序差异；保存遗漏则是状态不完整。两种问题要分开，不能用“GPU本来就随机”掩盖漏保存optimizer。
+
+本项目曾出现普通GPU恢复hash不一致，后续确定性复测通过，[原始诊断](../reports/hardware_comparison_20261003.md)保留了范围。Hybrid最终审计核对了状态完整性，没有在最终113082步再偷偷更新一次来宣称最终点逐位恢复已复验。
+
+## 7. 最终状态到底核对了哪些内容？
+
+[最终审计](../models/02_hybrid_moe/deliveries/20261006_final_integrity_v1/report.json)记录：step113082、epoch2、cursor0；189个模型state键，188组优化器参数状态；FP32模型和moments、四类RNG齐全，相关张量有限。
+
+189个键与188组参数不矛盾：embedding/lm_head共享同一独立参数，state字典可以有两个名称。参数量要按独立张量算，不能按键名重复相加。
+
+最终FP16导出重载固定验证CE，与训练态FP32结果差约0.000380。这说明导出精度确有影响，但它远小于该协议下相对参考模型的差距，不能把全部差距都归给“保存坏了”。
+
+文件指纹与大小见[files.json](../models/02_hybrid_moe/deliveries/20261006_final_integrity_v1/files.json)。字节SHA不同不必然意味着参数数值不同，序列化容器元数据也会影响字节；判断参数是否一样，应比较实际tensor。
+
+## 8. 你在自己的电脑上能检查什么？
+
+公开仓库包含源码、配置、日志及审计报告，推理权重可以按需下载；完整2.47GB恢复文件保存在本机交付目录，当前公开Release不是完整训练状态备份。
+
+在已配置依赖的仓库根目录获取推理权重：
+
+```bash
+python tools/fetch_learning_assets.py weight
+```
+
+下载工具会校验大小和SHA。已存在正确文件时复用，不会为了学习重复下载。你也可以用Python标准库核对，不依赖WSL的sha256sum：
+
+```python
+import hashlib
+from pathlib import Path
+p = Path('models/02_hybrid_moe/runs/hybrid_sft_official_mini_2ep_v1/checkpoints/best_validation.pth')
+h = hashlib.sha256()
+with p.open('rb') as f:
+    for block in iter(lambda: f.read(8*1024*1024), b''):
+        h.update(block)
+print(h.hexdigest())
+```
+
+预期：`1fc422dfac3b784e319676e251a58fdb1eb0eea83def7936f6be4578a4cac896`。SHA证明文件身份，不证明回答一定正确。
+
+## 9. 备份、硬链接与删除怎样影响可恢复性？
+
+正式最终状态、里程碑、来源与重要失败证据保留。已清理的冗余短测文件有收据，但不能再承诺从那些被删文件的精确状态resume。保留config只能重新执行类似实验，不等于保留了全部当时状态。
+
+本地某些交付快照是硬链接：多个路径指向同一份数据，不能把每条路径大小相加当成真实磁盘占用；删掉一个链接也未必释放空间。这是存储组织，不改变模型含义。
+
+<details>
+<summary>验收：仅拿best继续训练与resume有何区别？</summary>
+
+前者通常重新建optimizer，可能损失FP32细节，重置RNG、数据位置和调度；应作为明确的新阶段初始化。后者恢复完整学习状态，按原配置继续。能加载best、loss也有限，不能证明恢复轨迹相同。
+
+你应能解释演示中四个恢复分支为什么不同，并在正式payload里找到对应字段。
+
+</details>
+
+下一章：[08 评估与诊断](08_评估和Debug.md)。

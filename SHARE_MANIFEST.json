@@ -8,13 +8,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 3802,
-      "sha256": "d4a7f139777bcfcc5e97c15408febf4a0b747d6fbbae0345dbdd806ce977dc2e"
+      "bytes": 4204,
+      "sha256": "48dd9bed74acb03ec0c61e85f5b3d951ae7df096c7130bdd3f6e57e4fa41d5db"
     },
     {
       "path": "SHARING_GUIDE.md",
-      "bytes": 5725,
-      "sha256": "0adaa9f5df583086cc236a185de7eb162369d0396daf48e53ac3ac91f5728354"
+      "bytes": 6134,
+      "sha256": "71c6e270574cfb74f6965b087f4c6d0dd8b0f4ea4cd06c0464d7f1bc8d2d31d8"
     },
     {
       "path": "data/README.md",
@@ -11692,6 +11692,11 @@
       "sha256": "abb426668f8c677456f418ddaa1e06183b30f189bc77f19c5cea935a138fefb0"
     },
     {
+      "path": "reports/course_revision_v2/validation.json",
+      "bytes": 3918,
+      "sha256": "a8d89e47dec77521d653d5894547dda4d63e172f19a76ca594495d682d6598f8"
+    },
+    {
       "path": "reports/formal_progress_20261003_midday.json",
       "bytes": 3227,
       "sha256": "313f78034741eda63ef3ed4e52348b09102a9271c614bec0d5eb54a49372dc31"
@@ -16617,6 +16622,11 @@
       "sha256": "0e88f0f8ff8aac813c18a7ce2d428e5c6361464dcb4a20069b88f2d3d5b1882d"
     },
     {
+      "path": "tools/lesson_examples.py",
+      "bytes": 9685,
+      "sha256": "6cb0c49144f3db48a0332632473d16c179510a1332b920b9a36252dc10990309"
+    },
+    {
       "path": "tools/make_token_corpus_view.py",
       "bytes": 1984,
       "sha256": "cc9f023db8717b9441e889e3a69ae9aa5c35547cddbd90504f1afb10be8254f6"
@@ -17103,58 +17113,58 @@
     },
     {
       "path": "学习手册/01_实验和文件导航.md",
-      "bytes": 4138,
-      "sha256": "017356c9db873c4f03359d9ac94df464622eda5da56177bfabd154811dc2adc3"
+      "bytes": 10683,
+      "sha256": "9c4440a14a3510edaa8d9e8ad7f9dd9edb009480be2d8cd56624e230f401d570"
     },
     {
       "path": "学习手册/02_数据到Batch.md",
-      "bytes": 28850,
-      "sha256": "55377014b20e373e5a24a6e0f84935894fd5cf9a170daac6270a36c9235bfacd"
+      "bytes": 29162,
+      "sha256": "9d1c0a4eaf3fbf745d401eb6c5767b8399befd7abc4817b3d4ec542d30673b06"
     },
     {
       "path": "学习手册/03_Hybrid和MoE原理.md",
-      "bytes": 4084,
-      "sha256": "c06d4c643111a990045151d705ad887246bd6a20dfc6e52446e8e541ce4dc8d9"
+      "bytes": 15433,
+      "sha256": "ae191af4b6edd2a119b9dfc4750d67a5f21b9f6d24d7669dd94b1facdb879c59"
     },
     {
       "path": "学习手册/04_Forward到Optimizer.md",
-      "bytes": 4687,
-      "sha256": "30e12056536492ded5dd438437f68a5f0665f72b39ffee659a6295a13a4d82ec"
+      "bytes": 12184,
+      "sha256": "172a047bbaadad7ac49e220b44eff0d2a0467725766501ebfc5f5de97314393c"
     },
     {
       "path": "学习手册/05_显存效率和Recipe.md",
-      "bytes": 4430,
-      "sha256": "db031a535bca5f11a2a8dd623b66a2c3b1f99e53d793d87bbf85e356be67d552"
+      "bytes": 11811,
+      "sha256": "c8ea21645265283129f5bc77f5e89b225623d16cc4e41dd8694fdc75b999f189"
     },
     {
       "path": "学习手册/06_曲线和状态字典.md",
-      "bytes": 4724,
-      "sha256": "3fafe7e13d13b20d12ce1740b43a13f31f0b994ce56d57daad60c4e4bd639fcc"
+      "bytes": 9324,
+      "sha256": "081aff0c4609c73d61774b27bf80db869f7dd7db69b059190bcbdeabf0401e91"
     },
     {
       "path": "学习手册/07_Checkpoint和恢复.md",
-      "bytes": 4265,
-      "sha256": "dc3a3a2f4b974a5cfb1c1f28aea5f309dd0ac56f92c8c18dcdaf70cd4a4ad1dd"
+      "bytes": 9681,
+      "sha256": "27a538e71700064ca8dbb59af07f7aaf2d2fadcc4884040108a5803f5a0bcc23"
     },
     {
       "path": "学习手册/08_评估和Debug.md",
-      "bytes": 5332,
-      "sha256": "0acc86a31efea5fc86223e4660d7c74e8dfc4df44944762aff4f097b54663c98"
+      "bytes": 12994,
+      "sha256": "42a9859bcc9a2cc2e64f535350ca4adcf8ea43d37ce83c4bac1296e9ba2eee3b"
     },
     {
       "path": "学习手册/09_训练阶段和实验设计.md",
-      "bytes": 7631,
-      "sha256": "7684b9c8f661baf54bb57691cb40ff597e0d672cb495281104e1e956e32d35a3"
+      "bytes": 17931,
+      "sha256": "d6ed4e713045f030915cddc67f59a8f5376d9daa90a4306f40a91c9573b469a2"
     },
     {
       "path": "学习手册/10_实操练习和答案.md",
-      "bytes": 8160,
-      "sha256": "fdbfa8cae9ec996e4a927f426810b6200437a8bf32ee2bb4022a73b85f8b6de7"
+      "bytes": 14935,
+      "sha256": "302e9397d4ecaf9f6a06e15c4e730a1701c07efe7820f180db8ae563b2dfeb08"
     },
     {
       "path": "学习手册/README.md",
-      "bytes": 5076,
-      "sha256": "002a24361782a1100b7a1bb75f75cb5a9c0b99c297bb71c748456eb0a9d886b7"
+      "bytes": 6588,
+      "sha256": "0f496a65665674dcba4fed68e9b02356a810078ff9dbe468e4d349804dd45188"
     },
     {
       "path": "学习手册/图表/01_模型和训练数据流.png",
@@ -17280,6 +17290,16 @@
       "path": "学习手册/实操输出/最终权重推理_v1/generation.json",
       "bytes": 949,
       "sha256": "21bca8282b3aa5c8300e42f2746cf568f108b5c4f41fb09ad4e4c08b56a8c9ff"
+    },
+    {
+      "path": "学习手册/实操输出/课程机制演示_v2/pytorch_checks.json",
+      "bytes": 614,
+      "sha256": "416df053bc44c8328edb70404e5c64a9860e8b2dba2d17993f971f5967b53442"
+    },
+    {
+      "path": "学习手册/实操输出/课程机制演示_v2/results.json",
+      "bytes": 21308,
+      "sha256": "4f0e7c37639b0d2115dce9576e4bf241b54bd1e719718388bc294f248b7a9393"
     },
     {
       "path": "学习手册/数据表/Checkpoint记录.csv",
@@ -18577,5 +18597,5 @@
     "quality_approved": false
   },
   "public_portability_guide": "SHARING_GUIDE.md",
-  "total_file_bytes": 196617890
+  "total_file_bytes": 196723575
 }
