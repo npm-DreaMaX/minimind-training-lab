@@ -1,0 +1,26 @@
+{
+  "checked_at": "2026-10-06T14:01:18.059235+08:00",
+  "checkpoint": "models/01_moe/runs/pretrain_full_v1/checkpoints/latest_resume.pt",
+  "bytes": 2381236747,
+  "step": 9768,
+  "epoch": 0,
+  "cursor": 1406592,
+  "trained_tokens": 319137649,
+  "config_matches": true,
+  "source_matches": true,
+  "optimizer_states": 170,
+  "model_state_keys": 171,
+  "rng_keys": [
+    "python",
+    "numpy",
+    "torch",
+    "cuda"
+  ],
+  "checkpoint_model_dtype_counts": {
+    "torch.float32": 171
+  },
+  "last_attempt": "models/01_moe/runs/pretrain_full_v1/source/attempt_1790989458",
+  "trainer_matches_last_attempt": true,
+  "data_matches_last_attempt": true,
+  "scope": "CPU mmap structure/lineage inspection only; no tensor math or new CUDA allocation, no resume yet."
+}

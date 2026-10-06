@@ -1,0 +1,284 @@
+{
+  "scope": "Actual bounded audio and visual input fixtures; pinned frozen encoders; no formal dataset replacement",
+  "selections": {
+    "a2a": {
+      "scope": "fixture",
+      "rows": 68,
+      "columns": [
+        "conversations",
+        "answer_audios",
+        "question_audios",
+        "ref_audios",
+        "spk_emb"
+      ],
+      "shards": [
+        {
+          "file": "shard_000000.arrow",
+          "rows": 68,
+          "bytes": 1927746
+        }
+      ],
+      "source_corpus": "data/processed/sft_a2a_shards_v1",
+      "source_index_sha256": "59b847e844cb94de0cfdfbf7197f3cc5ea49bbea9e3a6477c81ba870c000fbb4",
+      "raw_rows": [
+        56518,
+        358729,
+        282342,
+        349536,
+        61293,
+        355272,
+        407437,
+        162089,
+        367282,
+        130705,
+        167281,
+        202961,
+        97369,
+        74107,
+        339028,
+        365645,
+        261718,
+        333209,
+        158892,
+        332411,
+        261269,
+        319710,
+        33690,
+        40508,
+        146932,
+        31961,
+        403380,
+        131211,
+        283316,
+        290472,
+        148710,
+        127294,
+        336005,
+        45369,
+        135126,
+        176566,
+        26908,
+        193596,
+        37538,
+        21517,
+        407616,
+        218163,
+        75217,
+        361351,
+        370307,
+        321758,
+        112593,
+        37114,
+        186694,
+        41812,
+        90106,
+        138400,
+        36483,
+        34919,
+        308785,
+        197395,
+        83213,
+        86239,
+        239325,
+        206647,
+        2368,
+        258110,
+        23100,
+        124216,
+        100155,
+        289080,
+        229200,
+        126649
+      ],
+      "limitations": "Reindexed real records; augmentation seed identity differs from full source; only short hardware/path validation"
+    },
+    "i2t": {
+      "scope": "fixture",
+      "rows": 64,
+      "columns": [
+        "conversations",
+        "image_bytes"
+      ],
+      "shards": [
+        {
+          "file": "shard_000000.arrow",
+          "rows": 64,
+          "bytes": 495034
+        }
+      ],
+      "source_corpus": "data/processed/sft_i2t_shards_v1",
+      "source_index_sha256": "c058d31f5880afbf390ac811bef7a84e5c2f26da26ee1799f8c8cb0d0e55736e",
+      "raw_rows": [
+        882589,
+        1854866,
+        1467870,
+        1100317,
+        2412765,
+        2342269,
+        1077217,
+        2585165,
+        42095,
+        1136528,
+        1404254,
+        2774148,
+        2506565,
+        2386298,
+        67962,
+        1230142,
+        1130535,
+        2113984,
+        175183,
+        2876784,
+        2097762,
+        70913,
+        1013691,
+        2874110,
+        1722402,
+        1731061,
+        2672549,
+        1686048,
+        1841096,
+        2793566,
+        1214167,
+        900895,
+        751412,
+        2760126,
+        152025,
+        1311658,
+        965890,
+        1670877,
+        788055,
+        2022127,
+        1631770,
+        861462,
+        310566,
+        1554461,
+        372902,
+        2329472,
+        1203488,
+        1883108,
+        1398521,
+        2770284,
+        2579061,
+        992304,
+        54210,
+        1565053,
+        2532617,
+        281941,
+        144482,
+        1818881,
+        276431,
+        1659651,
+        1014622,
+        2810527,
+        1827961,
+        1949828
+      ],
+      "limitations": "Reindexed real records; augmentation seed identity differs from full source; only short hardware/path validation"
+    }
+  },
+  "files": {
+    "artifacts/omni_validation/server_inputs_v1/a2a/index.json": {
+      "bytes": 1359,
+      "sha256": "6c994b143f6ca92cc558424754dd061c1d46cccc0fbfc8c3fe87cdc1b5caea98"
+    },
+    "artifacts/omni_validation/server_inputs_v1/a2a/schema_sample.parquet": {
+      "bytes": 14932,
+      "sha256": "d063fb70bf18b09c1553f328b5e8e6573664889c190e0315fa1d6bcda0dfebda"
+    },
+    "artifacts/omni_validation/server_inputs_v1/a2a/shard_000000.arrow": {
+      "bytes": 1927746,
+      "sha256": "f6b93dcd5dec651493b602156420b5a72e6824c00ede4ec97012e43790b405f6"
+    },
+    "artifacts/omni_validation/server_inputs_v1/a2a/audit_v1/metadata.json": {
+      "bytes": 140,
+      "sha256": "ac7033f65e4a95b0e50a31f41355b9dec5a76f2436d52ab6d37c1b81e4130ec0"
+    },
+    "artifacts/omni_validation/server_inputs_v1/a2a/audit_v1/train.npy": {
+      "bytes": 544,
+      "sha256": "1cfd1d52c850d14a90e41f9b54b1f5fbd927d911c64ae5e38f2adec7a747b00f"
+    },
+    "artifacts/omni_validation/server_inputs_v1/a2a/audit_v1/val.npy": {
+      "bytes": 256,
+      "sha256": "83a90e22fbe7ff16a2c70d850add48b9cad39d395e45ef75dacaf0ab7ec00816"
+    },
+    "artifacts/omni_validation/server_inputs_v1/i2t/index.json": {
+      "bytes": 1316,
+      "sha256": "91b4aa93c55008afdda7e116910c3a23264c2c9c1a4548d4803edd57d89f58d7"
+    },
+    "artifacts/omni_validation/server_inputs_v1/i2t/schema_sample.parquet": {
+      "bytes": 12302,
+      "sha256": "21a29f44f5b30df3a602edfb93b45974e6bb3d9f49750160701a2db3c57395eb"
+    },
+    "artifacts/omni_validation/server_inputs_v1/i2t/shard_000000.arrow": {
+      "bytes": 495034,
+      "sha256": "7230a19f3c8f86b367de1478d9fae655fd109899fa76e3529b3f878d57a83bf9"
+    },
+    "artifacts/omni_validation/server_inputs_v1/i2t/audit_v1/metadata.json": {
+      "bytes": 146,
+      "sha256": "d7c01f3b30f80db26db1a5fa632cbaa742a942d9bb993632a82d583e17077a92"
+    },
+    "artifacts/omni_validation/server_inputs_v1/i2t/audit_v1/train.npy": {
+      "bytes": 512,
+      "sha256": "e97bd023d10caccc5938477265ee1705bdfe9059555de8ec76dbefa84ad1f66b"
+    },
+    "artifacts/omni_validation/server_inputs_v1/i2t/audit_v1/val.npy": {
+      "bytes": 256,
+      "sha256": "d5ca6dad37cadf507c665b18d15230381627146aac3084cba401d90abb94189e"
+    },
+    "data/frozen_models/SenseVoiceSmall/README.md": {
+      "bytes": 890,
+      "sha256": "46f0df410dd8ab01ad47e67fafa647eafbb5fc038ffdd233daa3fd958f2f299c"
+    },
+    "data/frozen_models/SenseVoiceSmall/am.mvn": {
+      "bytes": 11203,
+      "sha256": "29b3c740a2c0cfc6b308126d31d7f265fa2be74f3bb095cd2f143ea970896ae5"
+    },
+    "data/frozen_models/SenseVoiceSmall/chn_jpn_yue_eng_ko_spectok.bpe.model": {
+      "bytes": 377341,
+      "sha256": "aa87f86064c3730d799ddf7af3c04659151102cba548bce325cf06ba4da4e6a8"
+    },
+    "data/frozen_models/SenseVoiceSmall/config.yaml": {
+      "bytes": 1855,
+      "sha256": "f71e239ba36705564b5bf2d2ffd07eece07b8e3f2bbf6d2c99d8df856339ac19"
+    },
+    "data/frozen_models/SenseVoiceSmall/configuration.json": {
+      "bytes": 396,
+      "sha256": "02810a7f8e9e8aee10370a265f7e799728ce25b4c00cdbf4602b303ee395a38e"
+    },
+    "data/frozen_models/SenseVoiceSmall/model.pt": {
+      "bytes": 468291478,
+      "sha256": "218811976815c1673e1b852dc383d78987b229268f78e7ebd0a1fe67229c83dd"
+    },
+    "data/frozen_models/SenseVoiceSmall/tokens.json": {
+      "bytes": 352064,
+      "sha256": "a2594fc1474e78973149cba8cd1f603ebed8c39c7decb470631f66e70ce58e97"
+    },
+    "data/frozen_models/siglip2-base-p32-256-ve/README.md": {
+      "bytes": 1432,
+      "sha256": "7276ff3ab08b8d2bdd16e11de24c523d860e08141160529806a75c0526f03aa4"
+    },
+    "data/frozen_models/siglip2-base-p32-256-ve/config.json": {
+      "bytes": 410,
+      "sha256": "5ad8dda7d55541c7749f9b1cc43fe8eb8c70d8664588d89f710242ce06b3167e"
+    },
+    "data/frozen_models/siglip2-base-p32-256-ve/model.safetensors": {
+      "bytes": 189129296,
+      "sha256": "c1e9cc19ed6704b87353ee00b9ff5d6191886d741898339984364f789c62810d"
+    },
+    "data/frozen_models/siglip2-base-p32-256-ve/preprocessor_config.json": {
+      "bytes": 394,
+      "sha256": "d14ba2ee3fd816f3de8abaddc31953565128eaf37c73ad4bed32101a98465aff"
+    },
+    "models/03_omni_moe/src/omni_dataset_role_aware.py": {
+      "bytes": 19460,
+      "sha256": "0ab7a1aa4b345ff54adfb52fa2558809c4595bbc913ed7add01f3189e095523f"
+    },
+    "data/manifests/omni_frozen_models.json": {
+      "bytes": 4330,
+      "sha256": "27aae327cc740323e345a5be682efc60491eb067b6ae10f5510bda595f18b550"
+    }
+  },
+  "script_sha256": "358d10639fbedf7592b5ec0c66b83a3b7b2e9c467702b136ac6a4be24a932165",
+  "time": 1790990369.4719198
+}

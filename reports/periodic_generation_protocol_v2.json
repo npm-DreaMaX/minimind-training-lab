@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "scope": "Periodic generation v2 input-token contract; no GPU use or changes to training/validation loss",
+  "pretrain_ids": [
+    1,
+    1405,
+    296,
+    1408,
+    2462
+  ],
+  "bos_id": 1,
+  "sft_default_and_explicit_no_special_equal": true
+}

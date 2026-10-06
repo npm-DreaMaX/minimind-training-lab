@@ -1,0 +1,24 @@
+{
+  "scope": "Frozen Mimi decoding of existing dataset codes, not output of our trained Omni model",
+  "dataset_row_in_fixture": 7,
+  "text": "The capital of France is Paris.",
+  "code_shape": [
+    1,
+    8,
+    26
+  ],
+  "sampling_rate": 24000,
+  "configured_frame_rate": 12.5,
+  "output_samples": 49920,
+  "output_seconds": 2.08,
+  "expected_seconds": 2.08,
+  "peak_amplitude": 0.2530936002731323,
+  "seconds_on_cpu": 0.29812049865722656,
+  "loading_info": {
+    "missing_keys": [],
+    "unexpected_keys": [],
+    "mismatched_keys": [],
+    "error_msgs": []
+  },
+  "wav": "artifacts/omni_validation/codec_decode_sample.wav"
+}

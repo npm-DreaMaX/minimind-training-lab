@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "step": 3,
+  "trained_tokens": 10243,
+  "validation": {
+    "step": 3,
+    "epoch": 0,
+    "trained_tokens": 10243,
+    "validation_ce": 8.031215568712955,
+    "validation_tokens": 7720,
+    "validation_rows": 18,
+    "final": true,
+    "generation": [
+      {
+        "prompt": "你好，请介绍一下自己。",
+        "continuation": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+      },
+      {
+        "prompt": "为什么天空是蓝色的？",
+        "continuation": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+      },
+      {
+        "prompt": "计算 17 加 25。",
+        "continuation": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+      }
+    ],
+    "time": 1790964752.8664725
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "cleanup_receipt": "reports/learning_delivery_v1/cleanup_deleted.jsonl",
+  "reason": "Redundant completed short preflight binaries removed during user-requested learning cleanup.",
+  "removed": [
+    "models/03_omni_moe/runs/real_t2a_offload_no_recompute_v3/checkpoints/best_validation.pth",
+    "models/03_omni_moe/runs/real_t2a_offload_no_recompute_v3/checkpoints/latest_resume.pt",
+    "models/03_omni_moe/runs/real_t2a_offload_no_recompute_v3/checkpoints/model_step_0000003.pth"
+  ],
+  "retained": "config, source snapshots, all metrics, evaluation, checkpoint history, errors",
+  "limitation": "Historical metrics remain; exact saved optimizer state cannot be resumed after deletion."
+}

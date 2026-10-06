@@ -1,0 +1,42 @@
+{
+  "purpose": "preflight",
+  "device": "cpu",
+  "model": {
+    "hidden_size": 32,
+    "num_hidden_layers": 2,
+    "talker_hidden_size": 32,
+    "num_talker_hidden_layers": 2,
+    "use_moe": true,
+    "dropout": 0.1
+  },
+  "modality": "t2a",
+  "mode": "all",
+  "corpus": "artifacts/omni_validation/t2a_shards_v1",
+  "train_indices_override": [
+    0,
+    7,
+    8,
+    9,
+    10,
+    12,
+    32,
+    44
+  ],
+  "max_length": 128,
+  "batch_size": 1,
+  "accumulation_steps": 2,
+  "epochs": 2,
+  "max_steps": 5,
+  "learning_rate": 0.0001,
+  "warmup_steps": 1,
+  "seed": 20261006,
+  "cpu_threads": 2,
+  "num_workers": 2,
+  "deterministic": true,
+  "checkpointing": true,
+  "eval_interval": 2,
+  "save_interval": 2,
+  "validation_samples": 3,
+  "log_interval": 1,
+  "run_dir": "models/03_omni_moe/runs/trainer_cpu_resume_v3_mmap/resumed"
+}

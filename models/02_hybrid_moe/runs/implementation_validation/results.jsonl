@@ -1,0 +1,44 @@
+{"test": "router_task_gradient", "author_fixed_mainline_norms": [2.9067908258184616e-07, 3.4498839378356934, 3.4498839378356934], "forward_identical": true, "passed": true}
+{"event": "gpu_lock_acquired", "pid": 330935, "torch": "2.11.0+cu128", "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU"}
+{"test": "independent_recurrent", "event": "forward_backward", "seconds": 0.21348166465759277, "passed": true}
+{"test": "author_chunk", "event": "forward_backward", "seconds": 0.13573288917541504, "passed": true}
+{"test": "fla_chunk_fp32", "event": "forward_backward", "seconds": 69.16127848625183, "passed": true}
+{"test": "author_chunk_output", "relative_rms": 2.0183762217129697e-07, "max_absolute": 1.862645149230957e-08, "tolerance": 1e-05, "passed": true}
+{"test": "author_chunk_final_state", "relative_rms": 1.5149601040320704e-07, "max_absolute": 2.384185791015625e-07, "tolerance": 1e-05, "passed": true}
+{"test": "author_chunk_gradient_q", "relative_rms": 1.955885977622529e-07, "max_absolute": 2.384185791015625e-07, "tolerance": 1e-05, "passed": true}
+{"test": "author_chunk_gradient_k", "relative_rms": 2.176169999756894e-07, "max_absolute": 2.980232238769531e-07, "tolerance": 1e-05, "passed": true}
+{"test": "author_chunk_gradient_v", "relative_rms": 2.1419792517463065e-07, "max_absolute": 3.725290298461914e-08, "tolerance": 1e-05, "passed": true}
+{"test": "author_chunk_gradient_g", "relative_rms": 3.3317289194201294e-07, "max_absolute": 1.7881393432617188e-07, "tolerance": 1e-05, "passed": true}
+{"test": "author_chunk_gradient_beta", "relative_rms": 2.1711522890655033e-07, "max_absolute": 1.7881393432617188e-07, "tolerance": 1e-05, "passed": true}
+{"test": "fla_fp32_output", "relative_rms": 0.0014603076269850135, "max_absolute": 0.0001313537359237671, "tolerance": 0.005, "passed": true}
+{"test": "fla_fp32_final_state", "relative_rms": 0.0007698420668020844, "max_absolute": 0.0008069872856140137, "tolerance": 0.005, "passed": true}
+{"test": "fla_fp32_gradient_q", "relative_rms": 0.0014677617000415921, "max_absolute": 0.0013706088066101074, "tolerance": 0.005, "passed": true}
+{"test": "fla_fp32_gradient_k", "relative_rms": 0.0015519128646701574, "max_absolute": 0.0018551349639892578, "tolerance": 0.005, "passed": true}
+{"test": "fla_fp32_gradient_v", "relative_rms": 0.0018147648079320788, "max_absolute": 0.00017359107732772827, "tolerance": 0.005, "passed": true}
+{"test": "fla_fp32_gradient_g", "relative_rms": 0.0015473103849217296, "max_absolute": 0.001248002052307129, "tolerance": 0.005, "passed": true}
+{"test": "fla_fp32_gradient_beta", "relative_rms": 0.001837243209592998, "max_absolute": 0.0013422966003417969, "tolerance": 0.005, "passed": true}
+{"test": "full_205M_forward_backward_update", "parameters": 205623072, "ce": 8.952017784118652, "aux": 0.004044527653604746, "peak_allocated": 3379356672, "seconds": 6.853409290313721, "kernel_calls": {"chunk": 6, "recurrent": 0}, "gradient_norms": {"model.layers.0.linear_attn.in_proj_qkv.weight": 26.64019775390625, "model.layers.0.mlp.gate.weight": 1.0677733421325684, "model.layers.1.linear_attn.in_proj_qkv.weight": 8.521820068359375, "model.layers.1.mlp.gate.weight": 0.508122444152832, "model.layers.2.linear_attn.in_proj_qkv.weight": 4.405281066894531, "model.layers.2.mlp.gate.weight": 0.3077344298362732, "model.layers.3.mlp.gate.weight": 0.2675445079803467, "model.layers.4.linear_attn.in_proj_qkv.weight": 2.327969551086426, "model.layers.4.mlp.gate.weight": 0.17844612896442413, "model.layers.5.linear_attn.in_proj_qkv.weight": 1.7615547180175781, "model.layers.5.mlp.gate.weight": 0.14527678489685059, "model.layers.6.linear_attn.in_proj_qkv.weight": 1.4606413841247559, "model.layers.6.mlp.gate.weight": 0.11123661696910858, "model.layers.7.mlp.gate.weight": 0.07769116759300232}, "passed": true}
+{"test": "full_model_cached_vs_full_logits", "relative_rms": 0.002183633390814066, "max_absolute": 0.005031745880842209, "tolerance": 0.005, "passed": true}
+{"test": "all_tests", "kernel_calls": {"chunk": 18, "recurrent": 6}, "passed": true}
+{"test": "router_task_gradient", "author_fixed_mainline_norms": [2.9067908258184616e-07, 3.4498839378356934, 3.4498839378356934], "forward_identical": true, "passed": true}
+{"event": "gpu_lock_acquired", "pid": 332725, "torch": "2.11.0+cu128", "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU"}
+{"test": "independent_recurrent", "event": "forward_backward", "seconds": 0.1419508457183838, "passed": true}
+{"test": "author_chunk", "event": "forward_backward", "seconds": 0.10389256477355957, "passed": true}
+{"test": "fla_chunk_fp32", "event": "forward_backward", "seconds": 1.154996395111084, "passed": true}
+{"test": "author_chunk_output", "relative_rms": 2.0183762217129697e-07, "max_absolute": 1.862645149230957e-08, "tolerance": 1e-05, "passed": true}
+{"test": "author_chunk_final_state", "relative_rms": 1.5149601040320704e-07, "max_absolute": 2.384185791015625e-07, "tolerance": 1e-05, "passed": true}
+{"test": "author_chunk_gradient_q", "relative_rms": 1.955885977622529e-07, "max_absolute": 2.384185791015625e-07, "tolerance": 1e-05, "passed": true}
+{"test": "author_chunk_gradient_k", "relative_rms": 2.176169999756894e-07, "max_absolute": 2.980232238769531e-07, "tolerance": 1e-05, "passed": true}
+{"test": "author_chunk_gradient_v", "relative_rms": 2.1419792517463065e-07, "max_absolute": 3.725290298461914e-08, "tolerance": 1e-05, "passed": true}
+{"test": "author_chunk_gradient_g", "relative_rms": 3.3317289194201294e-07, "max_absolute": 1.7881393432617188e-07, "tolerance": 1e-05, "passed": true}
+{"test": "author_chunk_gradient_beta", "relative_rms": 2.1711522890655033e-07, "max_absolute": 1.7881393432617188e-07, "tolerance": 1e-05, "passed": true}
+{"test": "fla_fp32_output", "relative_rms": 0.0014603076269850135, "max_absolute": 0.0001313537359237671, "tolerance": 0.005, "passed": true}
+{"test": "fla_fp32_final_state", "relative_rms": 0.0007698420668020844, "max_absolute": 0.0008069872856140137, "tolerance": 0.005, "passed": true}
+{"test": "fla_fp32_gradient_q", "relative_rms": 0.0014677617000415921, "max_absolute": 0.0013706088066101074, "tolerance": 0.005, "passed": true}
+{"test": "fla_fp32_gradient_k", "relative_rms": 0.0015519128646701574, "max_absolute": 0.0018551349639892578, "tolerance": 0.005, "passed": true}
+{"test": "fla_fp32_gradient_v", "relative_rms": 0.0018147648079320788, "max_absolute": 0.00017359107732772827, "tolerance": 0.005, "passed": true}
+{"test": "fla_fp32_gradient_g", "relative_rms": 0.0015473103849217296, "max_absolute": 0.001248002052307129, "tolerance": 0.005, "passed": true}
+{"test": "fla_fp32_gradient_beta", "relative_rms": 0.001837243209592998, "max_absolute": 0.0013422966003417969, "tolerance": 0.005, "passed": true}
+{"test": "full_205M_forward_backward_update", "parameters": 205623072, "ce": 8.952017784118652, "aux": 0.004044527653604746, "peak_allocated": 3378701312, "seconds": 0.4794893264770508, "kernel_calls": {"chunk": 6, "recurrent": 0}, "gradient_norms": {"model.layers.0.linear_attn.in_proj_qkv.weight": 26.64019775390625, "model.layers.0.mlp.gate.weight": 1.0677733421325684, "model.layers.1.linear_attn.in_proj_qkv.weight": 8.521820068359375, "model.layers.1.mlp.gate.weight": 0.508122444152832, "model.layers.2.linear_attn.in_proj_qkv.weight": 4.405281066894531, "model.layers.2.mlp.gate.weight": 0.3077344298362732, "model.layers.3.mlp.gate.weight": 0.2675445079803467, "model.layers.4.linear_attn.in_proj_qkv.weight": 2.327969551086426, "model.layers.4.mlp.gate.weight": 0.17844612896442413, "model.layers.5.linear_attn.in_proj_qkv.weight": 1.7615547180175781, "model.layers.5.mlp.gate.weight": 0.14527678489685059, "model.layers.6.linear_attn.in_proj_qkv.weight": 1.4606413841247559, "model.layers.6.mlp.gate.weight": 0.11123661696910858, "model.layers.7.mlp.gate.weight": 0.07769116759300232}, "passed": true}
+{"test": "full_model_cached_vs_full_logits", "relative_rms": 0.002183633390814066, "max_absolute": 0.005031745880842209, "tolerance": 0.005, "passed": true}
+{"test": "all_tests", "kernel_calls": {"chunk": 18, "recurrent": 6}, "passed": true}

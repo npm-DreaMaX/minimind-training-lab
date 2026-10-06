@@ -1,0 +1,1878 @@
+[
+  {
+    "path": "models/01_moe/deliveries/20261006_resume_from_9768/training_resume.pt",
+    "bytes": 2381236747,
+    "inode": 5629499535195760,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/01_moe/deliveries/20261006_user_stop/training_resume.pt",
+    "bytes": 2381236747,
+    "inode": 183240209839608881,
+    "device": 69,
+    "links": 2
+  },
+  {
+    "path": "models/01_moe/runs/20261003_hardware/local_b1/smoke_resume.pt",
+    "bytes": 2381229339,
+    "inode": 3659174698147208,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/01_moe/runs/20261003_hardware/local_deterministic/smoke_resume.pt",
+    "bytes": 2381229339,
+    "inode": 3659174698147238,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/01_moe/runs/pipeline_smoke_20261003/checkpoints/latest_resume.pt",
+    "bytes": 2381236555,
+    "inode": 3940649674858090,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/01_moe/runs/pipeline_smoke_20261003/checkpoints/model_step_0000004.pth",
+    "bytes": 406720964,
+    "inode": 3940649674858088,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/01_moe/runs/pretrain_full_v1/checkpoints/best_validation.pth",
+    "bytes": 406720433,
+    "inode": 1407374884551426,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/01_moe/runs/pretrain_full_v1/checkpoints/latest_resume.pt",
+    "bytes": 2381236747,
+    "inode": 183240209839608881,
+    "device": 69,
+    "links": 2
+  },
+  {
+    "path": "models/01_moe/runs/pretrain_full_v1/checkpoints/model_step_0002607.pth",
+    "bytes": 406720964,
+    "inode": 4222124651573363,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/01_moe/runs/pretrain_full_v1/checkpoints/model_step_0002750.pth",
+    "bytes": 406720964,
+    "inode": 5910974511889543,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/01_moe/runs/pretrain_full_v1/checkpoints/model_step_0003194.pth",
+    "bytes": 406720964,
+    "inode": 3940649674863930,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/01_moe/runs/pretrain_full_v1/checkpoints/model_step_0003279.pth",
+    "bytes": 406720964,
+    "inode": 1407374884535190,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/01_moe/runs/pretrain_full_v1/checkpoints/model_step_0003502.pth",
+    "bytes": 406720964,
+    "inode": 1970324837956346,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/01_moe/runs/pretrain_full_v1/checkpoints/model_step_0004712.pth",
+    "bytes": 406720964,
+    "inode": 1970324837958898,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/01_moe/runs/pretrain_full_v1/checkpoints/model_step_0005000.pth",
+    "bytes": 406720964,
+    "inode": 1407374884538837,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/01_moe/runs/pretrain_full_v1/checkpoints/model_step_0005003.pth",
+    "bytes": 406720964,
+    "inode": 2533274791381019,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/01_moe/runs/pretrain_full_v1/checkpoints/model_step_0009768.pth",
+    "bytes": 406720964,
+    "inode": 12384898976256102,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/01_moe/runs/pretrain_full_v1/checkpoints/model_step_0010000.pth",
+    "bytes": 406720964,
+    "inode": 2814749768078726,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/01_moe/runs/pretrain_full_v1/checkpoints/model_step_0013209.pth",
+    "bytes": 406720964,
+    "inode": 19703248370717779,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/01_moe/runs/profile_real_update_v1/trace.json",
+    "bytes": 320441769,
+    "inode": 3377699721442090,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/01_moe/runs/recipe_B6_T512_probe/checkpoints/best_validation.pth",
+    "bytes": 406720433,
+    "inode": 3659174698151125,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/01_moe/runs/recipe_B6_T512_probe/checkpoints/latest_resume.pt",
+    "bytes": 2381236555,
+    "inode": 3940649674861780,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/01_moe/runs/recipe_B6_T512_probe/checkpoints/model_step_0000003.pth",
+    "bytes": 406720964,
+    "inode": 3659174698151338,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/01_moe/runs/recipe_batch8_probe_v2/checkpoints/latest_resume.pt",
+    "bytes": 2381236555,
+    "inode": 3377699721440450,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/01_moe/runs/recipe_batch8_probe_v2/checkpoints/model_step_0000005.pth",
+    "bytes": 406720964,
+    "inode": 5066549581700819,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/01_moe/runs/sft_full_random_probe_v1/checkpoints/best_validation.pth",
+    "bytes": 406720433,
+    "inode": 2533274791373344,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/01_moe/runs/sft_full_random_probe_v1/checkpoints/latest_resume.pt",
+    "bytes": 2381236875,
+    "inode": 2814749768083980,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/01_moe/runs/sft_full_random_probe_v1/checkpoints/model_step_0000010.pth",
+    "bytes": 406720964,
+    "inode": 1970324837955613,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/01_moe/runs/sft_pipeline_probe/checkpoints/best_validation.pth",
+    "bytes": 406720433,
+    "inode": 3096224744730135,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/01_moe/runs/sft_pipeline_probe/checkpoints/latest_resume.pt",
+    "bytes": 2381236683,
+    "inode": 3659174698151446,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/01_moe/runs/sft_pipeline_probe/checkpoints/model_step_0000003.pth",
+    "bytes": 406720964,
+    "inode": 3096224744730125,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/01_moe/runs/sft_random_B4_recompute_v2/checkpoints/best_validation.pth",
+    "bytes": 406720433,
+    "inode": 1407374884539070,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/01_moe/runs/sft_random_B4_recompute_v2/checkpoints/latest_resume.pt",
+    "bytes": 2381237131,
+    "inode": 3096224744803003,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/01_moe/runs/sft_random_B4_recompute_v2/checkpoints/model_step_0000010.pth",
+    "bytes": 406720964,
+    "inode": 1407374884539073,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/01_moe/runs/sft_random_B8_recompute_v2/checkpoints/best_validation.pth",
+    "bytes": 406720433,
+    "inode": 1407374884539101,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/01_moe/runs/sft_random_B8_recompute_v2/checkpoints/latest_resume.pt",
+    "bytes": 2381237131,
+    "inode": 3096224744803034,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/01_moe/runs/sft_random_B8_recompute_v2/checkpoints/model_step_0000010.pth",
+    "bytes": 406720964,
+    "inode": 1407374884539103,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/deliveries/20261003_1800_official_mini_v1/hybrid_205m_fp16.pth",
+    "bytes": 421139232,
+    "inode": 11821949022818692,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/deliveries/20261003_1800_official_mini_v1/training_resume.pt",
+    "bytes": 2467735019,
+    "inode": 2251799814656371,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/deliveries/20261003_first_500/hybrid_205m_fp16.pth",
+    "bytes": 421139232,
+    "inode": 1407374884552493,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/deliveries/20261003_first_500/training_resume.pt",
+    "bytes": 965229539,
+    "inode": 4222124651658924,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/deliveries/20261003_mini_resume_integrity_v1/training_resume.pt",
+    "bytes": 2467735019,
+    "inode": 13792273859808478,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/deliveries/20261006_final_integrity_v1/training_resume.pt",
+    "bytes": 2467735019,
+    "inode": 4503599628342506,
+    "device": 69,
+    "links": 2
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/cache_diagnosis_trained_cpu_v1/training_resume.pt",
+    "bytes": 2467735019,
+    "inode": 15481123720057386,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/full_pretrain_ieee_v4/checkpoints/best_validation.pth",
+    "bytes": 421139037,
+    "inode": 1688849861247864,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/full_pretrain_ieee_v4/checkpoints/latest_resume.pt",
+    "bytes": 2467734379,
+    "inode": 3377699721511798,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/full_pretrain_ieee_v4/checkpoints/model_step_0000010.pth",
+    "bytes": 421139622,
+    "inode": 1688849861247865,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/full_pretrain_tf32x3_v4/checkpoints/best_validation.pth",
+    "bytes": 421139037,
+    "inode": 1125899907826711,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/full_pretrain_tf32x3_v4/checkpoints/latest_resume.pt",
+    "bytes": 2467734379,
+    "inode": 2814749768090645,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/full_pretrain_tf32x3_v4/checkpoints/model_step_0000010.pth",
+    "bytes": 421139622,
+    "inode": 1125899907826712,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/full_sft_ieee_v4/checkpoints/best_validation.pth",
+    "bytes": 421139037,
+    "inode": 1125899907826734,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/full_sft_ieee_v4/checkpoints/latest_resume.pt",
+    "bytes": 2467734379,
+    "inode": 2814749768090668,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/full_sft_ieee_v4/checkpoints/model_step_0000010.pth",
+    "bytes": 421139622,
+    "inode": 1125899907826735,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/hybrid_adapt_official_full_v1/checkpoints/best_validation.pth",
+    "bytes": 421139037,
+    "inode": 7036874418765689,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/hybrid_adapt_official_full_v1/checkpoints/latest_resume.pt",
+    "bytes": 965229539,
+    "inode": 1688849861263247,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/hybrid_adapt_official_full_v1/checkpoints/model_step_0001369.pth",
+    "bytes": 421139622,
+    "inode": 13229323906388238,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/hybrid_sft_official_mini_2ep_v1/metrics.jsonl",
+    "bytes": 83466795,
+    "inode": 562949954420841,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/hybrid_sft_official_mini_2ep_v1/checkpoints/best_validation.pth",
+    "bytes": 421139037,
+    "inode": 3096224744789227,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/hybrid_sft_official_mini_2ep_v1/checkpoints/latest_resume.pt",
+    "bytes": 2467735019,
+    "inode": 4503599628342506,
+    "device": 69,
+    "links": 2
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/hybrid_sft_official_mini_2ep_v1/checkpoints/model_step_0005000.pth",
+    "bytes": 421139622,
+    "inode": 10414574139198506,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/hybrid_sft_official_mini_2ep_v1/checkpoints/model_step_0010000.pth",
+    "bytes": 421139622,
+    "inode": 2251799814656512,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/hybrid_sft_official_mini_2ep_v1/checkpoints/model_step_0015000.pth",
+    "bytes": 421139622,
+    "inode": 29836347532300864,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/hybrid_sft_official_mini_2ep_v1/checkpoints/model_step_0020000.pth",
+    "bytes": 421139622,
+    "inode": 93168217292198516,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/hybrid_sft_official_mini_2ep_v1/checkpoints/model_step_0025000.pth",
+    "bytes": 421139622,
+    "inode": 106960491151020405,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/hybrid_sft_official_mini_2ep_v1/checkpoints/model_step_0030000.pth",
+    "bytes": 421139622,
+    "inode": 36873221950067352,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/hybrid_sft_official_mini_2ep_v1/checkpoints/model_step_0035000.pth",
+    "bytes": 421139622,
+    "inode": 119063915149578858,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/hybrid_sft_official_mini_2ep_v1/checkpoints/model_step_0040000.pth",
+    "bytes": 421139622,
+    "inode": 2251799814656622,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/hybrid_sft_official_mini_2ep_v1/checkpoints/model_step_0045000.pth",
+    "bytes": 421139622,
+    "inode": 18577348463874765,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/hybrid_sft_official_mini_2ep_v1/checkpoints/model_step_0050000.pth",
+    "bytes": 421139622,
+    "inode": 12384898976240338,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/hybrid_sft_official_mini_2ep_v1/checkpoints/model_step_0055000.pth",
+    "bytes": 421139622,
+    "inode": 43065671437701864,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/hybrid_sft_official_mini_2ep_v1/checkpoints/model_step_0060000.pth",
+    "bytes": 421139622,
+    "inode": 33776997206250335,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/hybrid_sft_official_mini_2ep_v1/checkpoints/model_step_0065000.pth",
+    "bytes": 421139622,
+    "inode": 4503599628342192,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/hybrid_sft_official_mini_2ep_v1/checkpoints/model_step_0070000.pth",
+    "bytes": 421139622,
+    "inode": 99360666779832882,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/hybrid_sft_official_mini_2ep_v1/checkpoints/model_step_0075000.pth",
+    "bytes": 421139622,
+    "inode": 98234766872990635,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/hybrid_sft_official_mini_2ep_v1/checkpoints/model_step_0080000.pth",
+    "bytes": 421139622,
+    "inode": 15481123720057854,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/hybrid_sft_official_mini_2ep_v1/checkpoints/model_step_0085000.pth",
+    "bytes": 421139622,
+    "inode": 104990166314046500,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/hybrid_sft_official_mini_2ep_v1/checkpoints/model_step_0090000.pth",
+    "bytes": 421139622,
+    "inode": 388716942838387196,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/hybrid_sft_official_mini_2ep_v1/checkpoints/model_step_0095000.pth",
+    "bytes": 421139622,
+    "inode": 143833713100053476,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/hybrid_sft_official_mini_2ep_v1/checkpoints/model_step_0100000.pth",
+    "bytes": 421139622,
+    "inode": 3940649674921070,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/hybrid_sft_official_mini_2ep_v1/checkpoints/model_step_0105000.pth",
+    "bytes": 421139622,
+    "inode": 2814749768078474,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/hybrid_sft_official_mini_2ep_v1/checkpoints/model_step_0110000.pth",
+    "bytes": 421139622,
+    "inode": 211669182487385149,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/hybrid_sft_official_mini_2ep_v1/checkpoints/model_step_0113082.pth",
+    "bytes": 421139622,
+    "inode": 12384898976240801,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/profile_official_sft_B16_RC_v1/trace.json",
+    "bytes": 22571905,
+    "inode": 1407374884552726,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/random_adapt_B4_tf32x3_v5/checkpoints/best_validation.pth",
+    "bytes": 421139037,
+    "inode": 1125899907827871,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/random_adapt_B4_tf32x3_v5/checkpoints/latest_resume.pt",
+    "bytes": 965229347,
+    "inode": 4785074605066055,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/random_adapt_B4_tf32x3_v5/checkpoints/model_step_0000012.pth",
+    "bytes": 421139622,
+    "inode": 1407374884538528,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/random_adapt_B8_tf32x3_v6/checkpoints/best_validation.pth",
+    "bytes": 421139037,
+    "inode": 1407374884539041,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/random_adapt_B8_tf32x3_v6/checkpoints/latest_resume.pt",
+    "bytes": 965229475,
+    "inode": 3377699721513631,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/random_adapt_B8_tf32x3_v6/checkpoints/model_step_0000012.pth",
+    "bytes": 421139622,
+    "inode": 1407374884539042,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/random_pretrain_B3_tf32x3_v5/checkpoints/best_validation.pth",
+    "bytes": 421139037,
+    "inode": 1125899907827819,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/random_pretrain_B3_tf32x3_v5/checkpoints/latest_resume.pt",
+    "bytes": 2467734507,
+    "inode": 3377699721513064,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/random_pretrain_B3_tf32x3_v5/checkpoints/model_step_0000012.pth",
+    "bytes": 421139622,
+    "inode": 1407374884538477,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/random_pretrain_B4_recompute_tf32x3_v5/checkpoints/best_validation.pth",
+    "bytes": 421139037,
+    "inode": 1125899907827844,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/random_pretrain_B4_recompute_tf32x3_v5/checkpoints/latest_resume.pt",
+    "bytes": 2467734507,
+    "inode": 3377699721513090,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/random_pretrain_B4_recompute_tf32x3_v5/checkpoints/model_step_0000012.pth",
+    "bytes": 421139622,
+    "inode": 1125899907827845,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/random_pretrain_B4_tf32x3_v6/checkpoints/best_validation.pth",
+    "bytes": 421139037,
+    "inode": 2814749768092266,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/random_pretrain_B4_tf32x3_v6/checkpoints/latest_resume.pt",
+    "bytes": 2467734635,
+    "inode": 8162774325480197,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/random_pretrain_B4_tf32x3_v6/checkpoints/model_step_0000012.pth",
+    "bytes": 421139622,
+    "inode": 1125899907828332,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/random_sft_B2_recompute_tf32x3_v5/checkpoints/best_validation.pth",
+    "bytes": 421139037,
+    "inode": 1407374884538551,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/random_sft_B2_recompute_tf32x3_v5/checkpoints/latest_resume.pt",
+    "bytes": 2467734507,
+    "inode": 3096224744802485,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/random_sft_B2_recompute_tf32x3_v5/checkpoints/model_step_0000012.pth",
+    "bytes": 421139622,
+    "inode": 1407374884538552,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/random_sft_B4_recompute_tf32x3_v6/checkpoints/best_validation.pth",
+    "bytes": 421139037,
+    "inode": 1688849861249672,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/random_sft_B4_recompute_tf32x3_v6/checkpoints/latest_resume.pt",
+    "bytes": 2467734635,
+    "inode": 3940649674934729,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/random_sft_B4_recompute_tf32x3_v6/checkpoints/model_step_0000012.pth",
+    "bytes": 421139622,
+    "inode": 1407374884539017,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/real_pretrain_B2_T512/checkpoints/best_validation.pth",
+    "bytes": 421139037,
+    "inode": 3096224744731847,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/real_pretrain_B2_T512/checkpoints/latest_resume.pt",
+    "bytes": 2467734251,
+    "inode": 3377699721442500,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/real_pretrain_B2_T512/checkpoints/model_step_0000003.pth",
+    "bytes": 421139622,
+    "inode": 3377699721442502,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/real_sft_B1_T1536/checkpoints/best_validation.pth",
+    "bytes": 421139037,
+    "inode": 2814749768021220,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/real_sft_B1_T1536/checkpoints/latest_resume.pt",
+    "bytes": 2467734251,
+    "inode": 3659174698153187,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/real_sft_B1_T1536/checkpoints/model_step_0000003.pth",
+    "bytes": 421139622,
+    "inode": 2533274791310572,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/resume_deterministic/smoke_resume.pt",
+    "bytes": 2467726963,
+    "inode": 3377699721440694,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/resume_ieee_v4/smoke_resume.pt",
+    "bytes": 2467727027,
+    "inode": 1125899907826742,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/resume_tf32x3_v5/smoke_resume.pt",
+    "bytes": 2467727027,
+    "inode": 1407374884538559,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/today_sft_B16_T768_RC_probe_v1/checkpoints/best_validation.pth",
+    "bytes": 421139037,
+    "inode": 1125899907842022,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/today_sft_B16_T768_RC_probe_v1/checkpoints/latest_resume.pt",
+    "bytes": 2467734699,
+    "inode": 20266198324153565,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/today_sft_B16_T768_RC_probe_v1/checkpoints/model_step_0000008.pth",
+    "bytes": 421139622,
+    "inode": 562949954420712,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/today_sft_B16_T768_RC_torch_tf32_probe_v1/checkpoints/best_validation.pth",
+    "bytes": 421139037,
+    "inode": 562949954420755,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/today_sft_B16_T768_RC_torch_tf32_probe_v1/checkpoints/latest_resume.pt",
+    "bytes": 2467734635,
+    "inode": 1970324837974033,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/today_sft_B16_T768_RC_torch_tf32_probe_v1/checkpoints/model_step_0000008.pth",
+    "bytes": 421139622,
+    "inode": 1407374884552696,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/today_sft_B2_T768_probe_v1/checkpoints/best_validation.pth",
+    "bytes": 421139037,
+    "inode": 562949954420652,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/today_sft_B2_T768_probe_v1/checkpoints/latest_resume.pt",
+    "bytes": 2467734571,
+    "inode": 1125899907841948,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/today_sft_B2_T768_probe_v1/checkpoints/model_step_0000008.pth",
+    "bytes": 421139622,
+    "inode": 26458647811791374,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/transfer_official_pretrain_v1/initialized_fp32.pth",
+    "bytes": 822570777,
+    "inode": 562949954420397,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/transfer_official_sft_today_v1/initialized_fp32.pth",
+    "bytes": 822570777,
+    "inode": 562949954420621,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/transfer_preflight_early_ar/initialized_fp32.pth",
+    "bytes": 822570777,
+    "inode": 3377699721441460,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/triton_ieee_v3/kernel_seed_20261007.pt",
+    "bytes": 2794847,
+    "inode": 1407374884535232,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/triton_ieee_v3/kernel_seed_20261008.pt",
+    "bytes": 2794847,
+    "inode": 1688849861245893,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/triton_tf32x3_v3/kernel_seed_20261007.pt",
+    "bytes": 2794847,
+    "inode": 1407374884535263,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/triton_tf32x3_v3/kernel_seed_20261008.pt",
+    "bytes": 2794847,
+    "inode": 1688849861245920,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/triton_tf32_v3/kernel_seed_20261007.pt",
+    "bytes": 2794847,
+    "inode": 1688849861245852,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/02_hybrid_moe/runs/triton_tf32_v3/kernel_seed_20261008.pt",
+    "bytes": 2794847,
+    "inode": 1688849861245853,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/adam_offload_contract_v1/offload_resume.pt",
+    "bytes": 34381,
+    "inode": 1970324837950684,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_a2a_L3072_worker0_resource_v4/checkpoints/best_validation.pth",
+    "bytes": 639711125,
+    "inode": 1407374884539148,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_a2a_L3072_worker0_resource_v4/checkpoints/latest_resume.pt",
+    "bytes": 3779077469,
+    "inode": 844424931117838,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_a2a_L3072_worker0_resource_v4/checkpoints/model_step_0000032.pth",
+    "bytes": 639712152,
+    "inode": 3096224744803079,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_a2a_L3072_worker0_resource_v4/learning/batch_step_0000000_micro_000_000.pt",
+    "bytes": 444674,
+    "inode": 1407374884539140,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_a2a_L3072_worker0_resource_v4/learning/batch_step_0000000_micro_001_001.pt",
+    "bytes": 444674,
+    "inode": 844424931117830,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_a2a_L3072_worker1_resource_v3/checkpoints/best_validation.pth",
+    "bytes": 639711125,
+    "inode": 1407374884538615,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_a2a_L3072_worker1_resource_v3/checkpoints/latest_resume.pt",
+    "bytes": 3779077405,
+    "inode": 1125899907827968,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_a2a_L3072_worker1_resource_v3/checkpoints/model_step_0000032.pth",
+    "bytes": 639712152,
+    "inode": 2533274791381222,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_a2a_L3072_worker1_resource_v3/learning/batch_step_0000000_micro_000_000.pt",
+    "bytes": 444674,
+    "inode": 1125899907827936,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_a2a_L3072_worker1_resource_v3/learning/batch_step_0000000_micro_001_001.pt",
+    "bytes": 444674,
+    "inode": 1407374884538594,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_a2a_long_cap57_v1/checkpoints/best_validation.pth",
+    "bytes": 639711125,
+    "inode": 1407374884535115,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_a2a_long_cap57_v1/checkpoints/latest_resume.pt",
+    "bytes": 3779077277,
+    "inode": 1688849861245776,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_a2a_long_cap57_v1/checkpoints/model_step_0000002.pth",
+    "bytes": 639712152,
+    "inode": 1407374884535122,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_a2a_long_cap57_v1/learning/batch_step_0000000_micro_000_000.pt",
+    "bytes": 223490,
+    "inode": 1407374884535093,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_a2a_long_cap57_v1/learning/batch_step_0000000_micro_001_001.pt",
+    "bytes": 223490,
+    "inode": 1407374884535096,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_a2a_long_cap57_v1/learning/batch_step_0000001_micro_000_002.pt",
+    "bytes": 223490,
+    "inode": 1688849861245756,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_a2a_long_cap57_v1/learning/batch_step_0000001_micro_001_003.pt",
+    "bytes": 223490,
+    "inode": 1407374884535111,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_a2a_long_L3072_v2/checkpoints/best_validation.pth",
+    "bytes": 639711125,
+    "inode": 1125899907826790,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_a2a_long_L3072_v2/checkpoints/latest_resume.pt",
+    "bytes": 3779077405,
+    "inode": 844424931116137,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_a2a_long_L3072_v2/checkpoints/model_step_0000002.pth",
+    "bytes": 639712152,
+    "inode": 1125899907826794,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_a2a_long_L3072_v2/learning/batch_step_0000000_micro_000_000.pt",
+    "bytes": 444674,
+    "inode": 1125899907826781,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_a2a_long_L3072_v2/learning/batch_step_0000000_micro_001_001.pt",
+    "bytes": 444674,
+    "inode": 1125899907826783,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_a2a_long_L3072_v2/learning/batch_step_0000001_micro_000_002.pt",
+    "bytes": 444674,
+    "inode": 844424931116130,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_a2a_long_L3072_v2/learning/batch_step_0000001_micro_001_003.pt",
+    "bytes": 444674,
+    "inode": 1125899907826788,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_a2a_random_cap57_v1/checkpoints/best_validation.pth",
+    "bytes": 639711125,
+    "inode": 1970324837956337,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_a2a_random_cap57_v1/checkpoints/latest_resume.pt",
+    "bytes": 3779077341,
+    "inode": 1407374884535031,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_a2a_random_cap57_v1/checkpoints/model_step_0000003.pth",
+    "bytes": 639712152,
+    "inode": 1688849861245688,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_a2a_random_cap57_v1/learning/batch_step_0000000_micro_000_000.pt",
+    "bytes": 223490,
+    "inode": 2814749768088295,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_a2a_random_cap57_v1/learning/batch_step_0000000_micro_001_001.pt",
+    "bytes": 223490,
+    "inode": 1407374884535017,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_a2a_random_cap57_v1/learning/batch_step_0000001_micro_000_002.pt",
+    "bytes": 223490,
+    "inode": 1407374884535021,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_a2a_random_cap57_v1/learning/batch_step_0000001_micro_001_003.pt",
+    "bytes": 223490,
+    "inode": 1688849861245679,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_i2t_all_B2_L768_v1/checkpoints/best_validation.pth",
+    "bytes": 639711125,
+    "inode": 1125899907826837,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_i2t_all_B2_L768_v1/checkpoints/latest_resume.pt",
+    "bytes": 3779077533,
+    "inode": 1125899907826865,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_i2t_all_B2_L768_v1/checkpoints/model_step_0000003.pth",
+    "bytes": 639712152,
+    "inode": 844424931116210,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_i2t_all_B2_L768_v1/learning/batch_step_0000000_micro_000_000.pt",
+    "bytes": 223362,
+    "inode": 1125899907826827,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_i2t_all_B2_L768_v1/learning/batch_step_0000000_micro_001_001.pt",
+    "bytes": 223362,
+    "inode": 1125899907826829,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_i2t_all_B2_L768_v1/learning/batch_step_0000001_micro_000_002.pt",
+    "bytes": 223362,
+    "inode": 1125899907826832,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_i2t_all_B2_L768_v1/learning/batch_step_0000001_micro_001_003.pt",
+    "bytes": 223362,
+    "inode": 1125899907826834,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_i2t_proj_B16_grouped_role_v2/checkpoints/best_validation.pth",
+    "bytes": 639711125,
+    "inode": 1407374884538720,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_i2t_proj_B16_grouped_role_v2/checkpoints/latest_resume.pt",
+    "bytes": 1269176023,
+    "inode": 1407374884538722,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_i2t_proj_B16_grouped_role_v2/checkpoints/model_step_0000008.pth",
+    "bytes": 639712152,
+    "inode": 1407374884538723,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_i2t_proj_B16_grouped_role_v2/learning/batch_step_0000000_micro_000_000.pt",
+    "bytes": 1769602,
+    "inode": 1407374884538714,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_i2t_proj_B16_grouped_role_v2/learning/batch_step_0000000_micro_001_001.pt",
+    "bytes": 1769602,
+    "inode": 1407374884538716,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_i2t_vision_proj_B2_L768_v1/checkpoints/best_validation.pth",
+    "bytes": 639711125,
+    "inode": 1125899907826894,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_i2t_vision_proj_B2_L768_v1/checkpoints/latest_resume.pt",
+    "bytes": 1269173143,
+    "inode": 1125899907826918,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_i2t_vision_proj_B2_L768_v1/checkpoints/model_step_0000003.pth",
+    "bytes": 639712152,
+    "inode": 1125899907826919,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_i2t_vision_proj_B2_L768_v1/learning/batch_step_0000000_micro_000_000.pt",
+    "bytes": 223362,
+    "inode": 1125899907826898,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_i2t_vision_proj_B2_L768_v1/learning/batch_step_0000000_micro_001_001.pt",
+    "bytes": 223362,
+    "inode": 1125899907826900,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_i2t_vision_proj_B2_L768_v1/learning/batch_step_0000001_micro_000_002.pt",
+    "bytes": 223362,
+    "inode": 1125899907826903,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_i2t_vision_proj_B2_L768_v1/learning/batch_step_0000001_micro_001_003.pt",
+    "bytes": 223362,
+    "inode": 1125899907826905,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_t2a_accum1_diagnostic_v2/checkpoints/best_validation.pth",
+    "bytes": 639711125,
+    "inode": 2533274791361876,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_t2a_accum1_diagnostic_v2/checkpoints/latest_resume.pt",
+    "bytes": 3779083933,
+    "inode": 2814749768072488,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_t2a_accum1_diagnostic_v2/checkpoints/model_step_0000003.pth",
+    "bytes": 639712152,
+    "inode": 2533274791361898,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_t2a_accum2_diagnostic_v2/checkpoints/best_validation.pth",
+    "bytes": 639711125,
+    "inode": 3940649674923905,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_t2a_B1_T1536/checkpoints/best_validation.pth",
+    "bytes": 639711125,
+    "inode": 2814749768021256,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_t2a_B2_recompute_resource_v3/checkpoints/best_validation.pth",
+    "bytes": 639711125,
+    "inode": 1970324837959912,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_t2a_B2_recompute_resource_v3/checkpoints/latest_resume.pt",
+    "bytes": 3779077341,
+    "inode": 1688849861249331,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_t2a_B2_recompute_resource_v3/checkpoints/model_step_0000012.pth",
+    "bytes": 639712152,
+    "inode": 4503599628354809,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_t2a_B2_recompute_resource_v3/learning/batch_step_0000000_micro_000_000.pt",
+    "bytes": 444546,
+    "inode": 1125899907828001,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_t2a_B2_recompute_resource_v3/learning/batch_step_0000000_micro_001_001.pt",
+    "bytes": 444546,
+    "inode": 1125899907828003,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_t2a_cap57_v3/checkpoints/best_validation.pth",
+    "bytes": 639711125,
+    "inode": 1688849861245481,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_t2a_offload_no_recompute_v3/checkpoints/best_validation.pth",
+    "bytes": 639711125,
+    "inode": 1970324837956220,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_t2a_offload_no_recompute_v3/checkpoints/latest_resume.pt",
+    "bytes": 3779077149,
+    "inode": 1407374884534909,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_t2a_offload_no_recompute_v3/checkpoints/model_step_0000003.pth",
+    "bytes": 639712152,
+    "inode": 1407374884534914,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_t2a_offload_v2/checkpoints/best_validation.pth",
+    "bytes": 639711125,
+    "inode": 2814749768082775,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_t2a_offload_v2/checkpoints/latest_resume.pt",
+    "bytes": 3779077149,
+    "inode": 2251799814661464,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/real_t2a_offload_v2/checkpoints/model_step_0000003.pth",
+    "bytes": 639712152,
+    "inode": 1970324837950809,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_all_modes_v1/a2a_all_long/learning/batch_step_0000000_micro_000_000.pt",
+    "bytes": 886467,
+    "inode": 1125899907829082,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_all_modes_v1/a2a_all_long/learning/batch_step_0000000_micro_001_001.pt",
+    "bytes": 886467,
+    "inode": 1688849861250396,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_all_modes_v1/a2a_audio_proj_long/learning/batch_step_0000000_micro_000_000.pt",
+    "bytes": 886467,
+    "inode": 1688849861250527,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_all_modes_v1/a2a_audio_proj_long/learning/batch_step_0000000_micro_001_001.pt",
+    "bytes": 886467,
+    "inode": 1688849861250561,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_all_modes_v1/t2a_B16_recompute/learning/batch_step_0000000_micro_000_000.pt",
+    "bytes": 3538627,
+    "inode": 1125899907829003,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_all_modes_v1/t2a_B16_recompute/learning/batch_step_0000001_micro_000_001.pt",
+    "bytes": 3538627,
+    "inode": 1125899907829000,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_visual_v2/i2t_all/learning/batch_step_0000000_micro_000_000.pt",
+    "bytes": 443715,
+    "inode": 1125899907829414,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_visual_v2/i2t_all/learning/batch_step_0000000_micro_001_001.pt",
+    "bytes": 443715,
+    "inode": 844424931118759,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_visual_v2/i2t_vision_proj/learning/batch_step_0000000_micro_000_000.pt",
+    "bytes": 1769155,
+    "inode": 1125899907829344,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_visual_v2/i2t_vision_proj/learning/batch_step_0000001_micro_000_001.pt",
+    "bytes": 1769155,
+    "inode": 1407374884539996,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/server_readiness_t2a_v1/continuous/learning/batch_step_0000000_micro_000_000.pt",
+    "bytes": 223043,
+    "inode": 1407374884539184,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/server_readiness_t2a_v1/continuous/learning/batch_step_0000000_micro_001_001.pt",
+    "bytes": 223043,
+    "inode": 844424931117873,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/server_readiness_t2a_v1/resource_B4_recompute/learning/batch_step_0000000_micro_000_000.pt",
+    "bytes": 886083,
+    "inode": 1407374884539222,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/server_readiness_t2a_v1/resource_B4_recompute/learning/batch_step_0000000_micro_001_001.pt",
+    "bytes": 886083,
+    "inode": 1407374884539223,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/server_readiness_t2a_v1/resumed/learning/batch_step_0000000_micro_000_000.pt",
+    "bytes": 223043,
+    "inode": 844424931117955,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/server_readiness_t2a_v1/resumed/learning/batch_step_0000000_micro_001_001.pt",
+    "bytes": 223043,
+    "inode": 1407374884539270,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/server_readiness_t2a_v1/resumed/learning/batch_step_0000001_micro_000_000.pt",
+    "bytes": 223043,
+    "inode": 1407374884539272,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/server_readiness_t2a_v1/resumed/learning/batch_step_0000001_micro_001_001.pt",
+    "bytes": 223043,
+    "inode": 1407374884539268,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/trainer_cpu_per_record_v3/continuous/checkpoints/best_validation.pth",
+    "bytes": 19233157,
+    "inode": 1125899907827604,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/trainer_cpu_per_record_v3/continuous/checkpoints/latest_resume.pt",
+    "bytes": 112850612,
+    "inode": 844424931116950,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/trainer_cpu_per_record_v3/continuous/checkpoints/model_step_0000005.pth",
+    "bytes": 19233680,
+    "inode": 1970324837959555,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/trainer_cpu_per_record_v3/resumed/checkpoints/best_validation.pth",
+    "bytes": 19233157,
+    "inode": 1407374884538317,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/trainer_cpu_per_record_v3/resumed/checkpoints/latest_resume.pt",
+    "bytes": 112850612,
+    "inode": 1407374884538319,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/trainer_cpu_per_record_v3/resumed/checkpoints/model_step_0000001.pth",
+    "bytes": 19233680,
+    "inode": 1407374884538268,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/trainer_cpu_per_record_v3/resumed/checkpoints/model_step_0000005.pth",
+    "bytes": 19233680,
+    "inode": 1970324837959600,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/trainer_cpu_resume_v2/continuous/checkpoints/best_validation.pth",
+    "bytes": 19233157,
+    "inode": 3096224744730912,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/trainer_cpu_resume_v2/continuous/checkpoints/latest_resume.pt",
+    "bytes": 112850484,
+    "inode": 3377699721441573,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/trainer_cpu_resume_v2/continuous/checkpoints/model_step_0000005.pth",
+    "bytes": 19233680,
+    "inode": 3940649674862876,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/trainer_cpu_resume_v2/resumed/checkpoints/best_validation.pth",
+    "bytes": 19233157,
+    "inode": 3096224744730966,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/trainer_cpu_resume_v2/resumed/checkpoints/latest_resume.pt",
+    "bytes": 112850484,
+    "inode": 3377699721441705,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/trainer_cpu_resume_v2/resumed/checkpoints/model_step_0000001.pth",
+    "bytes": 19233680,
+    "inode": 3940649674862372,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/trainer_cpu_resume_v2/resumed/checkpoints/model_step_0000005.pth",
+    "bytes": 19233680,
+    "inode": 3940649674862909,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/trainer_cpu_resume_v3_mmap/continuous/checkpoints/best_validation.pth",
+    "bytes": 19233157,
+    "inode": 2814749768020670,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/trainer_cpu_resume_v3_mmap/continuous/checkpoints/latest_resume.pt",
+    "bytes": 112850484,
+    "inode": 3377699721441981,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/trainer_cpu_resume_v3_mmap/continuous/checkpoints/model_step_0000005.pth",
+    "bytes": 19233680,
+    "inode": 3940649674863286,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/trainer_cpu_resume_v3_mmap/resumed/checkpoints/best_validation.pth",
+    "bytes": 19233157,
+    "inode": 4503599628284143,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/trainer_cpu_resume_v3_mmap/resumed/checkpoints/latest_resume.pt",
+    "bytes": 112850484,
+    "inode": 3659174698152745,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/trainer_cpu_resume_v3_mmap/resumed/checkpoints/model_step_0000001.pth",
+    "bytes": 19233680,
+    "inode": 5629499534547001,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/trainer_cpu_resume_v3_mmap/resumed/checkpoints/model_step_0000005.pth",
+    "bytes": 19233680,
+    "inode": 4785074604993976,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/trainer_cpu_resume_v4_optional_offload/continuous/checkpoints/best_validation.pth",
+    "bytes": 19233157,
+    "inode": 3659174698153324,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/trainer_cpu_resume_v4_optional_offload/continuous/checkpoints/latest_resume.pt",
+    "bytes": 112850484,
+    "inode": 2814749768021362,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/trainer_cpu_resume_v4_optional_offload/continuous/checkpoints/model_step_0000005.pth",
+    "bytes": 19233680,
+    "inode": 3659174698153321,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/trainer_cpu_resume_v4_optional_offload/resumed/checkpoints/best_validation.pth",
+    "bytes": 19233157,
+    "inode": 2814749768021412,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/trainer_cpu_resume_v4_optional_offload/resumed/checkpoints/latest_resume.pt",
+    "bytes": 112850484,
+    "inode": 3096224744732069,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/trainer_cpu_resume_v4_optional_offload/resumed/checkpoints/model_step_0000001.pth",
+    "bytes": 19233680,
+    "inode": 2814749768021390,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/trainer_cpu_resume_v4_optional_offload/resumed/checkpoints/model_step_0000005.pth",
+    "bytes": 19233680,
+    "inode": 3940649674864010,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/trainer_gpu_resume_v1/continuous/checkpoints/best_validation.pth",
+    "bytes": 639711125,
+    "inode": 2814749768021288,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/trainer_gpu_resume_v2_offload/continuous/checkpoints/best_validation.pth",
+    "bytes": 639711125,
+    "inode": 4222124651636347,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/trainer_gpu_resume_v2_offload/continuous/checkpoints/latest_resume.pt",
+    "bytes": 3779077085,
+    "inode": 2533274791372416,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/trainer_gpu_resume_v2_offload/continuous/checkpoints/model_step_0000005.pth",
+    "bytes": 639712152,
+    "inode": 7318349395453486,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/trainer_gpu_resume_v2_offload/resumed/checkpoints/best_validation.pth",
+    "bytes": 639711125,
+    "inode": 6755399442032809,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/trainer_gpu_resume_v2_offload/resumed/checkpoints/latest_resume.pt",
+    "bytes": 3779077085,
+    "inode": 1970324837951661,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/trainer_gpu_resume_v2_offload/resumed/checkpoints/model_step_0000001.pth",
+    "bytes": 639712152,
+    "inode": 5066549581706060,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/trainer_gpu_resume_v2_offload/resumed/checkpoints/model_step_0000005.pth",
+    "bytes": 639712152,
+    "inode": 5910974511900639,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "models/03_omni_moe/runs/transfer_preflight_early_ar/initialized_fp32.pth",
+    "bytes": 1259684875,
+    "inode": 3096224744730840,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "artifacts/server_omni_inputs_v1.tar.gz",
+    "bytes": 612258500,
+    "inode": 1407374884539350,
+    "device": 69,
+    "links": 1
+  },
+  {
+    "path": "artifacts/pipeline_validation/pretrain_full_random_view_v2/content_hash64.npy",
+    "bytes": 67750744,
+    "inode": 2814749768019766,
+    "device": 69,
+    "links": 2
+  },
+  {
+    "path": "artifacts/pipeline_validation/pretrain_full_random_view_v2/first_targets.npy",
+    "bytes": 33875436,
+    "inode": 2814749768019765,
+    "device": 69,
+    "links": 2
+  },
+  {
+    "path": "artifacts/pipeline_validation/pretrain_full_random_view_v2/lengths.npy",
+    "bytes": 33875436,
+    "inode": 2814749768019764,
+    "device": 69,
+    "links": 2
+  },
+  {
+    "path": "artifacts/pipeline_validation/pretrain_full_random_view_v2/offsets.npy",
+    "bytes": 67750752,
+    "inode": 3096224744730366,
+    "device": 69,
+    "links": 2
+  },
+  {
+    "path": "artifacts/pipeline_validation/pretrain_full_random_view_v2/tokens.bin",
+    "bytes": 4400767540,
+    "inode": 4503599628279336,
+    "device": 69,
+    "links": 2
+  },
+  {
+    "path": "artifacts/pipeline_validation/sft_complete_T768_today_probe_v1/content_hash64.npy",
+    "bytes": 40875584,
+    "inode": 2814749768021295,
+    "device": 69,
+    "links": 4
+  },
+  {
+    "path": "artifacts/pipeline_validation/sft_complete_T768_today_probe_v1/labels.bin",
+    "bytes": 8389228976,
+    "inode": 35184372089737140,
+    "device": 69,
+    "links": 4
+  },
+  {
+    "path": "artifacts/pipeline_validation/sft_complete_T768_today_probe_v1/offsets.npy",
+    "bytes": 40875592,
+    "inode": 3096224744731946,
+    "device": 69,
+    "links": 4
+  },
+  {
+    "path": "artifacts/pipeline_validation/sft_complete_T768_today_probe_v1/tokens.bin",
+    "bytes": 8389228976,
+    "inode": 21110623254204329,
+    "device": 69,
+    "links": 4
+  },
+  {
+    "path": "artifacts/pipeline_validation/sft_full_random_view_v1/content_hash64.npy",
+    "bytes": 40875584,
+    "inode": 2814749768021295,
+    "device": 69,
+    "links": 4
+  },
+  {
+    "path": "artifacts/pipeline_validation/sft_full_random_view_v1/labels.bin",
+    "bytes": 8389228976,
+    "inode": 35184372089737140,
+    "device": 69,
+    "links": 4
+  },
+  {
+    "path": "artifacts/pipeline_validation/sft_full_random_view_v1/offsets.npy",
+    "bytes": 40875592,
+    "inode": 3096224744731946,
+    "device": 69,
+    "links": 4
+  },
+  {
+    "path": "artifacts/pipeline_validation/sft_full_random_view_v1/tokens.bin",
+    "bytes": 8389228976,
+    "inode": 21110623254204329,
+    "device": 69,
+    "links": 4
+  }
+]

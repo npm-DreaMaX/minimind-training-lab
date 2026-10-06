@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/mnt/d/minimind/lab/omni_train.py", line 219, in <module>
+    if __name__=='__main__': main()
+  File "/mnt/d/minimind/lab/omni_train.py", line 55, in main
+    module,collate=official_modules()
+  File "/mnt/d/minimind/lab/omni_batch.py", line 12, in official_modules
+    trainer=importlib.util.module_from_spec(spec); spec.loader.exec_module(trainer)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/mnt/d/minimind/sources/minimind-o/trainer/train_sft_omni.py", line 7, in <module>
+    import datasets
+ModuleNotFoundError: No module named 'datasets'

@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "scope": "Small fixed qualitative probes using pinned repository assets; no claim of an unseen benchmark. Visual reference facts were checked from actual pixels, not filenames. Audio prompts use clean waveform processing without training augmentation.",
+  "cases": [
+    {"id": "t2a_zh_spring", "modality": "t2a", "prompt": "请用一句话介绍春天。", "max_new_tokens": 256},
+    {"id": "t2a_en_coffee", "modality": "t2a", "prompt": "Explain how to make a cup of coffee in one short sentence.", "max_new_tokens": 256},
+    {"id": "a2a_zh_spring", "modality": "a2a", "audio": "sources/minimind-o/dataset/eval_omni/audio-zh-04_请用一句话介绍一下春天.mp3", "reference_question": "请用一句话介绍一下春天", "max_new_tokens": 256},
+    {"id": "a2a_en_sky", "modality": "a2a", "audio": "sources/minimind-o/dataset/eval_omni/audio-en-05_why_is_the_sky_blue.mp3", "reference_question": "Why is the sky blue?", "max_new_tokens": 256},
+    {"id": "i2t_fruit", "modality": "i2t", "image": "sources/minimind-o/dataset/eval_omni/image-02-fruit-basket-apples-bananas-oranges.jpg", "prompt": "篮子里有哪些水果？简短回答。", "reference_facts": ["苹果", "香蕉", "橙子"], "max_new_tokens": 256},
+    {"id": "i2t_sign", "modality": "i2t", "image": "sources/minimind-o/dataset/eval_omni/image-03-panda-holding-hello-sign.jpg", "prompt": "图片中是什么动物？它举着的牌子写了什么字？", "reference_facts": ["熊猫", "你好"], "max_new_tokens": 256}
+  ]
+}

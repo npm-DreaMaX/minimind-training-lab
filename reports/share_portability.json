@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "scope": "Independent exported directory; system Python for summary/replay, existing scientific Python for CPU/sample; not a newly installed OS environment.",
+  "full_corpus_present": false,
+  "bundled_sample_matches_original_T768": true,
+  "FLA_and_causal_conv_imports_deliberately_blocked": true,
+  "full_model_parameters": 205623072,
+  "CE_aux_all_parameter_gradient_norms_equal_original_CPU_trace": true,
+  "weight_unchanged": true,
+  "optimizer_updates": 0,
+  "CPU_trace_script_sha256": "aa07d2aeb14a091cb869a1b7a0c8b059c906f614894b8bbe8258b8820a8fc46f",
+  "trace": "学习手册/实操输出/portable_cpu_v2/trace.json",
+  "debug_note": "The first CPU check finished before the user-requested summary wording edit; final script fingerprint differed. Repeated the check after the wording change and verified the exact final script hash, with unchanged numeric outputs. Both checks retained.",
+  "known_limitations": [
+    "Native Windows/macOS not separately executed",
+    "Full-dataset cache regeneration not rerun",
+    "Historical documents reference some assets not uploaded; see SHARING_GUIDE.md"
+  ]
+}

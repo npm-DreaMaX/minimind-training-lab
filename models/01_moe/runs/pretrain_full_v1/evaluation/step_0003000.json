@@ -1,0 +1,26 @@
+{
+  "step": 3000,
+  "epoch": 0,
+  "trained_tokens": 97964864,
+  "validation_ce": 2.360349021205085,
+  "validation_tokens": 123368,
+  "validation_rows": 512,
+  "final": false,
+  "generation": [
+    {
+      "prompt": "人工智能的主要应用包括",
+      "continuation": "：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：："
+    },
+    {
+      "prompt": "中国的首都是",
+      "continuation": "<|im_end|>"
+    },
+    {
+      "prompt": "水的三种状态是",
+      "continuation": "是是是是是是是是是是是是<|im_end|>"
+    }
+  ],
+  "time": 1790978286.0064375,
+  "validation_selection_sha256": "35a38ff957d0d37bf7a0ef4bd07dbd57a42a599826796aaa853fd82c2b8abbc7",
+  "validation_selection": "fixed seeded sample across the full held-out split"
+}

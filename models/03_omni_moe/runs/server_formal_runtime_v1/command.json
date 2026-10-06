@@ -1,0 +1,1 @@
+["/new_data/REMOTE_USER/minimind/envs/omni-formal/bin/python", "-u", "-B", "-m", "lab.omni_train", "--config", "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/formal_runtime_preflight_v1/t2a_B16_acc8.json"]

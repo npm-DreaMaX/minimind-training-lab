@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-10-03T18:14:14.840641+08:00",
+  "passed": true,
+  "step": 7500,
+  "evaluation_step": 7500,
+  "files": [
+    {
+      "name": "training_resume.pt",
+      "bytes": 2467735019,
+      "sha256": "25ced78a9e92b8110de5bc8c05df78e04fb16f24e8ffd8264448b7fca5760bc3",
+      "passed": true
+    },
+    {
+      "name": "hybrid_205m_fp16.pth",
+      "bytes": 421139232,
+      "sha256": "24a7889ce485afd1e642ea56177faca3d13c0c3405232eb23fd283adf050d81b",
+      "passed": true
+    }
+  ],
+  "scope": "Read-only file SHA/size and matching-step evaluation audit; no quality approval, no pause or GPU use"
+}

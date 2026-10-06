@@ -1,0 +1,16 @@
+{
+  "scope": "Small CPU actual trainer with real T2A data, dropout, activation recomputation, two workers and boundary resume; full315M GPU preflight still required",
+  "checks": {
+    "model": true,
+    "optimizer": true,
+    "epoch": true,
+    "cursor": true,
+    "step": true,
+    "text_tokens": true,
+    "audio_tokens": true,
+    "best": true,
+    "torch_rng": true
+  },
+  "passed": true,
+  "time": 1790985463.4955862
+}

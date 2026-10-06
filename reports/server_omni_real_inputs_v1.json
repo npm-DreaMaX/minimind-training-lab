@@ -1,0 +1,665 @@
+{
+  "scope": "Bounded full315M hardware/path checks, not formally trained quality or population throughput",
+  "groups": {
+    "real_inputs_all_modes_v1": {
+      "controller_passed": false,
+      "started": 1790990780.7218494,
+      "finished": 1790990972.1343105
+    },
+    "real_inputs_visual_v2": {
+      "controller_passed": true,
+      "started": 1790991232.4559975,
+      "finished": 1790991300.0795693
+    }
+  },
+  "checks": [
+    {
+      "name": "t2a_B16_recompute",
+      "result": "passed",
+      "run": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_all_modes_v1/t2a_B16_recompute",
+      "config": {
+        "purpose": "preflight",
+        "device": "cuda",
+        "model": {
+          "hidden_size": 768,
+          "num_hidden_layers": 8,
+          "use_moe": true
+        },
+        "epochs": 2,
+        "learning_rate": 1e-05,
+        "warmup_steps": 1,
+        "seed": 20261006,
+        "cpu_threads": 4,
+        "num_workers": 2,
+        "prefetch_factor": 1,
+        "deterministic": true,
+        "checkpointing": true,
+        "allocator_gib": 13.5,
+        "optimizer_state_offload": false,
+        "eval_interval": 50,
+        "save_interval": 50,
+        "validation_samples": 8,
+        "log_interval": 1,
+        "inspect_first_batches": 2,
+        "modality": "t2a",
+        "mode": "all",
+        "corpus": "artifacts/omni_validation/t2a_shards_v1",
+        "max_length": 1536,
+        "batch_size": 16,
+        "accumulation_steps": 1,
+        "max_steps": 12,
+        "run_dir": "runs/real_inputs_all_modes_v1/t2a_B16_recompute"
+      },
+      "parameters": 314887938,
+      "trainable_parameters": 314887938,
+      "updates": 12,
+      "steady_updates": 10,
+      "samples_per_second": 9.206933805868172,
+      "peak_allocated_gib": 10.273600101470947,
+      "minimum_host_available_gib": 224.21818161010742,
+      "nonzero_projector_gradient": null,
+      "projector_gradients": [
+        {
+          "event": "projector_gradient_after_clipping",
+          "step": 0,
+          "gradient_norms": {
+            "audio_proj": 0.0,
+            "vision_proj": 0.0
+          },
+          "time": 1790990798.0009308
+        }
+      ],
+      "data": {
+        "samples": 192,
+        "zero_supervision_samples": 0,
+        "audio_samples_with_missing_stop": 0
+      },
+      "maximum_observed_fbank_frames": 0,
+      "complete_status": {
+        "status": "complete",
+        "step": 12,
+        "text_tokens": 25823,
+        "audio_tokens": 327000,
+        "validation": {
+          "step": 12,
+          "final": true,
+          "validation_rows": 3,
+          "text_ce": 8.499709129333496,
+          "audio_codebook_ce": [
+            7.969522953033447,
+            7.950640678405762,
+            7.948505401611328,
+            7.969817638397217,
+            7.915341377258301,
+            7.9832892417907715,
+            7.946260452270508,
+            7.960909843444824
+          ],
+          "audio_ce": 7.95553594827652,
+          "selection_score": 16.455245077610016,
+          "text_labels": 644,
+          "audio_labels": [
+            849,
+            849,
+            849,
+            849,
+            849,
+            849,
+            849,
+            849
+          ],
+          "stop_count": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "stop_correct": [
+            2,
+            2,
+            3,
+            3,
+            2,
+            2,
+            3,
+            3
+          ],
+          "time": 1790990825.7373488,
+          "per_record_metrics": "runs/real_inputs_all_modes_v1/t2a_B16_recompute/evaluation/step_0000012_full_rows.jsonl",
+          "validation_raw_rows_sha256": "bf30cad5e63a5dfa82a9591fa363655d23696b1a0b3100f8dba87d8a565ad4a9",
+          "protocol": "fixed per-record augmented inputs; scheduled_sampling=0; CE globally token-weighted within each head; no aux in selection score"
+        },
+        "purpose": "preflight"
+      }
+    },
+    {
+      "name": "a2a_all_long",
+      "result": "passed",
+      "run": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_all_modes_v1/a2a_all_long",
+      "config": {
+        "purpose": "preflight",
+        "device": "cuda",
+        "model": {
+          "hidden_size": 768,
+          "num_hidden_layers": 8,
+          "use_moe": true
+        },
+        "epochs": 2,
+        "learning_rate": 1e-05,
+        "warmup_steps": 1,
+        "seed": 20261006,
+        "cpu_threads": 4,
+        "num_workers": 2,
+        "prefetch_factor": 1,
+        "deterministic": true,
+        "checkpointing": true,
+        "allocator_gib": 13.5,
+        "optimizer_state_offload": false,
+        "eval_interval": 50,
+        "save_interval": 50,
+        "validation_samples": 8,
+        "log_interval": 1,
+        "inspect_first_batches": 2,
+        "modality": "a2a",
+        "mode": "all",
+        "corpus": "artifacts/omni_validation/server_inputs_v1/a2a",
+        "audio_encoder": "data/frozen_models/SenseVoiceSmall",
+        "max_length": 3072,
+        "batch_size": 2,
+        "accumulation_steps": 2,
+        "max_steps": 5,
+        "train_indices_override": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          48,
+          49,
+          50,
+          51
+        ],
+        "run_dir": "runs/real_inputs_all_modes_v1/a2a_all_long"
+      },
+      "parameters": 314887938,
+      "trainable_parameters": 314887938,
+      "updates": 5,
+      "steady_updates": 3,
+      "samples_per_second": 1.7110314022512645,
+      "peak_allocated_gib": 7.735043048858643,
+      "minimum_host_available_gib": 223.1909065246582,
+      "nonzero_projector_gradient": true,
+      "projector_gradients": [
+        {
+          "event": "projector_gradient_after_clipping",
+          "step": 0,
+          "gradient_norms": {
+            "audio_proj": 0.4033293754267151,
+            "vision_proj": 0.0
+          },
+          "time": 1790990894.2494302
+        }
+      ],
+      "data": {
+        "samples": 20,
+        "zero_supervision_samples": 0,
+        "audio_samples_with_missing_stop": 0
+      },
+      "maximum_observed_fbank_frames": 2174,
+      "complete_status": {
+        "status": "complete",
+        "step": 5,
+        "text_tokens": 1266,
+        "audio_tokens": 39256,
+        "validation": {
+          "step": 5,
+          "final": true,
+          "validation_rows": 16,
+          "text_ce": 8.74524206540181,
+          "audio_codebook_ce": [
+            8.1875902730205,
+            8.159623199421576,
+            8.121322185123871,
+            8.202752821884431,
+            8.178801995838592,
+            8.157863150090517,
+            8.153519771073269,
+            8.161405733260006
+          ],
+          "audio_ce": 8.165359891214095,
+          "selection_score": 16.910601956615906,
+          "text_labels": 821,
+          "audio_labels": [
+            2770,
+            2770,
+            2770,
+            2770,
+            2770,
+            2770,
+            2770,
+            2770
+          ],
+          "stop_count": [
+            16,
+            16,
+            16,
+            16,
+            16,
+            16,
+            16,
+            16
+          ],
+          "stop_correct": [
+            1,
+            2,
+            0,
+            0,
+            4,
+            2,
+            4,
+            2
+          ],
+          "time": 1790990912.1058042,
+          "per_record_metrics": "runs/real_inputs_all_modes_v1/a2a_all_long/evaluation/step_0000005_full_rows.jsonl",
+          "validation_raw_rows_sha256": "eb307d921bb862a1f75e9ef3ca5700ea47db138973962741a8fe30b0df038226",
+          "protocol": "fixed per-record augmented inputs; scheduled_sampling=0; CE globally token-weighted within each head; no aux in selection score"
+        },
+        "purpose": "preflight"
+      }
+    },
+    {
+      "name": "a2a_audio_proj_long",
+      "result": "passed",
+      "run": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_all_modes_v1/a2a_audio_proj_long",
+      "config": {
+        "purpose": "preflight",
+        "device": "cuda",
+        "model": {
+          "hidden_size": 768,
+          "num_hidden_layers": 8,
+          "use_moe": true
+        },
+        "epochs": 3,
+        "learning_rate": 1e-05,
+        "warmup_steps": 1,
+        "seed": 20261006,
+        "cpu_threads": 4,
+        "num_workers": 2,
+        "prefetch_factor": 1,
+        "deterministic": true,
+        "checkpointing": true,
+        "allocator_gib": 13.5,
+        "optimizer_state_offload": false,
+        "eval_interval": 50,
+        "save_interval": 50,
+        "validation_samples": 8,
+        "log_interval": 1,
+        "inspect_first_batches": 2,
+        "modality": "a2a",
+        "mode": "audio_proj",
+        "corpus": "artifacts/omni_validation/server_inputs_v1/a2a",
+        "audio_encoder": "data/frozen_models/SenseVoiceSmall",
+        "max_length": 3072,
+        "batch_size": 2,
+        "accumulation_steps": 2,
+        "max_steps": 3,
+        "train_indices_override": [
+          48,
+          49,
+          50,
+          51
+        ],
+        "run_dir": "runs/real_inputs_all_modes_v1/a2a_audio_proj_long"
+      },
+      "parameters": 314887938,
+      "trainable_parameters": 985600,
+      "updates": 3,
+      "steady_updates": 1,
+      "samples_per_second": 0.8460074844945338,
+      "peak_allocated_gib": 3.4409141540527344,
+      "minimum_host_available_gib": 223.56016159057617,
+      "nonzero_projector_gradient": true,
+      "projector_gradients": [
+        {
+          "event": "projector_gradient_after_clipping",
+          "step": 0,
+          "gradient_norms": {
+            "audio_proj": 0.9999997443954757,
+            "vision_proj": 0.0
+          },
+          "time": 1790990949.0176325
+        }
+      ],
+      "data": {
+        "samples": 12,
+        "zero_supervision_samples": 0,
+        "audio_samples_with_missing_stop": 0
+      },
+      "maximum_observed_fbank_frames": 2174,
+      "complete_status": {
+        "status": "complete",
+        "step": 3,
+        "text_tokens": 924,
+        "audio_tokens": 26568,
+        "validation": {
+          "step": 3,
+          "final": true,
+          "validation_rows": 16,
+          "text_ce": 8.867006704955386,
+          "audio_codebook_ce": [
+            8.258765907838457,
+            8.260740178242488,
+            8.243535444280301,
+            8.31401183441658,
+            8.28561593995628,
+            8.264790151437698,
+            8.274819377183054,
+            8.273183524135218
+          ],
+          "audio_ce": 8.27193279468626,
+          "selection_score": 17.138939499641644,
+          "text_labels": 821,
+          "audio_labels": [
+            2770,
+            2770,
+            2770,
+            2770,
+            2770,
+            2770,
+            2770,
+            2770
+          ],
+          "stop_count": [
+            16,
+            16,
+            16,
+            16,
+            16,
+            16,
+            16,
+            16
+          ],
+          "stop_correct": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "time": 1790990966.7078862,
+          "per_record_metrics": "runs/real_inputs_all_modes_v1/a2a_audio_proj_long/evaluation/step_0000003_full_rows.jsonl",
+          "validation_raw_rows_sha256": "eb307d921bb862a1f75e9ef3ca5700ea47db138973962741a8fe30b0df038226",
+          "protocol": "fixed per-record augmented inputs; scheduled_sampling=0; CE globally token-weighted within each head; no aux in selection score"
+        },
+        "purpose": "preflight"
+      }
+    },
+    {
+      "name": "i2t_all",
+      "result": "passed",
+      "run": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_visual_v2/i2t_all",
+      "config": {
+        "purpose": "preflight",
+        "device": "cuda",
+        "model": {
+          "hidden_size": 768,
+          "num_hidden_layers": 8,
+          "use_moe": true
+        },
+        "epochs": 2,
+        "learning_rate": 1e-05,
+        "warmup_steps": 1,
+        "seed": 20261006,
+        "cpu_threads": 4,
+        "num_workers": 2,
+        "prefetch_factor": 1,
+        "deterministic": true,
+        "checkpointing": true,
+        "allocator_gib": 13.5,
+        "optimizer_state_offload": false,
+        "eval_interval": 50,
+        "save_interval": 50,
+        "validation_samples": 8,
+        "log_interval": 1,
+        "inspect_first_batches": 2,
+        "modality": "i2t",
+        "mode": "all",
+        "corpus": "artifacts/omni_validation/server_inputs_v1/i2t",
+        "vision_encoder": "data/frozen_models/siglip2-base-p32-256-ve",
+        "max_length": 768,
+        "batch_size": 4,
+        "accumulation_steps": 4,
+        "max_steps": 3,
+        "image_placeholder_policy": "user_only",
+        "run_dir": "runs/real_inputs_visual_v2/i2t_all"
+      },
+      "parameters": 314887938,
+      "trainable_parameters": 314887938,
+      "updates": 3,
+      "steady_updates": 1,
+      "samples_per_second": 5.215477991954864,
+      "peak_allocated_gib": 6.490891933441162,
+      "minimum_host_available_gib": 223.91587448120117,
+      "nonzero_projector_gradient": true,
+      "projector_gradients": [
+        {
+          "event": "projector_gradient_after_clipping",
+          "step": 0,
+          "gradient_norms": {
+            "audio_proj": 0.0,
+            "vision_proj": 0.34928242874018006
+          },
+          "time": 1790991253.9772863
+        }
+      ],
+      "data": {
+        "samples": 48,
+        "zero_supervision_samples": 0,
+        "audio_samples_with_missing_stop": 0
+      },
+      "maximum_observed_fbank_frames": 0,
+      "complete_status": {
+        "status": "complete",
+        "step": 3,
+        "text_tokens": 10193,
+        "audio_tokens": 0,
+        "validation": {
+          "step": 3,
+          "final": true,
+          "validation_rows": 16,
+          "text_ce": 8.785840810744752,
+          "audio_codebook_ce": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "audio_ce": 0.0,
+          "selection_score": 8.785840810744752,
+          "text_labels": 3322,
+          "audio_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "stop_count": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "stop_correct": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "time": 1790991264.3310838,
+          "per_record_metrics": "runs/real_inputs_visual_v2/i2t_all/evaluation/step_0000003_full_rows.jsonl",
+          "validation_raw_rows_sha256": "2301b670dff1c0d3fd1ae7c0ab7b025f1494eb8f4658075f6183d16bfd834d22",
+          "protocol": "fixed per-record augmented inputs; scheduled_sampling=0; CE globally token-weighted within each head; no aux in selection score"
+        },
+        "purpose": "preflight"
+      }
+    },
+    {
+      "name": "i2t_vision_proj",
+      "result": "passed",
+      "run": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_visual_v2/i2t_vision_proj",
+      "config": {
+        "purpose": "preflight",
+        "device": "cuda",
+        "model": {
+          "hidden_size": 768,
+          "num_hidden_layers": 8,
+          "use_moe": true
+        },
+        "epochs": 2,
+        "learning_rate": 1e-05,
+        "warmup_steps": 1,
+        "seed": 20261006,
+        "cpu_threads": 4,
+        "num_workers": 2,
+        "prefetch_factor": 1,
+        "deterministic": true,
+        "checkpointing": true,
+        "allocator_gib": 13.5,
+        "optimizer_state_offload": false,
+        "eval_interval": 50,
+        "save_interval": 50,
+        "validation_samples": 8,
+        "log_interval": 1,
+        "inspect_first_batches": 2,
+        "modality": "i2t",
+        "mode": "vision_proj",
+        "corpus": "artifacts/omni_validation/server_inputs_v1/i2t",
+        "vision_encoder": "data/frozen_models/siglip2-base-p32-256-ve",
+        "max_length": 768,
+        "batch_size": 16,
+        "accumulation_steps": 1,
+        "max_steps": 3,
+        "image_placeholder_policy": "user_only",
+        "run_dir": "runs/real_inputs_visual_v2/i2t_vision_proj"
+      },
+      "parameters": 314887938,
+      "trainable_parameters": 1182720,
+      "updates": 3,
+      "steady_updates": 1,
+      "samples_per_second": 20.556547249128943,
+      "peak_allocated_gib": 4.2216691970825195,
+      "minimum_host_available_gib": 224.47796630859375,
+      "nonzero_projector_gradient": true,
+      "projector_gradients": [
+        {
+          "event": "projector_gradient_after_clipping",
+          "step": 0,
+          "gradient_norms": {
+            "audio_proj": 0.0,
+            "vision_proj": 0.9999993708636609
+          },
+          "time": 1790991290.4889302
+        }
+      ],
+      "data": {
+        "samples": 48,
+        "zero_supervision_samples": 0,
+        "audio_samples_with_missing_stop": 0
+      },
+      "maximum_observed_fbank_frames": 0,
+      "complete_status": {
+        "status": "complete",
+        "step": 3,
+        "text_tokens": 10193,
+        "audio_tokens": 0,
+        "validation": {
+          "step": 3,
+          "final": true,
+          "validation_rows": 16,
+          "text_ce": 8.900003433227539,
+          "audio_codebook_ce": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "audio_ce": 0.0,
+          "selection_score": 8.900003433227539,
+          "text_labels": 3322,
+          "audio_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "stop_count": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "stop_correct": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "time": 1790991295.5574038,
+          "per_record_metrics": "runs/real_inputs_visual_v2/i2t_vision_proj/evaluation/step_0000003_full_rows.jsonl",
+          "validation_raw_rows_sha256": "2301b670dff1c0d3fd1ae7c0ab7b025f1494eb8f4658075f6183d16bfd834d22",
+          "protocol": "fixed per-record augmented inputs; scheduled_sampling=0; CE globally token-weighted within each head; no aux in selection score"
+        },
+        "purpose": "preflight"
+      }
+    }
+  ],
+  "all_five_paths_passed": true,
+  "controller_caveat": "v1 stopped at the pre-I2T idle-card guard; its three completed model checks remain passed. v2 ran only the two pending I2T modes; neither group alone represents all five paths.",
+  "source_sha256": "eb923229c05dc81e86bfdb01ec233c40c8fbccf7abefd01e363df78b93e18577"
+}

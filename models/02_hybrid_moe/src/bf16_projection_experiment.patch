@@ -1,0 +1,77 @@
+diff --git a/models/02_hybrid_moe/src/model_hybrid.py b/models/02_hybrid_moe/src/model_hybrid.py
+index 1e38dd1..e3f2568 100644
+--- a/models/02_hybrid_moe/src/model_hybrid.py
++++ b/models/02_hybrid_moe/src/model_hybrid.py
+@@ -67,6 +67,10 @@ class MiniMindConfig(PretrainedConfig):
+         self.linear_num_value_heads = kwargs.get("linear_num_value_heads", self.num_attention_heads)
+         # Our explicit training guard; the author reference remains archived.
+         self.require_fla = kwargs.get("require_fla", False)
++        # Our precision experiment; the author-compatible default remains FP32.
++        self.linear_precision = kwargs.get("linear_precision", "float32")
++        if self.linear_precision not in ("float32", "bfloat16"):
++            raise ValueError("linear_precision must be float32 or bfloat16")
+         self.layer_types = []
+         for i in range(self.num_hidden_layers):
+             if (i + 1) % self.full_attention_interval == 0:
+@@ -158,6 +162,7 @@ class GatedDeltaNet(nn.Module):
+         self.conv_kernel_size = config.linear_conv_kernel_dim
+         self.layer_idx = layer_idx
+         self.require_fla = config.require_fla
++        self.linear_precision = config.linear_precision
+         if self.require_fla and (chunk_gated_delta_rule is None or fused_recurrent_gated_delta_rule is None):
+             raise RuntimeError("This recipe requires FLA; accelerated kernels were not imported")
+         self.conv_dim = self.key_dim * 2 + self.value_dim
+@@ -171,6 +176,13 @@ class GatedDeltaNet(nn.Module):
+         self.in_proj_b = nn.Linear(self.hidden_size, self.num_v_heads, bias=False)
+         self.in_proj_a = nn.Linear(self.hidden_size, self.num_v_heads, bias=False)
+ 
++    def _projection(self, layer, x):
++        # Keep master parameters FP32. Only the large qkv/z/output projections
++        # use BF16 in this opt-in candidate; decay/update gate projections stay
++        # FP32, as do normalization and FLA's recurrent-state accumulation.
++        with torch.amp.autocast(device_type=x.device.type, enabled=self.linear_precision == "bfloat16", dtype=torch.bfloat16):
++            return layer(x)
++
+     def forward(self, x, conv_state=None, recurrent_state=None, use_cache=False):
+         input_dtype = x.dtype
+         with torch.amp.autocast(device_type=x.device.type, enabled=False):
+@@ -180,8 +192,9 @@ class GatedDeltaNet(nn.Module):
+         B, T, _ = x.shape
+         w, b = self.conv1d.weight.squeeze(1), self.conv1d.bias
+         use_recurrent = conv_state is not None and T == 1
+-        mixed_qkv = self.in_proj_qkv(x).transpose(1, 2)
+-        z = self.in_proj_z(x).reshape(B, T, -1, self.head_v_dim)
++        mixed_qkv = self._projection(self.in_proj_qkv, x).transpose(1, 2)
++        projection_dtype = mixed_qkv.dtype
++        z = self._projection(self.in_proj_z, x).reshape(B, T, -1, self.head_v_dim)
+         beta, a = self.in_proj_b(x).sigmoid(), self.in_proj_a(x)
+         if use_recurrent:
+             if causal_conv1d_update is not None and x.is_cuda:
+@@ -198,11 +211,15 @@ class GatedDeltaNet(nn.Module):
+             if causal_conv1d_fn is not None and mixed_qkv.is_cuda:
+                 mixed_qkv = causal_conv1d_fn(x=mixed_qkv, weight=w, bias=b, activation="silu")
+             else:
+-                mixed_qkv = F.silu(self.conv1d(mixed_qkv)[:, :, :T])
++                with torch.amp.autocast(device_type=x.device.type, enabled=self.linear_precision == "bfloat16", dtype=torch.bfloat16):
++                    mixed_qkv = F.silu(self.conv1d(mixed_qkv)[:, :, :T])
++        # Native one-token convolution accumulates against FP32 weights; match
++        # the projected/parallel convolution dtype before normalizing q and k.
++        mixed_qkv = mixed_qkv.to(projection_dtype)
+         mixed_qkv = mixed_qkv.transpose(1, 2)
+         q, k, v = torch.split(mixed_qkv, [self.key_dim, self.key_dim, self.value_dim], dim=-1)
+-        q = l2norm(q.reshape(B, T, -1, self.head_k_dim))
+-        k = l2norm(k.reshape(B, T, -1, self.head_k_dim))
++        q = l2norm(q.reshape(B, T, -1, self.head_k_dim).float()).to(projection_dtype)
++        k = l2norm(k.reshape(B, T, -1, self.head_k_dim).float()).to(projection_dtype)
+         v = v.reshape(B, T, -1, self.head_v_dim)
+         g = (-self.A_log.float().exp() * F.softplus(a.float() + self.dt_bias))
+         if self.num_v_heads // self.num_k_heads > 1:
+@@ -236,7 +253,7 @@ class GatedDeltaNet(nn.Module):
+             else:
+                 out, recurrent_state = torch_chunk_gated_delta_rule(q, k, v, g=g, beta=beta, initial_state=None, output_final_state=use_cache)
+         out = self.norm(out.reshape(-1, self.head_v_dim), z.reshape(-1, self.head_v_dim))
+-        out = self.out_proj(out.reshape(B, T, -1))
++        out = self._projection(self.out_proj, out.reshape(B, T, -1))
+         if out.dtype != input_dtype: out = out.to(input_dtype)
+         return out, (conv_state, recurrent_state) if use_cache else None
+ 

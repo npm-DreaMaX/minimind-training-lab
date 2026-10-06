@@ -1,0 +1,171 @@
+{
+  "scope": "First microbatch non-padding token routing at recorded steps; sampled diagnostic, not whole-corpus expert load",
+  "observations": 28,
+  "latest_step": 1351,
+  "recent_window_steps": [
+    901,
+    951,
+    1001,
+    1051,
+    1101,
+    1151,
+    1201,
+    1251,
+    1301,
+    1351
+  ],
+  "layers": {
+    "0": {
+      "recent_sampled_tokens": 8904,
+      "recent_token_weighted_share": [
+        0.1486972147349506,
+        0.10983827493261455,
+        0.15891734052111411,
+        0.5825471698113207
+      ],
+      "latest": {
+        "tokens_per_expert": [
+          216,
+          33,
+          195,
+          892
+        ],
+        "mean_probability_entropy": 1.1076794862747192,
+        "max_expert_share": 0.667664647102356
+      }
+    },
+    "1": {
+      "recent_sampled_tokens": 8904,
+      "recent_token_weighted_share": [
+        0.1201707097933513,
+        0.42621293800539084,
+        0.31828391734052114,
+        0.13533243486073676
+      ],
+      "latest": {
+        "tokens_per_expert": [
+          160,
+          560,
+          559,
+          57
+        ],
+        "mean_probability_entropy": 1.1813546419143677,
+        "max_expert_share": 0.41916167736053467
+      }
+    },
+    "2": {
+      "recent_sampled_tokens": 8904,
+      "recent_token_weighted_share": [
+        0.1545372866127583,
+        0.19609164420485176,
+        0.2813342318059299,
+        0.36803683737646004
+      ],
+      "latest": {
+        "tokens_per_expert": [
+          57,
+          312,
+          384,
+          583
+        ],
+        "mean_probability_entropy": 0.8641811013221741,
+        "max_expert_share": 0.43637725710868835
+      }
+    },
+    "3": {
+      "recent_sampled_tokens": 8904,
+      "recent_token_weighted_share": [
+        0.23674752920035938,
+        0.09973045822102426,
+        0.504492362982929,
+        0.15902964959568733
+      ],
+      "latest": {
+        "tokens_per_expert": [
+          365,
+          99,
+          529,
+          343
+        ],
+        "mean_probability_entropy": 0.9390637278556824,
+        "max_expert_share": 0.3959580957889557
+      }
+    },
+    "4": {
+      "recent_sampled_tokens": 8904,
+      "recent_token_weighted_share": [
+        0.3444519317160827,
+        0.1351078167115903,
+        0.20148247978436656,
+        0.3189577717879605
+      ],
+      "latest": {
+        "tokens_per_expert": [
+          461,
+          155,
+          343,
+          377
+        ],
+        "mean_probability_entropy": 0.7131893634796143,
+        "max_expert_share": 0.345059871673584
+      }
+    },
+    "5": {
+      "recent_sampled_tokens": 8904,
+      "recent_token_weighted_share": [
+        0.19429469901168014,
+        0.2771787960467206,
+        0.3694968553459119,
+        0.15902964959568733
+      ],
+      "latest": {
+        "tokens_per_expert": [
+          323,
+          395,
+          353,
+          265
+        ],
+        "mean_probability_entropy": 0.7506037950515747,
+        "max_expert_share": 0.295658677816391
+      }
+    },
+    "6": {
+      "recent_sampled_tokens": 8904,
+      "recent_token_weighted_share": [
+        0.1690251572327044,
+        0.620507637017071,
+        0.11747529200359388,
+        0.09299191374663072
+      ],
+      "latest": {
+        "tokens_per_expert": [
+          224,
+          925,
+          42,
+          145
+        ],
+        "mean_probability_entropy": 0.599653959274292,
+        "max_expert_share": 0.692365288734436
+      }
+    },
+    "7": {
+      "recent_sampled_tokens": 8904,
+      "recent_token_weighted_share": [
+        0.26830637915543576,
+        0.1144429469901168,
+        0.45945642407906556,
+        0.15779424977538184
+      ],
+      "latest": {
+        "tokens_per_expert": [
+          254,
+          168,
+          691,
+          223
+        ],
+        "mean_probability_entropy": 0.5404240489006042,
+        "max_expert_share": 0.5172155499458313
+      }
+    }
+  }
+}

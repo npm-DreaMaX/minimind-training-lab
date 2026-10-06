@@ -1,0 +1,7 @@
+{
+  "status": "failed",
+  "root_cause": "TMPDIR on Windows DrvFS does not support AF_UNIX sockets needed by PyTorch DataLoader tensor IPC",
+  "diagnosis": "D-drive socket bind raises OSError 95; /tmp bind succeeds",
+  "action": "terminated only the hung owned validation job; retry with Linux-native TMPDIR",
+  "time": 1790962432.7939062
+}

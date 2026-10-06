@@ -1,0 +1,34 @@
+{
+  "scope": "Small CPU instance of official Omni solely to isolate dummy gradients and AdamW; actual T2A record has text/audio-output supervision but no input audio; no formal model updated",
+  "model_parameters": 9387682,
+  "input_shape": [
+    1,
+    9,
+    511
+  ],
+  "text_labels": 16,
+  "audio_labels": 216,
+  "first_zero_gradient": {
+    "loss": 19.476192474365234,
+    "grad_max": 0.0,
+    "all_have_grad": true,
+    "parameter_max_change": 1.0132789611816406e-06
+  },
+  "none_gradient_control": {
+    "all_grads_none": true,
+    "parameter_max_change": 0.0
+  },
+  "zero_gradient_after_synthetic_prior": {
+    "loss": 19.476192474365234,
+    "grad_max": 0.0,
+    "all_have_grad": true,
+    "parameter_max_change": 5.8531761169433594e-05
+  },
+  "tracked_parameter": "audio_proj.mlp.0.weight",
+  "optimizer": {
+    "lr": 0.0001,
+    "weight_decay": 0.01
+  },
+  "model_source_sha256": "9a0de2b438b8927a170fe12636e01c00dbfec463ea5c4a81efdfc1cca6a6696c",
+  "time": 1790991099.6384385
+}

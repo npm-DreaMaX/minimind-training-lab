@@ -1,0 +1,59 @@
+{
+  "records": [
+    {
+      "id": "a2a_zh_spring",
+      "thinker_text": "春天是一年中最美好的季节之一，温暖的阳光和清新的空气混合着花草树木，万物复苏，生机勃勃。",
+      "generation_reached_budget": false,
+      "asr_result": [
+        {
+          "key": "rand_key_2yW4Acq9GFz6Y",
+          "text": "<|zh|><|NEUTRAL|><|Speech|><|withitn|>春天是一年中最美好的季节之一，温暖的阳光和清新的空气，混合着花草树木，万物复苏，生机勃勃。"
+        }
+      ],
+      "transcript": "<|zh|><|NEUTRAL|><|Speech|><|withitn|>春天是一年中最美好的季节之一，温暖的阳光和清新的空气，混合着花草树木，万物复苏，生机勃勃。",
+      "reference_normalized": "春天是一年中最美好的季节之一温暖的阳光和清新的空气混合着花草树木万物复苏生机勃勃",
+      "asr_normalized": "春天是一年中最美好的季节之一温暖的阳光和清新的空气混合着花草树木万物复苏生机勃勃",
+      "edit_distance": 0,
+      "reference_characters": 40,
+      "character_error_rate": 0.0,
+      "wav_sha256": "102270bd46e0b5ae6ff2a56b390803fae9b3c142719295c8d06c3728213f3d72",
+      "input_sample_rate": 24000,
+      "asr_samples": 165120,
+      "seconds": 0.762080706001143
+    },
+    {
+      "id": "a2a_en_sky",
+      "thinker_text": "The sky is blue because of the way Earth's atmosphere scatters sunlight. Sunlight is made up of three types of gases, with the atmosphere being mostly made up of red, orange, and pink hues. These gases can be obscured by the sun and are scattered across the sky. Blue light is scattered more than other colors because it travels in shorter wavelengths, making the scattered clouds appear blue.",
+      "generation_reached_budget": true,
+      "asr_result": [
+        {
+          "key": "rand_key_1t9EwL56nGisi",
+          "text": "<|en|><|HAPPY|><|Speech|><|withitn|>The sky is blue because of the wheres atmosphere scatters sunlight. sunlight is made up of three types of gases, with the atmosphere being mostly made up of red, orangerange and pink hues. These gases can be obscured by the sun and are scattered across the sky. Blue light is scattered more than other colors because it travels in shorter waves."
+        }
+      ],
+      "transcript": "<|en|><|HAPPY|><|Speech|><|withitn|>The sky is blue because of the wheres atmosphere scatters sunlight. sunlight is made up of three types of gases, with the atmosphere being mostly made up of red, orangerange and pink hues. These gases can be obscured by the sun and are scattered across the sky. Blue light is scattered more than other colors because it travels in shorter waves.",
+      "reference_normalized": "theskyisbluebecauseofthewayearthsatmospherescatterssunlightsunlightismadeupofthreetypesofgaseswiththeatmospherebeingmostlymadeupofredorangeandpinkhuesthesegasescanbeobscuredbythesunandarescatteredacrosstheskybluelightisscatteredmorethanothercolorsbecauseittravelsinshorterwavelengthsmakingthescatteredcloudsappearblue",
+      "asr_normalized": "theskyisbluebecauseofthewheresatmospherescatterssunlightsunlightismadeupofthreetypesofgaseswiththeatmospherebeingmostlymadeupofredorangerangeandpinkhuesthesegasescanbeobscuredbythesunandarescatteredacrosstheskybluelightisscatteredmorethanothercolorsbecauseittravelsinshorterwaves",
+      "edit_distance": 50,
+      "reference_characters": 317,
+      "character_error_rate": 0.15772870662460567,
+      "wav_sha256": "252a2ee5208daf89b11eebe51a7a5c93708a7d40828d37475b8777da5cc01905",
+      "input_sample_rate": 24000,
+      "asr_samples": 317440,
+      "seconds": 1.2573440939886495
+    }
+  ],
+  "normalization": "Strip SenseVoice tags, Unicode NFKC, lowercase, keep only letters/numbers; English is character error, not word error",
+  "scope": "ASR proxy for generated speech versus generated text; not task correctness or naturalness; inspect budget truncation separately",
+  "preprocessing": "soundfile float32, mean to mono, torchaudio.functional.resample to16kHz, raw PCM input bypasses file backend",
+  "asr_verified_manifest": {
+    "name": "model.pt",
+    "sha256": "218811976815c1673e1b852dc383d78987b229268f78e7ebd0a1fe67229c83dd",
+    "bytes": 468291478,
+    "revision": "964f07d8f0e48309a5f37770ac9b5ed2cdca6b91",
+    "verified_unix": 1790968497.8634055
+  },
+  "source_evaluation_sha256": "5358d6a4f7ca333f624fe6874d047b54df9a29234fe6796d4930ca15f2b5bb12",
+  "script_sha256": "5fc3fea6be5b4f46c7082a586496127a14dc5a7142d832f00c9e74fe9c6a439d",
+  "time": 1790983492.7688606
+}

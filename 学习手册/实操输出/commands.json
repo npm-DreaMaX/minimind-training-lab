@@ -1,0 +1,122 @@
+{
+  "cwd": "/mnt/d/minimind",
+  "python": "/home/USER/.venvs/minimind-lab/bin/python",
+  "no_optimizer_updates": true,
+  "commands": [
+    {
+      "args": [
+        "-B",
+        "tools/study_minimind.py",
+        "summary"
+      ],
+      "output": "历史数据重放_v1/summary.json"
+    },
+    {
+      "args": [
+        "-B",
+        "tools/study_minimind.py",
+        "sample",
+        "--index",
+        "51023"
+      ],
+      "output": "历史数据重放_v1/sample_51023.json"
+    },
+    {
+      "args": [
+        "-B",
+        "tools/study_minimind.py",
+        "replay",
+        "--step",
+        "1"
+      ],
+      "output": "历史数据重放_v1/step_1.json"
+    },
+    {
+      "args": [
+        "-B",
+        "tools/study_minimind.py",
+        "replay",
+        "--step",
+        "12000"
+      ],
+      "output": "历史数据重放_v1/step_12000.json"
+    },
+    {
+      "args": [
+        "-B",
+        "tools/study_minimind.py",
+        "replay",
+        "--step",
+        "56541"
+      ],
+      "output": "历史数据重放_v1/step_56541.json"
+    },
+    {
+      "args": [
+        "-B",
+        "tools/study_minimind.py",
+        "replay",
+        "--step",
+        "56542"
+      ],
+      "output": "历史数据重放_v1/step_56542.json"
+    },
+    {
+      "args": [
+        "-B",
+        "tools/study_minimind.py",
+        "replay",
+        "--step",
+        "113082"
+      ],
+      "output": "历史数据重放_v1/step_113082.json"
+    },
+    {
+      "args": [
+        "-B",
+        "tools/study_minimind.py",
+        "trace",
+        "--index",
+        "51023",
+        "--length",
+        "128",
+        "--out",
+        "学习手册/实操输出/完整Hybrid梯度检查_v1"
+      ],
+      "output": "完整Hybrid梯度检查_v1/trace.json",
+      "script_sha256": "5d3a563af6a4a5836c435199d2889dd1008239d4af2da53108324a39c14506d8",
+      "note": "First trace: combined CE+aux gradients."
+    },
+    {
+      "args": [
+        "-B",
+        "tools/study_minimind.py",
+        "infer",
+        "--prompt",
+        "你好，请介绍一下自己。",
+        "--max-new-tokens",
+        "32",
+        "--out",
+        "学习手册/实操输出/最终权重推理_v1"
+      ],
+      "output": "最终权重推理_v1/generation.json",
+      "script_sha256": "5d3a563af6a4a5836c435199d2889dd1008239d4af2da53108324a39c14506d8"
+    },
+    {
+      "args": [
+        "-B",
+        "tools/study_minimind.py",
+        "trace",
+        "--index",
+        "51023",
+        "--length",
+        "128",
+        "--out",
+        "学习手册/实操输出/完整Hybrid梯度检查_v2"
+      ],
+      "output": "完整Hybrid梯度检查_v2/trace.json",
+      "script_sha256": "aa534f0623eee85f8db808cb31ca10a00612d0ec57b4582af9e1e9c57ac3f73e",
+      "note": "Adds isolated CE-only prefix gradients; retained v1 unchanged."
+    }
+  ]
+}

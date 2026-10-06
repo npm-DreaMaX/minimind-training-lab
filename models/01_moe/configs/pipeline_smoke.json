@@ -1,0 +1,11 @@
+{
+  "run_dir": "models/01_moe/runs/pipeline_smoke_20261003",
+  "model_file": "upstream/model/model_minimind.py",
+  "model": {"hidden_size": 768, "num_hidden_layers": 8, "use_moe": true},
+  "corpus": "artifacts/pipeline_validation/tokens",
+  "stage": "pretrain", "seq_len": 384, "batch_size": 4, "accumulation_steps": 2,
+  "epochs": 1, "max_steps": 4, "learning_rate": 0.0003, "warmup_steps": 1,
+  "seed": 20261003, "num_workers": 2, "cpu_threads": 4, "deterministic": true,
+  "validation_samples": 16, "eval_interval": 2, "save_interval": 2, "log_interval": 1,
+  "milestone_interval": 4
+}

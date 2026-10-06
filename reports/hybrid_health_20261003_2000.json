@@ -1,0 +1,485 @@
+{
+  "checked_at": "2026-10-03T20:09:55.129266+08:00",
+  "step": 12745,
+  "total_steps": 113082,
+  "progress_percent": 11.270582409225165,
+  "trained_tokens": 83013511,
+  "total_tokens": 735833934,
+  "remaining_steps": 100337,
+  "remaining_hours": 43.56637365099883,
+  "projected_end": "2026-10-05T15:43:54.074410+08:00",
+  "latest_evaluation": {
+    "step": 12500,
+    "epoch": 0,
+    "trained_tokens": 81424980,
+    "validation_ce": 2.405529199722808,
+    "validation_tokens": 191220,
+    "validation_rows": 512,
+    "final": false,
+    "generation": [
+      {
+        "prompt": "你好，请介绍一下自己。",
+        "rendered_input": "<|im_start|>user\n你好，请介绍一下自己。<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+        "input_ids": [
+          1,
+          832,
+          311,
+          234,
+          1968,
+          294,
+          960,
+          2919,
+          2360,
+          1153,
+          302,
+          2,
+          234,
+          1,
+          1388,
+          570,
+          811,
+          234,
+          25,
+          234,
+          234,
+          26,
+          234,
+          234
+        ],
+        "continuation": "你好！我是由中国的个人开发者开发的智能助手minimind。如您有任何任何问题，我会尽我所能为您提供帮助。\n</think>\n\n您好！我是由中国的个人开发者开发的智能助手minimind。有关模型和产品的详细内容请参考官方文档。\n",
+        "output_tokens": 64,
+        "ended_with_eos": false,
+        "truncated_by_budget": true
+      },
+      {
+        "prompt": "为什么天空是蓝色的？",
+        "rendered_input": "<|im_start|>user\n为什么天空是蓝色的？<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+        "input_ids": [
+          1,
+          832,
+          311,
+          234,
+          4568,
+          993,
+          1273,
+          357,
+          3961,
+          930,
+          296,
+          776,
+          2,
+          234,
+          1,
+          1388,
+          570,
+          811,
+          234,
+          25,
+          234,
+          234,
+          26,
+          234,
+          234
+        ],
+        "continuation": "天空是由蓝色的，它在天空中形成的，但它在天空中形成的。\n\n1. **天空的形成**：天空中形成的天空，形成了天空的形成。天空中，天空中形成的天空，形成了",
+        "output_tokens": 64,
+        "ended_with_eos": false,
+        "truncated_by_budget": true
+      },
+      {
+        "prompt": "计算 17 加 25。",
+        "rendered_input": "<|im_start|>user\n计算 17 加 25。<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+        "input_ids": [
+          1,
+          832,
+          311,
+          234,
+          895,
+          4515,
+          256,
+          595,
+          3331,
+          302,
+          2,
+          234,
+          1,
+          1388,
+          570,
+          811,
+          234,
+          25,
+          234,
+          234,
+          26,
+          234,
+          234
+        ],
+        "continuation": "要计算一个计算公式，可以使用公式：\n\n$$\n\\text{公式} = \\text{公式}\n$$\n\n其中，我们可以使用公式 $ \\text{公式} = \\frac{$ \\text{公式} = \\frac{$ \\text{公式} = \\frac",
+        "output_tokens": 64,
+        "ended_with_eos": false,
+        "truncated_by_budget": true
+      }
+    ],
+    "time": 1791028991.2478428,
+    "validation_selection_sha256": "e5f2872a99d8f485970b59088e9a333814ddcfba04a6538310dd6ce812b72fcb",
+    "validation_selection": "fixed seeded sample across the full held-out split",
+    "generation_protocol": {
+      "version": 2,
+      "pretrain_prefix": "explicit tokenizer BOS",
+      "sft_prefix": "official chat template",
+      "dtype": "BF16 autocast",
+      "do_sample": false,
+      "temperature": 1.0,
+      "top_p": 1.0,
+      "top_k": 0,
+      "repetition_penalty": 1.0,
+      "max_new_tokens": 64
+    }
+  },
+  "validation_curve": [
+    {
+      "step": 0,
+      "ce": 10.703402231602649
+    },
+    {
+      "step": 500,
+      "ce": 6.103528520552487
+    },
+    {
+      "step": 1000,
+      "ce": 5.578843794578713
+    },
+    {
+      "step": 1500,
+      "ce": 5.221687126286844
+    },
+    {
+      "step": 2000,
+      "ce": 4.88736110727304
+    },
+    {
+      "step": 2500,
+      "ce": 4.565012277829673
+    },
+    {
+      "step": 3000,
+      "ce": 4.269648202079545
+    },
+    {
+      "step": 3500,
+      "ce": 4.001999766945577
+    },
+    {
+      "step": 4000,
+      "ce": 3.7665673775062465
+    },
+    {
+      "step": 4500,
+      "ce": 3.561154229657668
+    },
+    {
+      "step": 5000,
+      "ce": 3.381272081007906
+    },
+    {
+      "step": 5500,
+      "ce": 3.2359157361503974
+    },
+    {
+      "step": 6000,
+      "ce": 3.11472408059077
+    },
+    {
+      "step": 6500,
+      "ce": 3.0222796456034047
+    },
+    {
+      "step": 7000,
+      "ce": 2.9280132647438935
+    },
+    {
+      "step": 7500,
+      "ce": 2.847166908463104
+    },
+    {
+      "step": 8000,
+      "ce": 2.7839903867639966
+    },
+    {
+      "step": 8500,
+      "ce": 2.7212804091947995
+    },
+    {
+      "step": 9000,
+      "ce": 2.6636952487198755
+    },
+    {
+      "step": 9500,
+      "ce": 2.6181527335291412
+    },
+    {
+      "step": 10000,
+      "ce": 2.577110878339735
+    },
+    {
+      "step": 10500,
+      "ce": 2.533172285667761
+    },
+    {
+      "step": 11000,
+      "ce": 2.5013850564426017
+    },
+    {
+      "step": 11500,
+      "ce": 2.468850358799778
+    },
+    {
+      "step": 12000,
+      "ce": 2.4323384483854786
+    },
+    {
+      "step": 12500,
+      "ce": 2.405529199722808
+    }
+  ],
+  "recent_median_step_s": 1.5629694374947576,
+  "recent_weighted_ce": 2.4460615884060766,
+  "all_losses_gradients_finite": true,
+  "contiguous_steps": true,
+  "token_sum_matches": true,
+  "failure_record_exists": false,
+  "router_summary": {
+    "scope": "First microbatch non-padding token routing at recorded steps; sampled diagnostic, not whole-corpus expert load",
+    "observations": 250,
+    "latest_step": 12451,
+    "recent_window_steps": [
+      12001,
+      12051,
+      12101,
+      12151,
+      12201,
+      12251,
+      12301,
+      12351,
+      12401,
+      12451
+    ],
+    "layers": {
+      "0": {
+        "recent_sampled_tokens": 75970,
+        "recent_token_weighted_share": [
+          0.3544820323812031,
+          0.1701855995787811,
+          0.20999078583651443,
+          0.2653415822035014
+        ],
+        "latest": {
+          "tokens_per_expert": [
+            2498,
+            1259,
+            1307,
+            1871
+          ],
+          "mean_probability_entropy": 1.3476365804672241,
+          "max_expert_share": 0.3602018654346466
+        }
+      },
+      "1": {
+        "recent_sampled_tokens": 75970,
+        "recent_token_weighted_share": [
+          0.16174805844412268,
+          0.26626299855206004,
+          0.5060945109911807,
+          0.06589443201263656
+        ],
+        "latest": {
+          "tokens_per_expert": [
+            1051,
+            1749,
+            3719,
+            416
+          ],
+          "mean_probability_entropy": 1.2775908708572388,
+          "max_expert_share": 0.5362653136253357
+        }
+      },
+      "2": {
+        "recent_sampled_tokens": 75970,
+        "recent_token_weighted_share": [
+          0.02169277346320916,
+          0.14611030670001315,
+          0.06867184414900619,
+          0.7635250756877715
+        ],
+        "latest": {
+          "tokens_per_expert": [
+            134,
+            1100,
+            520,
+            5181
+          ],
+          "mean_probability_entropy": 0.8313612937927246,
+          "max_expert_share": 0.7470800280570984
+        }
+      },
+      "3": {
+        "recent_sampled_tokens": 75970,
+        "recent_token_weighted_share": [
+          0.20714755824667633,
+          0.25283664604449124,
+          0.17080426484138475,
+          0.3692115308674477
+        ],
+        "latest": {
+          "tokens_per_expert": [
+            1170,
+            1308,
+            1891,
+            2566
+          ],
+          "mean_probability_entropy": 0.9118841886520386,
+          "max_expert_share": 0.3700072169303894
+        }
+      },
+      "4": {
+        "recent_sampled_tokens": 75970,
+        "recent_token_weighted_share": [
+          0.12837962353560617,
+          0.10135579834145057,
+          0.39860471238646833,
+          0.3716598657364749
+        ],
+        "latest": {
+          "tokens_per_expert": [
+            1240,
+            470,
+            2963,
+            2262
+          ],
+          "mean_probability_entropy": 0.5574339628219604,
+          "max_expert_share": 0.4272530674934387
+        }
+      },
+      "5": {
+        "recent_sampled_tokens": 75970,
+        "recent_token_weighted_share": [
+          0.2100171120179018,
+          0.24126628932473346,
+          0.20372515466631566,
+          0.3449914439910491
+        ],
+        "latest": {
+          "tokens_per_expert": [
+            1305,
+            1966,
+            1397,
+            2267
+          ],
+          "mean_probability_entropy": 0.660693347454071,
+          "max_expert_share": 0.32689258456230164
+        }
+      },
+      "6": {
+        "recent_sampled_tokens": 75970,
+        "recent_token_weighted_share": [
+          0.09266815848361196,
+          0.5900355403448729,
+          0.013268395419244438,
+          0.3040279057522706
+        ],
+        "latest": {
+          "tokens_per_expert": [
+            410,
+            4623,
+            78,
+            1824
+          ],
+          "mean_probability_entropy": 0.7419059872627258,
+          "max_expert_share": 0.6666185855865479
+        }
+      },
+      "7": {
+        "recent_sampled_tokens": 75970,
+        "recent_token_weighted_share": [
+          0.024417533236804,
+          0.3930498881137291,
+          0.43224957219955246,
+          0.15028300644991444
+        ],
+        "latest": {
+          "tokens_per_expert": [
+            183,
+            2322,
+            3355,
+            1075
+          ],
+          "mean_probability_entropy": 0.5473557710647583,
+          "max_expert_share": 0.4837779402732849
+        }
+      }
+    }
+  },
+  "cpu_cache_check": {
+    "report": "models/02_hybrid_moe/runs/cache_diagnosis_trained_cpu_v1/report.json",
+    "passed": true,
+    "step": 12000,
+    "scope": "Trained-weight CPU cached recurrence vs same-sequence full forward; does not validate GPU FLA or BF16 kernels"
+  },
+  "training_config_unchanged": true,
+  "verified_small_file_fingerprints": {
+    "lab/pipeline.py": true,
+    "lab/train.py": true,
+    "lab/data.py": true,
+    "lab/transfer.py": true,
+    "lab/checkpointing.py": true,
+    "lab/live_status.py": true,
+    "tools/run_formal_pipeline.py": true,
+    "tools/transfer_ar_checkpoint.py": true,
+    "tools/evaluate_text_probes.py": true,
+    "evaluation/text_probes_v1.json": true,
+    "upstream/model/model_minimind.py": true,
+    "upstream/model/tokenizer.json": true,
+    "models/02_hybrid_moe/src/model_hybrid.py": true,
+    "models/02_hybrid_moe/configs/hybrid_sft_official_mini_2ep_v1.json": true,
+    "data/manifests/minimind_official_mini.json": true,
+    "data/raw/minimind/sft_t2t_mini.jsonl.verified.json": true,
+    "data/processed/sft_t2t_mini_full_v1/metadata.json": true,
+    "reports/sft_official_mini_T768_audit_v1.json": true,
+    "tools/prepare_tokens.py": true,
+    "tools/audit_token_cache.py": true
+  },
+  "gpu_recent_30min": {
+    "memory.used [MiB]": {
+      "median": 7024.0,
+      "max": 7403.0
+    },
+    "utilization.gpu [%]": {
+      "median": 97.0,
+      "max": 99.0
+    },
+    "temperature.gpu": {
+      "median": 70.0,
+      "max": 77.0
+    },
+    "power.draw [W]": {
+      "median": 86.34,
+      "max": 151.88
+    }
+  },
+  "latest_completed_save": {
+    "event": "checkpoint",
+    "kind": "periodic",
+    "step": 12500,
+    "epoch": 0,
+    "cursor": 200000,
+    "tokens": 81424980,
+    "bytes": 2467735019,
+    "seconds": 24.032745361328125,
+    "time": 1791029018.2657185
+  },
+  "pids_alive": [
+    604480,
+    604577
+  ],
+  "disk_free_gib": 112.30728149414062
+}

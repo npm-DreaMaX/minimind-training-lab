@@ -1,0 +1,53 @@
+{
+  "step": 2,
+  "final": false,
+  "validation_rows": 3,
+  "text_ce": 8.758488982518514,
+  "audio_codebook_ce": [
+    7.895006213525329,
+    7.9277135174290665,
+    7.929916170454517,
+    7.840388579501046,
+    7.792601684101841,
+    7.862641211097122,
+    7.849820793315929,
+    7.8480368455251055
+  ],
+  "audio_ce": 7.8682656268687445,
+  "selection_score": 16.62675460938726,
+  "text_labels": 300,
+  "audio_labels": [
+    297,
+    294,
+    291,
+    288,
+    285,
+    282,
+    279,
+    276
+  ],
+  "stop_count": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "stop_correct": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "time": 1790985431.6871076,
+  "per_record_metrics": "models/03_omni_moe/runs/trainer_cpu_per_record_v3/continuous/evaluation/step_0000002_subset_rows.jsonl",
+  "validation_raw_rows_sha256": "06e27c44ff8b2a70aeaae50c1b2e35ae3ca0360dfd256a4adb1a95b880151b73",
+  "protocol": "fixed per-record augmented inputs; scheduled_sampling=0; CE globally token-weighted within each head; no aux in selection score"
+}

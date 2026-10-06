@@ -1,0 +1,120 @@
+{
+  "scope": "Remote full Omni random initialization, real small T2A fixture, no input encoders; not comparable end-to-end data throughput to local uniform full-corpus probes",
+  "result": {
+    "scope": "Full 314887938 parameter random-initialized Omni; real small T2A fixture; no frozen input encoders",
+    "gpu_snapshot": "2, GPU-7a1dd94b-ddd9-9652-ee95-5528f2255b90, NVIDIA RTX A4000, 3, 16105, 0",
+    "started": 1790989113.8733706,
+    "source_sha256": "4fb6aef800bb3dd09b19d730fbc99ea265aefa3e4d6cf3d7f752bc3e29e3f040",
+    "commands": [
+      {
+        "command": [
+          "/new_data/REMOTE_USER/minimind/envs/omni-readiness/bin/python",
+          "-u",
+          "-B",
+          "-m",
+          "lab.omni_train",
+          "--config",
+          "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/t2a_resume_and_resource_v1/continuous.json"
+        ],
+        "returncode": 0,
+        "seconds": 68.84864290291443
+      },
+      {
+        "command": [
+          "/new_data/REMOTE_USER/minimind/envs/omni-readiness/bin/python",
+          "-u",
+          "-B",
+          "-m",
+          "lab.omni_train",
+          "--config",
+          "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/t2a_resume_and_resource_v1/resumed.json",
+          "--stop-after-step",
+          "1"
+        ],
+        "returncode": 0,
+        "seconds": 25.609584036283195
+      },
+      {
+        "command": [
+          "/new_data/REMOTE_USER/minimind/envs/omni-readiness/bin/python",
+          "-u",
+          "-B",
+          "-m",
+          "lab.omni_train",
+          "--config",
+          "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/t2a_resume_and_resource_v1/resumed.json",
+          "--resume"
+        ],
+        "returncode": 0,
+        "seconds": 86.04116001725197
+      },
+      {
+        "command": [
+          "/new_data/REMOTE_USER/minimind/envs/omni-readiness/bin/python",
+          "-u",
+          "-B",
+          "-m",
+          "lab.omni_train",
+          "--config",
+          "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/t2a_resume_and_resource_v1/resource_B4_recompute.json"
+        ],
+        "returncode": 0,
+        "seconds": 75.76951684989035
+      }
+    ],
+    "status": "passed",
+    "resume_checks": {
+      "model": true,
+      "optimizer": true,
+      "epoch": true,
+      "cursor": true,
+      "step": true,
+      "text_tokens": true,
+      "audio_tokens": true,
+      "best": true,
+      "rng": true
+    },
+    "run_checks": {
+      "continuous": {
+        "full_parameter_count": true,
+        "status": "complete",
+        "step": 5
+      },
+      "resumed": {
+        "full_parameter_count": true,
+        "status": "complete",
+        "step": 5
+      },
+      "resource_B4_recompute": {
+        "full_parameter_count": true,
+        "status": "complete",
+        "step": 12
+      }
+    },
+    "finished": 1790989373.4008741
+  },
+  "runs": {
+    "continuous": {
+      "observed_updates": 5,
+      "peak_allocated_gib": 5.753591537475586,
+      "samples_per_second_after_first_two": 1.4864111448764488,
+      "minimum_host_available_gib": 223.42859268188477,
+      "optimizer_state_offload": false
+    },
+    "resumed": {
+      "observed_updates": 5,
+      "peak_allocated_gib": 5.753591537475586,
+      "samples_per_second_after_first_two": 1.468312490099926,
+      "minimum_host_available_gib": 224.5041961669922,
+      "optimizer_state_offload": false
+    },
+    "resource_B4_recompute": {
+      "observed_updates": 12,
+      "peak_allocated_gib": 6.891395568847656,
+      "samples_per_second_after_first_two": 5.491082795220198,
+      "minimum_host_available_gib": 223.66504287719727,
+      "optimizer_state_offload": false
+    }
+  },
+  "results_archive_sha256": "328dc301f864fc13c988b93b5df42fe34fd4f93d501fbe345024049b07561e42"
+}

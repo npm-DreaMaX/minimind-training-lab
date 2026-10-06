@@ -1,0 +1,9 @@
+{
+  "purpose": "evaluation_only",
+  "model_file": "upstream/model/model_minimind.py",
+  "model": {"hidden_size": 768, "num_hidden_layers": 8, "use_moe": true},
+  "stage": "sft",
+  "weights": "data/reference_models/minimind_3_moe/full_sft_768_moe.pth",
+  "weights_sha256": "a050020ea6d1b9e824693d0db525b1a0a8b40f36a934ea8d89da161368f20cc1",
+  "scope": "Official AR initialization reference for identical generation probes; not a matched extra-training control and not our self-trained AR model."
+}

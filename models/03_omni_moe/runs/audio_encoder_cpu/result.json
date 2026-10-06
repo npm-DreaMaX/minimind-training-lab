@@ -1,0 +1,78 @@
+{
+  "scope": "Real repository evaluation audio, frozen encoder on CPU only; no LLM update",
+  "parameters": 221136992,
+  "load_seconds": 15.262660503387451,
+  "threads": 4,
+  "dtype": "torch.float32",
+  "samples": [
+    {
+      "file": "sources/minimind-o/dataset/eval_omni/audio-zh-01_\u4f60\u5e73\u65f6\u559c\u6b22\u5403\u4ec0\u4e48.mp3",
+      "audio_seconds": 1.36,
+      "fbank_shape": [
+        1,
+        23,
+        560
+      ],
+      "feature_shape": [
+        1,
+        23,
+        512
+      ],
+      "valid_frames": 23,
+      "encoder_output_lengths": [
+        23
+      ],
+      "frontend_seconds": 0.03885101499326993,
+      "encoder_seconds": 0.16857431600510608,
+      "encoder_real_time_factor": 0.12395170294493094,
+      "fp16_cache_rounding_relative_rms": 0.00020654626132454723,
+      "first_sample_includes_warmup": true
+    },
+    {
+      "file": "sources/minimind-o/dataset/eval_omni/audio-zh-02_\u4eba\u5de5\u667a\u80fd\u5305\u542b\u54ea\u4e9b\u9886\u57df.mp3",
+      "audio_seconds": 2.24,
+      "fbank_shape": [
+        1,
+        37,
+        560
+      ],
+      "feature_shape": [
+        1,
+        37,
+        512
+      ],
+      "valid_frames": 37,
+      "encoder_output_lengths": [
+        37
+      ],
+      "frontend_seconds": 0.0016755920078139752,
+      "encoder_seconds": 0.1186977249890333,
+      "encoder_real_time_factor": 0.05299005579867558,
+      "fp16_cache_rounding_relative_rms": 0.00020557768584694713,
+      "first_sample_includes_warmup": false
+    },
+    {
+      "file": "sources/minimind-o/dataset/eval_omni/audio-zh-03_\u7ed9\u6211\u8bb2\u4e00\u4e2a\u5173\u4e8e\u5c0f\u732b\u7684\u6545\u4e8b\u5427.mp3",
+      "audio_seconds": 2.08,
+      "fbank_shape": [
+        1,
+        35,
+        560
+      ],
+      "feature_shape": [
+        1,
+        35,
+        512
+      ],
+      "valid_frames": 35,
+      "encoder_output_lengths": [
+        35
+      ],
+      "frontend_seconds": 0.0017018429934978485,
+      "encoder_seconds": 0.1375715360045433,
+      "encoder_real_time_factor": 0.06614016154064582,
+      "fp16_cache_rounding_relative_rms": 0.00020402211521286517,
+      "first_sample_includes_warmup": false
+    }
+  ]
+}

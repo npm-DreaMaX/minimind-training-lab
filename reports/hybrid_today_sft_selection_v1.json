@@ -1,0 +1,61 @@
+{
+  "stage": "sft",
+  "scope": "Formal finite-budget complete-record subset; not the official mini file or a full-source epoch",
+  "source": "/mnt/d/minimind/data/processed/sft_t2t_full_v1",
+  "source_metadata_sha256": "cf3d748c2baf6938b613062024a6feec269dad7c067b05311684dcfa6f56175e",
+  "tokenizer_sha256": "71f32c68cf63a15355a8fc171b7594b3d41870fe0ddb54fc6aefa55f73a4a668",
+  "augmentation": "official SFT augmentation sampled once offline with Python seed 20261003; no fresh augmentation per epoch",
+  "seed": 20261003,
+  "seq_len": 768,
+  "min_targets": 32,
+  "train_rows": 100000,
+  "val_rows": 3280,
+  "selection": "Uniform without replacement from deduplicated length-eligible training records, then reject fewer than min_targets. Validation uses all eligible held-out records.",
+  "deduplication": "Existing 64-bit content hashes; not semantic deduplication or a proof against hash collisions.",
+  "selection_bias": "Only complete dialogs fitting the context window; long-dialog/tool-chain capabilities are not established by this experiment.",
+  "counts": {
+    "train": {
+      "source_rows": 5104031,
+      "length_eligible_rows": 3367818,
+      "content_hash_unique_pool": 3252764,
+      "selected_rows": 100000,
+      "checked_but_rejected_low_target_rows": 509,
+      "input_tokens": 49741096,
+      "supervised_tokens": 42394164,
+      "min_supervised_tokens": 32,
+      "length_percentiles": {
+        "0": 51.0,
+        "50": 505.0,
+        "90": 689.0,
+        "100": 768.0
+      },
+      "input_padding_fraction": 0.3523294791666667,
+      "targets_truncated": 0
+    },
+    "val": {
+      "source_rows": 5401,
+      "length_eligible_rows": 3613,
+      "content_hash_unique_pool": 3292,
+      "selected_rows": 3280,
+      "checked_but_rejected_low_target_rows": 12,
+      "input_tokens": 1637547,
+      "supervised_tokens": 1396694,
+      "min_supervised_tokens": 33,
+      "length_percentiles": {
+        "0": 63.0,
+        "50": 507.0,
+        "90": 693.0,
+        "100": 768.0
+      },
+      "input_padding_fraction": 0.34993211699695126,
+      "targets_truncated": 0
+    }
+  },
+  "split": "Inherited original content-hash split; explicit selected hash disjointness checked",
+  "index_sha256": {
+    "train": "2e25659d51a19ea7897ddfe06938efb145ca367818f37b2bca7cf611bd751635",
+    "val": "f034341ca11f8c5c3a8e816532fc22407c44b00fb189f64130a8a101424994df"
+  },
+  "storage": "Read-only hardlinks of existing full cache; no repeated large arrays",
+  "elapsed_seconds": 67.4232497215271
+}

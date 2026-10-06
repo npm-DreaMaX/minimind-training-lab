@@ -1,0 +1,60 @@
+{
+  "status": "complete",
+  "step": 3,
+  "text_tokens": 10193,
+  "audio_tokens": 0,
+  "validation": {
+    "step": 3,
+    "final": true,
+    "validation_rows": 16,
+    "text_ce": 8.900003433227539,
+    "audio_codebook_ce": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "audio_ce": 0.0,
+    "selection_score": 8.900003433227539,
+    "text_labels": 3322,
+    "audio_labels": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "stop_count": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "stop_correct": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "time": 1790991295.5574038,
+    "per_record_metrics": "runs/real_inputs_visual_v2/i2t_vision_proj/evaluation/step_0000003_full_rows.jsonl",
+    "validation_raw_rows_sha256": "2301b670dff1c0d3fd1ae7c0ab7b025f1494eb8f4658075f6183d16bfd834d22",
+    "protocol": "fixed per-record augmented inputs; scheduled_sampling=0; CE globally token-weighted within each head; no aux in selection score"
+  },
+  "purpose": "preflight"
+}

@@ -1,0 +1,425 @@
+{
+  "comparisons": [
+    {
+      "run": "triton_tf32_v3",
+      "seed": 20261007,
+      "output_relative_rms": 0.0009371550950471641,
+      "gradients": {
+        "dt_bias": {
+          "reference_rms": 9.546410183247644e-06,
+          "error_rms": 1.1573448318813462e-05,
+          "relative_rms": 1.212335118296397,
+          "max_absolute": 3.091429243795574e-05,
+          "finite": true
+        },
+        "A_log": {
+          "reference_rms": 1.4693855518999044e-05,
+          "error_rms": 2.2411351892515086e-05,
+          "relative_rms": 1.5252192907121878,
+          "max_absolute": 5.981193680781871e-05,
+          "finite": true
+        },
+        "conv1d.weight": {
+          "reference_rms": 2.3183607481769286e-05,
+          "error_rms": 2.8107264071763893e-08,
+          "relative_rms": 0.001212376636977933,
+          "max_absolute": 1.9931030692532659e-07,
+          "finite": true
+        },
+        "norm.weight": {
+          "reference_rms": 3.4147371479775757e-05,
+          "error_rms": 3.224296918347136e-08,
+          "relative_rms": 0.0009442299007573012,
+          "max_absolute": 9.073119144886732e-08,
+          "finite": true
+        },
+        "out_proj.weight": {
+          "reference_rms": 2.1612106138491072e-05,
+          "error_rms": 2.0194972805143152e-08,
+          "relative_rms": 0.0009344287259988969,
+          "max_absolute": 3.0239607440307736e-07,
+          "finite": true
+        },
+        "in_proj_qkv.weight": {
+          "reference_rms": 2.3277052605408244e-05,
+          "error_rms": 2.814142341378556e-08,
+          "relative_rms": 0.0012089770939146787,
+          "max_absolute": 4.1382736526429653e-07,
+          "finite": true
+        },
+        "in_proj_z.weight": {
+          "reference_rms": 2.2125288523966447e-05,
+          "error_rms": 2.060071757625792e-08,
+          "relative_rms": 0.0009310937371028139,
+          "max_absolute": 1.8914579413831234e-07,
+          "finite": true
+        },
+        "in_proj_b.weight": {
+          "reference_rms": 3.925749842892401e-05,
+          "error_rms": 4.195350200575376e-08,
+          "relative_rms": 0.0010686748693809638,
+          "max_absolute": 1.929438440129161e-07,
+          "finite": true
+        },
+        "in_proj_a.weight": {
+          "reference_rms": 8.159294338838663e-06,
+          "error_rms": 1.5033467661851319e-06,
+          "relative_rms": 0.18424960587941086,
+          "max_absolute": 1.3066757674096152e-05,
+          "finite": true
+        }
+      }
+    },
+    {
+      "run": "triton_tf32_v3",
+      "seed": 20261008,
+      "output_relative_rms": 0.000950324113664262,
+      "gradients": {
+        "dt_bias": {
+          "reference_rms": 2.9036948490102077e-06,
+          "error_rms": 1.1610287401708774e-05,
+          "relative_rms": 3.9984530074385787,
+          "max_absolute": 3.162347638863139e-05,
+          "finite": true
+        },
+        "A_log": {
+          "reference_rms": 3.3086500934587093e-06,
+          "error_rms": 2.1723448298871517e-05,
+          "relative_rms": 6.565652965787879,
+          "max_absolute": 5.907534068683162e-05,
+          "finite": true
+        },
+        "conv1d.weight": {
+          "reference_rms": 2.244507231807802e-05,
+          "error_rms": 2.8726125478328868e-08,
+          "relative_rms": 0.0012798410747463654,
+          "max_absolute": 1.9674189388751984e-07,
+          "finite": true
+        },
+        "norm.weight": {
+          "reference_rms": 2.7895877792616375e-05,
+          "error_rms": 2.4862332637098916e-08,
+          "relative_rms": 0.0008912547159093021,
+          "max_absolute": 6.234040483832359e-08,
+          "finite": true
+        },
+        "out_proj.weight": {
+          "reference_rms": 2.0320343537605368e-05,
+          "error_rms": 1.9359134739715955e-08,
+          "relative_rms": 0.0009526972171454398,
+          "max_absolute": 1.9344588508829474e-07,
+          "finite": true
+        },
+        "in_proj_qkv.weight": {
+          "reference_rms": 2.2057713067624718e-05,
+          "error_rms": 2.84089995972181e-08,
+          "relative_rms": 0.0012879394844842508,
+          "max_absolute": 3.3847754821181297e-07,
+          "finite": true
+        },
+        "in_proj_z.weight": {
+          "reference_rms": 2.018442864937242e-05,
+          "error_rms": 1.9326622080484412e-08,
+          "relative_rms": 0.0009575015679765263,
+          "max_absolute": 1.825756044127047e-07,
+          "finite": true
+        },
+        "in_proj_b.weight": {
+          "reference_rms": 3.162577559123747e-05,
+          "error_rms": 4.234980366391028e-08,
+          "relative_rms": 0.0013390913858139215,
+          "max_absolute": 1.9438084564171731e-07,
+          "finite": true
+        },
+        "in_proj_a.weight": {
+          "reference_rms": 1.0041108907898888e-05,
+          "error_rms": 1.7071918136934983e-06,
+          "relative_rms": 0.1700202467030835,
+          "max_absolute": 1.2055534170940518e-05,
+          "finite": true
+        }
+      }
+    },
+    {
+      "run": "triton_ieee_v3",
+      "seed": 20261007,
+      "output_relative_rms": 1.636747619656347e-05,
+      "gradients": {
+        "dt_bias": {
+          "reference_rms": 9.546410183247644e-06,
+          "error_rms": 3.913358082030527e-09,
+          "relative_rms": 0.0004099298067977235,
+          "max_absolute": 8.4387323795454e-09,
+          "finite": true
+        },
+        "A_log": {
+          "reference_rms": 1.4693855518999044e-05,
+          "error_rms": 7.544056934705168e-09,
+          "relative_rms": 0.0005134157556504322,
+          "max_absolute": 1.62367541634012e-08,
+          "finite": true
+        },
+        "conv1d.weight": {
+          "reference_rms": 2.3183607481769286e-05,
+          "error_rms": 3.9101735738178434e-10,
+          "relative_rms": 1.6866113597258994e-05,
+          "max_absolute": 5.27688825968653e-09,
+          "finite": true
+        },
+        "norm.weight": {
+          "reference_rms": 3.4147371479775757e-05,
+          "error_rms": 6.599243373983654e-10,
+          "relative_rms": 1.9325772637850457e-05,
+          "max_absolute": 2.621163730509579e-09,
+          "finite": true
+        },
+        "out_proj.weight": {
+          "reference_rms": 2.1612106138491072e-05,
+          "error_rms": 3.4993144493178363e-10,
+          "relative_rms": 1.6191455043271196e-05,
+          "max_absolute": 1.000444171950221e-08,
+          "finite": true
+        },
+        "in_proj_qkv.weight": {
+          "reference_rms": 2.3277052605408244e-05,
+          "error_rms": 3.76416592340334e-10,
+          "relative_rms": 1.6171144977903107e-05,
+          "max_absolute": 1.0863004717975855e-08,
+          "finite": true
+        },
+        "in_proj_z.weight": {
+          "reference_rms": 2.2125288523966447e-05,
+          "error_rms": 3.6344705023338975e-10,
+          "relative_rms": 1.6426771105818502e-05,
+          "max_absolute": 8.763890946283937e-09,
+          "finite": true
+        },
+        "in_proj_b.weight": {
+          "reference_rms": 3.925749842892401e-05,
+          "error_rms": 1.060730947521904e-09,
+          "relative_rms": 2.7019830350177946e-05,
+          "max_absolute": 9.458744898438454e-09,
+          "finite": true
+        },
+        "in_proj_a.weight": {
+          "reference_rms": 8.159294338838663e-06,
+          "error_rms": 5.991414586681287e-10,
+          "relative_rms": 7.343054849929661e-05,
+          "max_absolute": 3.615895138864289e-09,
+          "finite": true
+        }
+      }
+    },
+    {
+      "run": "triton_ieee_v3",
+      "seed": 20261008,
+      "output_relative_rms": 1.697788245689433e-06,
+      "gradients": {
+        "dt_bias": {
+          "reference_rms": 2.9036948490102077e-06,
+          "error_rms": 2.818104860580206e-09,
+          "relative_rms": 0.0009705237661391393,
+          "max_absolute": 6.156398058010382e-09,
+          "finite": true
+        },
+        "A_log": {
+          "reference_rms": 3.3086500934587093e-06,
+          "error_rms": 5.398356872632348e-09,
+          "relative_rms": 0.0016315889320859423,
+          "max_absolute": 1.1681237310767756e-08,
+          "finite": true
+        },
+        "conv1d.weight": {
+          "reference_rms": 2.244507231807802e-05,
+          "error_rms": 1.870068509768341e-11,
+          "relative_rms": 8.33175533260423e-07,
+          "max_absolute": 5.748006515204906e-10,
+          "finite": true
+        },
+        "norm.weight": {
+          "reference_rms": 2.7895877792616375e-05,
+          "error_rms": 3.410649540569466e-11,
+          "relative_rms": 1.2226356761113336e-06,
+          "max_absolute": 2.546585164964199e-10,
+          "finite": true
+        },
+        "out_proj.weight": {
+          "reference_rms": 2.0320343537605368e-05,
+          "error_rms": 3.575511067777093e-11,
+          "relative_rms": 1.7595721554412489e-06,
+          "max_absolute": 2.5659119273768738e-09,
+          "finite": true
+        },
+        "in_proj_qkv.weight": {
+          "reference_rms": 2.2057713067624718e-05,
+          "error_rms": 1.7730686710515364e-11,
+          "relative_rms": 8.038315965103218e-07,
+          "max_absolute": 1.229636836796999e-09,
+          "finite": true
+        },
+        "in_proj_z.weight": {
+          "reference_rms": 2.018442864937242e-05,
+          "error_rms": 2.10666224048639e-11,
+          "relative_rms": 1.043706649854511e-06,
+          "max_absolute": 7.967173587530851e-10,
+          "finite": true
+        },
+        "in_proj_b.weight": {
+          "reference_rms": 3.162577559123747e-05,
+          "error_rms": 2.7177961270385964e-11,
+          "relative_rms": 8.593610990497303e-07,
+          "max_absolute": 2.1827872842550278e-10,
+          "finite": true
+        },
+        "in_proj_a.weight": {
+          "reference_rms": 1.0041108907898888e-05,
+          "error_rms": 5.456135543369101e-10,
+          "relative_rms": 5.433797794063368e-05,
+          "max_absolute": 3.4004004056953363e-09,
+          "finite": true
+        }
+      }
+    },
+    {
+      "run": "triton_tf32x3_v3",
+      "seed": 20261007,
+      "output_relative_rms": 1.635173275215015e-05,
+      "gradients": {
+        "dt_bias": {
+          "reference_rms": 9.546410183247644e-06,
+          "error_rms": 2.6385604812162455e-09,
+          "relative_rms": 0.0002763929509174536,
+          "max_absolute": 6.115786987948013e-09,
+          "finite": true
+        },
+        "A_log": {
+          "reference_rms": 1.4693855518999044e-05,
+          "error_rms": 5.062137375944076e-09,
+          "relative_rms": 0.00034450708797284486,
+          "max_absolute": 1.1616098305466949e-08,
+          "finite": true
+        },
+        "conv1d.weight": {
+          "reference_rms": 2.3183607481769286e-05,
+          "error_rms": 3.9166750398500483e-10,
+          "relative_rms": 1.689415697246416e-05,
+          "max_absolute": 5.338733899407089e-09,
+          "finite": true
+        },
+        "norm.weight": {
+          "reference_rms": 3.4147371479775757e-05,
+          "error_rms": 6.608731339952101e-10,
+          "relative_rms": 1.9353557985762422e-05,
+          "max_absolute": 2.6266206987202168e-09,
+          "finite": true
+        },
+        "out_proj.weight": {
+          "reference_rms": 2.1612106138491072e-05,
+          "error_rms": 3.4957967076643115e-10,
+          "relative_rms": 1.617517832488483e-05,
+          "max_absolute": 9.931682143360376e-09,
+          "finite": true
+        },
+        "in_proj_qkv.weight": {
+          "reference_rms": 2.3277052605408244e-05,
+          "error_rms": 3.767836875834263e-10,
+          "relative_rms": 1.6186915670581226e-05,
+          "max_absolute": 1.0899384506046772e-08,
+          "finite": true
+        },
+        "in_proj_z.weight": {
+          "reference_rms": 2.2125288523966447e-05,
+          "error_rms": 3.633720269125007e-10,
+          "relative_rms": 1.6423380265477244e-05,
+          "max_absolute": 8.74933903105557e-09,
+          "finite": true
+        },
+        "in_proj_b.weight": {
+          "reference_rms": 3.925749842892401e-05,
+          "error_rms": 1.0564826791181758e-09,
+          "relative_rms": 2.6911614886285877e-05,
+          "max_absolute": 9.305949788540602e-09,
+          "finite": true
+        },
+        "in_proj_a.weight": {
+          "reference_rms": 8.159294338838663e-06,
+          "error_rms": 5.04004504797706e-10,
+          "relative_rms": 6.177059974397767e-05,
+          "max_absolute": 2.5621393895391975e-09,
+          "finite": true
+        }
+      }
+    },
+    {
+      "run": "triton_tf32x3_v3",
+      "seed": 20261008,
+      "output_relative_rms": 1.710205040101855e-06,
+      "gradients": {
+        "dt_bias": {
+          "reference_rms": 2.9036948490102077e-06,
+          "error_rms": 4.398475805800217e-09,
+          "relative_rms": 0.0015147858278908132,
+          "max_absolute": 1.0862802213296163e-08,
+          "finite": true
+        },
+        "A_log": {
+          "reference_rms": 3.3086500934587093e-06,
+          "error_rms": 8.19464407442183e-09,
+          "relative_rms": 0.0024767333634411397,
+          "max_absolute": 2.0101460052046605e-08,
+          "finite": true
+        },
+        "conv1d.weight": {
+          "reference_rms": 2.244507231807802e-05,
+          "error_rms": 1.9303897022537875e-11,
+          "relative_rms": 8.600505602733061e-07,
+          "max_absolute": 5.857145879417658e-10,
+          "finite": true
+        },
+        "norm.weight": {
+          "reference_rms": 2.7895877792616375e-05,
+          "error_rms": 3.533658782250981e-11,
+          "relative_rms": 1.266731525181218e-06,
+          "max_absolute": 2.6921043172478676e-10,
+          "finite": true
+        },
+        "out_proj.weight": {
+          "reference_rms": 2.0320343537605368e-05,
+          "error_rms": 3.594996175748655e-11,
+          "relative_rms": 1.7691611212653268e-06,
+          "max_absolute": 2.5627286959206685e-09,
+          "finite": true
+        },
+        "in_proj_qkv.weight": {
+          "reference_rms": 2.2057713067624718e-05,
+          "error_rms": 1.842927893624946e-11,
+          "relative_rms": 8.355027050967988e-07,
+          "max_absolute": 1.2660166248679161e-09,
+          "finite": true
+        },
+        "in_proj_z.weight": {
+          "reference_rms": 2.018442864937242e-05,
+          "error_rms": 2.1303635938663135e-11,
+          "relative_rms": 1.055449044842075e-06,
+          "max_absolute": 8.076312951743603e-10,
+          "finite": true
+        },
+        "in_proj_b.weight": {
+          "reference_rms": 3.162577559123747e-05,
+          "error_rms": 2.898927105310367e-11,
+          "relative_rms": 9.166343120810516e-07,
+          "max_absolute": 1.9281287677586079e-10,
+          "finite": true
+        },
+        "in_proj_a.weight": {
+          "reference_rms": 1.0041108907898888e-05,
+          "error_rms": 7.700813320354882e-10,
+          "relative_rms": 7.669285724305808e-05,
+          "max_absolute": 7.213638131275957e-09,
+          "finite": true
+        }
+      }
+    }
+  ],
+  "scope": "Isolated full-width layer; all dtype settings/inputs fixed except Triton dot precision; no full-model throughput claim"
+}

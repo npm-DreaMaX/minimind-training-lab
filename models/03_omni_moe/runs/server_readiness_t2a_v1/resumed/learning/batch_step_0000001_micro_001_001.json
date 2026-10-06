@@ -1,0 +1,51 @@
+{
+  "event": "batch_contract",
+  "step": 1,
+  "microbatch": 1,
+  "ids_shape": [
+    1,
+    9,
+    1535
+  ],
+  "text_labels_shape": [
+    1,
+    1535
+  ],
+  "audio_labels_shape": [
+    1,
+    8,
+    1535
+  ],
+  "fbank_shape": null,
+  "fbank_lengths": [
+    0
+  ],
+  "pixel_shapes": null,
+  "speaker_shape": [
+    1,
+    192
+  ],
+  "audio_markers_per_sample": [
+    0
+  ],
+  "image_markers_per_sample": [
+    0
+  ],
+  "valid_text_labels_per_sample": [
+    194
+  ],
+  "valid_audio_labels_per_sample_head": [
+    [
+      283,
+      283,
+      283,
+      283,
+      283,
+      283,
+      283,
+      283
+    ]
+  ],
+  "note": "CPU batch before CUDA transfer; labels already shifted by the official Dataset",
+  "time": 1790989224.370689
+}

@@ -1,0 +1,10 @@
+{
+  "completed_at": "2026-10-06T18:01:07.929374+08:00",
+  "deleted_files": 67,
+  "logical_bytes": 65785650643,
+  "last_link_logical_bytes": 65785650643,
+  "free_bytes_before": 106650861568,
+  "free_bytes_after": 172436492288,
+  "protected": "All formal/transfer/delivery checkpoints, failed runs, resume-equivalence runs, named representative preflights, all raw/processed/reference/frozen data and source/log/evaluation files.",
+  "no_training_started": true
+}

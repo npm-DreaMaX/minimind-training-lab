@@ -1,0 +1,171 @@
+{
+  "corpus": "data/processed/sft_t2t_full_v1",
+  "rows": 5109432,
+  "unique_conversations": 4908918,
+  "extra_repeated_records": 200514,
+  "highest_frequency_groups": [
+    {
+      "hash64": 12590320684360004028,
+      "multiplicity": 831,
+      "first_row": 3191338,
+      "full_length": 442,
+      "supervised_labels_at_1536": 67,
+      "rendered_prefix": "<|im_start|>system\n\n\n# Tools\n\nYou may call one or more functions to assist with the user query.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n<tools>\n{\"function\": {\"name\": \"unit_converter\", \"description\": \"进行单位换算，支持长度、重量、温度等\", \"parameters\": {\"type\": \"object\", \"properties\": {\"value\": {\"type\": \"number\", \"description\": \"要转换的数值\"}, \"from_unit\": {\"type\": \"string\", \"description\": \"源单位，如km、miles、kg、pounds、celsius、fahrenheit\"}, \"to_unit\": {\"type\": \"string\", \"description\": \"目标单位\"}}, \"required\": [\"value\", \"from_unit\", \"to_unit\"]}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call><|im_end|>\n<|im_start|>user\nConvert 100 miles to kilometers please<|im_end|>\n<|im_start|>assistant\n<tool_call>\n{\"name\": \"unit_converter\", \"arguments\": {\"value\": 100, \"from_unit\": \"miles\", \"to_unit\": \"km\"}}\n</tool_call><|im_end|>\n<|im_start|>user\n<tool_response>\n{\"result\": 160.934, \"from\": \"100.0 miles\", \"to\": \"160.934 km\"}\n</tool_response><|im_end|>\n<|im_start|>assistant\n100 miles is equal to 160.934 kilometers.<|im_end|>\n"
+    },
+    {
+      "hash64": 42290763442556447,
+      "multiplicity": 776,
+      "first_row": 3191264,
+      "full_length": 458,
+      "supervised_labels_at_1536": 83,
+      "rendered_prefix": "<|im_start|>system\n\n\n# Tools\n\nYou may call one or more functions to assist with the user query.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n<tools>\n{\"function\": {\"name\": \"unit_converter\", \"description\": \"进行单位换算，支持长度、重量、温度等\", \"parameters\": {\"type\": \"object\", \"properties\": {\"value\": {\"type\": \"number\", \"description\": \"要转换的数值\"}, \"from_unit\": {\"type\": \"string\", \"description\": \"源单位，如km、miles、kg、pounds、celsius、fahrenheit\"}, \"to_unit\": {\"type\": \"string\", \"description\": \"目标单位\"}}, \"required\": [\"value\", \"from_unit\", \"to_unit\"]}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call><|im_end|>\n<|im_start|>user\nConvert 100 miles to kilometers please<|im_end|>\n<|im_start|>assistant\nConvert 100 miles to kilometers using unit_converter.\n<tool_call>\n{\"name\": \"unit_converter\", \"arguments\": {\"value\": 100, \"from_unit\": \"miles\", \"to_unit\": \"km\"}}\n</tool_call><|im_end|>\n<|im_start|>user\n<tool_response>\n{\"result\": 160.934, \"from\": \"100.0 miles\", \"to\": \"160.934 km\"}\n</tool_response><|im_end|>\n<|im_start|>assistant\n100 miles is equal to 160.934 kilometers.<|im_end|>\n"
+    },
+    {
+      "hash64": 7922150211372807812,
+      "multiplicity": 635,
+      "first_row": 3191526,
+      "full_length": 353,
+      "supervised_labels_at_1536": 73,
+      "rendered_prefix": "<|im_start|>system\n\n\n# Tools\n\nYou may call one or more functions to assist with the user query.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n<tools>\n{\"function\": {\"name\": \"text_length\", \"description\": \"计算文本的字符数和单词数\", \"parameters\": {\"type\": \"object\", \"properties\": {\"text\": {\"type\": \"string\", \"description\": \"要统计的文本\"}}, \"required\": [\"text\"]}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call><|im_end|>\n<|im_start|>user\nHow many words are in this sentence \"The quick brown fox jumps over the lazy dog\"?<|im_end|>\n<|im_start|>assistant\n<tool_call>\n{\"name\": \"text_length\", \"arguments\": {\"text\": \"The quick brown fox jumps over the lazy dog\"}}\n</tool_call><|im_end|>\n<|im_start|>user\n<tool_response>\n{\"characters\": 43, \"words\": 9}\n</tool_response><|im_end|>\n<|im_start|>assistant\nThe sentence \"The quick brown fox jumps over the lazy dog\" contains 9 words.<|im_end|>\n"
+    },
+    {
+      "hash64": 10775281790721580140,
+      "multiplicity": 634,
+      "first_row": 3193003,
+      "full_length": 363,
+      "supervised_labels_at_1536": 83,
+      "rendered_prefix": "<|im_start|>system\n\n\n# Tools\n\nYou may call one or more functions to assist with the user query.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n<tools>\n{\"function\": {\"name\": \"text_length\", \"description\": \"计算文本的字符数和单词数\", \"parameters\": {\"type\": \"object\", \"properties\": {\"text\": {\"type\": \"string\", \"description\": \"要统计的文本\"}}, \"required\": [\"text\"]}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call><|im_end|>\n<|im_start|>user\nHow many words are in this sentence \"The quick brown fox jumps over the lazy dog\"?<|im_end|>\n<|im_start|>assistant\nCount the words in the given sentence.\n<tool_call>\n{\"name\": \"text_length\", \"arguments\": {\"text\": \"The quick brown fox jumps over the lazy dog\"}}\n</tool_call><|im_end|>\n<|im_start|>user\n<tool_response>\n{\"characters\": 43, \"words\": 9}\n</tool_response><|im_end|>\n<|im_start|>assistant\nThe sentence \"The quick brown fox jumps over the lazy dog\" contains 9 words.<|im_end|>\n"
+    },
+    {
+      "hash64": 6459414408997032926,
+      "multiplicity": 464,
+      "first_row": 3191350,
+      "full_length": 442,
+      "supervised_labels_at_1536": 66,
+      "rendered_prefix": "<|im_start|>system\n\n\n# Tools\n\nYou may call one or more functions to assist with the user query.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n<tools>\n{\"function\": {\"name\": \"unit_converter\", \"description\": \"进行单位换算，支持长度、重量、温度等\", \"parameters\": {\"type\": \"object\", \"properties\": {\"value\": {\"type\": \"number\", \"description\": \"要转换的数值\"}, \"from_unit\": {\"type\": \"string\", \"description\": \"源单位，如km、miles、kg、pounds、celsius、fahrenheit\"}, \"to_unit\": {\"type\": \"string\", \"description\": \"目标单位\"}}, \"required\": [\"value\", \"from_unit\", \"to_unit\"]}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call><|im_end|>\n<|im_start|>user\n请问100公里等于多少英里？<|im_end|>\n<|im_start|>assistant\n<tool_call>\n{\"name\": \"unit_converter\", \"arguments\": {\"value\": 100, \"from_unit\": \"km\", \"to_unit\": \"miles\"}}\n</tool_call><|im_end|>\n<|im_start|>user\n<tool_response>\n{\"result\": 62.1371, \"from\": \"100.0 km\", \"to\": \"62.1371 miles\"}\n</tool_response><|im_end|>\n<|im_start|>assistant\n100公里等于约62.14英里。<|im_end|>\n"
+    },
+    {
+      "hash64": 6651279574869286331,
+      "multiplicity": 450,
+      "first_row": 3191445,
+      "full_length": 450,
+      "supervised_labels_at_1536": 74,
+      "rendered_prefix": "<|im_start|>system\n\n\n# Tools\n\nYou may call one or more functions to assist with the user query.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n<tools>\n{\"function\": {\"name\": \"unit_converter\", \"description\": \"进行单位换算，支持长度、重量、温度等\", \"parameters\": {\"type\": \"object\", \"properties\": {\"value\": {\"type\": \"number\", \"description\": \"要转换的数值\"}, \"from_unit\": {\"type\": \"string\", \"description\": \"源单位，如km、miles、kg、pounds、celsius、fahrenheit\"}, \"to_unit\": {\"type\": \"string\", \"description\": \"目标单位\"}}, \"required\": [\"value\", \"from_unit\", \"to_unit\"]}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call><|im_end|>\n<|im_start|>user\n请问100公里等于多少英里？<|im_end|>\n<|im_start|>assistant\n将100公里转换为英里\n<tool_call>\n{\"name\": \"unit_converter\", \"arguments\": {\"value\": 100, \"from_unit\": \"km\", \"to_unit\": \"miles\"}}\n</tool_call><|im_end|>\n<|im_start|>user\n<tool_response>\n{\"result\": 62.1371, \"from\": \"100.0 km\", \"to\": \"62.1371 miles\"}\n</tool_response><|im_end|>\n<|im_start|>assistant\n100公里等于约62.14英里。<|im_end|>\n"
+    },
+    {
+      "hash64": 16285482145751337249,
+      "multiplicity": 361,
+      "first_row": 3191436,
+      "full_length": 441,
+      "supervised_labels_at_1536": 66,
+      "rendered_prefix": "<|im_start|>system\n\n\n# Tools\n\nYou may call one or more functions to assist with the user query.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n<tools>\n{\"function\": {\"name\": \"unit_converter\", \"description\": \"进行单位换算，支持长度、重量、温度等\", \"parameters\": {\"type\": \"object\", \"properties\": {\"value\": {\"type\": \"number\", \"description\": \"要转换的数值\"}, \"from_unit\": {\"type\": \"string\", \"description\": \"源单位，如km、miles、kg、pounds、celsius、fahrenheit\"}, \"to_unit\": {\"type\": \"string\", \"description\": \"目标单位\"}}, \"required\": [\"value\", \"from_unit\", \"to_unit\"]}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call><|im_end|>\n<|im_start|>user\n50公斤等于多少磅？<|im_end|>\n<|im_start|>assistant\n<tool_call>\n{\"name\": \"unit_converter\", \"arguments\": {\"value\": 50, \"from_unit\": \"kg\", \"to_unit\": \"pounds\"}}\n</tool_call><|im_end|>\n<|im_start|>user\n<tool_response>\n{\"result\": 110.231, \"from\": \"50.0 kg\", \"to\": \"110.231 pounds\"}\n</tool_response><|im_end|>\n<|im_start|>assistant\n50公斤等于约110.23磅。<|im_end|>\n"
+    },
+    {
+      "hash64": 8360703683545105351,
+      "multiplicity": 331,
+      "first_row": 742904,
+      "full_length": 326,
+      "supervised_labels_at_1536": 307,
+      "rendered_prefix": "<|im_start|>user\n# coding=utf-8<|im_end|>\n<|im_start|>assistant\nIt seems like you're setting up a Python script. The comment `# coding=utf-8` is used to specify the character encoding for the file. This is particularly useful when dealing with non-ASCII characters in your text. Python 2.x uses this to indicate that the file is encoded in UTF-8, which is a common encoding for handling multilingual text.\n\nIf you're using Python 3.x, you don't need this comment because UTF-8 is the default encoding for text files. However, if you're working with a file that contains non-ASCII characters and you're using Python 3.x, you might still include this comment for clarity.\n\nHere's a simple example of how you might start a Python script:\n\n```python\n# coding=utf-8\n\ndef main():\n    print(\"Hello, world!\")\n\nif __name__ == \"__main__\":\n    main()\n```\n\nThis script defines a simple function `main()` that prints \"Hello, world!\" to the console. The `if __name__ == \"__main__\":` line ensures that `main()` is called when the script is run directly, not when it's imported as a module in another script.<|im_end|>\n"
+    },
+    {
+      "hash64": 881520132356619723,
+      "multiplicity": 330,
+      "first_row": 3191289,
+      "full_length": 299,
+      "supervised_labels_at_1536": 15,
+      "rendered_prefix": "<|im_start|>system\n\n\n# Tools\n\nYou may call one or more functions to assist with the user query.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n<tools>\n{\"function\": {\"name\": \"translate_text\", \"description\": \"将文本翻译成目标语言\", \"parameters\": {\"type\": \"object\", \"properties\": {\"text\": {\"type\": \"string\", \"description\": \"要翻译的文本\"}, \"target_language\": {\"type\": \"string\", \"description\": \"目标语言，如english、chinese、japanese、french\"}}, \"required\": [\"text\", \"target_language\"]}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call><|im_end|>\n<|im_start|>user\nWhat is the weather in Paris today in English?<|im_end|>\n<|im_start|>assistant\nI'll check the current weather in Paris today for you.<|im_end|>\n"
+    },
+    {
+      "hash64": 11138820633382952850,
+      "multiplicity": 265,
+      "first_row": 3191537,
+      "full_length": 381,
+      "supervised_labels_at_1536": 85,
+      "rendered_prefix": "<|im_start|>system\n\n\n# Tools\n\nYou may call one or more functions to assist with the user query.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n<tools>\n{\"function\": {\"name\": \"calculate_math\", \"description\": \"计算数学表达式的结果，支持加减乘除、幂运算、开方等\", \"parameters\": {\"type\": \"object\", \"properties\": {\"expression\": {\"type\": \"string\", \"description\": \"数学表达式，如 123+456、2**10、sqrt(144)\"}}, \"required\": [\"expression\"]}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call><|im_end|>\n<|im_start|>user\nWhat is the result of 25 multiplied by 3 and then subtracted by 10?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nMultiply 25 by 3, then subtract 10.\n<tool_call>\n{\"name\": \"calculate_math\", \"arguments\": {\"expression\": \"25 * 3 - 10\"}}\n</tool_call><|im_end|>\n<|im_start|>user\n<tool_response>\n{\"result\": 65}\n</tool_response><|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nThe result of 25 multiplied by 3 and then subtracted by 10 is 65.<|im_end|>\n"
+    },
+    {
+      "hash64": 11905199146162245328,
+      "multiplicity": 264,
+      "first_row": 3191259,
+      "full_length": 369,
+      "supervised_labels_at_1536": 73,
+      "rendered_prefix": "<|im_start|>system\n\n\n# Tools\n\nYou may call one or more functions to assist with the user query.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n<tools>\n{\"function\": {\"name\": \"calculate_math\", \"description\": \"计算数学表达式的结果，支持加减乘除、幂运算、开方等\", \"parameters\": {\"type\": \"object\", \"properties\": {\"expression\": {\"type\": \"string\", \"description\": \"数学表达式，如 123+456、2**10、sqrt(144)\"}}, \"required\": [\"expression\"]}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call><|im_end|>\n<|im_start|>user\nWhat is the result of 25 multiplied by 4 and then subtracted by 15?<|im_end|>\n<|im_start|>assistant\nMultiply 25 by 4, then subtract 15.\n<tool_call>\n{\"name\": \"calculate_math\", \"arguments\": {\"expression\": \"25 * 4 - 15\"}}\n</tool_call><|im_end|>\n<|im_start|>user\n<tool_response>\n{\"result\": 85}\n</tool_response><|im_end|>\n<|im_start|>assistant\nThe result of 25 multiplied by 4 and then subtracted by 15 is 85.<|im_end|>\n"
+    },
+    {
+      "hash64": 5741407646320836577,
+      "multiplicity": 262,
+      "first_row": 3191505,
+      "full_length": 356,
+      "supervised_labels_at_1536": 60,
+      "rendered_prefix": "<|im_start|>system\n\n\n# Tools\n\nYou may call one or more functions to assist with the user query.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n<tools>\n{\"function\": {\"name\": \"calculate_math\", \"description\": \"计算数学表达式的结果，支持加减乘除、幂运算、开方等\", \"parameters\": {\"type\": \"object\", \"properties\": {\"expression\": {\"type\": \"string\", \"description\": \"数学表达式，如 123+456、2**10、sqrt(144)\"}}, \"required\": [\"expression\"]}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call><|im_end|>\n<|im_start|>user\nWhat is the result of 25 multiplied by 3 and then subtracted by 10?<|im_end|>\n<|im_start|>assistant\n<tool_call>\n{\"name\": \"calculate_math\", \"arguments\": {\"expression\": \"25 * 3 - 10\"}}\n</tool_call><|im_end|>\n<|im_start|>user\n<tool_response>\n{\"result\": 65}\n</tool_response><|im_end|>\n<|im_start|>assistant\nThe result of 25 multiplied by 3 and then subtracted by 10 is 65.<|im_end|>\n"
+    },
+    {
+      "hash64": 9759974112383572094,
+      "multiplicity": 258,
+      "first_row": 3191515,
+      "full_length": 438,
+      "supervised_labels_at_1536": 85,
+      "rendered_prefix": "<|im_start|>system\n\n\n# Tools\n\nYou may call one or more functions to assist with the user query.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n<tools>\n{\"function\": {\"name\": \"translate_text\", \"description\": \"将文本翻译成目标语言\", \"parameters\": {\"type\": \"object\", \"properties\": {\"text\": {\"type\": \"string\", \"description\": \"要翻译的文本\"}, \"target_language\": {\"type\": \"string\", \"description\": \"目标语言，如english、chinese、japanese、french\"}}, \"required\": [\"text\", \"target_language\"]}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call><|im_end|>\n<|im_start|>user\nWhat is the translation of \"good morning\" in Spanish?<|im_end|>\n<|im_start|>assistant\nTranslate \"good morning\" into Spanish.\n<tool_call>\n{\"name\": \"translate_text\", \"arguments\": {\"text\": \"good morning\", \"target_language\": \"spanish\"}}\n</tool_call><|im_end|>\n<|im_start|>user\n<tool_response>\n{\"translated_text\": \"buenos días\", \"source_language\": \"english\", \"target_language\": \"spanish\", \"success\": true}\n</tool_response><|im_end|>\n<|im_start|>assistant\nThe translation of \"good morning\" in Spanish is \"buenos días\".<|im_end|>\n"
+    },
+    {
+      "hash64": 12864153370094491139,
+      "multiplicity": 253,
+      "first_row": 3191303,
+      "full_length": 437,
+      "supervised_labels_at_1536": 84,
+      "rendered_prefix": "<|im_start|>system\n\n\n# Tools\n\nYou may call one or more functions to assist with the user query.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n<tools>\n{\"function\": {\"name\": \"translate_text\", \"description\": \"将文本翻译成目标语言\", \"parameters\": {\"type\": \"object\", \"properties\": {\"text\": {\"type\": \"string\", \"description\": \"要翻译的文本\"}, \"target_language\": {\"type\": \"string\", \"description\": \"目标语言，如english、chinese、japanese、french\"}}, \"required\": [\"text\", \"target_language\"]}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call><|im_end|>\n<|im_start|>user\nWhat is the translation of \"good morning\" in Spanish?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n<tool_call>\n{\"name\": \"translate_text\", \"arguments\": {\"text\": \"good morning\", \"target_language\": \"spanish\"}}\n</tool_call><|im_end|>\n<|im_start|>user\n<tool_response>\n{\"translated_text\": \"buenos días\", \"source_language\": \"english\", \"target_language\": \"spanish\", \"success\": true}\n</tool_response><|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nThe translation of \"good morning\" in Spanish is \"buenos días\".<|im_end|>\n"
+    },
+    {
+      "hash64": 12649809286718024062,
+      "multiplicity": 249,
+      "first_row": 3191556,
+      "full_length": 356,
+      "supervised_labels_at_1536": 60,
+      "rendered_prefix": "<|im_start|>system\n\n\n# Tools\n\nYou may call one or more functions to assist with the user query.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n<tools>\n{\"function\": {\"name\": \"calculate_math\", \"description\": \"计算数学表达式的结果，支持加减乘除、幂运算、开方等\", \"parameters\": {\"type\": \"object\", \"properties\": {\"expression\": {\"type\": \"string\", \"description\": \"数学表达式，如 123+456、2**10、sqrt(144)\"}}, \"required\": [\"expression\"]}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call><|im_end|>\n<|im_start|>user\nWhat is the result of 25 multiplied by 4 and then subtracted by 15?<|im_end|>\n<|im_start|>assistant\n<tool_call>\n{\"name\": \"calculate_math\", \"arguments\": {\"expression\": \"25 * 4 - 15\"}}\n</tool_call><|im_end|>\n<|im_start|>user\n<tool_response>\n{\"result\": 85}\n</tool_response><|im_end|>\n<|im_start|>assistant\nThe result of 25 multiplied by 4 and then subtracted by 15 is 85.<|im_end|>\n"
+    },
+    {
+      "hash64": 6463336754691833006,
+      "multiplicity": 238,
+      "first_row": 3191383,
+      "full_length": 469,
+      "supervised_labels_at_1536": 87,
+      "rendered_prefix": "<|im_start|>system\n\n\n# Tools\n\nYou may call one or more functions to assist with the user query.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n<tools>\n{\"function\": {\"name\": \"get_current_weather\", \"description\": \"获取指定城市的当前天气信息，包括温度、湿度和天气状况\", \"parameters\": {\"type\": \"object\", \"properties\": {\"location\": {\"type\": \"string\", \"description\": \"城市名称，如北京、上海、New York\"}, \"unit\": {\"type\": \"string\", \"description\": \"温度单位，celsius或fahrenheit\", \"enum\": [\"celsius\", \"fahrenheit\"], \"default\": \"celsius\"}}, \"required\": [\"location\"]}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call><|im_end|>\n<|im_start|>user\n北京现在的天气怎么样？<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n<tool_call>\n{\"name\": \"get_current_weather\", \"arguments\": {\"location\": \"北京\"}}\n</tool_call><|im_end|>\n<|im_start|>user\n<tool_response>\n{\"location\": \"北京\", \"temperature\": \"15°C\", \"condition\": \"多云\", \"humidity\": \"60%\", \"wind_speed\": \"3 km/h\"}\n</tool_response><|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n北京现在的天气是多云，温度为15°C，湿度60%，风速为3 km/h。天气较为舒适，适合外出活动。<|im_end|>\n"
+    },
+    {
+      "hash64": 14427517195500627891,
+      "multiplicity": 238,
+      "first_row": 3191267,
+      "full_length": 450,
+      "supervised_labels_at_1536": 74,
+      "rendered_prefix": "<|im_start|>system\n\n\n# Tools\n\nYou may call one or more functions to assist with the user query.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n<tools>\n{\"function\": {\"name\": \"unit_converter\", \"description\": \"进行单位换算，支持长度、重量、温度等\", \"parameters\": {\"type\": \"object\", \"properties\": {\"value\": {\"type\": \"number\", \"description\": \"要转换的数值\"}, \"from_unit\": {\"type\": \"string\", \"description\": \"源单位，如km、miles、kg、pounds、celsius、fahrenheit\"}, \"to_unit\": {\"type\": \"string\", \"description\": \"目标单位\"}}, \"required\": [\"value\", \"from_unit\", \"to_unit\"]}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call><|im_end|>\n<|im_start|>user\n请将100公里转换成英里<|im_end|>\n<|im_start|>assistant\n将100公里转换为英里\n<tool_call>\n{\"name\": \"unit_converter\", \"arguments\": {\"value\": 100, \"from_unit\": \"km\", \"to_unit\": \"miles\"}}\n</tool_call><|im_end|>\n<|im_start|>user\n<tool_response>\n{\"result\": 62.1371, \"from\": \"100.0 km\", \"to\": \"62.1371 miles\"}\n</tool_response><|im_end|>\n<|im_start|>assistant\n100公里等于约62.14英里。<|im_end|>\n"
+    },
+    {
+      "hash64": 14718874861517440915,
+      "multiplicity": 223,
+      "first_row": 750864,
+      "full_length": 178,
+      "supervised_labels_at_1536": 158,
+      "rendered_prefix": "<|im_start|>user\n# coding: utf-8<|im_end|>\n<|im_start|>assistant\nIt seems like you're setting up a Python script and you've included the `# coding: utf-8` line at the top. This line is used to specify the character encoding of the source file. It's particularly useful when dealing with files that might contain non-ASCII characters, ensuring that the file is read and written correctly in UTF-8 format.\n\nUTF-8 is a popular encoding that supports a wide range of characters from various languages and scripts, making it a good choice for internationalization and multilingual applications.\n\nIf you need further assistance with Python or any other topic, feel free to ask!<|im_end|>\n"
+    },
+    {
+      "hash64": 18388324232835167003,
+      "multiplicity": 219,
+      "first_row": 3191584,
+      "full_length": 442,
+      "supervised_labels_at_1536": 66,
+      "rendered_prefix": "<|im_start|>system\n\n\n# Tools\n\nYou may call one or more functions to assist with the user query.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n<tools>\n{\"function\": {\"name\": \"unit_converter\", \"description\": \"进行单位换算，支持长度、重量、温度等\", \"parameters\": {\"type\": \"object\", \"properties\": {\"value\": {\"type\": \"number\", \"description\": \"要转换的数值\"}, \"from_unit\": {\"type\": \"string\", \"description\": \"源单位，如km、miles、kg、pounds、celsius、fahrenheit\"}, \"to_unit\": {\"type\": \"string\", \"description\": \"目标单位\"}}, \"required\": [\"value\", \"from_unit\", \"to_unit\"]}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call><|im_end|>\n<|im_start|>user\n请将100公里转换成英里<|im_end|>\n<|im_start|>assistant\n<tool_call>\n{\"name\": \"unit_converter\", \"arguments\": {\"value\": 100, \"from_unit\": \"km\", \"to_unit\": \"miles\"}}\n</tool_call><|im_end|>\n<|im_start|>user\n<tool_response>\n{\"result\": 62.1371, \"from\": \"100.0 km\", \"to\": \"62.1371 miles\"}\n</tool_response><|im_end|>\n<|im_start|>assistant\n100公里等于约62.14英里。<|im_end|>\n"
+    },
+    {
+      "hash64": 11894131434762500932,
+      "multiplicity": 214,
+      "first_row": 3191850,
+      "full_length": 520,
+      "supervised_labels_at_1536": 134,
+      "rendered_prefix": "<|im_start|>system\n\n\n# Tools\n\nYou may call one or more functions to assist with the user query.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n<tools>\n{\"function\": {\"name\": \"get_exchange_rate\", \"description\": \"查询两种货币之间的实时汇率\", \"parameters\": {\"type\": \"object\", \"properties\": {\"from_currency\": {\"type\": \"string\", \"description\": \"源货币代码，如USD、CNY、EUR\"}, \"to_currency\": {\"type\": \"string\", \"description\": \"目标货币代码，如USD、CNY、EUR\"}}, \"required\": [\"from_currency\", \"to_currency\"]}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call><|im_end|>\n<|im_start|>user\nWhat is the current exchange rate from USD to EUR?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nCheck the latest USD to EUR exchange rate.\n<tool_call>\n{\"name\": \"get_exchange_rate\", \"arguments\": {\"from_currency\": \"USD\", \"to_currency\": \"EUR\"}}\n</tool_call><|im_end|>\n<|im_start|>user\n<tool_response>\n{\"from_currency\": \"USD\", \"to_currency\": \"EUR\", \"rate\": 0.85, \"timestamp\": \"2024-04-05T10:00:00Z\"}\n</tool_response><|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nThe current exchange rate from USD to EUR is 0.85. This means 1 USD is equivalent to 0.85 EUR as of April 5, 2024, at 10:00 UTC.<|im_end|>\n"
+    }
+  ],
+  "scope": "Content hashes group canonical raw conversations before augmentation; shown text is the first cached rendered example, not a reconstruction of every raw record",
+  "script_sha256": "0e88f0f8ff8aac813c18a7ce2d428e5c6361464dcb4a20069b88f2d3d5b1882d",
+  "time": 1790976805.588349
+}

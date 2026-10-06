@@ -1,0 +1,43 @@
+{
+  "model": {
+    "hidden_size": 768,
+    "num_hidden_layers": 8,
+    "use_moe": true,
+    "require_fla": true
+  },
+  "strict_init": true,
+  "epochs": 1,
+  "num_workers": 2,
+  "cpu_threads": 4,
+  "deterministic": false,
+  "validation_samples": 512,
+  "warmup_steps": 100,
+  "eval_interval": 500,
+  "save_interval": 500,
+  "log_interval": 50,
+  "milestone_interval": 5000,
+  "early_checkpoint_steps": [
+    10,
+    100
+  ],
+  "plot_on_save": true,
+  "allocator_conf": "expandable_segments:True",
+  "allocator_gib": 5.3,
+  "purpose": "formal",
+  "model_file": "models/02_hybrid_moe/src/model_hybrid.py",
+  "run_dir": "models/02_hybrid_moe/runs/hybrid_adapt_full_v1",
+  "init_weight": "models/02_hybrid_moe/runs/transfer_formal_v1/initialized_fp32.pth",
+  "stage": "pretrain",
+  "corpus": "data/processed/pretrain_t2t_full_v1",
+  "batch_size": 4,
+  "accumulation_steps": 6,
+  "seq_len": 512,
+  "checkpointing": false,
+  "learning_rate": 0.0001,
+  "seed": 20261015,
+  "validation_seed": 21261006,
+  "recipe_status": "Authorized full architecture/data experiment. Adapt is a bounded transfer stage, not model completion. Matched control uses the same sample order, budget, microbatch, LR, scheduler and checkpoint selection policy; frozen/new parameter sets differ by design.",
+  "triton_f32_default": "tf32x3",
+  "train_only_linear": true,
+  "max_steps": 5000
+}

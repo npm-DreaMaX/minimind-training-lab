@@ -1,0 +1,40 @@
+{
+  "run_dir": "models/03_omni_moe/runs/omni_01_t2a_all_full_v1",
+  "purpose": "formal",
+  "device": "cuda",
+  "model": {
+    "hidden_size": 768,
+    "num_hidden_layers": 8,
+    "use_moe": true
+  },
+  "modality": "t2a",
+  "mode": "all",
+  "corpus": "data/processed/sft_t2a_shards_v1",
+  "init_weight": "models/03_omni_moe/runs/transfer_formal_v1/initialized_fp32.pth",
+  "max_length": 1536,
+  "batch_size": 16,
+  "accumulation_steps": 8,
+  "epochs": 6,
+  "learning_rate": 0.0005,
+  "warmup_steps": 100,
+  "seed": 20261018,
+  "cpu_threads": 4,
+  "num_workers": 2,
+  "prefetch_factor": 1,
+  "deterministic": false,
+  "checkpointing": true,
+  "allocator_gib": 13.5,
+  "allocator_conf": "expandable_segments:True",
+  "optimizer_state_offload": false,
+  "eval_interval": 250,
+  "save_interval": 250,
+  "milestone_interval": 5000,
+  "early_checkpoint_steps": [
+    10,
+    100
+  ],
+  "validation_samples": 256,
+  "log_interval": 10,
+  "inspect_first_batches": 2,
+  "recipe_status": "Full pinned author seven-stage epochs/LRs and effective sample batch128. Single-GPU accumulation is not identical to four GPU microbatch32 MoE routing. Our longer speech contexts, holdout splits, warmup, loss-preserving harness and stage checkpoint selection are explicit recipe differences."
+}

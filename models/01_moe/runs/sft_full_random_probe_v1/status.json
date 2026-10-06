@@ -1,0 +1,31 @@
+{
+  "status": "complete",
+  "step": 10,
+  "trained_tokens": 85976,
+  "validation": {
+    "step": 10,
+    "epoch": 0,
+    "trained_tokens": 85976,
+    "validation_ce": 3.157347439171065,
+    "validation_tokens": 21093,
+    "validation_rows": 32,
+    "final": true,
+    "generation": [
+      {
+        "prompt": "你好，请介绍一下自己。",
+        "continuation": "What are the benefits of using a daily lifestyle?\n\nPremise: \"A man is wearing a ball.\"\nHypothesis: \"A man is wearing a ball.\"\nHypothesis: \"A"
+      },
+      {
+        "prompt": "为什么天空是蓝色的？",
+        "continuation": "According to the text, we can be extracted from the sentence.The text is **\"user\"**. Here's the step-by-step reasoning:\n\n1. **\"user\"** → \"user\"**  \n   - \"user"
+      },
+      {
+        "prompt": "计算 17 加 25。",
+        "continuation": "Input:\n\nThe sum of the first two terms is $-1, 2, 3, 4, 5, 6, 7, 8, 9, 10\n\nInput:\n\nThe sum of the first two terms is $-1, 2, 3, 4, 5, 6, 7"
+      }
+    ],
+    "time": 1790977357.1293392,
+    "validation_selection_sha256": "bcc9bcfc670935c6018dc26a74956a373b655f8930dd55ab074d816d7d233780",
+    "validation_selection": "full split"
+  }
+}

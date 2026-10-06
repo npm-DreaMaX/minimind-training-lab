@@ -1,0 +1,53 @@
+{
+  "step": 32,
+  "final": false,
+  "validation_rows": 16,
+  "text_ce": 3.38871036567688,
+  "audio_codebook_ce": [
+    7.976353121229926,
+    7.882165160826025,
+    7.880153296731721,
+    7.894093374040048,
+    7.949234605707065,
+    7.903327454211361,
+    7.848417838349951,
+    7.960762976244347
+  ],
+  "audio_ce": 7.911813478417556,
+  "selection_score": 11.300523844094435,
+  "text_labels": 625,
+  "audio_labels": [
+    2462,
+    2462,
+    2462,
+    2462,
+    2462,
+    2462,
+    2462,
+    2462
+  ],
+  "stop_count": [
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16
+  ],
+  "stop_correct": [
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16
+  ],
+  "time": 1790989312.7276182,
+  "per_record_metrics": "models/03_omni_moe/runs/real_a2a_L3072_worker0_resource_v4/evaluation/step_0000032_subset_rows.jsonl",
+  "validation_raw_rows_sha256": "099c4e247bfd35bf2306a331e640325b135cdab810cf60cd530ac3dd3515ee14",
+  "protocol": "fixed per-record augmented inputs; scheduled_sampling=0; CE globally token-weighted within each head; no aux in selection score"
+}

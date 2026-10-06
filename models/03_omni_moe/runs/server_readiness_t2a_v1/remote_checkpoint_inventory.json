@@ -1,0 +1,71 @@
+{
+  "observed_time": 1790989941.1094007,
+  "scope": "Random hardware/resume test checkpoints retained remotely; metadata inventory, not content hash verification or formal trained weights",
+  "files": [
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/t2a_resume_and_resource_v1/continuous/checkpoints/best_validation.json",
+      "bytes": 1039,
+      "mtime": 1790989165.1117053
+    },
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/t2a_resume_and_resource_v1/continuous/checkpoints/best_validation.pth",
+      "bytes": 639710704,
+      "mtime": 1790989163.7597175
+    },
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/t2a_resume_and_resource_v1/continuous/checkpoints/latest_resume.pt",
+      "bytes": 3779083454,
+      "mtime": 1790989171.0876522
+    },
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/t2a_resume_and_resource_v1/continuous/checkpoints/model_step_0000005.pth",
+      "bytes": 639711725,
+      "mtime": 1790989180.8355653
+    },
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/t2a_resume_and_resource_v1/resource_B4_recompute/checkpoints/best_validation.json",
+      "bytes": 1051,
+      "mtime": 1790989352.627638
+    },
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/t2a_resume_and_resource_v1/resource_B4_recompute/checkpoints/best_validation.pth",
+      "bytes": 639710704,
+      "mtime": 1790989351.3116355
+    },
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/t2a_resume_and_resource_v1/resource_B4_recompute/checkpoints/latest_resume.pt",
+      "bytes": 3779083390,
+      "mtime": 1790989358.399649
+    },
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/t2a_resume_and_resource_v1/resource_B4_recompute/checkpoints/model_step_0000012.pth",
+      "bytes": 639711725,
+      "mtime": 1790989367.9356656
+    },
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/t2a_resume_and_resource_v1/resumed/checkpoints/best_validation.json",
+      "bytes": 1036,
+      "mtime": 1790989276.483434
+    },
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/t2a_resume_and_resource_v1/resumed/checkpoints/best_validation.pth",
+      "bytes": 639710704,
+      "mtime": 1790989275.1354294
+    },
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/t2a_resume_and_resource_v1/resumed/checkpoints/latest_resume.pt",
+      "bytes": 3779083454,
+      "mtime": 1790989282.4554543
+    },
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/t2a_resume_and_resource_v1/resumed/checkpoints/model_step_0000001.pth",
+      "bytes": 639711725,
+      "mtime": 1790989206.0753405
+    },
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/t2a_resume_and_resource_v1/resumed/checkpoints/model_step_0000005.pth",
+      "bytes": 639711725,
+      "mtime": 1790989292.2234857
+    }
+  ]
+}

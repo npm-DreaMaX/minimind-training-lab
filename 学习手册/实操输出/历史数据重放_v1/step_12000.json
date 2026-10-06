@@ -1,0 +1,56 @@
+{
+  "真实更新": {
+    "event": "train",
+    "step": 12000,
+    "epoch": 0,
+    "cursor": 192000,
+    "loss": 2.4662078944966197,
+    "ce_loss": 2.4619994163513184,
+    "aux_loss": 0.004208478145301342,
+    "grad_norm": 3.1094558238983154,
+    "learning_rate": 9.752280604265422e-06,
+    "valid_tokens": 6126,
+    "tokens_trained": 78165415,
+    "nominal_tokens": 12288,
+    "nonpad_input_tokens": 7203,
+    "input_padding_fraction": 0.413818359375,
+    "unsupervised_fraction": 0.50146484375,
+    "step_seconds": 1.5131270429992583,
+    "valid_tokens_per_second": 4048.5695027016995,
+    "nominal_tokens_per_second": 8120.930794841411,
+    "cuda_allocated": 2509707264,
+    "cuda_reserved": 5073010688,
+    "cuda_peak_allocated": 4834460672,
+    "wall_seconds": 18623.93595480919,
+    "time": 1791028176.5071778
+  },
+  "此前最近保存的评估": {
+    "path": "models/02_hybrid_moe/runs/hybrid_sft_official_mini_2ep_v1/evaluation/step_0012000.json",
+    "step": 12000,
+    "ce": 2.4323384483854786,
+    "rows": 512,
+    "generation": [
+      {
+        "prompt": "你好，请介绍一下自己。",
+        "continuation": "你好！很高兴能帮助你了解如何开始自己的兴趣和技能。以下是一些帮助你开始自己的兴趣和技能：\n\n1. **兴趣爱好**：无论是通过阅读、观看还是简单的书籍，都能让你接触到你感兴趣的领域。你可以从简单的书籍、电影、电影、电影、电影、电影、电影等"
+      },
+      {
+        "prompt": "为什么天空是蓝色的？",
+        "continuation": "天空是蓝色的，它在天空中形成的，是因为天空中的天空中天空的天空。天空中的天空是由天空中的天空形成的，而天空中的天空则是天空中的天空。天空中的天空是"
+      },
+      {
+        "prompt": "计算 17 加 25。",
+        "continuation": "要计算15 加 9 的 加 8 的 加 8 的 加 9 的 加 9 的 加 9 的 加 9 的 加 9 的 加 9 的 加 9 的 加 9 的 加 - 加 9 的 加 - 加 - 加 - "
+      }
+    ]
+  },
+  "解释": {
+    "loss": "ce_loss + aux_loss",
+    "grad_norm": "裁剪前范数；阈值1",
+    "cursor": "当前epoch已消费的训练记录数；epoch从0开始",
+    "valid_tokens": "本次有效右移标签数，不是B*T",
+    "cuda_peak_allocated": "本次进程启动以来高水位，不是每步重置",
+    "generation": "来自评估保存步，不能假装每一步都有生成样例"
+  },
+  "这是历史重放": true
+}

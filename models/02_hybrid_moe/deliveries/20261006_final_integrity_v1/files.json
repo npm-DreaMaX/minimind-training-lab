@@ -1,0 +1,24 @@
+{
+  "checked_at": "2026-10-06T14:17:29.153916+08:00",
+  "step": 113082,
+  "trained_tokens": 735833934,
+  "files": [
+    {
+      "path": "models/02_hybrid_moe/deliveries/20261006_final_integrity_v1/training_resume.pt",
+      "bytes": 2467735019,
+      "sha256": "6961158836bacb7264352c49a33fdf04c6f1ceff7c4756e3fc2e6bc1272a0742"
+    },
+    {
+      "path": "models/02_hybrid_moe/runs/hybrid_sft_official_mini_2ep_v1/checkpoints/best_validation.pth",
+      "bytes": 421139037,
+      "sha256": "1fc422dfac3b784e319676e251a58fdb1eb0eea83def7936f6be4578a4cac896"
+    },
+    {
+      "path": "models/02_hybrid_moe/runs/hybrid_sft_official_mini_2ep_v1/checkpoints/model_step_0113082.pth",
+      "bytes": 421139622,
+      "sha256": "3882e3330d0bf4fafe44eae1e47684ae58a6d0dbe5cb28d1756a100d4ae1e6b4"
+    }
+  ],
+  "snapshot_is_hardlink": true,
+  "quality_approved": false
+}

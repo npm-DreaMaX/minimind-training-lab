@@ -1,0 +1,98 @@
+{
+  "corpus": "data/processed/sft_t2t_mini_full_v1",
+  "stage": "sft",
+  "sequence": 768,
+  "batch_size": 16,
+  "accumulation_steps": 1,
+  "cache_metadata": {
+    "stage": "sft",
+    "raw": "data/raw/minimind/sft_t2t_mini.jsonl",
+    "rows": 905718,
+    "train_rows": 904652,
+    "val_rows": 1066,
+    "full_input_tokens": 447130319,
+    "full_supervised_tokens": 372797723,
+    "bad_rows": 0,
+    "empty_rows": 0,
+    "length_percentiles": {
+      "50": 494.0,
+      "90": 709.0,
+      "95": 773.0,
+      "99": 910.0,
+      "100": 3216.0
+    },
+    "length_coverage": {
+      "384": {
+        "cut_rows": 694238,
+        "tokens_retained": 322307891,
+        "supervised_retained": 254509611,
+        "zero_supervision_rows": 13024
+      },
+      "512": {
+        "cut_rows": 405647,
+        "tokens_retained": 394504894,
+        "supervised_retained": 322361299,
+        "zero_supervision_rows": 1118
+      },
+      "768": {
+        "cut_rows": 47624,
+        "tokens_retained": 442459011,
+        "supervised_retained": 368314251,
+        "zero_supervision_rows": 8
+      },
+      "1024": {
+        "cut_rows": 3309,
+        "tokens_retained": 446299957,
+        "supervised_retained": 371973940,
+        "zero_supervision_rows": 2
+      },
+      "1536": {
+        "cut_rows": 533,
+        "tokens_retained": 446999277,
+        "supervised_retained": 372667013,
+        "zero_supervision_rows": 0
+      },
+      "2048": {
+        "cut_rows": 74,
+        "tokens_retained": 447115326,
+        "supervised_retained": 372782939,
+        "zero_supervision_rows": 0
+      }
+    },
+    "elapsed_s": 363.33214950561523,
+    "limit": 0,
+    "split": "SHA256(content) first uint64 little endian modulo 1000 < 1; identical content stays in same split",
+    "augmentation": "official SFT augmentation sampled once offline with Python seed 20261003; no fresh augmentation per epoch",
+    "tokenizer_sha256": "71f32c68cf63a15355a8fc171b7594b3d41870fe0ddb54fc6aefa55f73a4a668",
+    "preprocessor_sha256": "b27ffe563e18ec09acb5a2aababee6585b1b40cf6099be275e1e33c1bda9f6e4",
+    "cache_note": "supervised_retained is before split; pretrain count assumes no internal literal PAD token"
+  },
+  "unique_hashes": 858856,
+  "extra_exact_duplicates": 46862,
+  "max_multiplicity": 804,
+  "splits": {
+    "train": {
+      "original_rows": 904652,
+      "rows": 904644,
+      "removed_zero_target_rows": 8,
+      "supervised_tokens": 367916967,
+      "nonpad_positions": 441932252,
+      "positional_padding_fraction": 0.36391263326605083,
+      "optimizer_steps": 56541
+    },
+    "val": {
+      "original_rows": 1066,
+      "rows": 1066,
+      "removed_zero_target_rows": 0,
+      "supervised_tokens": 397284,
+      "nonpad_positions": 520615,
+      "positional_padding_fraction": 0.3640861964509068,
+      "optimizer_steps": 67
+    }
+  },
+  "exact_duplicate_cross_split": false,
+  "split_assignment_verified": true,
+  "limitation": "Content-hash split prevents identical records crossing train/val; no semantic decontamination claim. Padding estimate counts positions before literal PAD token handling.",
+  "script_sha256": "7ddb8544a34afbc6ae808911697f147f9aaab59f389d7fc9f8a6558eaccb8c87",
+  "time": 1791009202.033327
+}

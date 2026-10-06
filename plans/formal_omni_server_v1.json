@@ -1,0 +1,569 @@
+{
+  "version": 1,
+  "controller_dir": "runs/formal_omni_server_v1",
+  "remote_gpu": 2,
+  "min_free_gib": 30,
+  "prerequisites": [
+    "Independent project Python/runtime and full-data hashes verified",
+    "Actual B16 accumulation8 T2A update check passed",
+    "Completed formal language SFT and immutable uploaded lineage",
+    "Idle GPU checked again at stage start"
+  ],
+  "stages": [
+    {
+      "id": "transfer_omni",
+      "kind": "transfer",
+      "model_kind": "omni",
+      "out": "models/03_omni_moe/runs/transfer_formal_v1",
+      "source": "models/01_moe/runs/sft_full_v1/checkpoints/best_validation.pth",
+      "seed": 20261017,
+      "dependencies": [
+        {
+          "run_dir": "models/01_moe/runs/sft_full_v1",
+          "expected_steps": 318877,
+          "min_trained_tokens": 0,
+          "config_contract": {
+            "corpus": "data/processed/sft_t2t_full_v1",
+            "stage": "sft",
+            "epochs": 1,
+            "seq_len": 1536
+          },
+          "provenance_contract": {
+            "train_rows": 5102028,
+            "parameter_count": 198416640
+          }
+        }
+      ]
+    },
+    {
+      "id": "omni_01_t2a_all_full_v1",
+      "kind": "train",
+      "module": "lab.omni_train",
+      "config": "models/03_omni_moe/configs/omni_01_t2a_all_full_v1.json",
+      "completion": {
+        "run_dir": "models/03_omni_moe/runs/omni_01_t2a_all_full_v1",
+        "expected_steps": 58488,
+        "config_contract": {
+          "run_dir": "models/03_omni_moe/runs/omni_01_t2a_all_full_v1",
+          "purpose": "formal",
+          "device": "cuda",
+          "model": {
+            "hidden_size": 768,
+            "num_hidden_layers": 8,
+            "use_moe": true
+          },
+          "modality": "t2a",
+          "mode": "all",
+          "corpus": "data/processed/sft_t2a_shards_v1",
+          "init_weight": "models/03_omni_moe/runs/transfer_formal_v1/initialized_fp32.pth",
+          "max_length": 1536,
+          "batch_size": 16,
+          "accumulation_steps": 8,
+          "epochs": 6,
+          "learning_rate": 0.0005,
+          "warmup_steps": 100,
+          "seed": 20261018,
+          "cpu_threads": 4,
+          "num_workers": 2,
+          "prefetch_factor": 1,
+          "deterministic": false,
+          "checkpointing": true,
+          "allocator_gib": 13.5,
+          "allocator_conf": "expandable_segments:True",
+          "optimizer_state_offload": false,
+          "eval_interval": 250,
+          "save_interval": 250,
+          "milestone_interval": 5000,
+          "early_checkpoint_steps": [
+            10,
+            100
+          ],
+          "validation_samples": 256,
+          "log_interval": 10,
+          "inspect_first_batches": 2,
+          "recipe_status": "Full pinned author seven-stage epochs/LRs and effective sample batch128. Single-GPU accumulation is not identical to four GPU microbatch32 MoE routing. Our longer speech contexts, holdout splits, warmup, loss-preserving harness and stage checkpoint selection are explicit recipe differences."
+        },
+        "provenance_contract": {
+          "parameters": 314887938,
+          "train_rows": 1247657,
+          "purpose": "formal"
+        }
+      },
+      "dependencies": [],
+      "omni_probes": [
+        "t2a"
+      ]
+    },
+    {
+      "id": "omni_02_a2a_audio_proj_full_v1",
+      "kind": "train",
+      "module": "lab.omni_train",
+      "config": "models/03_omni_moe/configs/omni_02_a2a_audio_proj_full_v1.json",
+      "completion": {
+        "run_dir": "models/03_omni_moe/runs/omni_02_a2a_audio_proj_full_v1",
+        "expected_steps": 3232,
+        "config_contract": {
+          "run_dir": "models/03_omni_moe/runs/omni_02_a2a_audio_proj_full_v1",
+          "purpose": "formal",
+          "device": "cuda",
+          "model": {
+            "hidden_size": 768,
+            "num_hidden_layers": 8,
+            "use_moe": true
+          },
+          "modality": "a2a",
+          "mode": "audio_proj",
+          "corpus": "data/processed/sft_a2a_shards_v1",
+          "init_weight": "models/03_omni_moe/runs/omni_01_t2a_all_full_v1/checkpoints/best_validation.pth",
+          "max_length": 3072,
+          "batch_size": 2,
+          "accumulation_steps": 64,
+          "epochs": 1,
+          "learning_rate": 0.0005,
+          "warmup_steps": 100,
+          "seed": 20261019,
+          "cpu_threads": 4,
+          "num_workers": 2,
+          "prefetch_factor": 1,
+          "deterministic": false,
+          "checkpointing": true,
+          "allocator_gib": 13.5,
+          "allocator_conf": "expandable_segments:True",
+          "optimizer_state_offload": false,
+          "eval_interval": 250,
+          "save_interval": 250,
+          "milestone_interval": 5000,
+          "early_checkpoint_steps": [
+            10,
+            100
+          ],
+          "validation_samples": 256,
+          "log_interval": 10,
+          "inspect_first_batches": 2,
+          "recipe_status": "Full pinned author seven-stage epochs/LRs and effective sample batch128. Single-GPU accumulation is not identical to four GPU microbatch32 MoE routing. Our longer speech contexts, holdout splits, warmup, loss-preserving harness and stage checkpoint selection are explicit recipe differences.",
+          "audio_encoder": "data/frozen_models/SenseVoiceSmall"
+        },
+        "provenance_contract": {
+          "parameters": 314887938,
+          "train_rows": 413573,
+          "purpose": "formal"
+        }
+      },
+      "dependencies": [],
+      "omni_probes": [
+        "t2a",
+        "a2a"
+      ]
+    },
+    {
+      "id": "omni_03_a2a_all_full_v1",
+      "kind": "train",
+      "module": "lab.omni_train",
+      "config": "models/03_omni_moe/configs/omni_03_a2a_all_full_v1.json",
+      "completion": {
+        "run_dir": "models/03_omni_moe/runs/omni_03_a2a_all_full_v1",
+        "expected_steps": 9696,
+        "config_contract": {
+          "run_dir": "models/03_omni_moe/runs/omni_03_a2a_all_full_v1",
+          "purpose": "formal",
+          "device": "cuda",
+          "model": {
+            "hidden_size": 768,
+            "num_hidden_layers": 8,
+            "use_moe": true
+          },
+          "modality": "a2a",
+          "mode": "all",
+          "corpus": "data/processed/sft_a2a_shards_v1",
+          "init_weight": "models/03_omni_moe/runs/omni_02_a2a_audio_proj_full_v1/checkpoints/best_validation.pth",
+          "max_length": 3072,
+          "batch_size": 2,
+          "accumulation_steps": 64,
+          "epochs": 3,
+          "learning_rate": 5e-05,
+          "warmup_steps": 100,
+          "seed": 20261020,
+          "cpu_threads": 4,
+          "num_workers": 2,
+          "prefetch_factor": 1,
+          "deterministic": false,
+          "checkpointing": true,
+          "allocator_gib": 13.5,
+          "allocator_conf": "expandable_segments:True",
+          "optimizer_state_offload": false,
+          "eval_interval": 250,
+          "save_interval": 250,
+          "milestone_interval": 5000,
+          "early_checkpoint_steps": [
+            10,
+            100
+          ],
+          "validation_samples": 256,
+          "log_interval": 10,
+          "inspect_first_batches": 2,
+          "recipe_status": "Full pinned author seven-stage epochs/LRs and effective sample batch128. Single-GPU accumulation is not identical to four GPU microbatch32 MoE routing. Our longer speech contexts, holdout splits, warmup, loss-preserving harness and stage checkpoint selection are explicit recipe differences.",
+          "audio_encoder": "data/frozen_models/SenseVoiceSmall"
+        },
+        "provenance_contract": {
+          "parameters": 314887938,
+          "train_rows": 413573,
+          "purpose": "formal"
+        }
+      },
+      "dependencies": [],
+      "omni_probes": [
+        "t2a",
+        "a2a"
+      ]
+    },
+    {
+      "id": "omni_04_i2t_vision_proj_full_v1",
+      "kind": "train",
+      "module": "lab.omni_train",
+      "config": "models/03_omni_moe/configs/omni_04_i2t_vision_proj_full_v1.json",
+      "completion": {
+        "run_dir": "models/03_omni_moe/runs/omni_04_i2t_vision_proj_full_v1",
+        "expected_steps": 20873,
+        "config_contract": {
+          "run_dir": "models/03_omni_moe/runs/omni_04_i2t_vision_proj_full_v1",
+          "purpose": "formal",
+          "device": "cuda",
+          "model": {
+            "hidden_size": 768,
+            "num_hidden_layers": 8,
+            "use_moe": true
+          },
+          "modality": "i2t",
+          "mode": "vision_proj",
+          "corpus": "data/processed/sft_i2t_shards_v1",
+          "init_weight": "models/03_omni_moe/runs/omni_03_a2a_all_full_v1/checkpoints/best_validation.pth",
+          "max_length": 768,
+          "batch_size": 16,
+          "accumulation_steps": 8,
+          "epochs": 1,
+          "learning_rate": 5e-05,
+          "warmup_steps": 100,
+          "seed": 20261021,
+          "cpu_threads": 4,
+          "num_workers": 2,
+          "prefetch_factor": 1,
+          "deterministic": false,
+          "checkpointing": true,
+          "allocator_gib": 13.5,
+          "allocator_conf": "expandable_segments:True",
+          "optimizer_state_offload": false,
+          "eval_interval": 250,
+          "save_interval": 250,
+          "milestone_interval": 5000,
+          "early_checkpoint_steps": [
+            10,
+            100
+          ],
+          "validation_samples": 256,
+          "log_interval": 10,
+          "inspect_first_batches": 2,
+          "recipe_status": "Full pinned author seven-stage epochs/LRs and effective sample batch128. Single-GPU accumulation is not identical to four GPU microbatch32 MoE routing. Our longer speech contexts, holdout splits, warmup, loss-preserving harness and stage checkpoint selection are explicit recipe differences.",
+          "vision_encoder": "data/frozen_models/siglip2-base-p32-256-ve",
+          "split_subdir": "split_image_v2",
+          "train_index_name": "visual_train.npy",
+          "val_index_name": "visual_val.npy",
+          "image_placeholder_policy": "user_only"
+        },
+        "provenance_contract": {
+          "parameters": 314887938,
+          "train_rows": 2671732,
+          "purpose": "formal"
+        }
+      },
+      "dependencies": [],
+      "omni_probes": [
+        "t2a",
+        "a2a",
+        "i2t"
+      ]
+    },
+    {
+      "id": "omni_05_i2t_all_full_v1",
+      "kind": "train",
+      "module": "lab.omni_train",
+      "config": "models/03_omni_moe/configs/omni_05_i2t_all_full_v1.json",
+      "completion": {
+        "run_dir": "models/03_omni_moe/runs/omni_05_i2t_all_full_v1",
+        "expected_steps": 22671,
+        "config_contract": {
+          "run_dir": "models/03_omni_moe/runs/omni_05_i2t_all_full_v1",
+          "purpose": "formal",
+          "device": "cuda",
+          "model": {
+            "hidden_size": 768,
+            "num_hidden_layers": 8,
+            "use_moe": true
+          },
+          "modality": "i2t",
+          "mode": "all",
+          "corpus": "data/processed/sft_i2t_shards_v1",
+          "init_weight": "models/03_omni_moe/runs/omni_04_i2t_vision_proj_full_v1/checkpoints/best_validation.pth",
+          "max_length": 768,
+          "batch_size": 4,
+          "accumulation_steps": 32,
+          "epochs": 1,
+          "learning_rate": 5e-06,
+          "warmup_steps": 100,
+          "seed": 20261022,
+          "cpu_threads": 4,
+          "num_workers": 2,
+          "prefetch_factor": 1,
+          "deterministic": false,
+          "checkpointing": true,
+          "allocator_gib": 13.5,
+          "allocator_conf": "expandable_segments:True",
+          "optimizer_state_offload": false,
+          "eval_interval": 250,
+          "save_interval": 250,
+          "milestone_interval": 5000,
+          "early_checkpoint_steps": [
+            10,
+            100
+          ],
+          "validation_samples": 256,
+          "log_interval": 10,
+          "inspect_first_batches": 2,
+          "recipe_status": "Full pinned author seven-stage epochs/LRs and effective sample batch128. Single-GPU accumulation is not identical to four GPU microbatch32 MoE routing. Our longer speech contexts, holdout splits, warmup, loss-preserving harness and stage checkpoint selection are explicit recipe differences.",
+          "vision_encoder": "data/frozen_models/siglip2-base-p32-256-ve",
+          "split_subdir": "split_image_v2",
+          "train_index_name": "train.npy",
+          "val_index_name": "val.npy",
+          "image_placeholder_policy": "user_only"
+        },
+        "provenance_contract": {
+          "parameters": 314887938,
+          "train_rows": 2901800,
+          "purpose": "formal"
+        }
+      },
+      "dependencies": [],
+      "omni_probes": [
+        "t2a",
+        "a2a",
+        "i2t"
+      ]
+    },
+    {
+      "id": "omni_06_a2a_all_full_v1",
+      "kind": "train",
+      "module": "lab.omni_train",
+      "config": "models/03_omni_moe/configs/omni_06_a2a_all_full_v1.json",
+      "completion": {
+        "run_dir": "models/03_omni_moe/runs/omni_06_a2a_all_full_v1",
+        "expected_steps": 3232,
+        "config_contract": {
+          "run_dir": "models/03_omni_moe/runs/omni_06_a2a_all_full_v1",
+          "purpose": "formal",
+          "device": "cuda",
+          "model": {
+            "hidden_size": 768,
+            "num_hidden_layers": 8,
+            "use_moe": true
+          },
+          "modality": "a2a",
+          "mode": "all",
+          "corpus": "data/processed/sft_a2a_shards_v1",
+          "init_weight": "models/03_omni_moe/runs/omni_05_i2t_all_full_v1/checkpoints/best_validation.pth",
+          "max_length": 3072,
+          "batch_size": 2,
+          "accumulation_steps": 64,
+          "epochs": 1,
+          "learning_rate": 5e-06,
+          "warmup_steps": 100,
+          "seed": 20261023,
+          "cpu_threads": 4,
+          "num_workers": 2,
+          "prefetch_factor": 1,
+          "deterministic": false,
+          "checkpointing": true,
+          "allocator_gib": 13.5,
+          "allocator_conf": "expandable_segments:True",
+          "optimizer_state_offload": false,
+          "eval_interval": 250,
+          "save_interval": 250,
+          "milestone_interval": 5000,
+          "early_checkpoint_steps": [
+            10,
+            100
+          ],
+          "validation_samples": 256,
+          "log_interval": 10,
+          "inspect_first_batches": 2,
+          "recipe_status": "Full pinned author seven-stage epochs/LRs and effective sample batch128. Single-GPU accumulation is not identical to four GPU microbatch32 MoE routing. Our longer speech contexts, holdout splits, warmup, loss-preserving harness and stage checkpoint selection are explicit recipe differences.",
+          "audio_encoder": "data/frozen_models/SenseVoiceSmall"
+        },
+        "provenance_contract": {
+          "parameters": 314887938,
+          "train_rows": 413573,
+          "purpose": "formal"
+        }
+      },
+      "dependencies": [],
+      "omni_probes": [
+        "t2a",
+        "a2a",
+        "i2t"
+      ]
+    },
+    {
+      "id": "omni_07_i2t_vision_proj_full_v1",
+      "kind": "train",
+      "module": "lab.omni_train",
+      "config": "models/03_omni_moe/configs/omni_07_i2t_vision_proj_full_v1.json",
+      "completion": {
+        "run_dir": "models/03_omni_moe/runs/omni_07_i2t_vision_proj_full_v1",
+        "expected_steps": 20873,
+        "config_contract": {
+          "run_dir": "models/03_omni_moe/runs/omni_07_i2t_vision_proj_full_v1",
+          "purpose": "formal",
+          "device": "cuda",
+          "model": {
+            "hidden_size": 768,
+            "num_hidden_layers": 8,
+            "use_moe": true
+          },
+          "modality": "i2t",
+          "mode": "vision_proj",
+          "corpus": "data/processed/sft_i2t_shards_v1",
+          "init_weight": "models/03_omni_moe/runs/omni_06_a2a_all_full_v1/checkpoints/best_validation.pth",
+          "max_length": 768,
+          "batch_size": 16,
+          "accumulation_steps": 8,
+          "epochs": 1,
+          "learning_rate": 5e-06,
+          "warmup_steps": 100,
+          "seed": 20261024,
+          "cpu_threads": 4,
+          "num_workers": 2,
+          "prefetch_factor": 1,
+          "deterministic": false,
+          "checkpointing": true,
+          "allocator_gib": 13.5,
+          "allocator_conf": "expandable_segments:True",
+          "optimizer_state_offload": false,
+          "eval_interval": 250,
+          "save_interval": 250,
+          "milestone_interval": 5000,
+          "early_checkpoint_steps": [
+            10,
+            100
+          ],
+          "validation_samples": 256,
+          "log_interval": 10,
+          "inspect_first_batches": 2,
+          "recipe_status": "Full pinned author seven-stage epochs/LRs and effective sample batch128. Single-GPU accumulation is not identical to four GPU microbatch32 MoE routing. Our longer speech contexts, holdout splits, warmup, loss-preserving harness and stage checkpoint selection are explicit recipe differences.",
+          "vision_encoder": "data/frozen_models/siglip2-base-p32-256-ve",
+          "split_subdir": "split_image_v2",
+          "train_index_name": "visual_train.npy",
+          "val_index_name": "visual_val.npy",
+          "image_placeholder_policy": "user_only"
+        },
+        "provenance_contract": {
+          "parameters": 314887938,
+          "train_rows": 2671732,
+          "purpose": "formal"
+        }
+      },
+      "dependencies": [],
+      "omni_probes": [
+        "t2a",
+        "a2a",
+        "i2t"
+      ]
+    }
+  ],
+  "budget": [
+    {
+      "stage": "omni_01_t2a_all_full_v1",
+      "rows": 1247657,
+      "epochs": 6,
+      "sample_presentations": 7485942,
+      "updates": 58488
+    },
+    {
+      "stage": "omni_02_a2a_audio_proj_full_v1",
+      "rows": 413573,
+      "epochs": 1,
+      "sample_presentations": 413573,
+      "updates": 3232
+    },
+    {
+      "stage": "omni_03_a2a_all_full_v1",
+      "rows": 413573,
+      "epochs": 3,
+      "sample_presentations": 1240719,
+      "updates": 9696
+    },
+    {
+      "stage": "omni_04_i2t_vision_proj_full_v1",
+      "rows": 2671732,
+      "epochs": 1,
+      "sample_presentations": 2671732,
+      "updates": 20873
+    },
+    {
+      "stage": "omni_05_i2t_all_full_v1",
+      "rows": 2901800,
+      "epochs": 1,
+      "sample_presentations": 2901800,
+      "updates": 22671
+    },
+    {
+      "stage": "omni_06_a2a_all_full_v1",
+      "rows": 413573,
+      "epochs": 1,
+      "sample_presentations": 413573,
+      "updates": 3232
+    },
+    {
+      "stage": "omni_07_i2t_vision_proj_full_v1",
+      "rows": 2671732,
+      "epochs": 1,
+      "sample_presentations": 2671732,
+      "updates": 20873
+    }
+  ],
+  "fingerprints": {
+    "models/03_omni_moe/configs/omni_01_t2a_all_full_v1.json": "ffa3ab95c109e9d5bab7bfac3c70b9983d2aafad9d6e1abaff764ef35de8187b",
+    "models/03_omni_moe/configs/omni_02_a2a_audio_proj_full_v1.json": "789b65aaaf57fc4385c8875821cb8a3ab84ea5778230a29481fe7864afdcc860",
+    "models/03_omni_moe/configs/omni_03_a2a_all_full_v1.json": "53591645ce32004487c36cf16a9ad6953be98bde8af1ca84a66b59edd3ef8b24",
+    "models/03_omni_moe/configs/omni_04_i2t_vision_proj_full_v1.json": "d3bc3bf5c43d700ba66328029c58681e3d4e81ba8d99fce86af0755e81a14922",
+    "models/03_omni_moe/configs/omni_05_i2t_all_full_v1.json": "a1097b5313c64389a6d5328c35456db4bacbff60491ac4ebfbb04167a8ef6155",
+    "models/03_omni_moe/configs/omni_06_a2a_all_full_v1.json": "6e5689c2a0b753d0701263f1cfd0689876de3367da396e35d6a730e5a86059f0",
+    "models/03_omni_moe/configs/omni_07_i2t_vision_proj_full_v1.json": "d6e855cb40f9e45b026c403fe02654e3e5a793e8f1ef15e95970e9256604bc0e",
+    "lab/pipeline.py": "7724e10e45c999beec8ee20740d32b74b3c97a526d6fe0b38da684a61ab2f22c",
+    "lab/train.py": "2a25783ebe72087ec8b3f26c6008fdd05a08b8066e76d9be354bbc7c54aa0834",
+    "lab/data.py": "b06bda98ac443510b4d92e3ef1c1060d4826b7d41e392595aa6d9003ea363602",
+    "lab/transfer.py": "c2757533152775bef28faae006edf4ffbfe07f7cbb0c3be4c6cac3d9cd81d820",
+    "lab/checkpointing.py": "36809f843d94bc728278f4f5141387fc22e73429503f52769bde1349dd9f52ae",
+    "lab/live_status.py": "d888e8a9096b9910a4137d7acee838a4775a51e8a51ce5e402f95c95e49924f9",
+    "tools/run_formal_pipeline.py": "ff9118f7e6db7f1ac821f00301ae568eae6193f2e16238de1360d30a7506eb66",
+    "tools/transfer_ar_checkpoint.py": "368ffc7e6c6e8e8e5a57cf62c24e2d36a3c7aeedafb8c1e297a708a4adb1131c",
+    "tools/evaluate_text_probes.py": "f9d7863dac49ad03190aadacf94d31fd10a4c60e066578ed56f66e0ecc8ccb76",
+    "evaluation/text_probes_v1.json": "8e79bfc096f451c34bc87471194ca50c3e0eca1d6a97b2f8014ed686e76dd66b",
+    "upstream/model/model_minimind.py": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+    "upstream/model/tokenizer.json": "71f32c68cf63a15355a8fc171b7594b3d41870fe0ddb54fc6aefa55f73a4a668",
+    "models/02_hybrid_moe/src/model_hybrid.py": "cf83fb3f054b3dc9fc1da055a68cbc21ec973a6f63b1615ebc66c761bee8c503",
+    "lab/omni_train.py": "d4cbc99a141680eabc899ffeeecf47c1a98816e0492f1fe435bd05ee7d71615f",
+    "lab/omni_data.py": "e5523f3ec3b9cc19756fae6fd968df0dc9edf9f45a43b477152ccb65aab96359",
+    "lab/omni_table.py": "d3c979c368074b5b224416b4f6cc48ee4d9aa04450f32f3085c31ef4d0dc770c",
+    "lab/omni_batch.py": "4038ffeac77dbbd2251275708cb456f754f47afd30a49785d765cdd67b10b5eb",
+    "lab/omni_loss.py": "3549f694c53497761f74fc3d19ae77f60dfc02eb4ead45a88b531df7cf6330f5",
+    "models/03_omni_moe/src/omni_dataset_role_aware.py": "0ab7a1aa4b345ff54adfb52fa2558809c4595bbc913ed7add01f3189e095523f",
+    "sources/minimind-o/model/model_omni.py": "9a0de2b438b8927a170fe12636e01c00dbfec463ea5c4a81efdfc1cca6a6696c",
+    "sources/minimind-o/model/model_minimind.py": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+    "sources/minimind-o/dataset/omni_dataset.py": "06c305bf010dc47dcbe812b0b01316563e10537c32b61efdfa37ad7065fdff56",
+    "sources/minimind-o/trainer/train_sft_omni.py": "886f12d2024ad3ec7c8cf5526af487b693fd34fc26414cf6a40a07b8ad41b7c1",
+    "tools/monitor_host_resources.py": "7f8ee4ac53745b41c67b0c372dab2b03a396f689a411cce2dc3a38de1be61398",
+    "tools/server_gpu_guard.py": "4de00eda2a14d8ca213d557c2b59f7f7fcad947e6a57812f676ff4f63e0b4da7",
+    "tools/evaluate_omni_probes.py": "6d6c1bfa5d58cd7fce0ab1ccfa3d1397447e6958aa7e95c30823c8330602422a",
+    "evaluation/omni_probes_v1.json": "927f0b39f11df111a3c1947e494962f7436dcd5a7135bd2281724f597fa3dd7e",
+    "sources/minimind-o/trainer/trainer_utils.py": "61bf26516a60f808aaa117617c874d2bd4898b6583cb527df4603e95d334a708"
+  },
+  "semantics": "Prepared plan; launch only after deployment and resource gates. Budget completion is not multimodal evaluation completion."
+}

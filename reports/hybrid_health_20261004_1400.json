@@ -1,0 +1,851 @@
+{
+  "checked_at": "2026-10-04T14:09:01.447271+08:00",
+  "run": "models/02_hybrid_moe/runs/hybrid_sft_official_mini_2ep_v1",
+  "step": 54465,
+  "total_steps": 113082,
+  "progress_percent": 48.164164057940255,
+  "trained_tokens": 354435293,
+  "total_tokens": 735833934,
+  "current_epoch": 1,
+  "epochs": 2,
+  "first_epoch_end_step": 56541,
+  "first_epoch_remaining_minutes": 54.63471554291649,
+  "remaining_steps": 58617,
+  "remaining_hours": 25.71068658461091,
+  "projected_budget_end": "2026-10-05T15:51:39.918976+08:00",
+  "eta_method": "Recent3000 monotonic update times plus median periodic boundary wall overhead per500 steps. Approximate, excludes future pauses/failures/final expanded evaluation; past wall-clock adjustments documented.",
+  "recent_mean_update_s": 1.500223084788789,
+  "recent_median_update_s": 1.4961249829939334,
+  "periodic_boundary_gaps_s": [
+    36.37791604656377,
+    39.5366557034431,
+    37.98625836719293,
+    39.278280979342526,
+    48.265091382549144,
+    49.56736630076193
+  ],
+  "all_losses_gradients_finite": true,
+  "contiguous_steps": true,
+  "token_sum_matches": true,
+  "failure_record_exists": false,
+  "verified_small_file_fingerprints": {
+    "lab/pipeline.py": true,
+    "lab/train.py": true,
+    "lab/data.py": true,
+    "lab/transfer.py": true,
+    "lab/checkpointing.py": true,
+    "lab/live_status.py": true,
+    "tools/run_formal_pipeline.py": true,
+    "tools/transfer_ar_checkpoint.py": true,
+    "tools/evaluate_text_probes.py": true,
+    "evaluation/text_probes_v1.json": true,
+    "upstream/model/model_minimind.py": true,
+    "upstream/model/tokenizer.json": true,
+    "models/02_hybrid_moe/src/model_hybrid.py": true,
+    "models/02_hybrid_moe/configs/hybrid_sft_official_mini_2ep_v1.json": true,
+    "data/manifests/minimind_official_mini.json": true,
+    "data/raw/minimind/sft_t2t_mini.jsonl.verified.json": true,
+    "data/processed/sft_t2t_mini_full_v1/metadata.json": true,
+    "reports/sft_official_mini_T768_audit_v1.json": true,
+    "tools/prepare_tokens.py": true,
+    "tools/audit_token_cache.py": true
+  },
+  "pids_alive": [
+    604480,
+    604577
+  ],
+  "latest_evaluation": {
+    "step": 54000,
+    "epoch": 0,
+    "trained_tokens": 351384796,
+    "validation_ce": 1.7759151158715851,
+    "validation_tokens": 191220,
+    "validation_rows": 512,
+    "final": false,
+    "generation": [
+      {
+        "prompt": "你好，请介绍一下自己。",
+        "rendered_input": "<|im_start|>user\n你好，请介绍一下自己。<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+        "input_ids": [
+          1,
+          832,
+          311,
+          234,
+          1968,
+          294,
+          960,
+          2919,
+          2360,
+          1153,
+          302,
+          2,
+          234,
+          1,
+          1388,
+          570,
+          811,
+          234,
+          25,
+          234,
+          234,
+          26,
+          234,
+          234
+        ],
+        "continuation": "你好！我是minimind，一个轻量级的AI助手。我虽然不是最大的AI，但我会用最大的努力来回答你的每一个问题，努力提供最好的回答。\n</think>\n\n你好！我是minimind，一个追求极简主义的AI助手。我",
+        "output_tokens": 64,
+        "ended_with_eos": false,
+        "truncated_by_budget": true
+      },
+      {
+        "prompt": "为什么天空是蓝色的？",
+        "rendered_input": "<|im_start|>user\n为什么天空是蓝色的？<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+        "input_ids": [
+          1,
+          832,
+          311,
+          234,
+          4568,
+          993,
+          1273,
+          357,
+          3961,
+          930,
+          296,
+          776,
+          2,
+          234,
+          1,
+          1388,
+          570,
+          811,
+          234,
+          25,
+          234,
+          234,
+          26,
+          234,
+          234
+        ],
+        "continuation": "天空是由多种因素决定的，这些因素共同作用，导致了天空的形成。以下是一些主要的原因：\n\n1. **天空的形成**：天空是由多种天体组成的天体，这些天体在形成过程中会形成不同的天体。例如，白天",
+        "output_tokens": 64,
+        "ended_with_eos": false,
+        "truncated_by_budget": true
+      },
+      {
+        "prompt": "计算 17 加 25。",
+        "rendered_input": "<|im_start|>user\n计算 17 加 25。<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+        "input_ids": [
+          1,
+          832,
+          311,
+          234,
+          895,
+          4515,
+          256,
+          595,
+          3331,
+          302,
+          2,
+          234,
+          1,
+          1388,
+          570,
+          811,
+          234,
+          25,
+          234,
+          234,
+          26,
+          234,
+          234
+        ],
+        "continuation": "要计算17加 25，我们可以按照以下步骤进行：\n\n1. **确定17加25等于多少？**\n2. **确定17加25等于多少？**\n\n例如，17加25等于：\n\n17 + 25 = 35\n\n因此，17加 25等于35",
+        "output_tokens": 64,
+        "ended_with_eos": false,
+        "truncated_by_budget": true
+      }
+    ],
+    "time": 1791093406.241195,
+    "validation_selection_sha256": "e5f2872a99d8f485970b59088e9a333814ddcfba04a6538310dd6ce812b72fcb",
+    "validation_selection": "fixed seeded sample across the full held-out split",
+    "generation_protocol": {
+      "version": 2,
+      "pretrain_prefix": "explicit tokenizer BOS",
+      "sft_prefix": "official chat template",
+      "dtype": "BF16 autocast",
+      "do_sample": false,
+      "temperature": 1.0,
+      "top_p": 1.0,
+      "top_k": 0,
+      "repetition_penalty": 1.0,
+      "max_new_tokens": 64
+    }
+  },
+  "validation_curve": [
+    {
+      "step": 0,
+      "ce": 10.703402231602649
+    },
+    {
+      "step": 500,
+      "ce": 6.103528520552487
+    },
+    {
+      "step": 1000,
+      "ce": 5.578843794578713
+    },
+    {
+      "step": 1500,
+      "ce": 5.221687126286844
+    },
+    {
+      "step": 2000,
+      "ce": 4.88736110727304
+    },
+    {
+      "step": 2500,
+      "ce": 4.565012277829673
+    },
+    {
+      "step": 3000,
+      "ce": 4.269648202079545
+    },
+    {
+      "step": 3500,
+      "ce": 4.001999766945577
+    },
+    {
+      "step": 4000,
+      "ce": 3.7665673775062465
+    },
+    {
+      "step": 4500,
+      "ce": 3.561154229657668
+    },
+    {
+      "step": 5000,
+      "ce": 3.381272081007906
+    },
+    {
+      "step": 5500,
+      "ce": 3.2359157361503974
+    },
+    {
+      "step": 6000,
+      "ce": 3.11472408059077
+    },
+    {
+      "step": 6500,
+      "ce": 3.0222796456034047
+    },
+    {
+      "step": 7000,
+      "ce": 2.9280132647438935
+    },
+    {
+      "step": 7500,
+      "ce": 2.847166908463104
+    },
+    {
+      "step": 8000,
+      "ce": 2.7839903867639966
+    },
+    {
+      "step": 8500,
+      "ce": 2.7212804091947995
+    },
+    {
+      "step": 9000,
+      "ce": 2.6636952487198755
+    },
+    {
+      "step": 9500,
+      "ce": 2.6181527335291412
+    },
+    {
+      "step": 10000,
+      "ce": 2.577110878339735
+    },
+    {
+      "step": 10500,
+      "ce": 2.533172285667761
+    },
+    {
+      "step": 11000,
+      "ce": 2.5013850564426017
+    },
+    {
+      "step": 11500,
+      "ce": 2.468850358799778
+    },
+    {
+      "step": 12000,
+      "ce": 2.4323384483854786
+    },
+    {
+      "step": 12500,
+      "ce": 2.405529199722808
+    },
+    {
+      "step": 13000,
+      "ce": 2.376903364789522
+    },
+    {
+      "step": 13500,
+      "ce": 2.3501950833060827
+    },
+    {
+      "step": 14000,
+      "ce": 2.325806050469668
+    },
+    {
+      "step": 14500,
+      "ce": 2.3042582455782097
+    },
+    {
+      "step": 15000,
+      "ce": 2.2828911798342717
+    },
+    {
+      "step": 15500,
+      "ce": 2.2612260221961202
+    },
+    {
+      "step": 16000,
+      "ce": 2.239360423773705
+    },
+    {
+      "step": 16500,
+      "ce": 2.221476189154559
+    },
+    {
+      "step": 17000,
+      "ce": 2.203526600903889
+    },
+    {
+      "step": 17500,
+      "ce": 2.1866300856153185
+    },
+    {
+      "step": 18000,
+      "ce": 2.168665585068651
+    },
+    {
+      "step": 18500,
+      "ce": 2.154885120579369
+    },
+    {
+      "step": 19000,
+      "ce": 2.1428954645425575
+    },
+    {
+      "step": 19500,
+      "ce": 2.1315147220839044
+    },
+    {
+      "step": 20000,
+      "ce": 2.116105159625587
+    },
+    {
+      "step": 20500,
+      "ce": 2.104456493627849
+    },
+    {
+      "step": 21000,
+      "ce": 2.0955321010174504
+    },
+    {
+      "step": 21500,
+      "ce": 2.082806763349374
+    },
+    {
+      "step": 22000,
+      "ce": 2.070340375039458
+    },
+    {
+      "step": 22500,
+      "ce": 2.061423677229729
+    },
+    {
+      "step": 23000,
+      "ce": 2.0530215774504113
+    },
+    {
+      "step": 23500,
+      "ce": 2.0428284796096454
+    },
+    {
+      "step": 24000,
+      "ce": 2.0311410802189442
+    },
+    {
+      "step": 24500,
+      "ce": 2.0257600245123166
+    },
+    {
+      "step": 25000,
+      "ce": 2.0163877354470174
+    },
+    {
+      "step": 25500,
+      "ce": 2.010266182076269
+    },
+    {
+      "step": 26000,
+      "ce": 1.9997427134025847
+    },
+    {
+      "step": 26500,
+      "ce": 1.9924872717402518
+    },
+    {
+      "step": 27000,
+      "ce": 1.9852516702797207
+    },
+    {
+      "step": 27500,
+      "ce": 1.9790138593497804
+    },
+    {
+      "step": 28000,
+      "ce": 1.972124203241915
+    },
+    {
+      "step": 28500,
+      "ce": 1.967147078119852
+    },
+    {
+      "step": 29000,
+      "ce": 1.9582054555628068
+    },
+    {
+      "step": 29500,
+      "ce": 1.9531427060999191
+    },
+    {
+      "step": 30000,
+      "ce": 1.9458558380815751
+    },
+    {
+      "step": 30500,
+      "ce": 1.9421179721774622
+    },
+    {
+      "step": 31000,
+      "ce": 1.9362273820479436
+    },
+    {
+      "step": 31500,
+      "ce": 1.9318850946986217
+    },
+    {
+      "step": 32000,
+      "ce": 1.9254395646700337
+    },
+    {
+      "step": 32500,
+      "ce": 1.9188387013674904
+    },
+    {
+      "step": 33000,
+      "ce": 1.9124406604035706
+    },
+    {
+      "step": 33500,
+      "ce": 1.909231717012228
+    },
+    {
+      "step": 34000,
+      "ce": 1.902863793221743
+    },
+    {
+      "step": 34500,
+      "ce": 1.9012484278916788
+    },
+    {
+      "step": 35000,
+      "ce": 1.8949905772075009
+    },
+    {
+      "step": 35500,
+      "ce": 1.8898235739580371
+    },
+    {
+      "step": 36000,
+      "ce": 1.8874551863472602
+    },
+    {
+      "step": 36500,
+      "ce": 1.8823956263113963
+    },
+    {
+      "step": 37000,
+      "ce": 1.877914567842679
+    },
+    {
+      "step": 37500,
+      "ce": 1.8749565139342745
+    },
+    {
+      "step": 38000,
+      "ce": 1.8705281775586962
+    },
+    {
+      "step": 38500,
+      "ce": 1.864513930217976
+    },
+    {
+      "step": 39000,
+      "ce": 1.8625872060433677
+    },
+    {
+      "step": 39500,
+      "ce": 1.858081642911968
+    },
+    {
+      "step": 40000,
+      "ce": 1.8557240901856402
+    },
+    {
+      "step": 40500,
+      "ce": 1.8514886339412002
+    },
+    {
+      "step": 41000,
+      "ce": 1.845547324947677
+    },
+    {
+      "step": 41500,
+      "ce": 1.8451592135973
+    },
+    {
+      "step": 42000,
+      "ce": 1.8420440983702455
+    },
+    {
+      "step": 42500,
+      "ce": 1.8373761905055082
+    },
+    {
+      "step": 43000,
+      "ce": 1.8333551042169198
+    },
+    {
+      "step": 43500,
+      "ce": 1.8327717781814992
+    },
+    {
+      "step": 44000,
+      "ce": 1.828104107873782
+    },
+    {
+      "step": 44500,
+      "ce": 1.8237799757644853
+    },
+    {
+      "step": 45000,
+      "ce": 1.8209623453925312
+    },
+    {
+      "step": 45500,
+      "ce": 1.8178744790376
+    },
+    {
+      "step": 46000,
+      "ce": 1.8148515589353666
+    },
+    {
+      "step": 46500,
+      "ce": 1.8116439760099108
+    },
+    {
+      "step": 47000,
+      "ce": 1.8097817210426217
+    },
+    {
+      "step": 47500,
+      "ce": 1.806277530699666
+    },
+    {
+      "step": 48000,
+      "ce": 1.80376652211727
+    },
+    {
+      "step": 48500,
+      "ce": 1.7997729901445296
+    },
+    {
+      "step": 49000,
+      "ce": 1.7992728818848147
+    },
+    {
+      "step": 49500,
+      "ce": 1.795007565068645
+    },
+    {
+      "step": 50000,
+      "ce": 1.7938261165988956
+    },
+    {
+      "step": 50500,
+      "ce": 1.7898409616372386
+    },
+    {
+      "step": 51000,
+      "ce": 1.7874947280648636
+    },
+    {
+      "step": 51500,
+      "ce": 1.7857139775467747
+    },
+    {
+      "step": 52000,
+      "ce": 1.7837002249189706
+    },
+    {
+      "step": 52500,
+      "ce": 1.7804013160510412
+    },
+    {
+      "step": 53000,
+      "ce": 1.7787049910311743
+    },
+    {
+      "step": 53500,
+      "ce": 1.7782615058823068
+    },
+    {
+      "step": 54000,
+      "ce": 1.7759151158715851
+    }
+  ],
+  "validation_selection_sha256s": [
+    "e5f2872a99d8f485970b59088e9a333814ddcfba04a6538310dd6ce812b72fcb"
+  ],
+  "validation_increases": [],
+  "last_500_training_ce": 1.780951116157021,
+  "last_500_grad_norm_median": 2.690829873085022,
+  "last_500_grad_norm_max": 3.3964245319366455,
+  "learning_rate": 5.7595161408131425e-06,
+  "gpu_last_hour": {
+    "memory.used [MiB]": {
+      "median": 7106.0,
+      "max": 7187.0
+    },
+    "utilization.gpu [%]": {
+      "median": 97.0,
+      "max": 99.0
+    },
+    "temperature.gpu": {
+      "median": 70.0,
+      "max": 78.0
+    },
+    "power.draw [W]": {
+      "median": 86.33,
+      "max": 156.12
+    }
+  },
+  "router_summary": {
+    "scope": "First microbatch non-padding token routing at recorded steps; sampled diagnostic, not whole-corpus expert load",
+    "observations": 1080,
+    "latest_step": 53951,
+    "recent_window_steps": [
+      53501,
+      53551,
+      53601,
+      53651,
+      53701,
+      53751,
+      53801,
+      53851,
+      53901,
+      53951
+    ],
+    "layers": {
+      "0": {
+        "recent_sampled_tokens": 77927,
+        "recent_token_weighted_share": [
+          0.3548577514853645,
+          0.16894016194643705,
+          0.19511850834755604,
+          0.2810835782206424
+        ],
+        "latest": {
+          "tokens_per_expert": [
+            3449,
+            1677,
+            1732,
+            2614
+          ],
+          "mean_probability_entropy": 1.366760015487671,
+          "max_expert_share": 0.3641258478164673
+        }
+      },
+      "1": {
+        "recent_sampled_tokens": 77927,
+        "recent_token_weighted_share": [
+          0.23516881183671898,
+          0.20489689067973874,
+          0.4504857109859227,
+          0.10944858649761957
+        ],
+        "latest": {
+          "tokens_per_expert": [
+            2277,
+            1990,
+            4307,
+            898
+          ],
+          "mean_probability_entropy": 1.254887342453003,
+          "max_expert_share": 0.45470860600471497
+        }
+      },
+      "2": {
+        "recent_sampled_tokens": 77927,
+        "recent_token_weighted_share": [
+          0.06033852195003016,
+          0.21010689491447124,
+          0.1020698859188728,
+          0.6274846972166258
+        ],
+        "latest": {
+          "tokens_per_expert": [
+            567,
+            2045,
+            896,
+            5964
+          ],
+          "mean_probability_entropy": 0.9073829054832458,
+          "max_expert_share": 0.6296452879905701
+        }
+      },
+      "3": {
+        "recent_sampled_tokens": 77927,
+        "recent_token_weighted_share": [
+          0.21565054474059056,
+          0.2739358630513173,
+          0.22174599304477266,
+          0.2886675991633195
+        ],
+        "latest": {
+          "tokens_per_expert": [
+            1865,
+            2737,
+            1764,
+            3106
+          ],
+          "mean_probability_entropy": 0.7793204188346863,
+          "max_expert_share": 0.3279138505458832
+        }
+      },
+      "4": {
+        "recent_sampled_tokens": 77927,
+        "recent_token_weighted_share": [
+          0.11803354421445712,
+          0.16538555314589296,
+          0.32453450023740166,
+          0.39204640240224825
+        ],
+        "latest": {
+          "tokens_per_expert": [
+            1050,
+            1732,
+            3075,
+            3615
+          ],
+          "mean_probability_entropy": 0.5127796530723572,
+          "max_expert_share": 0.3816511929035187
+        }
+      },
+      "5": {
+        "recent_sampled_tokens": 77927,
+        "recent_token_weighted_share": [
+          0.22191281584046607,
+          0.25395562513634556,
+          0.20848999704851978,
+          0.3156415619746686
+        ],
+        "latest": {
+          "tokens_per_expert": [
+            2181,
+            2392,
+            2012,
+            2887
+          ],
+          "mean_probability_entropy": 0.590729296207428,
+          "max_expert_share": 0.3047930598258972
+        }
+      },
+      "6": {
+        "recent_sampled_tokens": 77927,
+        "recent_token_weighted_share": [
+          0.11744324816815738,
+          0.42094524362544433,
+          0.007930499056809578,
+          0.4536810091495887
+        ],
+        "latest": {
+          "tokens_per_expert": [
+            1064,
+            4528,
+            32,
+            3848
+          ],
+          "mean_probability_entropy": 0.7867333889007568,
+          "max_expert_share": 0.47804054617881775
+        }
+      },
+      "7": {
+        "recent_sampled_tokens": 77927,
+        "recent_token_weighted_share": [
+          0.02792356949452693,
+          0.173226224543483,
+          0.3079548808500263,
+          0.49089532511196377
+        ],
+        "latest": {
+          "tokens_per_expert": [
+            328,
+            1245,
+            2992,
+            4907
+          ],
+          "mean_probability_entropy": 0.3553909659385681,
+          "max_expert_share": 0.5180532336235046
+        }
+      }
+    }
+  },
+  "latest_completed_save": {
+    "event": "checkpoint",
+    "kind": "periodic",
+    "step": 54000,
+    "epoch": 0,
+    "cursor": 864000,
+    "tokens": 351384796,
+    "bytes": 2467735019,
+    "seconds": 28.93010377883911,
+    "time": 1791093438.3605962
+  },
+  "latest_resume_bytes": 2467735019,
+  "disk_free_gib": 109.11855697631836,
+  "other_models": {
+    "198M": {
+      "status": "paused",
+      "step": 9768,
+      "trained_tokens": 319137649
+    },
+    "Omni": {
+      "checked_live_via_ssh": "2026-10-04T14:05:55+08:00",
+      "pid": 41484,
+      "pid_alive": true,
+      "remote_project": "/new_data/REMOTE_USER/minimind/omni_formal_v1/project",
+      "status": "waiting_dependency",
+      "dependency": "models/01_moe/runs/sft_full_v1",
+      "formal_training_started": false
+    }
+  },
+  "quality_verdict": "Not approved. Three64-token greedy diagnostics show repetitions, thinking-tag leakage, factual and arithmetic errors; no broad capability claim.",
+  "training_config_unchanged": true
+}

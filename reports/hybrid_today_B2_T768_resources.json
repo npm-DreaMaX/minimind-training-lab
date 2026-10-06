@@ -1,0 +1,9 @@
+{
+  "scope": "Resource test only; withdrawn100k subset never entered formal training",
+  "samples_per_second": 10.405258090354709,
+  "median_step_seconds": 1.5209559744980652,
+  "peak_allocated_gib": 4.601809501647949,
+  "steps": 8,
+  "parameter_count": 205623072,
+  "trainable_parameters": 205623072
+}

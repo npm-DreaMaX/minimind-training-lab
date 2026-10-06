@@ -1,0 +1,138 @@
+{
+  "真实更新": {
+    "event": "train",
+    "step": 1,
+    "epoch": 0,
+    "cursor": 16,
+    "loss": 10.657537966035306,
+    "ce_loss": 10.652997970581055,
+    "aux_loss": 0.004539995454251766,
+    "grad_norm": 45.81141662597656,
+    "learning_rate": 1e-05,
+    "valid_tokens": 7818,
+    "tokens_trained": 7818,
+    "nominal_tokens": 12288,
+    "nonpad_input_tokens": 9228,
+    "input_padding_fraction": 0.2490234375,
+    "unsupervised_fraction": 0.36376953125,
+    "step_seconds": 2.1472221199946944,
+    "valid_tokens_per_second": 3640.983355750507,
+    "nominal_tokens_per_second": 5722.742833904097,
+    "cuda_allocated": 2509707264,
+    "cuda_reserved": 3447717888,
+    "cuda_peak_allocated": 3371528192,
+    "wall_seconds": 17.672253131866455,
+    "time": 1791009570.2434764,
+    "router_first_microbatch_nonpadding": {
+      "0": {
+        "tokens_per_expert": [
+          1779,
+          2414,
+          2237,
+          2798
+        ],
+        "mean_probability_entropy": 1.2681772708892822,
+        "max_expert_share": 0.3032076358795166
+      },
+      "1": {
+        "tokens_per_expert": [
+          2075,
+          2751,
+          2212,
+          2190
+        ],
+        "mean_probability_entropy": 1.2502485513687134,
+        "max_expert_share": 0.29811444878578186
+      },
+      "2": {
+        "tokens_per_expert": [
+          2717,
+          1977,
+          3106,
+          1428
+        ],
+        "mean_probability_entropy": 1.040872573852539,
+        "max_expert_share": 0.33658429980278015
+      },
+      "3": {
+        "tokens_per_expert": [
+          2033,
+          2440,
+          2966,
+          1789
+        ],
+        "mean_probability_entropy": 1.096670150756836,
+        "max_expert_share": 0.3214130997657776
+      },
+      "4": {
+        "tokens_per_expert": [
+          2681,
+          2642,
+          1896,
+          2009
+        ],
+        "mean_probability_entropy": 1.058553695678711,
+        "max_expert_share": 0.2905288338661194
+      },
+      "5": {
+        "tokens_per_expert": [
+          2504,
+          2733,
+          2074,
+          1917
+        ],
+        "mean_probability_entropy": 1.006719708442688,
+        "max_expert_share": 0.2961638569831848
+      },
+      "6": {
+        "tokens_per_expert": [
+          2145,
+          1538,
+          2637,
+          2908
+        ],
+        "mean_probability_entropy": 0.9715044498443604,
+        "max_expert_share": 0.3151278793811798
+      },
+      "7": {
+        "tokens_per_expert": [
+          1435,
+          814,
+          2173,
+          4806
+        ],
+        "mean_probability_entropy": 0.679530680179596,
+        "max_expert_share": 0.5208062529563904
+      }
+    }
+  },
+  "此前最近保存的评估": {
+    "path": "models/02_hybrid_moe/runs/hybrid_sft_official_mini_2ep_v1/evaluation/step_0000000.json",
+    "step": 0,
+    "ce": 10.703402231602649,
+    "rows": 512,
+    "generation": [
+      {
+        "prompt": "你好，请介绍一下自己。",
+        "continuation": "�去 I###密健康idF越健康遍在�的流11相自己在一个或服务3您已一表分�的�富</不要0ne8 = part外整���的�的�k���繁ering此�ast富各ed00�的状ing�**"
+      },
+      {
+        "prompt": "为什么天空是蓝色的？",
+        "continuation": " P又是 where.\n的2成功 *imual 的222b（  ra    后 if =w be<|im_end|>"
+      },
+      {
+        "prompt": "计算 17 加 25。",
+        "continuation": " pC由至中权并erase新保持不要'y -对t一汁正常]、一的 O你的的�亲化**、起来之一*于在上上3经验通过按后的补与�经一个长转的�只有�静足\n了�整适合了不��"
+      }
+    ]
+  },
+  "解释": {
+    "loss": "ce_loss + aux_loss",
+    "grad_norm": "裁剪前范数；阈值1",
+    "cursor": "当前epoch已消费的训练记录数；epoch从0开始",
+    "valid_tokens": "本次有效右移标签数，不是B*T",
+    "cuda_peak_allocated": "本次进程启动以来高水位，不是每步重置",
+    "generation": "来自评估保存步，不能假装每一步都有生成样例"
+  },
+  "这是历史重放": true
+}

@@ -1,0 +1,65 @@
+{
+  "pid": 430698,
+  "parameters": 314887938,
+  "trainable_parameters": 314887938,
+  "fingerprints": {
+    "lab/omni_train.py": "c810bf98814769b4ffc95cfc2b1700effcdfa24e1e2632f67003d7a38fcef3ec",
+    "lab/omni_loss.py": "9285f6d02e20f2d75dcc1d55d180dc9b166f432a1906a0ee6c4e29105aa6fb15",
+    "lab/omni_data.py": "d13ee4c54da5af2d1f3acc28ddd65a12bdfbbac0e92a93b21f03f9f7f714e83a",
+    "lab/omni_table.py": "d3c979c368074b5b224416b4f6cc48ee4d9aa04450f32f3085c31ef4d0dc770c",
+    "lab/omni_batch.py": "a119fd5ebd3daf1ed142057205b93d6b2409fd9ed9d32e208a9bfa95219ed81c",
+    "lab/checkpointing.py": "36809f843d94bc728278f4f5141387fc22e73429503f52769bde1349dd9f52ae",
+    "lab/train.py": "811e2a00f12016f78b4202d3fee9e719397e38d76fe197af4943702fa045d40b",
+    "lab/data.py": "b06bda98ac443510b4d92e3ef1c1060d4826b7d41e392595aa6d9003ea363602",
+    "sources/minimind-o/model/model_omni.py": "9a0de2b438b8927a170fe12636e01c00dbfec463ea5c4a81efdfc1cca6a6696c",
+    "sources/minimind-o/model/model_minimind.py": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+    "sources/minimind-o/dataset/omni_dataset.py": "06c305bf010dc47dcbe812b0b01316563e10537c32b61efdfa37ad7065fdff56",
+    "sources/minimind-o/trainer/train_sft_omni.py": "886f12d2024ad3ec7c8cf5526af487b693fd34fc26414cf6a40a07b8ad41b7c1"
+  },
+  "torch": "2.11.0+cu128",
+  "device": "cuda",
+  "train_rows": 16,
+  "val_rows": 3,
+  "total_steps": 3,
+  "loss_reduction": "Official per-microbatch text CE plus mean of eight STOP-weighted audio CEs plus aux; accumulated microbatches equally weighted",
+  "purpose": "preflight",
+  "corpus_audit": {
+    "rows": 3702,
+    "train_rows": 3699,
+    "val_rows": 3,
+    "counts": {
+      "missing_user": 0,
+      "missing_assistant": 0,
+      "answer_turn_count_mismatch": 0,
+      "rows_with_answer_audio": 3702,
+      "rows_with_question_audio": 0,
+      "rows_with_image": 0,
+      "rows_with_speaker": 0
+    },
+    "full_answer_codes": 6317160,
+    "full_answer_hours": 17.547666666666665,
+    "answer_frames_percentiles": {
+      "50": 248.0,
+      "90": 306.0,
+      "95": 316.0,
+      "99": 339.9899999999998,
+      "100": 483.0
+    },
+    "last_answer_frames_percentiles": {
+      "50": 248.0,
+      "90": 306.0,
+      "95": 316.0,
+      "99": 339.9899999999998,
+      "100": 483.0
+    },
+    "unique_conversation_hashes": 3702,
+    "extra_exact_conversation_duplicates": 0,
+    "max_multiplicity": 1,
+    "split": "Same canonical JSON and SHA256 first uint64 LE modulo1000 <1 as text SFT; shared conversations are held out together",
+    "limitations": "Exact conversation grouping only; no claim of semantic decontamination or unseen answer knowledge",
+    "corpus_index_sha256": "5983ff8bfd41877d1e21fffb449fdb32157fb2687ebb714a3f5da0435530b1a9",
+    "script_sha256": "68a3141df1285871e68b38f6a5904d2529d081377e8612e960fd1a3e345a085b",
+    "elapsed_s": 0.5335023403167725
+  },
+  "time": 1790979034.1378553
+}

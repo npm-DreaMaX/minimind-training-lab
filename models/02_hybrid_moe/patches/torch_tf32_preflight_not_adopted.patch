@@ -1,0 +1,65 @@
+diff --git a/lab/train.py b/lab/train.py
+index 1e8033d..5be1870 100644
+--- a/lab/train.py
++++ b/lab/train.py
+@@ -50,7 +50,9 @@ def main():
+         raise RuntimeError('Resume config mismatch; existing evidence was not overwritten')
+     signal.signal(signal.SIGTERM,stop_handler); signal.signal(signal.SIGINT,stop_handler)
+     torch.set_num_threads(cfg.get('cpu_threads',4)); random.seed(cfg['seed']); np.random.seed(cfg['seed']); torch.manual_seed(cfg['seed'])
+-    torch.backends.cuda.matmul.allow_tf32=False
++    # Opt-in only after independent output/gradient and full-model checks.
++    # Default preserves all earlier recipes; FLA has a separate precision flag.
++    torch.backends.cuda.matmul.allow_tf32=cfg.get('torch_allow_tf32',False)
+     if cfg.get('deterministic',False):
+         os.environ['CUBLAS_WORKSPACE_CONFIG']=':4096:8'; torch.use_deterministic_algorithms(True)
+     if cfg.get('allocator_gib'):
+@@ -100,6 +102,7 @@ def main():
+                 'trainable_parameters':sum(p.numel() for p in params),'torch':torch.__version__,'cuda':torch.version.cuda,
+                 'gpu':torch.cuda.get_device_name(0),'train_rows':len(train),'validation_rows':len(val),
+                 'triton_f32_default':os.environ.get('TRITON_F32_DEFAULT','unset (backend default)'),
++                'torch_allow_tf32':torch.backends.cuda.matmul.allow_tf32,
+                 'filtered_zero_target_train_rows':train.original_rows-len(train),
+                 'total_steps':total_steps,'effective_batch_samples':effective,'started_unix':time.time(),'pid':os.getpid(),
+                 'git_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),
+diff --git a/tools/evaluate_text_probes.py b/tools/evaluate_text_probes.py
+index 193ae0e..89dc517 100644
+--- a/tools/evaluate_text_probes.py
++++ b/tools/evaluate_text_probes.py
+@@ -32,7 +32,7 @@ def main():
+         lock=(ROOT/'runs/local_gpu.lock').open('a'); fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+     out.mkdir(parents=True); cfg=json.loads((ROOT/a.config).read_text()); suite=json.loads((ROOT/a.suite).read_text())
+     cases=suite[a.stage][:a.limit] if a.limit else suite[a.stage]
+-    torch.set_num_threads(2 if a.device=='cpu' else 4); torch.manual_seed(20261008); torch.backends.cuda.matmul.allow_tf32=False
++    torch.set_num_threads(2 if a.device=='cpu' else 4); torch.manual_seed(20261008); torch.backends.cuda.matmul.allow_tf32=cfg.get('torch_allow_tf32',False)
+     model_path=ROOT/cfg['model_file']; spec=importlib.util.spec_from_file_location('evaluated_model',model_path)
+     module=importlib.util.module_from_spec(spec); spec.loader.exec_module(module)
+     model=module.MiniMindForCausalLM(module.MiniMindConfig(**cfg['model']))
+@@ -41,6 +41,7 @@ def main():
+     if weight_sha!=sha(weight): raise RuntimeError('Weights changed during load')
+     model=model.to(a.device).eval(); tokenizer=AutoTokenizer.from_pretrained(ROOT/'upstream/model')
+     protocol=dict(stage=a.stage,device=a.device,parameter_dtype='float32',autocast='bfloat16' if a.device=='cuda' else 'disabled',
++                  torch_allow_tf32=torch.backends.cuda.matmul.allow_tf32,
+                   pretrain_prefix='explicit tokenizer BOS',sft_prefix='official chat template with generation prompt',
+                   do_sample=False,temperature=1.,top_p=1.,top_k=0,repetition_penalty=1.,use_cache=True,generation_budget_floor=a.budget_floor)
+     records=[]
+diff --git a/tools/hardware_smoke.py b/tools/hardware_smoke.py
+index 0acf7cb..40e991c 100644
+--- a/tools/hardware_smoke.py
++++ b/tools/hardware_smoke.py
+@@ -108,6 +108,7 @@ def main():
+     p.add_argument("--linear-precision",choices=["float32","bfloat16"],default="float32")
+     p.add_argument("--triton-precision",choices=["ieee","tf32","tf32x3"])
+     p.add_argument("--allocator-gib",type=float)
++    p.add_argument("--allow-tf32",action="store_true",help="Opt-in PyTorch FP32 matmul acceleration; independent from Triton precision")
+     args = p.parse_args()
+     if args.triton_precision: os.environ['TRITON_F32_DEFAULT']=args.triton_precision
+     root = Path(__file__).resolve().parents[1]
+@@ -134,7 +135,7 @@ def main():
+             torch.use_deterministic_algorithms(True)
+         torch.manual_seed(20261003)
+         torch.cuda.manual_seed_all(20261003)
+-        torch.backends.cuda.matmul.allow_tf32 = False
++        torch.backends.cuda.matmul.allow_tf32 = args.allow_tf32
+         torch.backends.cudnn.allow_tf32 = False
+         if not torch.cuda.is_available() or not torch.cuda.is_bf16_supported():
+             raise RuntimeError("CUDA/BF16 unavailable")

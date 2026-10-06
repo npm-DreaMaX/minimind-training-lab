@@ -1,0 +1,137 @@
+{
+  "checked_at": "2026-10-06T18:11:44.435712+08:00",
+  "no_optimizer_updates": true,
+  "local_links": {
+    "documents": 16,
+    "checked": 164,
+    "broken": [],
+    "scope": "New handbook and edited navigation; existence checked, anchors not validated."
+  },
+  "csv_rows": {
+    "Checkpoint记录.csv": 229,
+    "全部训练更新.csv": 113082,
+    "源码地图.csv": 87,
+    "验证记录.csv": 229
+  },
+  "budget": {
+    "training_rows": 113082,
+    "tokens": 735833934,
+    "fixed_validation_points": 228,
+    "evaluation_records": 229,
+    "saved_evaluation_files": 228,
+    "gpu_samples": 88215,
+    "checkpoint_records": 229,
+    "metrics_sha256": "59d0a119c8d59c1344cfe60b39b65483a6c6e8d1041fff491ccc57f81a043e49",
+    "script_sha256": "522728866d1509a042c2b19f5c52fc856ac6c40d2cbe768192b887809fe29829",
+    "note": "Plots are explanatory exports; original logs and all numerical rows retained."
+  },
+  "pngs": [
+    {
+      "path": "学习手册/图表/01_模型和训练数据流.png",
+      "size": [
+        1746,
+        1212
+      ],
+      "sha256": "35a8cff740826853afb4abe154d2a96439d47c00a00b1ac943639fe1ba015c52"
+    },
+    {
+      "path": "学习手册/图表/02_完整训练曲线.png",
+      "size": [
+        2399,
+        1549
+      ],
+      "sha256": "d11bbef5839cade8704d9597450b80a09e38544a3d16be0a764f072727f2d9d0"
+    },
+    {
+      "path": "学习手册/图表/03_GPU资源曲线.png",
+      "size": [
+        2399,
+        1379
+      ],
+      "sha256": "25b542e83c8800c251bafeb1f7e4461ea9d26821ed5aebb252c32958c93034c5"
+    },
+    {
+      "path": "学习手册/图表/04_验证对照与显存账本.png",
+      "size": [
+        2229,
+        869
+      ],
+      "sha256": "80bbd52b5b3388c174909ba7882e6f76c9e1dd94b28d201c906441dafd9c2bd4"
+    }
+  ],
+  "visual_review": "All four PNGs inspected by the assistant; labels and scales readable.",
+  "exercises": {
+    "full_205M_CPU_trace": "passed",
+    "manual_CE_matches": true,
+    "CE_only_prefix_positions_with_gradient": 23,
+    "CPU_inference": "passed; output truncated at its declared 32-token limit",
+    "summary_sample_replay_outputs": 7,
+    "scope": "No extra training or final GPU resume-equivalence test."
+  },
+  "formal_weight_checks": [
+    {
+      "path": "models/02_hybrid_moe/deliveries/20261006_final_integrity_v1/training_resume.pt",
+      "bytes": 2467735019,
+      "sha256": "6961158836bacb7264352c49a33fdf04c6f1ceff7c4756e3fc2e6bc1272a0742",
+      "sha256_matched": true
+    },
+    {
+      "path": "models/02_hybrid_moe/runs/hybrid_sft_official_mini_2ep_v1/checkpoints/best_validation.pth",
+      "bytes": 421139037,
+      "sha256": "1fc422dfac3b784e319676e251a58fdb1eb0eea83def7936f6be4578a4cac896",
+      "sha256_matched": true
+    },
+    {
+      "path": "models/02_hybrid_moe/runs/hybrid_sft_official_mini_2ep_v1/checkpoints/model_step_0113082.pth",
+      "bytes": 421139622,
+      "sha256": "3882e3330d0bf4fafe44eae1e47684ae58a6d0dbe5cb28d1756a100d4ae1e6b4",
+      "sha256_matched": true
+    },
+    {
+      "path": "models/01_moe/deliveries/20261006_user_stop/training_resume.pt",
+      "sha256": "3f8a9bd6ee06c7e56b20ded6bb7042ee1ca95c10fd38e95ad6be4058c4bc6620",
+      "bytes": 2381236747,
+      "sha256_matched": true
+    }
+  ],
+  "cleanup": {
+    "deleted_files": 67,
+    "remaining_inventory_files_preserved": 211,
+    "before_inventory_files": 268,
+    "dataset_check_scope": "All inventoried raw/cache/processed/reference/frozen files retain size/inode; not a new full dataset SHA pass.",
+    "result": {
+      "completed_at": "2026-10-06T18:01:07.929374+08:00",
+      "deleted_files": 67,
+      "logical_bytes": 65785650643,
+      "last_link_logical_bytes": 65785650643,
+      "free_bytes_before": 106650861568,
+      "free_bytes_after": 172436492288,
+      "protected": "All formal/transfer/delivery checkpoints, failed runs, resume-equivalence runs, named representative preflights, all raw/processed/reference/frozen data and source/log/evaluation files.",
+      "no_training_started": true
+    }
+  },
+  "formal_model_source_unchanged": true,
+  "official_checkout_status": "",
+  "environment_known_warning": {
+    "command": [
+      "/home/USER/.venvs/minimind-lab/bin/python",
+      "-m",
+      "pip",
+      "check"
+    ],
+    "exit_code": 1,
+    "stdout": "pygobject 3.42.1 requires pycairo, which is not installed.",
+    "stderr": ""
+  },
+  "compute_processes_at_environment_check": {
+    "command": [
+      "nvidia-smi",
+      "--query-compute-apps=pid,process_name,used_memory",
+      "--format=csv"
+    ],
+    "exit_code": 0,
+    "stdout": "pid, process_name, used_gpu_memory [MiB]",
+    "stderr": ""
+  },
+  "passed": true
+}

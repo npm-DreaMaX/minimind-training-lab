@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "scope": "Small prospective learning probes, not a standard benchmark or evidence of unseen knowledge. Arithmetic scoring measures exact answer-format compliance as well as correctness.",
+  "pretrain": [
+    {"id": "applications", "prompt": "人工智能的主要应用包括", "kind": "qualitative", "max_new_tokens": 96},
+    {"id": "capital", "prompt": "中国的首都是", "kind": "qualitative", "max_new_tokens": 48},
+    {"id": "water", "prompt": "水的三种状态是", "kind": "qualitative", "max_new_tokens": 64},
+    {"id": "story", "prompt": "小猫在窗边发现了一片落叶，它", "kind": "qualitative", "max_new_tokens": 96},
+    {"id": "python", "prompt": "Python 中列表与元组的区别是", "kind": "qualitative", "max_new_tokens": 96},
+    {"id": "english", "prompt": "Photosynthesis is the process by which", "kind": "qualitative", "max_new_tokens": 96}
+  ],
+  "sft": [
+    {"id": "add", "prompt": "计算17加25，只输出数字结果。", "kind": "exact", "expected": "42", "max_new_tokens": 32},
+    {"id": "subtract", "prompt": "计算83减47，只输出数字结果。", "kind": "exact", "expected": "36", "max_new_tokens": 32},
+    {"id": "multiply", "prompt": "计算12乘7，只输出数字结果。", "kind": "exact", "expected": "84", "max_new_tokens": 32},
+    {"id": "divide", "prompt": "计算144除以12，只输出数字结果。", "kind": "exact", "expected": "12", "max_new_tokens": 32},
+    {"id": "priority", "prompt": "计算3加4乘5，只输出数字结果。", "kind": "exact", "expected": "23", "max_new_tokens": 32},
+    {"id": "decimal", "prompt": "计算1.5加2.25，只输出数字结果。", "kind": "exact", "expected": "3.75", "max_new_tokens": 32},
+    {"id": "word_problem", "prompt": "盒里有18支笔，平均分给3个人，每人几支？只输出数字。", "kind": "exact", "expected": "6", "max_new_tokens": 32},
+    {"id": "json", "prompt": "只返回一个JSON对象，包含name和count两个字段，name的值为苹果，count的值为3。不要添加解释。", "kind": "json", "expected": {"name": "苹果", "count": 3}, "max_new_tokens": 64},
+    {"id": "list", "prompt": "只返回JSON数组，元素按顺序为红、绿、蓝，不要添加其他文字。", "kind": "json", "expected": ["红", "绿", "蓝"], "max_new_tokens": 64},
+    {"id": "hello", "prompt": "你好，请简短介绍一下自己。", "kind": "qualitative", "max_new_tokens": 128},
+    {"id": "sky", "prompt": "为什么晴天的天空通常是蓝色的？请给小学生解释。", "kind": "qualitative", "max_new_tokens": 128},
+    {"id": "summary", "prompt": "把这段话概括成一句话：小林每天骑车上学。今天下大雨，他改乘公共汽车，并提前十分钟到校。", "kind": "qualitative", "max_new_tokens": 96},
+    {"id": "python", "prompt": "写一个Python函数，返回整数列表中所有偶数的和。给出一个调用例子。", "kind": "qualitative", "max_new_tokens": 160},
+    {"id": "english", "prompt": "Explain the difference between a list and a tuple in Python in two short sentences.", "kind": "qualitative", "max_new_tokens": 128},
+    {"id": "reasoning", "prompt": "甲比乙高，乙比丙高。谁最高？说明理由。", "kind": "qualitative", "max_new_tokens": 96},
+    {"id": "multi_turn", "messages": [{"role": "user", "content": "请记住：我的猫叫团子。"}, {"role": "assistant", "content": "好的，你的猫叫团子。"}, {"role": "user", "content": "我的猫叫什么名字？只回答名字。"}], "kind": "exact", "expected": "团子", "max_new_tokens": 32}
+  ]
+}

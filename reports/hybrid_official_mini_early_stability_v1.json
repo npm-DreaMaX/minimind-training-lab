@@ -1,0 +1,23 @@
+{
+  "time": 1791010321.8835,
+  "run": "models/02_hybrid_moe/runs/hybrid_sft_official_mini_2ep_v1",
+  "actual_steps": 466,
+  "actual_tokens": 3028920,
+  "expected_steps": 113082,
+  "expected_tokens": 735833934,
+  "last100_median_step_s": 1.555126396502601,
+  "samples_per_s": 10.288552773577232,
+  "update_only_remaining_hours": 48.647809519038034,
+  "peak_allocated_gib": 4.50244140625,
+  "all_observed_losses_and_grad_finite": true,
+  "gpu_keys": [
+    "timestamp",
+    " index",
+    " memory.used [MiB]",
+    " utilization.gpu [%]",
+    " temperature.gpu",
+    " power.draw [W]",
+    " power.limit [W]"
+  ],
+  "scope": "Ongoing initial stability observation, not finished training or long-run guarantee"
+}

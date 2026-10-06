@@ -1,0 +1,5 @@
+{
+  "original_cli_error": "BlockingIOError: global watcher lock also blocked a one-off plot for a different run",
+  "repair": "Global lock only for watcher; per-run rendering locks; keep full-split validation separate from fixed-subset curve",
+  "verification": "Actual three-step315M preflight PNG rendered and inspected; formal watcher uses the same renderer; no model/training changes"
+}

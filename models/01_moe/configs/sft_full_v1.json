@@ -1,0 +1,36 @@
+{
+  "run_dir": "models/01_moe/runs/sft_full_v1",
+  "model_file": "upstream/model/model_minimind.py",
+  "model": {
+    "hidden_size": 768,
+    "num_hidden_layers": 8,
+    "use_moe": true
+  },
+  "init_weight": "models/01_moe/runs/pretrain_full_v1/checkpoints/best_validation.pth",
+  "strict_init": true,
+  "corpus": "data/processed/sft_t2t_full_v1",
+  "stage": "sft",
+  "seq_len": 1536,
+  "batch_size": 2,
+  "accumulation_steps": 8,
+  "epochs": 1,
+  "learning_rate": 1e-05,
+  "warmup_steps": 100,
+  "seed": 20261004,
+  "num_workers": 2,
+  "cpu_threads": 4,
+  "deterministic": false,
+  "validation_samples": 512,
+  "eval_interval": 2000,
+  "save_interval": 2000,
+  "log_interval": 100,
+  "milestone_interval": 20000,
+  "early_checkpoint_steps": [
+    10,
+    100
+  ],
+  "plot_on_save": true,
+  "recipe_status": "Full corpus and uniform random full-cache B2 T1536 accumulation8 preflight passed; await completed pretrain. Allocator and memory cap match measured preflight. One full epoch remains planned.",
+  "allocator_conf": "expandable_segments:True",
+  "allocator_gib": 5.3
+}

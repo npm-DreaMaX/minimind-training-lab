@@ -1,0 +1,53 @@
+{
+  "step": 0,
+  "final": false,
+  "validation_rows": 16,
+  "text_ce": 4.073336601257324,
+  "audio_codebook_ce": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "audio_ce": 0.0,
+  "selection_score": 4.073336601257324,
+  "text_labels": 2827,
+  "audio_labels": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "stop_count": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "stop_correct": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "time": 1790987538.3759818,
+  "per_record_metrics": "models/03_omni_moe/runs/real_i2t_proj_B16_grouped_role_v2/evaluation/step_0000000_subset_rows.jsonl",
+  "validation_raw_rows_sha256": "e728997137d30fbda2d178801165900ec12e5ab26bcd2bf8c304e776102b4fb9",
+  "protocol": "fixed per-record augmented inputs; scheduled_sampling=0; CE globally token-weighted within each head; no aux in selection score"
+}

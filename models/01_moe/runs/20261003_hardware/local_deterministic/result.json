@@ -1,0 +1,120 @@
+{
+  "status": "passed",
+  "args": {
+    "model_file": "upstream/model/model_minimind.py",
+    "out": "models/01_moe/runs/20261003_hardware/local_deterministic",
+    "physical_gpu": "0",
+    "batch_size": 1,
+    "seq_len": 512,
+    "warmup": 1,
+    "steps": 2,
+    "resume_check": true,
+    "deterministic": true
+  },
+  "pid": 306469,
+  "hostname": "localhost",
+  "python": "3.10.12",
+  "torch": "2.11.0+cu128",
+  "transformers": "4.57.6",
+  "cuda_build": "12.8",
+  "started_unix": 1790960617.740485,
+  "model_sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+  "scope": "Synthetic fixed tokens; full 198M architecture; tiny training verification, not learned quality",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "capability": [
+    8,
+    9
+  ],
+  "memory_before_model": {
+    "allocated_bytes": 0,
+    "reserved_bytes": 0,
+    "device_free_bytes": 7440695296,
+    "device_total_bytes": 8585216000,
+    "peak_allocated_bytes": 0,
+    "peak_reserved_bytes": 0
+  },
+  "parameter_count": 198416640,
+  "parameter_bytes": 793666560,
+  "parameter_dtype": "torch.float32",
+  "initial_parameter_probe_sha256": "9044618a7bb051d210d381258ae408b14c870fd7655ac5269cdeae41a127261a",
+  "input_sha256": "352e549925283ef2757f13591dcffc628aea7183a6e5b5d83f72ee674684f298",
+  "input_shape": [
+    1,
+    512
+  ],
+  "labels_shape": [
+    1,
+    512
+  ],
+  "supervised_tokens_per_step": 511,
+  "optimizer": {
+    "name": "AdamW",
+    "lr": 0.0001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "weight_decay": 0.01,
+    "foreach": false
+  },
+  "memory_after_steps": {
+    "allocated_bytes": 3275153408,
+    "reserved_bytes": 4393533440,
+    "device_free_bytes": 2956984320,
+    "device_total_bytes": 8585216000,
+    "peak_allocated_bytes": 3323453440,
+    "peak_reserved_bytes": 4393533440
+  },
+  "gradient_bytes": 793666560,
+  "optimizer_tensor_bytes": 1587333800,
+  "seconds_per_step_median": 0.16725817050610203,
+  "input_tokens_per_second": 3061.1359579669734,
+  "supervised_tokens_per_second": 3055.157176799069,
+  "timed_steps": 2,
+  "forward_backward_optimizer_checks": "passed",
+  "resume": {
+    "checks": {
+      "restored_model_bitwise_equal": true,
+      "restored_optimizer_bitwise_equal": true,
+      "next_loss_equal": true,
+      "all_model_tensors_bitwise_equal": true,
+      "all_optimizer_tensors_bitwise_equal": true
+    },
+    "passed": true,
+    "checkpoint_bytes": 2381229339,
+    "save_seconds": 21.867009813999175,
+    "expected_next": {
+      "seconds": 0.5525965820124839,
+      "ce_loss": 6.574241638183594,
+      "aux_loss": 0.004808257799595594,
+      "loss": 6.579050064086914,
+      "grad_norm": 13.915918350219727,
+      "router_grad_norm": 0.038732971996068954,
+      "parameter_sample_max_update": 0.00010058190673589706,
+      "logits_shape": [
+        1,
+        512,
+        6400
+      ],
+      "logits_dtype": "torch.bfloat16"
+    },
+    "resumed_next": {
+      "seconds": 0.24597617400286254,
+      "ce_loss": 6.574241638183594,
+      "aux_loss": 0.004808257799595594,
+      "loss": 6.579050064086914,
+      "grad_norm": 13.915918350219727,
+      "router_grad_norm": 0.038732971996068954,
+      "parameter_sample_max_update": 0.00010058190673589706,
+      "logits_shape": [
+        1,
+        512,
+        6400
+      ],
+      "logits_dtype": "torch.bfloat16"
+    },
+    "model_sha256": "932bd9c7e0f0a770f2580aa92165f1a5e42e5b1b9e95b3f1c99987b0e89ec890",
+    "optimizer_sha256": "0accbb6581856d29970da012e7101038d13c5c474bcb4f58cb029332beba8fbc"
+  },
+  "finished_unix": 1790960666.8537936
+}

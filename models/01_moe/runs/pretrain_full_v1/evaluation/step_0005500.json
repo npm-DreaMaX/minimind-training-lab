@@ -1,0 +1,73 @@
+{
+  "step": 5500,
+  "epoch": 0,
+  "trained_tokens": 179744937,
+  "validation_ce": 2.1753722222644014,
+  "validation_tokens": 123368,
+  "validation_rows": 512,
+  "final": false,
+  "generation": [
+    {
+      "prompt": "人工智能的主要应用包括",
+      "rendered_input": "<|im_start|>人工智能的主要应用包括",
+      "input_ids": [
+        1,
+        2225,
+        3669,
+        908,
+        898
+      ],
+      "continuation": "自然语言处理、计算机视觉、语音识别、推荐系统、金融风险管理、医疗保健、金融风险管理、智能家居、自动驾驶、智能客服、智能客服、智能客服、智能客服、智能客服、智能客服、智能客服、智能客服、智能客服、智能客服、智能客服、智能客服、",
+      "output_tokens": 64,
+      "ended_with_eos": false,
+      "truncated_by_budget": true
+    },
+    {
+      "prompt": "中国的首都是",
+      "rendered_input": "<|im_start|>中国的首都是",
+      "input_ids": [
+        1,
+        1405,
+        296,
+        1408,
+        2462
+      ],
+      "continuation": "哪里？中国的首都是北京。北京是中国的首都，位于中国的东部沿海，是中国的首都，位于中国的东北部，是中国的首都。北京的首都是北京，是中国的首都，位于中国的东部沿海，是中国的首都，",
+      "output_tokens": 64,
+      "ended_with_eos": false,
+      "truncated_by_budget": true
+    },
+    {
+      "prompt": "水的三种状态是",
+      "rendered_input": "<|im_start|>水的三种状态是",
+      "input_ids": [
+        1,
+        952,
+        296,
+        1441,
+        604,
+        2341,
+        357
+      ],
+      "continuation": "____水的三种状态是____水的三种状态是____水的三种状态是____水的三种状态是____水的三种状态是水的三种状态是水的三种状态是水的三种状态是水的三种状态是水的三种状态",
+      "output_tokens": 64,
+      "ended_with_eos": false,
+      "truncated_by_budget": true
+    }
+  ],
+  "time": 1790991162.4935884,
+  "validation_selection_sha256": "35a38ff957d0d37bf7a0ef4bd07dbd57a42a599826796aaa853fd82c2b8abbc7",
+  "validation_selection": "fixed seeded sample across the full held-out split",
+  "generation_protocol": {
+    "version": 2,
+    "pretrain_prefix": "explicit tokenizer BOS",
+    "sft_prefix": "official chat template",
+    "dtype": "BF16 autocast",
+    "do_sample": false,
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "top_k": 0,
+    "repetition_penalty": 1.0,
+    "max_new_tokens": 64
+  }
+}

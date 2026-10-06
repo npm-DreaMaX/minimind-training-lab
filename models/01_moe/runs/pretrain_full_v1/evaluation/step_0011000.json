@@ -1,0 +1,73 @@
+{
+  "step": 11000,
+  "epoch": 0,
+  "trained_tokens": 359362067,
+  "validation_ce": 2.016272935957136,
+  "validation_tokens": 123368,
+  "validation_rows": 512,
+  "final": false,
+  "generation": [
+    {
+      "prompt": "人工智能的主要应用包括",
+      "rendered_input": "<|im_start|>人工智能的主要应用包括",
+      "input_ids": [
+        1,
+        2225,
+        3669,
+        908,
+        898
+      ],
+      "continuation": "自然语言处理、计算机视觉、机器学习、深度学习、计算机视觉等。人工智能在自然语言处理、计算机视觉、机器学习、深度学习、计算机视觉等领域得到广泛应用。<|im_end|>",
+      "output_tokens": 32,
+      "ended_with_eos": true,
+      "truncated_by_budget": false
+    },
+    {
+      "prompt": "中国的首都是",
+      "rendered_input": "<|im_start|>中国的首都是",
+      "input_ids": [
+        1,
+        1405,
+        296,
+        1408,
+        2462
+      ],
+      "continuation": "北京，请问北京的首都是哪里？北京的首都是北京。<|im_end|>",
+      "output_tokens": 17,
+      "ended_with_eos": true,
+      "truncated_by_budget": false
+    },
+    {
+      "prompt": "水的三种状态是",
+      "rendered_input": "<|im_start|>水的三种状态是",
+      "input_ids": [
+        1,
+        952,
+        296,
+        1441,
+        604,
+        2341,
+        357
+      ],
+      "continuation": "：水的三种状态是：水的三种状态是：水的三种状态是：水的三种状态是：水的三种状态是：水的三种状态是：水的三种状态是：水的三种状态是：水的三种状态是：",
+      "output_tokens": 64,
+      "ended_with_eos": false,
+      "truncated_by_budget": true
+    }
+  ],
+  "time": 1791271644.2386324,
+  "validation_selection_sha256": "35a38ff957d0d37bf7a0ef4bd07dbd57a42a599826796aaa853fd82c2b8abbc7",
+  "validation_selection": "fixed seeded sample across the full held-out split",
+  "generation_protocol": {
+    "version": 2,
+    "pretrain_prefix": "explicit tokenizer BOS",
+    "sft_prefix": "official chat template",
+    "dtype": "BF16 autocast",
+    "do_sample": false,
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "top_k": 0,
+    "repetition_penalty": 1.0,
+    "max_new_tokens": 64
+  }
+}

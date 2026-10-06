@@ -1,0 +1,59 @@
+{
+  "scope": "Frozen encoder only, real repository evaluation images, CPU; no multimodal LLM trained",
+  "parameters": 94552320,
+  "loading_info": {
+    "missing_keys": [],
+    "unexpected_keys": [],
+    "mismatched_keys": [],
+    "error_msgs": []
+  },
+  "load_seconds": 0.9341921806335449,
+  "threads": 4,
+  "samples": [
+    {
+      "file": "sources/minimind-o/dataset/eval_omni/image-01-orange-cat-moon-desk.jpg",
+      "input_shape": [
+        1,
+        3,
+        256,
+        256
+      ],
+      "output_shape": [
+        1,
+        64,
+        768
+      ],
+      "seconds": 0.1186359890125459
+    },
+    {
+      "file": "sources/minimind-o/dataset/eval_omni/image-02-fruit-basket-apples-bananas-oranges.jpg",
+      "input_shape": [
+        1,
+        3,
+        256,
+        256
+      ],
+      "output_shape": [
+        1,
+        64,
+        768
+      ],
+      "seconds": 0.07458216899249237
+    },
+    {
+      "file": "sources/minimind-o/dataset/eval_omni/image-03-panda-holding-hello-sign.jpg",
+      "input_shape": [
+        1,
+        3,
+        256,
+        256
+      ],
+      "output_shape": [
+        1,
+        64,
+        768
+      ],
+      "seconds": 0.08349223701225128
+    }
+  ]
+}

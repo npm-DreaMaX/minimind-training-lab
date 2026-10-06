@@ -1,0 +1,155 @@
+{
+  "scope": "Random preflight checkpoints retained remotely; inventory only, not a SHA verification",
+  "files": [
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/formal_runtime_preflight_v1/t2a_B16_acc8/learning/batch_step_0000000_micro_000_000.pt",
+      "bytes": 3538627,
+      "mtime_ns": 1791001837141488117
+    },
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/formal_runtime_preflight_v1/t2a_B16_acc8/learning/batch_step_0000000_micro_001_001.pt",
+      "bytes": 3538627,
+      "mtime_ns": 1791001838881471554
+    },
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/formal_runtime_preflight_v1/t2a_B16_acc8/checkpoints/best_validation.pth",
+      "bytes": 639710704,
+      "mtime_ns": 1791001880653077011
+    },
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/formal_runtime_preflight_v1/t2a_B16_acc8/checkpoints/model_step_0000003.pth",
+      "bytes": 639711725,
+      "mtime_ns": 1791001888821000528
+    },
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/formal_runtime_preflight_v1/t2a_B16_acc8/checkpoints/latest_resume.pt",
+      "bytes": 3779083390,
+      "mtime_ns": 1791001887737010667
+    },
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/formal_runtime_preflight_v1/input_modes/t2a_B16_recompute/learning/batch_step_0000001_micro_000_001.pt",
+      "bytes": 3538627,
+      "mtime_ns": 1791001912184782900
+    },
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/formal_runtime_preflight_v1/input_modes/t2a_B16_recompute/learning/batch_step_0000000_micro_000_000.pt",
+      "bytes": 3538627,
+      "mtime_ns": 1791001910268800684
+    },
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/formal_runtime_preflight_v1/input_modes/t2a_B16_recompute/checkpoints/best_validation.pth",
+      "bytes": 639710704,
+      "mtime_ns": 1791001941884508611
+    },
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/formal_runtime_preflight_v1/input_modes/t2a_B16_recompute/checkpoints/model_step_0000012.pth",
+      "bytes": 639711725,
+      "mtime_ns": 1791001959120350584
+    },
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/formal_runtime_preflight_v1/input_modes/t2a_B16_recompute/checkpoints/latest_resume.pt",
+      "bytes": 3779083390,
+      "mtime_ns": 1791001949560438132
+    },
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/formal_runtime_preflight_v1/input_modes/i2t_vision_proj/learning/batch_step_0000001_micro_000_001.pt",
+      "bytes": 1769155,
+      "mtime_ns": 1791002151618635180
+    },
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/formal_runtime_preflight_v1/input_modes/i2t_vision_proj/learning/batch_step_0000000_micro_000_000.pt",
+      "bytes": 1769155,
+      "mtime_ns": 1791002150586644164
+    },
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/formal_runtime_preflight_v1/input_modes/i2t_vision_proj/checkpoints/best_validation.pth",
+      "bytes": 639710704,
+      "mtime_ns": 1791002154930606357
+    },
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/formal_runtime_preflight_v1/input_modes/i2t_vision_proj/checkpoints/model_step_0000003.pth",
+      "bytes": 639711725,
+      "mtime_ns": 1791002159518566466
+    },
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/formal_runtime_preflight_v1/input_modes/i2t_vision_proj/checkpoints/latest_resume.pt",
+      "bytes": 1269172472,
+      "mtime_ns": 1791002158546574912
+    },
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/formal_runtime_preflight_v1/input_modes/a2a_all_long/learning/batch_step_0000000_micro_000_000.pt",
+      "bytes": 886467,
+      "mtime_ns": 1791002004959934193
+    },
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/formal_runtime_preflight_v1/input_modes/a2a_all_long/learning/batch_step_0000000_micro_001_001.pt",
+      "bytes": 886467,
+      "mtime_ns": 1791002005999924808
+    },
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/formal_runtime_preflight_v1/input_modes/a2a_all_long/checkpoints/best_validation.pth",
+      "bytes": 639710704,
+      "mtime_ns": 1791002020275796265
+    },
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/formal_runtime_preflight_v1/input_modes/a2a_all_long/checkpoints/model_step_0000005.pth",
+      "bytes": 639711725,
+      "mtime_ns": 1791002032483686734
+    },
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/formal_runtime_preflight_v1/input_modes/a2a_all_long/checkpoints/latest_resume.pt",
+      "bytes": 3779083518,
+      "mtime_ns": 1791002031235697915
+    },
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/formal_runtime_preflight_v1/input_modes/i2t_all/learning/batch_step_0000000_micro_000_000.pt",
+      "bytes": 443715,
+      "mtime_ns": 1791002107559020614
+    },
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/formal_runtime_preflight_v1/input_modes/i2t_all/learning/batch_step_0000000_micro_001_001.pt",
+      "bytes": 443715,
+      "mtime_ns": 1791002108331013828
+    },
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/formal_runtime_preflight_v1/input_modes/i2t_all/checkpoints/best_validation.pth",
+      "bytes": 639710704,
+      "mtime_ns": 1791002118458924905
+    },
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/formal_runtime_preflight_v1/input_modes/i2t_all/checkpoints/model_step_0000003.pth",
+      "bytes": 639711725,
+      "mtime_ns": 1791002129098831708
+    },
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/formal_runtime_preflight_v1/input_modes/i2t_all/checkpoints/latest_resume.pt",
+      "bytes": 3779083646,
+      "mtime_ns": 1791002128034841016
+    },
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/formal_runtime_preflight_v1/input_modes/a2a_audio_proj_long/learning/batch_step_0000000_micro_000_000.pt",
+      "bytes": 886467,
+      "mtime_ns": 1791002063339411451
+    },
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/formal_runtime_preflight_v1/input_modes/a2a_audio_proj_long/learning/batch_step_0000000_micro_001_001.pt",
+      "bytes": 886467,
+      "mtime_ns": 1791002064559400611
+    },
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/formal_runtime_preflight_v1/input_modes/a2a_audio_proj_long/checkpoints/best_validation.pth",
+      "bytes": 639710704,
+      "mtime_ns": 1791002078235279323
+    },
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/formal_runtime_preflight_v1/input_modes/a2a_audio_proj_long/checkpoints/model_step_0000003.pth",
+      "bytes": 639711725,
+      "mtime_ns": 1791002086507206159
+    },
+    {
+      "path": "/new_data/REMOTE_USER/minimind/omni_readiness_v1/project/runs/formal_runtime_preflight_v1/input_modes/a2a_audio_proj_long/checkpoints/latest_resume.pt",
+      "bytes": 1267595320,
+      "mtime_ns": 1791002085499215067
+    }
+  ]
+}

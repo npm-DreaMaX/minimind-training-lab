@@ -1,0 +1,12 @@
+{
+  "training_rows": 113082,
+  "tokens": 735833934,
+  "fixed_validation_points": 228,
+  "evaluation_records": 229,
+  "saved_evaluation_files": 228,
+  "gpu_samples": 88215,
+  "checkpoint_records": 229,
+  "metrics_sha256": "59d0a119c8d59c1344cfe60b39b65483a6c6e8d1041fff491ccc57f81a043e49",
+  "script_sha256": "522728866d1509a042c2b19f5c52fc856ac6c40d2cbe768192b887809fe29829",
+  "note": "Plots are explanatory exports; original logs and all numerical rows retained."
+}

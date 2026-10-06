@@ -1,0 +1,738 @@
+{
+  "kind": "omni",
+  "copied_keys": [
+    "model.embed_tokens.weight",
+    "model.layers.0.self_attn.q_proj.weight",
+    "model.layers.0.self_attn.k_proj.weight",
+    "model.layers.0.self_attn.v_proj.weight",
+    "model.layers.0.self_attn.o_proj.weight",
+    "model.layers.0.self_attn.q_norm.weight",
+    "model.layers.0.self_attn.k_norm.weight",
+    "model.layers.0.input_layernorm.weight",
+    "model.layers.0.post_attention_layernorm.weight",
+    "model.layers.0.mlp.gate.weight",
+    "model.layers.0.mlp.experts.0.gate_proj.weight",
+    "model.layers.0.mlp.experts.0.down_proj.weight",
+    "model.layers.0.mlp.experts.0.up_proj.weight",
+    "model.layers.0.mlp.experts.1.gate_proj.weight",
+    "model.layers.0.mlp.experts.1.down_proj.weight",
+    "model.layers.0.mlp.experts.1.up_proj.weight",
+    "model.layers.0.mlp.experts.2.gate_proj.weight",
+    "model.layers.0.mlp.experts.2.down_proj.weight",
+    "model.layers.0.mlp.experts.2.up_proj.weight",
+    "model.layers.0.mlp.experts.3.gate_proj.weight",
+    "model.layers.0.mlp.experts.3.down_proj.weight",
+    "model.layers.0.mlp.experts.3.up_proj.weight",
+    "model.layers.1.self_attn.q_proj.weight",
+    "model.layers.1.self_attn.k_proj.weight",
+    "model.layers.1.self_attn.v_proj.weight",
+    "model.layers.1.self_attn.o_proj.weight",
+    "model.layers.1.self_attn.q_norm.weight",
+    "model.layers.1.self_attn.k_norm.weight",
+    "model.layers.1.input_layernorm.weight",
+    "model.layers.1.post_attention_layernorm.weight",
+    "model.layers.1.mlp.gate.weight",
+    "model.layers.1.mlp.experts.0.gate_proj.weight",
+    "model.layers.1.mlp.experts.0.down_proj.weight",
+    "model.layers.1.mlp.experts.0.up_proj.weight",
+    "model.layers.1.mlp.experts.1.gate_proj.weight",
+    "model.layers.1.mlp.experts.1.down_proj.weight",
+    "model.layers.1.mlp.experts.1.up_proj.weight",
+    "model.layers.1.mlp.experts.2.gate_proj.weight",
+    "model.layers.1.mlp.experts.2.down_proj.weight",
+    "model.layers.1.mlp.experts.2.up_proj.weight",
+    "model.layers.1.mlp.experts.3.gate_proj.weight",
+    "model.layers.1.mlp.experts.3.down_proj.weight",
+    "model.layers.1.mlp.experts.3.up_proj.weight",
+    "model.layers.2.self_attn.q_proj.weight",
+    "model.layers.2.self_attn.k_proj.weight",
+    "model.layers.2.self_attn.v_proj.weight",
+    "model.layers.2.self_attn.o_proj.weight",
+    "model.layers.2.self_attn.q_norm.weight",
+    "model.layers.2.self_attn.k_norm.weight",
+    "model.layers.2.input_layernorm.weight",
+    "model.layers.2.post_attention_layernorm.weight",
+    "model.layers.2.mlp.gate.weight",
+    "model.layers.2.mlp.experts.0.gate_proj.weight",
+    "model.layers.2.mlp.experts.0.down_proj.weight",
+    "model.layers.2.mlp.experts.0.up_proj.weight",
+    "model.layers.2.mlp.experts.1.gate_proj.weight",
+    "model.layers.2.mlp.experts.1.down_proj.weight",
+    "model.layers.2.mlp.experts.1.up_proj.weight",
+    "model.layers.2.mlp.experts.2.gate_proj.weight",
+    "model.layers.2.mlp.experts.2.down_proj.weight",
+    "model.layers.2.mlp.experts.2.up_proj.weight",
+    "model.layers.2.mlp.experts.3.gate_proj.weight",
+    "model.layers.2.mlp.experts.3.down_proj.weight",
+    "model.layers.2.mlp.experts.3.up_proj.weight",
+    "model.layers.3.self_attn.q_proj.weight",
+    "model.layers.3.self_attn.k_proj.weight",
+    "model.layers.3.self_attn.v_proj.weight",
+    "model.layers.3.self_attn.o_proj.weight",
+    "model.layers.3.self_attn.q_norm.weight",
+    "model.layers.3.self_attn.k_norm.weight",
+    "model.layers.3.input_layernorm.weight",
+    "model.layers.3.post_attention_layernorm.weight",
+    "model.layers.3.mlp.gate.weight",
+    "model.layers.3.mlp.experts.0.gate_proj.weight",
+    "model.layers.3.mlp.experts.0.down_proj.weight",
+    "model.layers.3.mlp.experts.0.up_proj.weight",
+    "model.layers.3.mlp.experts.1.gate_proj.weight",
+    "model.layers.3.mlp.experts.1.down_proj.weight",
+    "model.layers.3.mlp.experts.1.up_proj.weight",
+    "model.layers.3.mlp.experts.2.gate_proj.weight",
+    "model.layers.3.mlp.experts.2.down_proj.weight",
+    "model.layers.3.mlp.experts.2.up_proj.weight",
+    "model.layers.3.mlp.experts.3.gate_proj.weight",
+    "model.layers.3.mlp.experts.3.down_proj.weight",
+    "model.layers.3.mlp.experts.3.up_proj.weight",
+    "model.layers.4.self_attn.q_proj.weight",
+    "model.layers.4.self_attn.k_proj.weight",
+    "model.layers.4.self_attn.v_proj.weight",
+    "model.layers.4.self_attn.o_proj.weight",
+    "model.layers.4.self_attn.q_norm.weight",
+    "model.layers.4.self_attn.k_norm.weight",
+    "model.layers.4.input_layernorm.weight",
+    "model.layers.4.post_attention_layernorm.weight",
+    "model.layers.4.mlp.gate.weight",
+    "model.layers.4.mlp.experts.0.gate_proj.weight",
+    "model.layers.4.mlp.experts.0.down_proj.weight",
+    "model.layers.4.mlp.experts.0.up_proj.weight",
+    "model.layers.4.mlp.experts.1.gate_proj.weight",
+    "model.layers.4.mlp.experts.1.down_proj.weight",
+    "model.layers.4.mlp.experts.1.up_proj.weight",
+    "model.layers.4.mlp.experts.2.gate_proj.weight",
+    "model.layers.4.mlp.experts.2.down_proj.weight",
+    "model.layers.4.mlp.experts.2.up_proj.weight",
+    "model.layers.4.mlp.experts.3.gate_proj.weight",
+    "model.layers.4.mlp.experts.3.down_proj.weight",
+    "model.layers.4.mlp.experts.3.up_proj.weight",
+    "model.layers.5.self_attn.q_proj.weight",
+    "model.layers.5.self_attn.k_proj.weight",
+    "model.layers.5.self_attn.v_proj.weight",
+    "model.layers.5.self_attn.o_proj.weight",
+    "model.layers.5.self_attn.q_norm.weight",
+    "model.layers.5.self_attn.k_norm.weight",
+    "model.layers.5.input_layernorm.weight",
+    "model.layers.5.post_attention_layernorm.weight",
+    "model.layers.5.mlp.gate.weight",
+    "model.layers.5.mlp.experts.0.gate_proj.weight",
+    "model.layers.5.mlp.experts.0.down_proj.weight",
+    "model.layers.5.mlp.experts.0.up_proj.weight",
+    "model.layers.5.mlp.experts.1.gate_proj.weight",
+    "model.layers.5.mlp.experts.1.down_proj.weight",
+    "model.layers.5.mlp.experts.1.up_proj.weight",
+    "model.layers.5.mlp.experts.2.gate_proj.weight",
+    "model.layers.5.mlp.experts.2.down_proj.weight",
+    "model.layers.5.mlp.experts.2.up_proj.weight",
+    "model.layers.5.mlp.experts.3.gate_proj.weight",
+    "model.layers.5.mlp.experts.3.down_proj.weight",
+    "model.layers.5.mlp.experts.3.up_proj.weight",
+    "model.layers.6.self_attn.q_proj.weight",
+    "model.layers.6.self_attn.k_proj.weight",
+    "model.layers.6.self_attn.v_proj.weight",
+    "model.layers.6.self_attn.o_proj.weight",
+    "model.layers.6.self_attn.q_norm.weight",
+    "model.layers.6.self_attn.k_norm.weight",
+    "model.layers.6.input_layernorm.weight",
+    "model.layers.6.post_attention_layernorm.weight",
+    "model.layers.6.mlp.gate.weight",
+    "model.layers.6.mlp.experts.0.gate_proj.weight",
+    "model.layers.6.mlp.experts.0.down_proj.weight",
+    "model.layers.6.mlp.experts.0.up_proj.weight",
+    "model.layers.6.mlp.experts.1.gate_proj.weight",
+    "model.layers.6.mlp.experts.1.down_proj.weight",
+    "model.layers.6.mlp.experts.1.up_proj.weight",
+    "model.layers.6.mlp.experts.2.gate_proj.weight",
+    "model.layers.6.mlp.experts.2.down_proj.weight",
+    "model.layers.6.mlp.experts.2.up_proj.weight",
+    "model.layers.6.mlp.experts.3.gate_proj.weight",
+    "model.layers.6.mlp.experts.3.down_proj.weight",
+    "model.layers.6.mlp.experts.3.up_proj.weight",
+    "model.layers.7.self_attn.q_proj.weight",
+    "model.layers.7.self_attn.k_proj.weight",
+    "model.layers.7.self_attn.v_proj.weight",
+    "model.layers.7.self_attn.o_proj.weight",
+    "model.layers.7.self_attn.q_norm.weight",
+    "model.layers.7.self_attn.k_norm.weight",
+    "model.layers.7.input_layernorm.weight",
+    "model.layers.7.post_attention_layernorm.weight",
+    "model.layers.7.mlp.gate.weight",
+    "model.layers.7.mlp.experts.0.gate_proj.weight",
+    "model.layers.7.mlp.experts.0.down_proj.weight",
+    "model.layers.7.mlp.experts.0.up_proj.weight",
+    "model.layers.7.mlp.experts.1.gate_proj.weight",
+    "model.layers.7.mlp.experts.1.down_proj.weight",
+    "model.layers.7.mlp.experts.1.up_proj.weight",
+    "model.layers.7.mlp.experts.2.gate_proj.weight",
+    "model.layers.7.mlp.experts.2.down_proj.weight",
+    "model.layers.7.mlp.experts.2.up_proj.weight",
+    "model.layers.7.mlp.experts.3.gate_proj.weight",
+    "model.layers.7.mlp.experts.3.down_proj.weight",
+    "model.layers.7.mlp.experts.3.up_proj.weight",
+    "model.norm.weight",
+    "lm_head.weight"
+  ],
+  "new_keys": [
+    "audio_proj.mlp.0.bias",
+    "audio_proj.mlp.0.weight",
+    "audio_proj.mlp.1.bias",
+    "audio_proj.mlp.1.weight",
+    "audio_proj.mlp.3.bias",
+    "audio_proj.mlp.3.weight",
+    "talker.audio_scale",
+    "talker.codec_proj.0.bias",
+    "talker.codec_proj.0.weight",
+    "talker.codec_proj.2.bias",
+    "talker.codec_proj.2.weight",
+    "talker.codec_proj.3.weight",
+    "talker.embed_proj.0.bias",
+    "talker.embed_proj.0.weight",
+    "talker.embed_proj.2.bias",
+    "talker.embed_proj.2.weight",
+    "talker.embed_proj.3.weight",
+    "talker.embed_tokens.adapters.0.0.weight",
+    "talker.embed_tokens.adapters.0.2.weight",
+    "talker.embed_tokens.adapters.1.0.weight",
+    "talker.embed_tokens.adapters.1.2.weight",
+    "talker.embed_tokens.adapters.2.0.weight",
+    "talker.embed_tokens.adapters.2.2.weight",
+    "talker.embed_tokens.adapters.3.0.weight",
+    "talker.embed_tokens.adapters.3.2.weight",
+    "talker.embed_tokens.adapters.4.0.weight",
+    "talker.embed_tokens.adapters.4.2.weight",
+    "talker.embed_tokens.adapters.5.0.weight",
+    "talker.embed_tokens.adapters.5.2.weight",
+    "talker.embed_tokens.adapters.6.0.weight",
+    "talker.embed_tokens.adapters.6.2.weight",
+    "talker.embed_tokens.adapters.7.0.weight",
+    "talker.embed_tokens.adapters.7.2.weight",
+    "talker.embed_tokens.base.weight",
+    "talker.layers.0.input_layernorm.weight",
+    "talker.layers.0.mlp.experts.0.down_proj.weight",
+    "talker.layers.0.mlp.experts.0.gate_proj.weight",
+    "talker.layers.0.mlp.experts.0.up_proj.weight",
+    "talker.layers.0.mlp.experts.1.down_proj.weight",
+    "talker.layers.0.mlp.experts.1.gate_proj.weight",
+    "talker.layers.0.mlp.experts.1.up_proj.weight",
+    "talker.layers.0.mlp.experts.2.down_proj.weight",
+    "talker.layers.0.mlp.experts.2.gate_proj.weight",
+    "talker.layers.0.mlp.experts.2.up_proj.weight",
+    "talker.layers.0.mlp.experts.3.down_proj.weight",
+    "talker.layers.0.mlp.experts.3.gate_proj.weight",
+    "talker.layers.0.mlp.experts.3.up_proj.weight",
+    "talker.layers.0.mlp.gate.weight",
+    "talker.layers.0.post_attention_layernorm.weight",
+    "talker.layers.0.self_attn.k_norm.weight",
+    "talker.layers.0.self_attn.k_proj.weight",
+    "talker.layers.0.self_attn.o_proj.weight",
+    "talker.layers.0.self_attn.q_norm.weight",
+    "talker.layers.0.self_attn.q_proj.weight",
+    "talker.layers.0.self_attn.v_proj.weight",
+    "talker.layers.1.input_layernorm.weight",
+    "talker.layers.1.mlp.experts.0.down_proj.weight",
+    "talker.layers.1.mlp.experts.0.gate_proj.weight",
+    "talker.layers.1.mlp.experts.0.up_proj.weight",
+    "talker.layers.1.mlp.experts.1.down_proj.weight",
+    "talker.layers.1.mlp.experts.1.gate_proj.weight",
+    "talker.layers.1.mlp.experts.1.up_proj.weight",
+    "talker.layers.1.mlp.experts.2.down_proj.weight",
+    "talker.layers.1.mlp.experts.2.gate_proj.weight",
+    "talker.layers.1.mlp.experts.2.up_proj.weight",
+    "talker.layers.1.mlp.experts.3.down_proj.weight",
+    "talker.layers.1.mlp.experts.3.gate_proj.weight",
+    "talker.layers.1.mlp.experts.3.up_proj.weight",
+    "talker.layers.1.mlp.gate.weight",
+    "talker.layers.1.post_attention_layernorm.weight",
+    "talker.layers.1.self_attn.k_norm.weight",
+    "talker.layers.1.self_attn.k_proj.weight",
+    "talker.layers.1.self_attn.o_proj.weight",
+    "talker.layers.1.self_attn.q_norm.weight",
+    "talker.layers.1.self_attn.q_proj.weight",
+    "talker.layers.1.self_attn.v_proj.weight",
+    "talker.layers.2.input_layernorm.weight",
+    "talker.layers.2.mlp.experts.0.down_proj.weight",
+    "talker.layers.2.mlp.experts.0.gate_proj.weight",
+    "talker.layers.2.mlp.experts.0.up_proj.weight",
+    "talker.layers.2.mlp.experts.1.down_proj.weight",
+    "talker.layers.2.mlp.experts.1.gate_proj.weight",
+    "talker.layers.2.mlp.experts.1.up_proj.weight",
+    "talker.layers.2.mlp.experts.2.down_proj.weight",
+    "talker.layers.2.mlp.experts.2.gate_proj.weight",
+    "talker.layers.2.mlp.experts.2.up_proj.weight",
+    "talker.layers.2.mlp.experts.3.down_proj.weight",
+    "talker.layers.2.mlp.experts.3.gate_proj.weight",
+    "talker.layers.2.mlp.experts.3.up_proj.weight",
+    "talker.layers.2.mlp.gate.weight",
+    "talker.layers.2.post_attention_layernorm.weight",
+    "talker.layers.2.self_attn.k_norm.weight",
+    "talker.layers.2.self_attn.k_proj.weight",
+    "talker.layers.2.self_attn.o_proj.weight",
+    "talker.layers.2.self_attn.q_norm.weight",
+    "talker.layers.2.self_attn.q_proj.weight",
+    "talker.layers.2.self_attn.v_proj.weight",
+    "talker.layers.3.input_layernorm.weight",
+    "talker.layers.3.mlp.experts.0.down_proj.weight",
+    "talker.layers.3.mlp.experts.0.gate_proj.weight",
+    "talker.layers.3.mlp.experts.0.up_proj.weight",
+    "talker.layers.3.mlp.experts.1.down_proj.weight",
+    "talker.layers.3.mlp.experts.1.gate_proj.weight",
+    "talker.layers.3.mlp.experts.1.up_proj.weight",
+    "talker.layers.3.mlp.experts.2.down_proj.weight",
+    "talker.layers.3.mlp.experts.2.gate_proj.weight",
+    "talker.layers.3.mlp.experts.2.up_proj.weight",
+    "talker.layers.3.mlp.experts.3.down_proj.weight",
+    "talker.layers.3.mlp.experts.3.gate_proj.weight",
+    "talker.layers.3.mlp.experts.3.up_proj.weight",
+    "talker.layers.3.mlp.gate.weight",
+    "talker.layers.3.post_attention_layernorm.weight",
+    "talker.layers.3.self_attn.k_norm.weight",
+    "talker.layers.3.self_attn.k_proj.weight",
+    "talker.layers.3.self_attn.o_proj.weight",
+    "talker.layers.3.self_attn.q_norm.weight",
+    "talker.layers.3.self_attn.q_proj.weight",
+    "talker.layers.3.self_attn.v_proj.weight",
+    "talker.lm_head.adapters.0.0.weight",
+    "talker.lm_head.adapters.0.2.weight",
+    "talker.lm_head.adapters.1.0.weight",
+    "talker.lm_head.adapters.1.2.weight",
+    "talker.lm_head.adapters.2.0.weight",
+    "talker.lm_head.adapters.2.2.weight",
+    "talker.lm_head.adapters.3.0.weight",
+    "talker.lm_head.adapters.3.2.weight",
+    "talker.lm_head.adapters.4.0.weight",
+    "talker.lm_head.adapters.4.2.weight",
+    "talker.lm_head.adapters.5.0.weight",
+    "talker.lm_head.adapters.5.2.weight",
+    "talker.lm_head.adapters.6.0.weight",
+    "talker.lm_head.adapters.6.2.weight",
+    "talker.lm_head.adapters.7.0.weight",
+    "talker.lm_head.adapters.7.2.weight",
+    "talker.lm_head.base.weight",
+    "talker.norm.weight",
+    "talker.spk_proj.weight",
+    "talker.text_scale",
+    "vision_proj.mlp.0.bias",
+    "vision_proj.mlp.0.weight",
+    "vision_proj.mlp.1.bias",
+    "vision_proj.mlp.1.weight",
+    "vision_proj.mlp.3.bias",
+    "vision_proj.mlp.3.weight"
+  ],
+  "discarded_keys": [],
+  "duplicated_from_thinker": [
+    {
+      "target": "talker.layers.0.self_attn.q_proj.weight",
+      "source": "model.layers.4.self_attn.q_proj.weight"
+    },
+    {
+      "target": "talker.layers.0.self_attn.k_proj.weight",
+      "source": "model.layers.4.self_attn.k_proj.weight"
+    },
+    {
+      "target": "talker.layers.0.self_attn.v_proj.weight",
+      "source": "model.layers.4.self_attn.v_proj.weight"
+    },
+    {
+      "target": "talker.layers.0.self_attn.o_proj.weight",
+      "source": "model.layers.4.self_attn.o_proj.weight"
+    },
+    {
+      "target": "talker.layers.0.self_attn.q_norm.weight",
+      "source": "model.layers.4.self_attn.q_norm.weight"
+    },
+    {
+      "target": "talker.layers.0.self_attn.k_norm.weight",
+      "source": "model.layers.4.self_attn.k_norm.weight"
+    },
+    {
+      "target": "talker.layers.0.input_layernorm.weight",
+      "source": "model.layers.4.input_layernorm.weight"
+    },
+    {
+      "target": "talker.layers.0.post_attention_layernorm.weight",
+      "source": "model.layers.4.post_attention_layernorm.weight"
+    },
+    {
+      "target": "talker.layers.0.mlp.gate.weight",
+      "source": "model.layers.4.mlp.gate.weight"
+    },
+    {
+      "target": "talker.layers.0.mlp.experts.0.gate_proj.weight",
+      "source": "model.layers.4.mlp.experts.0.gate_proj.weight"
+    },
+    {
+      "target": "talker.layers.0.mlp.experts.0.down_proj.weight",
+      "source": "model.layers.4.mlp.experts.0.down_proj.weight"
+    },
+    {
+      "target": "talker.layers.0.mlp.experts.0.up_proj.weight",
+      "source": "model.layers.4.mlp.experts.0.up_proj.weight"
+    },
+    {
+      "target": "talker.layers.0.mlp.experts.1.gate_proj.weight",
+      "source": "model.layers.4.mlp.experts.1.gate_proj.weight"
+    },
+    {
+      "target": "talker.layers.0.mlp.experts.1.down_proj.weight",
+      "source": "model.layers.4.mlp.experts.1.down_proj.weight"
+    },
+    {
+      "target": "talker.layers.0.mlp.experts.1.up_proj.weight",
+      "source": "model.layers.4.mlp.experts.1.up_proj.weight"
+    },
+    {
+      "target": "talker.layers.0.mlp.experts.2.gate_proj.weight",
+      "source": "model.layers.4.mlp.experts.2.gate_proj.weight"
+    },
+    {
+      "target": "talker.layers.0.mlp.experts.2.down_proj.weight",
+      "source": "model.layers.4.mlp.experts.2.down_proj.weight"
+    },
+    {
+      "target": "talker.layers.0.mlp.experts.2.up_proj.weight",
+      "source": "model.layers.4.mlp.experts.2.up_proj.weight"
+    },
+    {
+      "target": "talker.layers.0.mlp.experts.3.gate_proj.weight",
+      "source": "model.layers.4.mlp.experts.3.gate_proj.weight"
+    },
+    {
+      "target": "talker.layers.0.mlp.experts.3.down_proj.weight",
+      "source": "model.layers.4.mlp.experts.3.down_proj.weight"
+    },
+    {
+      "target": "talker.layers.0.mlp.experts.3.up_proj.weight",
+      "source": "model.layers.4.mlp.experts.3.up_proj.weight"
+    },
+    {
+      "target": "talker.layers.1.self_attn.q_proj.weight",
+      "source": "model.layers.5.self_attn.q_proj.weight"
+    },
+    {
+      "target": "talker.layers.1.self_attn.k_proj.weight",
+      "source": "model.layers.5.self_attn.k_proj.weight"
+    },
+    {
+      "target": "talker.layers.1.self_attn.v_proj.weight",
+      "source": "model.layers.5.self_attn.v_proj.weight"
+    },
+    {
+      "target": "talker.layers.1.self_attn.o_proj.weight",
+      "source": "model.layers.5.self_attn.o_proj.weight"
+    },
+    {
+      "target": "talker.layers.1.self_attn.q_norm.weight",
+      "source": "model.layers.5.self_attn.q_norm.weight"
+    },
+    {
+      "target": "talker.layers.1.self_attn.k_norm.weight",
+      "source": "model.layers.5.self_attn.k_norm.weight"
+    },
+    {
+      "target": "talker.layers.1.input_layernorm.weight",
+      "source": "model.layers.5.input_layernorm.weight"
+    },
+    {
+      "target": "talker.layers.1.post_attention_layernorm.weight",
+      "source": "model.layers.5.post_attention_layernorm.weight"
+    },
+    {
+      "target": "talker.layers.1.mlp.gate.weight",
+      "source": "model.layers.5.mlp.gate.weight"
+    },
+    {
+      "target": "talker.layers.1.mlp.experts.0.gate_proj.weight",
+      "source": "model.layers.5.mlp.experts.0.gate_proj.weight"
+    },
+    {
+      "target": "talker.layers.1.mlp.experts.0.down_proj.weight",
+      "source": "model.layers.5.mlp.experts.0.down_proj.weight"
+    },
+    {
+      "target": "talker.layers.1.mlp.experts.0.up_proj.weight",
+      "source": "model.layers.5.mlp.experts.0.up_proj.weight"
+    },
+    {
+      "target": "talker.layers.1.mlp.experts.1.gate_proj.weight",
+      "source": "model.layers.5.mlp.experts.1.gate_proj.weight"
+    },
+    {
+      "target": "talker.layers.1.mlp.experts.1.down_proj.weight",
+      "source": "model.layers.5.mlp.experts.1.down_proj.weight"
+    },
+    {
+      "target": "talker.layers.1.mlp.experts.1.up_proj.weight",
+      "source": "model.layers.5.mlp.experts.1.up_proj.weight"
+    },
+    {
+      "target": "talker.layers.1.mlp.experts.2.gate_proj.weight",
+      "source": "model.layers.5.mlp.experts.2.gate_proj.weight"
+    },
+    {
+      "target": "talker.layers.1.mlp.experts.2.down_proj.weight",
+      "source": "model.layers.5.mlp.experts.2.down_proj.weight"
+    },
+    {
+      "target": "talker.layers.1.mlp.experts.2.up_proj.weight",
+      "source": "model.layers.5.mlp.experts.2.up_proj.weight"
+    },
+    {
+      "target": "talker.layers.1.mlp.experts.3.gate_proj.weight",
+      "source": "model.layers.5.mlp.experts.3.gate_proj.weight"
+    },
+    {
+      "target": "talker.layers.1.mlp.experts.3.down_proj.weight",
+      "source": "model.layers.5.mlp.experts.3.down_proj.weight"
+    },
+    {
+      "target": "talker.layers.1.mlp.experts.3.up_proj.weight",
+      "source": "model.layers.5.mlp.experts.3.up_proj.weight"
+    },
+    {
+      "target": "talker.layers.2.self_attn.q_proj.weight",
+      "source": "model.layers.6.self_attn.q_proj.weight"
+    },
+    {
+      "target": "talker.layers.2.self_attn.k_proj.weight",
+      "source": "model.layers.6.self_attn.k_proj.weight"
+    },
+    {
+      "target": "talker.layers.2.self_attn.v_proj.weight",
+      "source": "model.layers.6.self_attn.v_proj.weight"
+    },
+    {
+      "target": "talker.layers.2.self_attn.o_proj.weight",
+      "source": "model.layers.6.self_attn.o_proj.weight"
+    },
+    {
+      "target": "talker.layers.2.self_attn.q_norm.weight",
+      "source": "model.layers.6.self_attn.q_norm.weight"
+    },
+    {
+      "target": "talker.layers.2.self_attn.k_norm.weight",
+      "source": "model.layers.6.self_attn.k_norm.weight"
+    },
+    {
+      "target": "talker.layers.2.input_layernorm.weight",
+      "source": "model.layers.6.input_layernorm.weight"
+    },
+    {
+      "target": "talker.layers.2.post_attention_layernorm.weight",
+      "source": "model.layers.6.post_attention_layernorm.weight"
+    },
+    {
+      "target": "talker.layers.2.mlp.gate.weight",
+      "source": "model.layers.6.mlp.gate.weight"
+    },
+    {
+      "target": "talker.layers.2.mlp.experts.0.gate_proj.weight",
+      "source": "model.layers.6.mlp.experts.0.gate_proj.weight"
+    },
+    {
+      "target": "talker.layers.2.mlp.experts.0.down_proj.weight",
+      "source": "model.layers.6.mlp.experts.0.down_proj.weight"
+    },
+    {
+      "target": "talker.layers.2.mlp.experts.0.up_proj.weight",
+      "source": "model.layers.6.mlp.experts.0.up_proj.weight"
+    },
+    {
+      "target": "talker.layers.2.mlp.experts.1.gate_proj.weight",
+      "source": "model.layers.6.mlp.experts.1.gate_proj.weight"
+    },
+    {
+      "target": "talker.layers.2.mlp.experts.1.down_proj.weight",
+      "source": "model.layers.6.mlp.experts.1.down_proj.weight"
+    },
+    {
+      "target": "talker.layers.2.mlp.experts.1.up_proj.weight",
+      "source": "model.layers.6.mlp.experts.1.up_proj.weight"
+    },
+    {
+      "target": "talker.layers.2.mlp.experts.2.gate_proj.weight",
+      "source": "model.layers.6.mlp.experts.2.gate_proj.weight"
+    },
+    {
+      "target": "talker.layers.2.mlp.experts.2.down_proj.weight",
+      "source": "model.layers.6.mlp.experts.2.down_proj.weight"
+    },
+    {
+      "target": "talker.layers.2.mlp.experts.2.up_proj.weight",
+      "source": "model.layers.6.mlp.experts.2.up_proj.weight"
+    },
+    {
+      "target": "talker.layers.2.mlp.experts.3.gate_proj.weight",
+      "source": "model.layers.6.mlp.experts.3.gate_proj.weight"
+    },
+    {
+      "target": "talker.layers.2.mlp.experts.3.down_proj.weight",
+      "source": "model.layers.6.mlp.experts.3.down_proj.weight"
+    },
+    {
+      "target": "talker.layers.2.mlp.experts.3.up_proj.weight",
+      "source": "model.layers.6.mlp.experts.3.up_proj.weight"
+    },
+    {
+      "target": "talker.layers.3.self_attn.q_proj.weight",
+      "source": "model.layers.7.self_attn.q_proj.weight"
+    },
+    {
+      "target": "talker.layers.3.self_attn.k_proj.weight",
+      "source": "model.layers.7.self_attn.k_proj.weight"
+    },
+    {
+      "target": "talker.layers.3.self_attn.v_proj.weight",
+      "source": "model.layers.7.self_attn.v_proj.weight"
+    },
+    {
+      "target": "talker.layers.3.self_attn.o_proj.weight",
+      "source": "model.layers.7.self_attn.o_proj.weight"
+    },
+    {
+      "target": "talker.layers.3.self_attn.q_norm.weight",
+      "source": "model.layers.7.self_attn.q_norm.weight"
+    },
+    {
+      "target": "talker.layers.3.self_attn.k_norm.weight",
+      "source": "model.layers.7.self_attn.k_norm.weight"
+    },
+    {
+      "target": "talker.layers.3.input_layernorm.weight",
+      "source": "model.layers.7.input_layernorm.weight"
+    },
+    {
+      "target": "talker.layers.3.post_attention_layernorm.weight",
+      "source": "model.layers.7.post_attention_layernorm.weight"
+    },
+    {
+      "target": "talker.layers.3.mlp.gate.weight",
+      "source": "model.layers.7.mlp.gate.weight"
+    },
+    {
+      "target": "talker.layers.3.mlp.experts.0.gate_proj.weight",
+      "source": "model.layers.7.mlp.experts.0.gate_proj.weight"
+    },
+    {
+      "target": "talker.layers.3.mlp.experts.0.down_proj.weight",
+      "source": "model.layers.7.mlp.experts.0.down_proj.weight"
+    },
+    {
+      "target": "talker.layers.3.mlp.experts.0.up_proj.weight",
+      "source": "model.layers.7.mlp.experts.0.up_proj.weight"
+    },
+    {
+      "target": "talker.layers.3.mlp.experts.1.gate_proj.weight",
+      "source": "model.layers.7.mlp.experts.1.gate_proj.weight"
+    },
+    {
+      "target": "talker.layers.3.mlp.experts.1.down_proj.weight",
+      "source": "model.layers.7.mlp.experts.1.down_proj.weight"
+    },
+    {
+      "target": "talker.layers.3.mlp.experts.1.up_proj.weight",
+      "source": "model.layers.7.mlp.experts.1.up_proj.weight"
+    },
+    {
+      "target": "talker.layers.3.mlp.experts.2.gate_proj.weight",
+      "source": "model.layers.7.mlp.experts.2.gate_proj.weight"
+    },
+    {
+      "target": "talker.layers.3.mlp.experts.2.down_proj.weight",
+      "source": "model.layers.7.mlp.experts.2.down_proj.weight"
+    },
+    {
+      "target": "talker.layers.3.mlp.experts.2.up_proj.weight",
+      "source": "model.layers.7.mlp.experts.2.up_proj.weight"
+    },
+    {
+      "target": "talker.layers.3.mlp.experts.3.gate_proj.weight",
+      "source": "model.layers.7.mlp.experts.3.gate_proj.weight"
+    },
+    {
+      "target": "talker.layers.3.mlp.experts.3.down_proj.weight",
+      "source": "model.layers.7.mlp.experts.3.down_proj.weight"
+    },
+    {
+      "target": "talker.layers.3.mlp.experts.3.up_proj.weight",
+      "source": "model.layers.7.mlp.experts.3.up_proj.weight"
+    }
+  ],
+  "constructor_initialized_keys": [
+    "audio_proj.mlp.0.bias",
+    "audio_proj.mlp.0.weight",
+    "audio_proj.mlp.1.bias",
+    "audio_proj.mlp.1.weight",
+    "audio_proj.mlp.3.bias",
+    "audio_proj.mlp.3.weight",
+    "talker.audio_scale",
+    "talker.codec_proj.0.bias",
+    "talker.codec_proj.0.weight",
+    "talker.codec_proj.2.bias",
+    "talker.codec_proj.2.weight",
+    "talker.codec_proj.3.weight",
+    "talker.embed_proj.0.bias",
+    "talker.embed_proj.0.weight",
+    "talker.embed_proj.2.bias",
+    "talker.embed_proj.2.weight",
+    "talker.embed_proj.3.weight",
+    "talker.embed_tokens.adapters.0.0.weight",
+    "talker.embed_tokens.adapters.0.2.weight",
+    "talker.embed_tokens.adapters.1.0.weight",
+    "talker.embed_tokens.adapters.1.2.weight",
+    "talker.embed_tokens.adapters.2.0.weight",
+    "talker.embed_tokens.adapters.2.2.weight",
+    "talker.embed_tokens.adapters.3.0.weight",
+    "talker.embed_tokens.adapters.3.2.weight",
+    "talker.embed_tokens.adapters.4.0.weight",
+    "talker.embed_tokens.adapters.4.2.weight",
+    "talker.embed_tokens.adapters.5.0.weight",
+    "talker.embed_tokens.adapters.5.2.weight",
+    "talker.embed_tokens.adapters.6.0.weight",
+    "talker.embed_tokens.adapters.6.2.weight",
+    "talker.embed_tokens.adapters.7.0.weight",
+    "talker.embed_tokens.adapters.7.2.weight",
+    "talker.embed_tokens.base.weight",
+    "talker.lm_head.adapters.0.0.weight",
+    "talker.lm_head.adapters.0.2.weight",
+    "talker.lm_head.adapters.1.0.weight",
+    "talker.lm_head.adapters.1.2.weight",
+    "talker.lm_head.adapters.2.0.weight",
+    "talker.lm_head.adapters.2.2.weight",
+    "talker.lm_head.adapters.3.0.weight",
+    "talker.lm_head.adapters.3.2.weight",
+    "talker.lm_head.adapters.4.0.weight",
+    "talker.lm_head.adapters.4.2.weight",
+    "talker.lm_head.adapters.5.0.weight",
+    "talker.lm_head.adapters.5.2.weight",
+    "talker.lm_head.adapters.6.0.weight",
+    "talker.lm_head.adapters.6.2.weight",
+    "talker.lm_head.adapters.7.0.weight",
+    "talker.lm_head.adapters.7.2.weight",
+    "talker.lm_head.base.weight",
+    "talker.norm.weight",
+    "talker.spk_proj.weight",
+    "talker.text_scale",
+    "vision_proj.mlp.0.bias",
+    "vision_proj.mlp.0.weight",
+    "vision_proj.mlp.1.bias",
+    "vision_proj.mlp.1.weight",
+    "vision_proj.mlp.3.bias",
+    "vision_proj.mlp.3.weight"
+  ],
+  "copied_unique_parameters": 198416640,
+  "new_unique_parameters": 116471298,
+  "total_unique_parameters": 314887938,
+  "policy": "Exact shared names and shapes; allowlisted structural changes; official Thinker last layers copied to Omni Talker; new modules retain recorded seeded constructor initialization",
+  "source": "models/01_moe/runs/pretrain_full_v1/checkpoints/best_validation.pth",
+  "source_sha256": "8b3e5a93981ca6712ba5cae180f94cb88355d02b1ca0fffdc734907bc6e9f02b",
+  "target_file": "sources/minimind-o/model/model_omni.py",
+  "ar_source_sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+  "tokenizer_sha256": "71f32c68cf63a15355a8fc171b7594b3d41870fe0ddb54fc6aefa55f73a4a668",
+  "target_source_sha256": "9a0de2b438b8927a170fe12636e01c00dbfec463ea5c4a81efdfc1cca6a6696c",
+  "output": "models/03_omni_moe/runs/transfer_preflight_early_ar/initialized_fp32.pth",
+  "output_sha256": "95ad8ba99025fe136c0fa3444722e60b951bbdb651fc0af8f0a0494c6a6193e9",
+  "seed": 20261005,
+  "created": 1790970875.6659837,
+  "precision": "source export values loaded into FP32 target; new modules initialized in FP32; new stage requires new optimizer"
+}

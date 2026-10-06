@@ -1,0 +1,31 @@
+{
+  "status": "complete",
+  "step": 3,
+  "trained_tokens": 1900,
+  "validation": {
+    "step": 3,
+    "epoch": 0,
+    "trained_tokens": 1900,
+    "validation_ce": 8.152642131054138,
+    "validation_tokens": 1178,
+    "validation_rows": 5,
+    "final": true,
+    "generation": [
+      {
+        "prompt": "人工智能的主要应用包括",
+        "continuation": "？��  ,   �� � <|im_end|>"
+      },
+      {
+        "prompt": "中国的首都是",
+        "continuation": ".3：有质量了y A有有有性,��，好地 (信息、文、�小，，。<|im_end|>"
+      },
+      {
+        "prompt": "水的三种状态是",
+        "continuation": "中的�。，，，，人大，等。好的<|im_end|>"
+      }
+    ],
+    "time": 1790976021.9710343,
+    "validation_selection_sha256": "281b02b10f5f4997e5bf8c93343e6f2aa8bc81ffad6d6813c593181ebceda12a",
+    "validation_selection": "full split"
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "scope": "Full 205M architecture, ten-update preflights; early AR transfer, tiny pretrain fixture, real random SFT subset. Excludes setup/eval/save; not final convergence or full-data throughput estimate. First three updates excluded for warmup.",
+  "runs": {
+    "full_pretrain_ieee_v4": {
+      "steps": 10,
+      "steady_steps": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "median_step_seconds": 0.45319279399700463,
+      "aggregate_valid_tokens_per_second": 1534.843262822351,
+      "peak_allocated": 4530115072,
+      "first_step_seconds": 7.264856112989946,
+      "last_grad_norm": 39.39162826538086,
+      "status": {
+        "status": "complete",
+        "step": 10,
+        "trained_tokens": 6797,
+        "validation": {
+          "step": 10,
+          "epoch": 0,
+          "trained_tokens": 6797,
+          "validation_ce": 8.064210875532218,
+          "validation_tokens": 1178,
+          "validation_rows": 5,
+          "final": true,
+          "generation": [
+            {
+              "prompt": "人工智能的主要应用包括",
+              "continuation": "<|im_end|>"
+            },
+            {
+              "prompt": "中国的首都是",
+              "continuation": ".3：有质量了用�有法。问题建议建议会为�，�流，的中的，在，，：着，：内容 $文，感花，：�是节。、去，一个在时的人一一一，如� 了问题的，�"
+            },
+            {
+              "prompt": "水的三种状态是",
+              "continuation": "中的�，， 一有有，,�成时间<|im_end|>"
+            }
+          ],
+          "time": 1790981346.5366795,
+          "validation_selection_sha256": "281b02b10f5f4997e5bf8c93343e6f2aa8bc81ffad6d6813c593181ebceda12a",
+          "validation_selection": "full split"
+        }
+      }
+    },
+    "full_pretrain_tf32x3_v4": {
+      "steps": 10,
+      "steady_steps": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "median_step_seconds": 0.34407684599864297,
+      "aggregate_valid_tokens_per_second": 2034.4526027302481,
+      "peak_allocated": 4530113536,
+      "first_step_seconds": 4.300448049994884,
+      "last_grad_norm": 39.38140106201172,
+      "status": {
+        "status": "complete",
+        "step": 10,
+        "trained_tokens": 6797,
+        "validation": {
+          "step": 10,
+          "epoch": 0,
+          "trained_tokens": 6797,
+          "validation_ce": 8.068839944279254,
+          "validation_tokens": 1178,
+          "validation_rows": 5,
+          "final": true,
+          "generation": [
+            {
+              "prompt": "人工智能的主要应用包括",
+              "continuation": "？�� .<|im_end|>"
+            },
+            {
+              "prompt": "中国的首都是",
+              "continuation": ".3：有质量了用�有法。<|im_end|>"
+            },
+            {
+              "prompt": "水的三种状态是",
+              "continuation": "中的�，， <|im_end|>"
+            }
+          ],
+          "time": 1790981460.495564,
+          "validation_selection_sha256": "281b02b10f5f4997e5bf8c93343e6f2aa8bc81ffad6d6813c593181ebceda12a",
+          "validation_selection": "full split"
+        }
+      }
+    },
+    "full_sft_ieee_v4": {
+      "steps": 10,
+      "steady_steps": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "median_step_seconds": 0.5658824429992819,
+      "aggregate_valid_tokens_per_second": 1787.0085665684578,
+      "peak_allocated": 4941040640,
+      "first_step_seconds": 1.2025811909988988,
+      "last_grad_norm": 39.017425537109375,
+      "status": {
+        "status": "complete",
+        "step": 10,
+        "trained_tokens": 10423,
+        "validation": {
+          "step": 10,
+          "epoch": 0,
+          "trained_tokens": 10423,
+          "validation_ce": 8.11832289509689,
+          "validation_tokens": 21093,
+          "validation_rows": 32,
+          "final": true,
+          "generation": [
+            {
+              "prompt": "你好，请介绍一下自己。",
+              "continuation": "\n m elt \n。: gaa\n给给题，，，想头s用的<|im_end|>"
+            },
+            {
+              "prompt": "为什么天空是蓝色的？",
+              "continuation": "ins�.2<|im_end|>"
+            },
+            {
+              "prompt": "计算 17 加 25。",
+              "continuation": "ds的T ss2小微<|im_end|>"
+            }
+          ],
+          "time": 1790981553.5898767,
+          "validation_selection_sha256": "bcc9bcfc670935c6018dc26a74956a373b655f8930dd55ab074d816d7d233780",
+          "validation_selection": "full split"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "step": 0,
+  "epoch": 0,
+  "trained_tokens": 0,
+  "validation_ce": 8.203303355796665,
+  "validation_tokens": 1887,
+  "validation_rows": 8,
+  "final": false,
+  "generation": [
+    {
+      "prompt": "人工智能的主要应用包括",
+      "rendered_input": "<|im_start|>人工智能的主要应用包括",
+      "input_ids": [
+        1,
+        2225,
+        3669,
+        908,
+        898
+      ],
+      "continuation": "中   o� �在品��上，，，能，是上地是的人，，发。式入，<|im_end|>",
+      "output_tokens": 32,
+      "ended_with_eos": true,
+      "truncated_by_budget": false
+    },
+    {
+      "prompt": "中国的首都是",
+      "rendered_input": "<|im_start|>中国的首都是",
+      "input_ids": [
+        1,
+        1405,
+        296,
+        1408,
+        2462
+      ],
+      "continuation": "。化�世界一个 ：�人为等地者。。<|im_end|>",
+      "output_tokens": 16,
+      "ended_with_eos": true,
+      "truncated_by_budget": false
+    },
+    {
+      "prompt": "水的三种状态是",
+      "rendered_input": "<|im_start|>水的三种状态是",
+      "input_ids": [
+        1,
+        952,
+        296,
+        1441,
+        604,
+        2341,
+        357
+      ],
+      "continuation": "开生的地材料程序的。年大是��其中分，模型比情le人�机，<|im_end|>",
+      "output_tokens": 25,
+      "ended_with_eos": true,
+      "truncated_by_budget": false
+    }
+  ],
+  "time": 1790986647.814048,
+  "validation_selection_sha256": "4c1e2831bc78cc46995bcc7da67728525a0ac975823583a4c6e50e657fe978be",
+  "validation_selection": "fixed seeded sample across the full held-out split",
+  "generation_protocol": {
+    "version": 2,
+    "pretrain_prefix": "explicit tokenizer BOS",
+    "sft_prefix": "official chat template",
+    "dtype": "BF16 autocast",
+    "do_sample": false,
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "top_k": 0,
+    "repetition_penalty": 1.0,
+    "max_new_tokens": 64
+  }
+}

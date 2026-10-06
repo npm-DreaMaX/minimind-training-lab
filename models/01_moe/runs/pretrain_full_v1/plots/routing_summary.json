@@ -1,0 +1,171 @@
+{
+  "scope": "First microbatch non-padding token routing at recorded steps; sampled diagnostic, not whole-corpus expert load",
+  "observations": 265,
+  "latest_step": 13201,
+  "recent_window_steps": [
+    12751,
+    12801,
+    12851,
+    12901,
+    12951,
+    13001,
+    13051,
+    13101,
+    13151,
+    13201
+  ],
+  "layers": {
+    "0": {
+      "recent_sampled_tokens": 12428,
+      "recent_token_weighted_share": [
+        0.5135178628902478,
+        0.19528484068233024,
+        0.11602832314129385,
+        0.1751689732861281
+      ],
+      "latest": {
+        "tokens_per_expert": [
+          409,
+          146,
+          134,
+          179
+        ],
+        "mean_probability_entropy": 1.212196707725525,
+        "max_expert_share": 0.471198171377182
+      }
+    },
+    "1": {
+      "recent_sampled_tokens": 12428,
+      "recent_token_weighted_share": [
+        0.21532024460894753,
+        0.22505632442870938,
+        0.2793691663984551,
+        0.280254264563888
+      ],
+      "latest": {
+        "tokens_per_expert": [
+          200,
+          168,
+          221,
+          279
+        ],
+        "mean_probability_entropy": 0.9632713198661804,
+        "max_expert_share": 0.3214285671710968
+      }
+    },
+    "2": {
+      "recent_sampled_tokens": 12428,
+      "recent_token_weighted_share": [
+        0.23374637914386867,
+        0.28669134213067266,
+        0.1857901512713228,
+        0.29377212745413583
+      ],
+      "latest": {
+        "tokens_per_expert": [
+          280,
+          269,
+          171,
+          148
+        ],
+        "mean_probability_entropy": 0.7301309704780579,
+        "max_expert_share": 0.32258063554763794
+      }
+    },
+    "3": {
+      "recent_sampled_tokens": 12428,
+      "recent_token_weighted_share": [
+        0.29876086256839396,
+        0.22320566462825878,
+        0.2508850981654329,
+        0.22714837463791437
+      ],
+      "latest": {
+        "tokens_per_expert": [
+          250,
+          158,
+          273,
+          187
+        ],
+        "mean_probability_entropy": 0.7997463345527649,
+        "max_expert_share": 0.3145161271095276
+      }
+    },
+    "4": {
+      "recent_sampled_tokens": 12428,
+      "recent_token_weighted_share": [
+        0.2739781139362729,
+        0.20614740907627938,
+        0.2715642098487287,
+        0.248310267138719
+      ],
+      "latest": {
+        "tokens_per_expert": [
+          214,
+          221,
+          245,
+          188
+        ],
+        "mean_probability_entropy": 0.6721433401107788,
+        "max_expert_share": 0.2822580635547638
+      }
+    },
+    "5": {
+      "recent_sampled_tokens": 12428,
+      "recent_token_weighted_share": [
+        0.19279047312520114,
+        0.21000965561635018,
+        0.35757965883488896,
+        0.23962021242355971
+      ],
+      "latest": {
+        "tokens_per_expert": [
+          102,
+          221,
+          384,
+          161
+        ],
+        "mean_probability_entropy": 0.6029483079910278,
+        "max_expert_share": 0.4423963129520416
+      }
+    },
+    "6": {
+      "recent_sampled_tokens": 12428,
+      "recent_token_weighted_share": [
+        0.21049243643385904,
+        0.34888960411972963,
+        0.36329256517541036,
+        0.07732539427100096
+      ],
+      "latest": {
+        "tokens_per_expert": [
+          229,
+          283,
+          281,
+          75
+        ],
+        "mean_probability_entropy": 0.5020363330841064,
+        "max_expert_share": 0.32603687047958374
+      }
+    },
+    "7": {
+      "recent_sampled_tokens": 12428,
+      "recent_token_weighted_share": [
+        0.31952043772127453,
+        0.08601544898616029,
+        0.39925973607981974,
+        0.19520437721274542
+      ],
+      "latest": {
+        "tokens_per_expert": [
+          308,
+          79,
+          325,
+          156
+        ],
+        "mean_probability_entropy": 0.7131015658378601,
+        "max_expert_share": 0.37442395091056824
+      }
+    }
+  }
+}

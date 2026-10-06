@@ -1,0 +1,12 @@
+{
+  "repo": "jingyaogong/minimind-3o-pytorch",
+  "revision": "9e22fb0e51852359ff51bd48d91ec3a345dbd75b",
+  "purpose": "Official reference evaluation only; never initialize our formal315M from this completed Omni weight",
+  "source_api": "https://huggingface.co/api/models/jingyaogong/minimind-3o-pytorch?blobs=true",
+  "files": {
+    "sft_omni_768_moe.pth": {
+      "bytes": 639710162,
+      "sha256": "6cef510dab06320b1e3991c2bec5ddf2263d1b0c89d1fa4070b2567e4fef6d1a"
+    }
+  }
+}

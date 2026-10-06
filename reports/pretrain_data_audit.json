@@ -1,0 +1,103 @@
+{
+  "raw_sha256": "31efc9a6fa7430769c0e78cde1c8ec0273ac7bbad20614c0ee58bccef327cc9d",
+  "metadata": {
+    "stage": "pretrain",
+    "raw": "data/raw/minimind/pretrain_t2t.jsonl",
+    "rows": 8468827,
+    "train_rows": 8460241,
+    "val_rows": 8586,
+    "full_input_tokens": 2217321424,
+    "full_supervised_tokens": 2208852597,
+    "bad_rows": 0,
+    "empty_rows": 0,
+    "length_percentiles": {
+      "50": 209.0,
+      "90": 418.0,
+      "95": 571.0,
+      "99": 1434.0,
+      "100": 17792.0
+    },
+    "length_coverage": {
+      "384": {
+        "cut_rows": 1107543,
+        "tokens_retained": 1834646689,
+        "supervised_retained": 1826177862,
+        "zero_supervision_rows": 0
+      },
+      "512": {
+        "cut_rows": 518208,
+        "tokens_retained": 1930002590,
+        "supervised_retained": 1921533763,
+        "zero_supervision_rows": 0
+      },
+      "768": {
+        "cut_rows": 331996,
+        "tokens_retained": 2029235174,
+        "supervised_retained": 2020766347,
+        "zero_supervision_rows": 0
+      },
+      "1024": {
+        "cut_rows": 303521,
+        "tokens_retained": 2110355231,
+        "supervised_retained": 2101886404,
+        "zero_supervision_rows": 0
+      },
+      "1536": {
+        "cut_rows": 47956,
+        "tokens_retained": 2203540023,
+        "supervised_retained": 2195071196,
+        "zero_supervision_rows": 0
+      },
+      "2048": {
+        "cut_rows": 6096,
+        "tokens_retained": 2213678491,
+        "supervised_retained": 2205209664,
+        "zero_supervision_rows": 0
+      }
+    },
+    "elapsed_s": 972.4052441120148,
+    "limit": 0,
+    "split": "SHA256(content) first uint64 little endian modulo 1000 < 1; identical content stays in same split",
+    "augmentation": "official SFT augmentation sampled once offline with Python seed 20261003; no fresh augmentation per epoch",
+    "tokenizer_sha256": "71f32c68cf63a15355a8fc171b7594b3d41870fe0ddb54fc6aefa55f73a4a668",
+    "preprocessor_sha256": "b27ffe563e18ec09acb5a2aababee6585b1b40cf6099be275e1e33c1bda9f6e4",
+    "cache_note": "supervised_retained is before split; pretrain count assumes no internal literal PAD token"
+  },
+  "recipes": {
+    "384": {
+      "estimated_supervised_train_tokens": 1824310861,
+      "cut_row_fraction": 0.13077879616622232,
+      "input_token_retention": 0.8274157590063497
+    },
+    "512": {
+      "estimated_supervised_train_tokens": 1919567915,
+      "cut_row_fraction": 0.06119005619078061,
+      "input_token_retention": 0.8704207559219435
+    },
+    "768": {
+      "estimated_supervised_train_tokens": 2018699218,
+      "cut_row_fraction": 0.03920212326925559,
+      "input_token_retention": 0.9151741159562259
+    },
+    "1024": {
+      "estimated_supervised_train_tokens": 2099740524,
+      "cut_row_fraction": 0.035839792216796965,
+      "input_token_retention": 0.951758824028753
+    },
+    "1536": {
+      "estimated_supervised_train_tokens": 2192831886,
+      "cut_row_fraction": 0.005662649620779832,
+      "input_token_retention": 0.9937846624982595
+    },
+    "2048": {
+      "estimated_supervised_train_tokens": 2202961367,
+      "cut_row_fraction": 0.0007198163334780602,
+      "input_token_retention": 0.9983570568702538
+    }
+  },
+  "unique_content_hash64": 8467620,
+  "duplicate_rows_beyond_first": 1207,
+  "max_content_multiplicity": 2,
+  "formal_optimizer_steps": 58752,
+  "scope_note": "Token budget subtracts BOS and crops prefixes; assumes no literal PAD inside raw text. 64-bit content hashes used for duplicate estimate; exact duplicates are assigned to the same split."
+}

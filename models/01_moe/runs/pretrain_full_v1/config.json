@@ -1,0 +1,32 @@
+{
+  "run_dir": "models/01_moe/runs/pretrain_full_v1",
+  "model_file": "upstream/model/model_minimind.py",
+  "model": {
+    "hidden_size": 768,
+    "num_hidden_layers": 8,
+    "use_moe": true
+  },
+  "corpus": "data/processed/pretrain_t2t_full_v1",
+  "stage": "pretrain",
+  "seq_len": 512,
+  "batch_size": 6,
+  "accumulation_steps": 24,
+  "epochs": 1,
+  "learning_rate": 0.0003,
+  "warmup_steps": 100,
+  "seed": 20261003,
+  "num_workers": 2,
+  "cpu_threads": 4,
+  "deterministic": false,
+  "validation_samples": 512,
+  "eval_interval": 500,
+  "save_interval": 500,
+  "log_interval": 10,
+  "milestone_interval": 5000,
+  "early_checkpoint_steps": [
+    10,
+    100
+  ],
+  "plot_on_save": true,
+  "recipe_status": "B6 T512 accumulation24 real-data probe passed; our longer-context recipe (pinned upstream default is 340); full-corpus statistics retained"
+}

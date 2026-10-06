@@ -1,0 +1,11 @@
+{
+  "cleanup_receipt": "reports/learning_delivery_v1/cleanup_deleted.jsonl",
+  "reason": "Redundant completed short preflight binaries removed during user-requested learning cleanup.",
+  "removed": [
+    "models/02_hybrid_moe/runs/random_sft_B2_recompute_tf32x3_v5/checkpoints/best_validation.pth",
+    "models/02_hybrid_moe/runs/random_sft_B2_recompute_tf32x3_v5/checkpoints/latest_resume.pt",
+    "models/02_hybrid_moe/runs/random_sft_B2_recompute_tf32x3_v5/checkpoints/model_step_0000012.pth"
+  ],
+  "retained": "config, source snapshots, all metrics, evaluation, checkpoint history, errors",
+  "limitation": "Historical metrics remain; exact saved optimizer state cannot be resumed after deletion."
+}

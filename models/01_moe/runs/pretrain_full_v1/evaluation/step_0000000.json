@@ -1,0 +1,26 @@
+{
+  "step": 0,
+  "epoch": 0,
+  "trained_tokens": 0,
+  "validation_ce": 8.894279185060968,
+  "validation_tokens": 123368,
+  "validation_rows": 512,
+  "final": false,
+  "generation": [
+    {
+      "prompt": "人工智能的主要应用包括",
+      "continuation": "设置 是 是 是ther prote数据安全00�口设置符've(-IDIDIDID设置设置设置设置设置设置数据安全pre��忽忽忽忽忽忽忽忽忽忽忽忽忽忽忽忽忽忽忽忽忽忽忽忽忽忽忽忽忽忽preprepreprepreprether"
+    },
+    {
+      "prompt": "中国的首都是",
+      "continuation": "每 Sp每 Sp Sp Sp以下业务每 Sp以下 Sp每每每每每每每每每每每每每每每每塑料塑料塑料塑料aticaticaticaticaticaticaticaticaticaticaticс更新等多个等多个等多个等多个等多个等多个等多个等多个等多个等多个iumiumiumiumiumiumiumiumium"
+    },
+    {
+      "prompt": "水的三种状态是",
+      "continuation": "ri装装装装装ri均 height heightitedhang�用户体验食品达摩达摩ited ind ind ind用户体验24来计算食品的指导食品检测检测检测 indswswsw���ited提示提示提示提示提示提示提示提示提示提示提示提示提示提示提示提示提示提示提示提示提示提示提示提示提示提示"
+    }
+  ],
+  "time": 1790966385.3603077,
+  "validation_selection_sha256": "35a38ff957d0d37bf7a0ef4bd07dbd57a42a599826796aaa853fd82c2b8abbc7",
+  "validation_selection": "fixed seeded sample across the full held-out split"
+}

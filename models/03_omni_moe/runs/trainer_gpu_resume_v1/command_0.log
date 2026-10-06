@@ -1,0 +1,39 @@
+{"event": "train", "step": 1, "epoch": 0, "cursor": 2, "loss": 12.922427654266357, "text_ce": 3.69688618183136, "audio_ce": 9.2179594039917, "aux_loss": 0.007582189282402396, "audio_codebook_ce": [9.311169624328613, 9.238358497619629, 9.114800930023193, 9.198774337768555, 9.2128267288208, 9.270193099975586, 9.240313529968262, 9.157238006591797], "grad_norm": 21.83515167236328, "learning_rate": 0.0001, "text_labels": 185, "audio_labels": 2624, "total_text_labels": 185, "total_audio_labels": 2624, "step_seconds": 1.2912682780006435, "samples_per_second": 1.5488648130477836, "wall_seconds": 7.167372226715088, "time": 1790976181.4275017, "cuda_allocated": 3897162752, "cuda_reserved": 5272240128, "cuda_peak_allocated": 5196040192}
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/mnt/d/minimind/lab/omni_train.py", line 219, in <module>
+    if __name__=='__main__': main()
+  File "/mnt/d/minimind/lab/omni_train.py", line 186, in main
+    r=forward(batch)
+  File "/mnt/d/minimind/lab/omni_train.py", line 123, in forward
+    out=model(ids,audio_inputs=a_inputs,audio_lens=a_lens,pixel_values=pixels,spk_emb=spk)
+  File "/home/USER/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/USER/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/mnt/d/minimind/sources/minimind-o/model/model_omni.py", line 296, in forward
+    talker_emb = self.talker.embed_tokens(audio_ids)
+  File "/home/USER/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/USER/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/mnt/d/minimind/sources/minimind-o/model/model_omni.py", line 76, in forward
+    return sum(base_out[:, i, :] + self.adapters[i](x[:, i, :]) for i in range(len(self.adapters))) / self.num_layers
+  File "/mnt/d/minimind/sources/minimind-o/model/model_omni.py", line 76, in <genexpr>
+    return sum(base_out[:, i, :] + self.adapters[i](x[:, i, :]) for i in range(len(self.adapters))) / self.num_layers
+  File "/home/USER/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/USER/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/USER/.local/lib/python3.10/site-packages/torch/nn/modules/container.py", line 253, in forward
+    input = module(input)
+  File "/home/USER/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/USER/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/USER/.local/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.00 MiB. GPU 0 has a total capacity of 8.00 GiB of which 893.31 MiB is free. 5.30 GiB allowed; Of the allocated memory 5.25 GiB is allocated by PyTorch, and 54.96 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)

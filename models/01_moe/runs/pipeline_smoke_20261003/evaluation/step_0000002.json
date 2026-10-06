@@ -1,0 +1,24 @@
+{
+  "step": 2,
+  "epoch": 0,
+  "trained_tokens": 3288,
+  "validation_ce": 8.27186609731263,
+  "validation_tokens": 1178,
+  "validation_rows": 5,
+  "final": false,
+  "generation": [
+    {
+      "prompt": "人工智能的主要应用包括",
+      "continuation": " determ设置反应ven设置orororor设置填填���填 determ determ00 free来说plotplot elements巴巴逐令(-设置(-更准确地令(-总是填你可以使用 ```(-(-(-(-(-(-(-和服务流 set你可以使用令和服务中国中国的情感adem持携携携携携携携携携"
+    },
+    {
+      "prompt": "中国的首都是",
+      "continuation": "�����rorrorrorrorrorrorrorrorror ma好奇 comdatedatedatedatedatedatedate业务索营非常重要的:**营date稳稳稳内容ple given内容稳稳稳稳althalthalthalthalthalthalthalthalthalthalthalthalth French employees力alth久如果您有rix given were"
+    },
+    {
+      "prompt": "水的三种状态是",
+      "continuation": "，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，"
+    }
+  ],
+  "time": 1790961942.648139
+}

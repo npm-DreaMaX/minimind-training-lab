@@ -1,0 +1,411 @@
+{
+  "checked_at": "2026-10-05T19:07:51.072398+08:00",
+  "run": "models/02_hybrid_moe/runs/hybrid_sft_official_mini_2ep_v1",
+  "step": 94197,
+  "total_steps": 113082,
+  "completed_percent": 83.29972939990449,
+  "remaining_steps": 18885,
+  "trained_tokens": 612916028,
+  "total_tokens": 735833934,
+  "remaining_tokens": 122917906,
+  "current_epoch": 2,
+  "epochs": 2,
+  "current_epoch_records_seen": 602496,
+  "epoch_train_records": 904644,
+  "last_metric_at": "2026-10-05T19:07:49.810536+08:00",
+  "pid_alive": {
+    "604480": true,
+    "604577": true
+  },
+  "all_steps_contiguous": true,
+  "tokens_match_sum_of_updates": true,
+  "nonfinite_steps": [],
+  "incomplete_json_lines": 0,
+  "failure_record_exists": false,
+  "long_gaps_after_resume": [],
+  "recent_update_count": 3000,
+  "recent_metrics": {
+    "loss": {
+      "min": 1.1408289363607764,
+      "max": 2.120020384900272,
+      "mean": 1.6596190765532666
+    },
+    "ce_loss": {
+      "min": 1.1367942094802856,
+      "max": 2.1159679889678955,
+      "mean": 1.6555488758881887
+    },
+    "aux_loss": {
+      "min": 0.003932915162295103,
+      "max": 0.004393765237182379,
+      "mean": 0.004070200665077815
+    },
+    "grad_norm": {
+      "min": 2.3046703338623047,
+      "max": 5.386289119720459,
+      "mean": 2.7890507129828137
+    },
+    "learning_rate": {
+      "min": 1.605325800521166e-06,
+      "max": 1.8064332020305964e-06,
+      "mean": 1.7036839057723147e-06
+    },
+    "step_seconds": {
+      "min": 1.4496103019919246,
+      "max": 1.9659321189974435,
+      "mean": 1.5528518056204388
+    }
+  },
+  "mean_update_seconds": 1.5528518056204388,
+  "median_periodic_overhead_seconds": 42.41274752697791,
+  "remaining_wall_projection_hours": 8.590982173121095,
+  "projected_budget_end": "2026-10-06T03:43:18.608221+08:00",
+  "eta_method": "Last 3000 perf_counter update durations plus median periodic 500-step overhead; wall gaps outside (0,300) excluded. Future sleeps, failures and final expanded evaluation excluded.",
+  "latest_completed_checkpoint": {
+    "event": "checkpoint",
+    "kind": "periodic",
+    "step": 94000,
+    "epoch": 1,
+    "cursor": 599344,
+    "tokens": 611626948,
+    "bytes": 2467735019,
+    "seconds": 25.025294065475464,
+    "time": 1791198168.4881766
+  },
+  "latest_evaluation": {
+    "step": 94000,
+    "epoch": 1,
+    "trained_tokens": 611626948,
+    "validation_ce": 1.679007201551481,
+    "validation_tokens": 191220,
+    "validation_rows": 512,
+    "final": false,
+    "generation": [
+      {
+        "prompt": "你好，请介绍一下自己。",
+        "rendered_input": "<|im_start|>user\n你好，请介绍一下自己。<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+        "input_ids": [
+          1,
+          832,
+          311,
+          234,
+          1968,
+          294,
+          960,
+          2919,
+          2360,
+          1153,
+          302,
+          2,
+          234,
+          1,
+          1388,
+          570,
+          811,
+          234,
+          25,
+          234,
+          234,
+          26,
+          234,
+          234
+        ],
+        "continuation": "你好！我叫minimind，是一个小巧的AI。我擅长通过思考来帮助用户解决各个问题，提供有价值的帮助。\n</think>\n\n你好呀！我叫minimind，是一个小巧但努力的AI助手。虽然我的参数量不大，但我会",
+        "output_tokens": 64,
+        "ended_with_eos": false,
+        "truncated_by_budget": true
+      },
+      {
+        "prompt": "为什么天空是蓝色的？",
+        "rendered_input": "<|im_start|>user\n为什么天空是蓝色的？<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+        "input_ids": [
+          1,
+          832,
+          311,
+          234,
+          4568,
+          993,
+          1273,
+          357,
+          3961,
+          930,
+          296,
+          776,
+          2,
+          234,
+          1,
+          1388,
+          570,
+          811,
+          234,
+          25,
+          234,
+          234,
+          26,
+          234,
+          234
+        ],
+        "continuation": "天空是由多种颜色组成的，这些颜色共同构成了天空的蓝色。以下是几个主要原因：\n\n1. **颜色的多样性**：天空是由各种颜色组成的，这些颜色共同构成了天空的蓝色。例如，蓝色和绿色的天空通常",
+        "output_tokens": 64,
+        "ended_with_eos": false,
+        "truncated_by_budget": true
+      },
+      {
+        "prompt": "计算 17 加 25。",
+        "rendered_input": "<|im_start|>user\n计算 17 加 25。<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+        "input_ids": [
+          1,
+          832,
+          311,
+          234,
+          895,
+          4515,
+          256,
+          595,
+          3331,
+          302,
+          2,
+          234,
+          1,
+          1388,
+          570,
+          811,
+          234,
+          25,
+          234,
+          234,
+          26,
+          234,
+          234
+        ],
+        "continuation": "要计算17加 25，我们可以使用复数的方法。首先，我们需要将两个数相加，然后将结果相加。\n\n17加 25 的结果是：\n\n17 + 25 = 35\n\n所以，17加 25 的结果是35。<|im_end|>",
+        "output_tokens": 58,
+        "ended_with_eos": true,
+        "truncated_by_budget": false
+      }
+    ],
+    "time": 1791198139.6233158,
+    "validation_selection_sha256": "e5f2872a99d8f485970b59088e9a333814ddcfba04a6538310dd6ce812b72fcb",
+    "validation_selection": "fixed seeded sample across the full held-out split",
+    "generation_protocol": {
+      "version": 2,
+      "pretrain_prefix": "explicit tokenizer BOS",
+      "sft_prefix": "official chat template",
+      "dtype": "BF16 autocast",
+      "do_sample": false,
+      "temperature": 1.0,
+      "top_p": 1.0,
+      "top_k": 0,
+      "repetition_penalty": 1.0,
+      "max_new_tokens": 64
+    }
+  },
+  "validation_trend": [
+    {
+      "step": 80000,
+      "ce": 1.6987237752350464,
+      "rows": 512,
+      "selection_sha256": "e5f2872a99d8f485970b59088e9a333814ddcfba04a6538310dd6ce812b72fcb"
+    },
+    {
+      "step": 85000,
+      "ce": 1.6921476745029433,
+      "rows": 512,
+      "selection_sha256": "e5f2872a99d8f485970b59088e9a333814ddcfba04a6538310dd6ce812b72fcb"
+    },
+    {
+      "step": 90000,
+      "ce": 1.6840786886775037,
+      "rows": 512,
+      "selection_sha256": "e5f2872a99d8f485970b59088e9a333814ddcfba04a6538310dd6ce812b72fcb"
+    },
+    {
+      "step": 94000,
+      "ce": 1.679007201551481,
+      "rows": 512,
+      "selection_sha256": "e5f2872a99d8f485970b59088e9a333814ddcfba04a6538310dd6ce812b72fcb"
+    }
+  ],
+  "routing_summary": {
+    "scope": "First microbatch non-padding token routing at recorded steps; sampled diagnostic, not whole-corpus expert load",
+    "observations": 1880,
+    "latest_step": 93951,
+    "recent_window_steps": [
+      93501,
+      93551,
+      93601,
+      93651,
+      93701,
+      93751,
+      93801,
+      93851,
+      93901,
+      93951
+    ],
+    "layers": {
+      "0": {
+        "recent_sampled_tokens": 77596,
+        "recent_token_weighted_share": [
+          0.33081602144440436,
+          0.18289602556832826,
+          0.20958554564668283,
+          0.27670240734058454
+        ],
+        "latest": {
+          "tokens_per_expert": [
+            2300,
+            1690,
+            1814,
+            2096
+          ],
+          "mean_probability_entropy": 1.3703362941741943,
+          "max_expert_share": 0.29113924503326416
+        }
+      },
+      "1": {
+        "recent_sampled_tokens": 77596,
+        "recent_token_weighted_share": [
+          0.24530903654827568,
+          0.1915304912624362,
+          0.44616990566524045,
+          0.11699056652404763
+        ],
+        "latest": {
+          "tokens_per_expert": [
+            2297,
+            1607,
+            2931,
+            1065
+          ],
+          "mean_probability_entropy": 1.2041229009628296,
+          "max_expert_share": 0.3710126578807831
+        }
+      },
+      "2": {
+        "recent_sampled_tokens": 77596,
+        "recent_token_weighted_share": [
+          0.06868910768596319,
+          0.2482602195989484,
+          0.11058559719573174,
+          0.5724650755193567
+        ],
+        "latest": {
+          "tokens_per_expert": [
+            591,
+            2030,
+            833,
+            4446
+          ],
+          "mean_probability_entropy": 0.9222040772438049,
+          "max_expert_share": 0.5627847909927368
+        }
+      },
+      "3": {
+        "recent_sampled_tokens": 77596,
+        "recent_token_weighted_share": [
+          0.19463632145986906,
+          0.27483375431723284,
+          0.25498737048301456,
+          0.2755425537398835
+        ],
+        "latest": {
+          "tokens_per_expert": [
+            1097,
+            2722,
+            1598,
+            2483
+          ],
+          "mean_probability_entropy": 0.7049404382705688,
+          "max_expert_share": 0.3445569574832916
+        }
+      },
+      "4": {
+        "recent_sampled_tokens": 77596,
+        "recent_token_weighted_share": [
+          0.13026444662095985,
+          0.15116758595803909,
+          0.3266405484818805,
+          0.3919274189391206
+        ],
+        "latest": {
+          "tokens_per_expert": [
+            872,
+            910,
+            2456,
+            3662
+          ],
+          "mean_probability_entropy": 0.47849541902542114,
+          "max_expert_share": 0.4635443091392517
+        }
+      },
+      "5": {
+        "recent_sampled_tokens": 77596,
+        "recent_token_weighted_share": [
+          0.2145729161296974,
+          0.2606835403886798,
+          0.20779421619671118,
+          0.3169493272849116
+        ],
+        "latest": {
+          "tokens_per_expert": [
+            1500,
+            1719,
+            1911,
+            2770
+          ],
+          "mean_probability_entropy": 0.5319726467132568,
+          "max_expert_share": 0.350632905960083
+        }
+      },
+      "6": {
+        "recent_sampled_tokens": 77596,
+        "recent_token_weighted_share": [
+          0.09968297334914171,
+          0.42732872828496316,
+          0.010928398371050054,
+          0.4620598999948451
+        ],
+        "latest": {
+          "tokens_per_expert": [
+            467,
+            3282,
+            167,
+            3984
+          ],
+          "mean_probability_entropy": 0.7023661136627197,
+          "max_expert_share": 0.5043038129806519
+        }
+      },
+      "7": {
+        "recent_sampled_tokens": 77596,
+        "recent_token_weighted_share": [
+          0.03394504871385123,
+          0.1738233929583999,
+          0.2962781586679726,
+          0.49595339965977625
+        ],
+        "latest": {
+          "tokens_per_expert": [
+            274,
+            1567,
+            2333,
+            3726
+          ],
+          "mean_probability_entropy": 0.3606477975845337,
+          "max_expert_share": 0.4716455638408661
+        }
+      }
+    }
+  },
+  "quality_approved": false,
+  "quality_note": "Fixed 64-token greedy probes still show repeated self-introduction with stray </think>, incorrect sky explanation, and 17+25=35. Arithmetic ends with EOS at step 94000 but is wrong. No broad capability evaluation yet.",
+  "scope": "Read-only logs and saved evaluation review; no new model inference, no training recipe changes.",
+  "gpu_snapshot": {
+    "checked_at": "2026-10-05T19:06:17+08:00",
+    "utilization_percent": 89,
+    "memory_used_mib": 6875,
+    "memory_total_mib": 8188,
+    "temperature_c": 67,
+    "power_w": 92.62
+  }
+}

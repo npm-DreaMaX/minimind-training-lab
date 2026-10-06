@@ -1,0 +1,14 @@
+{
+  "repo": "jingyaogong/minimind_dataset",
+  "revision": "312afb4f76391145c6902f765bb51691c09a12f5",
+  "files": {
+    "pretrain_t2t_mini.jsonl": {
+      "bytes": 1241043656,
+      "sha256": "6dd6716c84ab36897bdbfc7f88e04f4441c48c1ab7ecee88ce0b0e7d4685560c"
+    },
+    "sft_t2t_mini.jsonl": {
+      "bytes": 1739201170,
+      "sha256": "abb1e76b2056e14728beb78db96b7b3c491a0bef1ed3e34a9b381b28f29fa518"
+    }
+  }
+}

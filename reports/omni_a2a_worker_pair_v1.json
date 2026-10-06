@@ -1,0 +1,19 @@
+{
+  "step": true,
+  "cursor": true,
+  "text_labels": true,
+  "audio_labels": true,
+  "data": true,
+  "skipped_microbatches": true,
+  "number_of_updates": true,
+  "maximum_absolute_text_ce_difference": 0.015677452087402344,
+  "maximum_absolute_audio_ce_difference": 0.027454853057861328,
+  "maximum_absolute_aux_loss_difference": 0.000198418740183115,
+  "maximum_absolute_loss_difference": 0.026590347290039062,
+  "maximum_absolute_grad_norm_difference": 0.38286876678466797,
+  "final_weight_file_sha256": [
+    "26b40c0d3f2003f8e863b5e46747c26c4199ee9ef999ca6e6ce0057e6e301c13",
+    "0edb4a65dd506e5153ebd94cb0c2642cf62224056db890e98f0e4fcbc7f640c2"
+  ],
+  "scope": "Same full model, data indices, per-record augmentation, seed, effective batch and objective. Global host pressure and initial paging state may differ. Equality of export hashes is stronger than close metric values, but does not imply equal full checkpoints with different configurations."
+}

@@ -1,0 +1,3573 @@
+{
+  "complete": true,
+  "results": {
+    "expected_not_started": true,
+    "missing_recovered": true,
+    "invalid_recovered": true,
+    "persistent_missing_fails": true,
+    "timeout_seconds": 0.11501584299548995,
+    "concurrent_writes": 2000,
+    "successful_reads": 2473,
+    "concurrent_read_pass": true
+  },
+  "retry_events": [
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 6,
+      "seconds": 0.11941245800699107
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "JSONDecodeError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 5,
+      "seconds": 0.10249398699670564
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.011651198990875855
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009594856994226575
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.012087320006685331
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010438241006340832
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008361899002920836
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.01046689999930095
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008698958001332358
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010483199002919719
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009607677988242358
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009814737990382127
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010545318000367843
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008121114005916752
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009444875991903245
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009996056003728881
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009639079988119192
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009439821005798876
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009234444005414844
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.011571926006581634
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.011302287006401457
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.011912202011444606
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010003256000345573
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010091937001561746
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009481762986979447
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.011622317993897013
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009071514999959618
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008605848997831345
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.011509187999763526
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.013065758001175709
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.011911405992577784
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.01230304900673218
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.013031506008701399
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.012043448994518258
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010214982001343742
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.007978987996466458
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.007468142008292489
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.01078712499293033
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.012763097998686135
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.011225777998333797
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.00953148299595341
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009963133008568548
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008905549999326468
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008373788004973903
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.01199849700788036
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.0074144440004602075
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.007342419004999101
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009799249994102865
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008834635998937301
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.013644911989104003
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.01569348099292256
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.012190854991786182
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.011603093997109681
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009843429012107663
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010559554008068517
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.018511343994759955
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.00954320099845063
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.0082809460000135
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.00961326900869608
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.02152547899459023
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009726126998430118
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009340674994746223
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008546355995349586
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.013557942991610616
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.011556591009139083
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010615004997816868
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.00713820599776227
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009112059997278266
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.012148280002293177
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.01268183600041084
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.012259285998879932
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009597839991329238
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.011173245002282783
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.012824391989852302
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010742069993284531
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.012504369005910121
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.0092428630014183
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008805258010397665
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009673617998487316
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.00932389400259126
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010365790003561415
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010050309996586293
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010522964992560446
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.01066317300137598
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.01096138400316704
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010673313998267986
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.01038340400555171
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.00907573699078057
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009487328003160655
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.012739554993459024
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009152491998975165
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010387041009380482
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010557746994891204
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.011795714992331341
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009575778996804729
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009151478006970137
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010869384990655817
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.012677107995841652
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008042635992751457
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.012161675011157058
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.015305355002055876
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009703207004349679
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.011148349003633484
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.00838858300994616
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008296921994769946
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.00717969800462015
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008432169997831807
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008758795011090115
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008311706988024525
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.011385699996026233
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.012608712000655942
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.015952814006595872
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010862244002055377
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.014369759999681264
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.011165951000293717
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.0076834060018882155
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.01271184800134506
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008811537991277874
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.012335560997598805
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.014937540996470489
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009823823987971991
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010759773998870514
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.00865283000166528
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009192137003992684
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009788633993593976
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008892742989701219
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.011889847999555059
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009270511000067927
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009367462989757769
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.011803569999756292
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009823286003665999
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009535796998534352
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008991435999632813
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.011580649996176362
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.012348668999038637
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009616467999876477
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009950503997970372
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.00846973700390663
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.016415300997323357
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009506047004833817
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.0081555000069784
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.007778037994285114
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010422987004858442
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009168125994619913
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.00854766600241419
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010556799999903888
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010113218988408335
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009808552989852615
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009526712005026639
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008748196007218212
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.01021315500838682
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010824468001374044
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010236454007099383
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008806176992948167
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009288440007367171
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.0093810310063418
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.013444155003526248
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010635238999384455
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.012554435001220554
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.019841825996991247
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.012254968998604454
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010803853001561947
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009008870998513885
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.011564863001694903
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.01074882700049784
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010062601999379694
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010488918996998109
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008052908000536263
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008502551994752139
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.007715015992289409
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.007189733994891867
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008896423998521641
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.011903077000170015
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009129719008342363
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.006957183009944856
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.00924946300801821
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009917001007124782
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010585748997982591
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.014317840992589481
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.011520896994625218
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010366867005359381
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.011302497994620353
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008923291999963112
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009624496989999898
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.013855078999768011
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.011331513000186533
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010770072010927834
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010098522005137056
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010262362004141323
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008082672997261398
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010459837008966133
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009092156004044227
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009140814989223145
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.00927877999492921
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009933163004461676
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.0060705070063704625
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010203829006059095
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010334075006539933
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009672397005488165
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009277046003262512
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.018620162998558953
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.012072040000930429
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.00949305499671027
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008723994993488304
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.011583239000174217
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.00988607099861838
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.012151786009781063
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.0081800799962366
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009240339990356006
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.011135584994917735
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010504667006898671
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009818417005590163
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.014922322006896138
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.007927867991384119
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.011443989991676062
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.01105817400093656
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010432311988552101
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009795505000511184
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009159876994090155
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009403046002262272
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008200982993002981
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008722571990801953
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009962216005078517
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009986790013499558
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009160730987787247
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.011636272000032477
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009588190994691104
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.006869794990052469
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008818271002382971
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010379312006989494
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010004198993556201
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010437960998388007
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009892494999803603
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.015434259999892674
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.0170447810087353
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010934038000414148
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.00959735301148612
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010701368999434635
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009193169011268765
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.012276690002181567
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.012024841009406373
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.014752648989087902
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.011675117988488637
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.011717266999767162
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.007359102004556917
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010021614987635985
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010238956994726323
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008107597997877747
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.013308579989825375
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009141756992903538
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009682608986622654
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.00993387600465212
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.00948643998708576
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.007526329995016567
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010563410993199795
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.01277812100306619
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008273876999737695
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009868298002402298
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.014038186011021025
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.013848001006408595
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.011769643009756692
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.011469867997220717
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.012576373002957553
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009406616998603567
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009386785997776315
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008796050999080762
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009368807994178496
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008151264992193319
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.005064341996330768
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.011858861005748622
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008463589008897543
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008444346996839158
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008312452991958708
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009174928985885344
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008610546006821096
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009643195997341536
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.01111688899982255
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010639538013492711
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008301941998070106
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.01399708099779673
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009353561996249482
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.011794272999395616
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008881981004378758
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010140820013475604
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009869677000096999
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009665600999142043
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009183290996588767
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008089151000604033
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.007002441998338327
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008895927996491082
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009327245992608368
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.011605621999478899
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.007755141006782651
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.011634107999270782
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008329662989126518
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.01091186999110505
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008255505003035069
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009007530999951996
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009606160005205311
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.006976186006795615
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008213224005885422
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009534729993902147
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008414469004492275
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.00838377999025397
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009568965993821621
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.01078459199925419
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010384298991994001
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.01569280499825254
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.006828250989201479
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008378259997698478
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009160054003586993
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.0094213620031951
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008519790004356764
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008964535998529755
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008864920993801206
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.008337571998708881
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.010613178004859947
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.011247392991208471
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009948594990419224
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.01066084900230635
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.012402822991134599
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.009379135997733101
+    },
+    {
+      "event": "live_json_retry",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "error": "FileNotFoundError"
+    },
+    {
+      "event": "live_json_recovered",
+      "path": "/mnt/d/minimind/reports/live_status_reader_validation_v1/reader-bpa34yfq/status.json",
+      "attempts": 1,
+      "seconds": 0.01167186199745629
+    }
+  ]
+}

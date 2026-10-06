@@ -1,0 +1,31 @@
+{
+  "repo": "jingyaogong/campplus",
+  "revision": "77bb7d92872bdbd66586cdcc6a7148dfd111683c",
+  "files": {
+    ".gitattributes": {
+      "bytes": 1519,
+      "sha256": null,
+      "git_blob_id": "a6344aac8c09253b3b630fb776ae94478aa0275b"
+    },
+    "README.md": {
+      "bytes": 950,
+      "sha256": null,
+      "git_blob_id": "9a200b24ec5cc01bcd1ff984a539035638f7236f"
+    },
+    "campplus_cn_common.pt": {
+      "bytes": 14173135,
+      "sha256": "55ffb1a55d04bac4a9b7ed80497cb731909985c9b55d120fce04b851a697886c",
+      "git_blob_id": "b11c417a3edf86921eaf8aeb0a18bebe60d8e4bc"
+    },
+    "config.yaml": {
+      "bytes": 537,
+      "sha256": null,
+      "git_blob_id": "38dcfde3e1828f468446eac35df33a8bb8b95b6a"
+    },
+    "configuration.json": {
+      "bytes": 581,
+      "sha256": null,
+      "git_blob_id": "e4f3160e97a6751940cacdc101c2be05f7f93aaa"
+    }
+  }
+}

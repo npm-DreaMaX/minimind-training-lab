@@ -1,0 +1,38 @@
+{
+  "checks": [
+    {
+      "step": 1,
+      "model_exact": true,
+      "optimizer_exact": true
+    },
+    {
+      "step": 2,
+      "model_exact": true,
+      "optimizer_exact": true
+    },
+    {
+      "step": 3,
+      "model_exact": true,
+      "optimizer_exact": true
+    },
+    {
+      "step": 4,
+      "model_exact": true,
+      "optimizer_exact": true
+    },
+    {
+      "step": 5,
+      "model_exact": true,
+      "optimizer_exact": true
+    },
+    {
+      "step": 6,
+      "model_exact": true,
+      "optimizer_exact": true
+    }
+  ],
+  "passed": true,
+  "host_bytes": 18944,
+  "scope": "Tiny CUDA BF16 forward, FP32 AdamW, three accumulation microbatches, pinned moment evict/restore and file resume; not full-model memory evidence",
+  "time": 1790976834.9623358
+}

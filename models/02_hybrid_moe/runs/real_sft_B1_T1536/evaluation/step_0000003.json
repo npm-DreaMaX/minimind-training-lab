@@ -1,0 +1,26 @@
+{
+  "step": 3,
+  "epoch": 0,
+  "trained_tokens": 1814,
+  "validation_ce": 7.987898690589351,
+  "validation_tokens": 7720,
+  "validation_rows": 18,
+  "final": true,
+  "generation": [
+    {
+      "prompt": "你好，请介绍一下自己。",
+      "continuation": "ineymnm��u的，子的 s\n气是的ing<|im_end|>"
+    },
+    {
+      "prompt": "为什么天空是蓝色的？",
+      "continuation": "\nr\n\n\nr as  G题�,,成p 在A<|im_end|>"
+    },
+    {
+      "prompt": "计算 17 加 25。",
+      "continuation": "\ns.s. ak,w �u??-- sss.A对 �\n\n-- .B�-. ��<|im_end|>"
+    }
+  ],
+  "time": 1790976111.7315614,
+  "validation_selection_sha256": "1a053915ce24353819db69c0fa512c517dadfaccf3bf5c75820808c16689fc9e",
+  "validation_selection": "full split"
+}

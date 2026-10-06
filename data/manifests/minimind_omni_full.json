@@ -1,0 +1,9 @@
+{
+  "repo": "jingyaogong/minimind-o_dataset",
+  "revision": "d6588e12ac2ac8ced65eb58a7d7b3eef4aa220de",
+  "files": {
+    "sft_t2a.parquet": {"bytes": 5352974361, "sha256": "2e5eb373e8853109f7d2d4e032a2a6e47088cd61873af0896e9fc32d1464597e"},
+    "sft_a2a.parquet": {"bytes": 5754147166, "sha256": "48cd60f4dbc987fee459968637758b27858daab52dfe6f21ac257cd4af182965"},
+    "sft_i2t.parquet": {"bytes": 4934887104, "sha256": "712f4026cd0e21b369feddca7334b1e465cb8182b5f298006f3f4f877f926643"}
+  }
+}

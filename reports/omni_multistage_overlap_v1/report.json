@@ -1,0 +1,119 @@
+{
+  "stage_sizes": {
+    "language_sft": {
+      "train": {
+        "rows": 5102028,
+        "unique_conversations": 4902060
+      },
+      "val": {
+        "rows": 5400,
+        "unique_conversations": 4970
+      }
+    },
+    "t2a": {
+      "train": {
+        "rows": 1247657,
+        "unique_conversations": 1237269
+      },
+      "val": {
+        "rows": 1266,
+        "unique_conversations": 1256
+      }
+    },
+    "a2a": {
+      "train": {
+        "rows": 413573,
+        "unique_conversations": 172178
+      },
+      "val": {
+        "rows": 451,
+        "unique_conversations": 170
+      }
+    },
+    "i2t_visual_v2": {
+      "train": {
+        "rows": 2671732,
+        "unique_conversations": 2669617
+      },
+      "val": {
+        "rows": 2513,
+        "unique_conversations": 2509
+      }
+    }
+  },
+  "cross_stage_exact_conversation_overlap": [
+    {
+      "validation_stage": "t2a",
+      "prior_training_stage": "language_sft",
+      "overlap_validation_rows": 0,
+      "overlap_unique_hashes": 0,
+      "validation_rows": 1266
+    },
+    {
+      "validation_stage": "a2a",
+      "prior_training_stage": "language_sft",
+      "overlap_validation_rows": 0,
+      "overlap_unique_hashes": 0,
+      "validation_rows": 451
+    },
+    {
+      "validation_stage": "a2a",
+      "prior_training_stage": "t2a",
+      "overlap_validation_rows": 0,
+      "overlap_unique_hashes": 0,
+      "validation_rows": 451
+    },
+    {
+      "validation_stage": "i2t_visual_v2",
+      "prior_training_stage": "language_sft",
+      "overlap_validation_rows": 0,
+      "overlap_unique_hashes": 0,
+      "validation_rows": 2513
+    },
+    {
+      "validation_stage": "i2t_visual_v2",
+      "prior_training_stage": "t2a",
+      "overlap_validation_rows": 0,
+      "overlap_unique_hashes": 0,
+      "validation_rows": 2513
+    },
+    {
+      "validation_stage": "i2t_visual_v2",
+      "prior_training_stage": "a2a",
+      "overlap_validation_rows": 0,
+      "overlap_unique_hashes": 0,
+      "validation_rows": 2513
+    }
+  ],
+  "a2a_unseen_audio": {
+    "original_validation_rows": 451,
+    "unseen_audio_validation_rows": 359,
+    "excluded_shared_audio_rows": 31,
+    "excluded_no_audio_rows": 61,
+    "unseen_input_assets": 237,
+    "shared_input_assets": 12,
+    "training_indices": "audit_v1/train.npy unchanged",
+    "selection": "Original conversation-hash held-out rows with at least one valid input audio and no input audio hash64 occurring in the unchanged A2A training split",
+    "asset_identity": "SHA256 first uint64 LE of exact encoded bytes; no perceptual/audio-semantic matching",
+    "index_sha256": "0f12b538e2705856d503c8457341408fff556427485a589d0424b053bef9e0ff",
+    "asset_manifest_sha256": "d77c54e49921f103f99b92b93531802b2a5832e0417d3eeaf3fa5b3d39285483",
+    "limitations": "Exact encoded asset hash64 and exact full-conversation hash64 only; no speaker, waveform-perceptual, question-only, answer-only, semantic or pretraining-text decontamination; excludes text-only replay from this audio-specific subset; old full validation remains available"
+  },
+  "input_sha256": {
+    "data/processed/sft_t2t_full_v1/content_hash64.npy": "c83442072885205af7ea26cc7c5fd49f1f35f184cb72f436bb15030c5cc66646",
+    "data/processed/sft_t2t_full_v1/train.npy": "806d7784ccce6131ec8b71b5367070c3faae94511fa5d22eade7cf103d9869d9",
+    "data/processed/sft_t2t_full_v1/val.npy": "51a22218344233196fa57492779fc107d4715ae0ca5d12d9b0e65c08c1334173",
+    "data/processed/sft_t2a_shards_v1/audit_v1/content_hash64.npy": "62adbbe5d4481bea084dc2353ba095e84859699d9555b08f1add5906ea3f5cf7",
+    "data/processed/sft_t2a_shards_v1/audit_v1/train.npy": "a84beedfbd73db39d9e2c68f2d308b91bba13cbd10b24b173909667a1939de63",
+    "data/processed/sft_t2a_shards_v1/audit_v1/val.npy": "569d123b457bb6066afe33c11d034868c42c4f4e51154aa589fc64485824921d",
+    "data/processed/sft_a2a_shards_v1/audit_v1/content_hash64.npy": "c40a2213019c7dd6fb95e5031d17d49a6974dfed27431bcecdaf88129ad755e7",
+    "data/processed/sft_a2a_shards_v1/audit_v1/train.npy": "9b0f691c35611bc223f10d941288848b9393e4b6abb289f000b1ee62092684d8",
+    "data/processed/sft_a2a_shards_v1/audit_v1/val.npy": "16430438b617f00d85bd570803ad21adc70dea77af3538c21af0f2b57854cb7e",
+    "data/processed/sft_i2t_shards_v1/audit_v1/content_hash64.npy": "2498843a1362cd323d3e0c20233e86562215f2f3a04c5a4e8c5d426632408ad6",
+    "data/processed/sft_i2t_shards_v1/split_image_v2/visual_train.npy": "76a52c15a9e1cabfc2e8c48d18d9c64dc80ef32dd765b082597238837113b06d",
+    "data/processed/sft_i2t_shards_v1/split_image_v2/visual_val.npy": "60eac9bfd223e0853a394a8c3b1362ede4573afd8406c972cfac8e4d4a693631"
+  },
+  "source_sha256": "76863b23ea678861ef99b361952bbff1e73684391ff0fd6155d6dec6c4f2ebbd",
+  "seconds": 5.186074762008502,
+  "peak_rss_kib": 551672
+}

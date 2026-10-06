@@ -1,0 +1,89 @@
+{
+  "time": 1791002579.6004798,
+  "step": 8879,
+  "total_steps": 58752,
+  "token_budget": 1919567915,
+  "tokens": 290139337,
+  "progress": 0.15112677015250545,
+  "recent_updates": 300,
+  "median_seconds": 3.4501140419961303,
+  "median_valid_tokens_per_second": 9463.347154454335,
+  "loss_min": 1.9053140709095187,
+  "loss_max": 2.204159575525028,
+  "grad_norm_min": 0.3155391812324524,
+  "grad_norm_max": 0.37328943610191345,
+  "best_validation": {
+    "step": 8500,
+    "epoch": 0,
+    "trained_tokens": 277685426,
+    "validation_ce": 2.0767379061424442,
+    "validation_tokens": 123368,
+    "validation_rows": 512,
+    "final": false,
+    "generation": [
+      {
+        "prompt": "人工智能的主要应用包括",
+        "rendered_input": "<|im_start|>人工智能的主要应用包括",
+        "input_ids": [
+          1,
+          2225,
+          3669,
+          908,
+          898
+        ],
+        "continuation": "自然语言处理、计算机视觉、机器学习、深度学习、自然语言处理等。自然语言处理是人工智能的一个重要分支，它涉及计算机科学、人工智能、语言学等多个领域。自然语言处理技术包括语音识别、文本分类、情感分析、机器翻译、情感分析等。计算机视觉技术包括人脸识别、图像分割、",
+        "output_tokens": 64,
+        "ended_with_eos": false,
+        "truncated_by_budget": true
+      },
+      {
+        "prompt": "中国的首都是",
+        "rendered_input": "<|im_start|>中国的首都是",
+        "input_ids": [
+          1,
+          1405,
+          296,
+          1408,
+          2462
+        ],
+        "continuation": "哪里？中国的首都是北京。北京是中国的首都，也是世界上最大的城市之一。北京的首都是北京，也是中国的首都。北京是中国的首都，也是世界上最大的城市之一。北京的首都是东京，也是中国的首都。北京是中国",
+        "output_tokens": 64,
+        "ended_with_eos": false,
+        "truncated_by_budget": true
+      },
+      {
+        "prompt": "水的三种状态是",
+        "rendered_input": "<|im_start|>水的三种状态是",
+        "input_ids": [
+          1,
+          952,
+          296,
+          1441,
+          604,
+          2341,
+          357
+        ],
+        "continuation": "：水的密度是1.08克/立方厘米，水的密度是1.08克/立方厘米。水的密度是1.08克/立方厘米，水的密度是1.08克/立",
+        "output_tokens": 64,
+        "ended_with_eos": false,
+        "truncated_by_budget": true
+      }
+    ],
+    "time": 1791001248.8093457,
+    "validation_selection_sha256": "35a38ff957d0d37bf7a0ef4bd07dbd57a42a599826796aaa853fd82c2b8abbc7",
+    "validation_selection": "fixed seeded sample across the full held-out split",
+    "generation_protocol": {
+      "version": 2,
+      "pretrain_prefix": "explicit tokenizer BOS",
+      "sft_prefix": "official chat template",
+      "dtype": "BF16 autocast",
+      "do_sample": false,
+      "temperature": 1.0,
+      "top_p": 1.0,
+      "top_k": 0,
+      "repetition_penalty": 1.0,
+      "max_new_tokens": 64
+    }
+  },
+  "remaining_train_hours_excluding_eval_save_pauses": 47.796538226798056
+}

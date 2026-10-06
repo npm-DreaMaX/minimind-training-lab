@@ -1,0 +1,58 @@
+{
+  "status": "complete",
+  "step": 3,
+  "text_tokens": 2361,
+  "audio_tokens": 0,
+  "validation": {
+    "step": 3,
+    "final": true,
+    "validation_rows": 2929,
+    "text_ce": 3.993193555601894,
+    "audio_codebook_ce": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "audio_ce": 0.0,
+    "selection_score": 3.993193555601894,
+    "text_labels": 644824,
+    "audio_labels": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "stop_count": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "stop_correct": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "time": 1790982003.6272585,
+    "protocol": "fixed per-record augmented inputs; scheduled_sampling=0; CE globally token-weighted within each head; no aux in selection score"
+  },
+  "purpose": "preflight"
+}

@@ -1,0 +1,56 @@
+{
+  "evaluated_rows": 359,
+  "requested_rows": 359,
+  "missing_rows": 0,
+  "complete_cohort": true,
+  "text_ce": 3.311783658797646,
+  "audio_codebook_ce": [
+    7.936929478482338,
+    7.850849348102923,
+    7.875470289738646,
+    7.8809647206452915,
+    7.9266931918261445,
+    7.8932281438934115,
+    7.8364123457286015,
+    7.9397554009866225
+  ],
+  "audio_ce": 7.892537864925497,
+  "selection_score": 11.204321523723143,
+  "text_labels": 25971,
+  "audio_labels": [
+    84024,
+    84024,
+    84024,
+    84024,
+    84024,
+    84024,
+    84024,
+    84024
+  ],
+  "stop_count": [
+    359,
+    359,
+    359,
+    359,
+    359,
+    359,
+    359,
+    359
+  ],
+  "stop_correct": [
+    359,
+    359,
+    359,
+    359,
+    359,
+    359,
+    359,
+    359
+  ],
+  "evaluation": "models/03_omni_moe/runs/real_a2a_L3072_worker1_resource_v3/evaluation/step_0000032_full_rows.jsonl",
+  "evaluation_sha256": "0423511e21e59ac2bea9c235baab82e0025bffa67f058491f6c77d3fb8064aef",
+  "indices": "data/processed/sft_a2a_shards_v1/evaluation_audio_unseen_v2/val.npy",
+  "indices_sha256": "0f12b538e2705856d503c8457341408fff556427485a589d0424b053bef9e0ff",
+  "protocol": "Sum per-record NLL numerator and valid label counts, then divide within each head; audio STOP weighted 10x; no aux; same forward pass as original evaluation",
+  "limitation": "Teacher-forced augmented inputs, not clean generation or task accuracy"
+}

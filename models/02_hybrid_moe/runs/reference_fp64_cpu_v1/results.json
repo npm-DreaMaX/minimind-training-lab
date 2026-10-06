@@ -1,0 +1,148 @@
+{
+  "capture": null,
+  "records": [
+    {
+      "case": "mild",
+      "fp32_vs_fp64": {
+        "output": {
+          "reference_rms": 0.03823479166387082,
+          "error_rms": 4.8583338737861155e-09,
+          "relative_rms": 1.270657864830711e-07,
+          "max_absolute": 2.8307256996762398e-08
+        },
+        "gradients": {
+          "q": {
+            "reference_rms": 9.419406376364433e-05,
+            "error_rms": 1.1877673842864572e-11,
+            "relative_rms": 1.2609790222734762e-07,
+            "max_absolute": 5.545747915796165e-11
+          },
+          "k": {
+            "reference_rms": 0.00010049807282047812,
+            "error_rms": 1.4524208122564304e-11,
+            "relative_rms": 1.44522255153183e-07,
+            "max_absolute": 8.386553132727972e-11
+          },
+          "v": {
+            "reference_rms": 1.8355415058085594e-05,
+            "error_rms": 2.5717299242472615e-12,
+            "relative_rms": 1.4010742421835946e-07,
+            "max_absolute": 1.7230667901605573e-11
+          },
+          "g": {
+            "reference_rms": 0.00016646391442615773,
+            "error_rms": 3.515313677639186e-11,
+            "relative_rms": 2.111757187590681e-07,
+            "max_absolute": 9.192370568076105e-11
+          },
+          "beta": {
+            "reference_rms": 0.000184569157797008,
+            "error_rms": 3.3669423038174975e-11,
+            "relative_rms": 1.824217189916699e-07,
+            "max_absolute": 9.533600449883328e-11
+          }
+        }
+      },
+      "finite_differences": [
+        {
+          "index": 20,
+          "finite_difference": -0.0005638063632607514,
+          "analytic": -0.0005638063623234159,
+          "passed": true
+        },
+        {
+          "index": 21,
+          "finite_difference": -0.0003763537674897604,
+          "analytic": -0.00037635376686427565,
+          "passed": true
+        },
+        {
+          "index": 50,
+          "finite_difference": -0.00031868428989906966,
+          "analytic": -0.00031868428936840984,
+          "passed": true
+        },
+        {
+          "index": 23,
+          "finite_difference": -0.00026882274129381295,
+          "analytic": -0.00026882274084792483,
+          "passed": true
+        }
+      ],
+      "reference_passed": true
+    },
+    {
+      "case": "strong",
+      "fp32_vs_fp64": {
+        "output": {
+          "reference_rms": 0.005836037198456127,
+          "error_rms": 6.359713920318057e-10,
+          "relative_rms": 1.0897315599702594e-07,
+          "max_absolute": 5.973747579934852e-09
+        },
+        "gradients": {
+          "q": {
+            "reference_rms": 4.600510947450925e-06,
+            "error_rms": 4.634156231941824e-13,
+            "relative_rms": 1.0073133799430563e-07,
+            "max_absolute": 6.1965895264905375e-12
+          },
+          "k": {
+            "reference_rms": 4.577874084707586e-06,
+            "error_rms": 4.639617831706756e-13,
+            "relative_rms": 1.0134874279756679e-07,
+            "max_absolute": 5.3071121377200846e-12
+          },
+          "v": {
+            "reference_rms": 4.821083385379734e-07,
+            "error_rms": 5.11290839248404e-14,
+            "relative_rms": 1.0605310018053796e-07,
+            "max_absolute": 6.730254349231819e-13
+          },
+          "g": {
+            "reference_rms": 2.3653604572978524e-07,
+            "error_rms": 4.2579713185592896e-14,
+            "relative_rms": 1.800136340920962e-07,
+            "max_absolute": 3.4459295311005606e-13
+          },
+          "beta": {
+            "reference_rms": 8.51101826700496e-06,
+            "error_rms": 1.106734691914289e-12,
+            "relative_rms": 1.3003552068555844e-07,
+            "max_absolute": 6.362804658426469e-12
+          }
+        }
+      },
+      "finite_differences": [
+        {
+          "index": 56,
+          "finite_difference": -1.745333064983028e-06,
+          "analytic": -1.7453330620956342e-06,
+          "passed": true
+        },
+        {
+          "index": 73,
+          "finite_difference": -1.251161563642475e-06,
+          "analytic": -1.2511615615442394e-06,
+          "passed": true
+        },
+        {
+          "index": 11,
+          "finite_difference": -1.0444245132374547e-06,
+          "analytic": -1.0444245114626794e-06,
+          "passed": true
+        },
+        {
+          "index": 12,
+          "finite_difference": -6.481253425253243e-07,
+          "analytic": -6.481253414656535e-07,
+          "passed": true
+        }
+      ],
+      "reference_passed": true
+    }
+  ],
+  "seconds": 0.3669555187225342,
+  "peak_rss_kib": 588676,
+  "scope": "Checks reference recurrence, not full model convergence"
+}

@@ -1,0 +1,60 @@
+{
+  "status": "complete",
+  "step": 12,
+  "text_tokens": 25823,
+  "audio_tokens": 327000,
+  "validation": {
+    "step": 12,
+    "final": true,
+    "validation_rows": 3,
+    "text_ce": 8.499709129333496,
+    "audio_codebook_ce": [
+      7.969522953033447,
+      7.950640678405762,
+      7.948505401611328,
+      7.969817638397217,
+      7.915341377258301,
+      7.9832892417907715,
+      7.946260452270508,
+      7.960909843444824
+    ],
+    "audio_ce": 7.95553594827652,
+    "selection_score": 16.455245077610016,
+    "text_labels": 644,
+    "audio_labels": [
+      849,
+      849,
+      849,
+      849,
+      849,
+      849,
+      849,
+      849
+    ],
+    "stop_count": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "stop_correct": [
+      2,
+      2,
+      3,
+      3,
+      2,
+      2,
+      3,
+      3
+    ],
+    "time": 1791001943.8467724,
+    "per_record_metrics": "runs/formal_runtime_preflight_v1/input_modes/t2a_B16_recompute/evaluation/step_0000012_full_rows.jsonl",
+    "validation_raw_rows_sha256": "bf30cad5e63a5dfa82a9591fa363655d23696b1a0b3100f8dba87d8a565ad4a9",
+    "protocol": "fixed per-record augmented inputs; scheduled_sampling=0; CE globally token-weighted within each head; no aux in selection score"
+  },
+  "purpose": "preflight"
+}

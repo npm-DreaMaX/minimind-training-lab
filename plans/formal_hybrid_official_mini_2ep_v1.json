@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "controller_dir": "runs/formal_hybrid_official_mini_2ep_v1",
+  "min_free_gib": 20,
+  "stages": [
+    {
+      "id": "transfer_official_sft",
+      "kind": "transfer",
+      "model_kind": "hybrid",
+      "out": "models/02_hybrid_moe/runs/transfer_official_sft_today_v1",
+      "source": "data/reference_models/minimind_3_moe/full_sft_768_moe.pth",
+      "seed": 20261015,
+      "dependencies": []
+    },
+    {
+      "id": "hybrid_sft_official_mini_2ep_v1",
+      "kind": "train",
+      "module": "lab.train",
+      "config": "models/02_hybrid_moe/configs/hybrid_sft_official_mini_2ep_v1.json",
+      "completion": {
+        "run_dir": "models/02_hybrid_moe/runs/hybrid_sft_official_mini_2ep_v1",
+        "expected_steps": 113082,
+        "min_trained_tokens": 735833934,
+        "config_contract": {
+          "model": {
+            "hidden_size": 768,
+            "num_hidden_layers": 8,
+            "use_moe": true,
+            "require_fla": true
+          },
+          "strict_init": true,
+          "epochs": 2,
+          "num_workers": 2,
+          "cpu_threads": 4,
+          "deterministic": false,
+          "validation_samples": 512,
+          "warmup_steps": 0,
+          "eval_interval": 500,
+          "save_interval": 500,
+          "log_interval": 25,
+          "milestone_interval": 5000,
+          "early_checkpoint_steps": [
+            10,
+            100
+          ],
+          "plot_on_save": true,
+          "allocator_conf": "expandable_segments:True",
+          "allocator_gib": 5.3,
+          "purpose": "formal",
+          "model_file": "models/02_hybrid_moe/src/model_hybrid.py",
+          "run_dir": "models/02_hybrid_moe/runs/hybrid_sft_official_mini_2ep_v1",
+          "init_weight": "models/02_hybrid_moe/runs/transfer_official_sft_today_v1/initialized_fp32.pth",
+          "stage": "sft",
+          "corpus": "data/processed/sft_t2t_mini_full_v1",
+          "batch_size": 16,
+          "accumulation_steps": 1,
+          "seq_len": 768,
+          "checkpointing": true,
+          "learning_rate": 1e-05,
+          "seed": 20261019,
+          "validation_seed": 21261007,
+          "recipe_status": "Author-style SFT conversion from verified official full_sft AR base; complete205623072 parameters all trainable. Entire pinned official sft_t2t_mini file processed, no custom sampling or short-dialog selection; content-hash heldout1066 records,8 zero-target-at-officialT768 records audited. Two full epochs; no max_steps cap, no deadline early stop. PhysicalB16,T768,accum1,peakLR1e-5,no warmup match official defaults; activation checkpointing and audited TF32x3 are engineering choices. Augmentation fixed offline instead of fresh each epoch is an explicit recipe difference. Original14GB extended research branch preserved separately.",
+          "triton_f32_default": "tf32x3",
+          "train_only_linear": false
+        },
+        "provenance_contract": {
+          "train_rows": 904644,
+          "validation_rows": 1066,
+          "parameter_count": 205623072,
+          "trainable_parameters": 205623072,
+          "filtered_zero_target_train_rows": 8
+        }
+      },
+      "text_probes": true,
+      "dependencies": []
+    }
+  ],
+  "fingerprints": {
+    "lab/pipeline.py": "7724e10e45c999beec8ee20740d32b74b3c97a526d6fe0b38da684a61ab2f22c",
+    "lab/train.py": "2a25783ebe72087ec8b3f26c6008fdd05a08b8066e76d9be354bbc7c54aa0834",
+    "lab/data.py": "b06bda98ac443510b4d92e3ef1c1060d4826b7d41e392595aa6d9003ea363602",
+    "lab/transfer.py": "c2757533152775bef28faae006edf4ffbfe07f7cbb0c3be4c6cac3d9cd81d820",
+    "lab/checkpointing.py": "36809f843d94bc728278f4f5141387fc22e73429503f52769bde1349dd9f52ae",
+    "lab/live_status.py": "d888e8a9096b9910a4137d7acee838a4775a51e8a51ce5e402f95c95e49924f9",
+    "tools/run_formal_pipeline.py": "ff9118f7e6db7f1ac821f00301ae568eae6193f2e16238de1360d30a7506eb66",
+    "tools/transfer_ar_checkpoint.py": "368ffc7e6c6e8e8e5a57cf62c24e2d36a3c7aeedafb8c1e297a708a4adb1131c",
+    "tools/evaluate_text_probes.py": "f9d7863dac49ad03190aadacf94d31fd10a4c60e066578ed56f66e0ecc8ccb76",
+    "evaluation/text_probes_v1.json": "8e79bfc096f451c34bc87471194ca50c3e0eca1d6a97b2f8014ed686e76dd66b",
+    "upstream/model/model_minimind.py": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+    "upstream/model/tokenizer.json": "71f32c68cf63a15355a8fc171b7594b3d41870fe0ddb54fc6aefa55f73a4a668",
+    "models/02_hybrid_moe/src/model_hybrid.py": "cf83fb3f054b3dc9fc1da055a68cbc21ec973a6f63b1615ebc66c761bee8c503",
+    "models/02_hybrid_moe/configs/hybrid_sft_official_mini_2ep_v1.json": "7589e8967d0b36222bbd28f1239b2e237f5dfdd961507d7bbe3b9d01e016008f",
+    "data/reference_models/minimind_3_moe/full_sft_768_moe.pth": "a050020ea6d1b9e824693d0db525b1a0a8b40f36a934ea8d89da161368f20cc1",
+    "data/manifests/minimind_official_mini.json": "8441d85138a22df1f8cc9d7596df482fa68d981ed9bec9fb58bacf4b8577adb8",
+    "data/raw/minimind/sft_t2t_mini.jsonl.verified.json": "14b170c432be571662396ebf1fa551827d4363d0ef98671eb442ebc457474f6f",
+    "data/processed/sft_t2t_mini_full_v1/metadata.json": "4a5b658398649f3bcc103b1f3c7a9b34e2bb27c7e6589a92b3fea87cdb9bae95",
+    "reports/sft_official_mini_T768_audit_v1.json": "95d46c350a9b8323310dfd76376b451862cab794fbf007fb94511efe5ce9a1ee",
+    "tools/prepare_tokens.py": "b27ffe563e18ec09acb5a2aababee6585b1b40cf6099be275e1e33c1bda9f6e4",
+    "tools/audit_token_cache.py": "7ddb8544a34afbc6ae808911697f147f9aaab59f389d7fc9f8a6558eaccb8c87"
+  },
+  "semantics": "Full official mini file, two SFT epochs of complete HybridMoE; trained token/update budgets enforced, final whole-heldout evaluation and generation suite required. Completion is not quality approval. No deadline stop.",
+  "decision": {
+    "time": 1791009331.0635371,
+    "initialization": "Official198M SFT, not our paused from-scratch AR",
+    "rejected": "Custom100k subset never launched formally",
+    "source_revision": "edba70ec15e06bc4280fbb96ac3383d73a7eab91",
+    "dataset_revision": "312afb4f76391145c6902f765bb51691c09a12f5",
+    "data_limit": 0,
+    "epochs": 2,
+    "previous_plan": "plans/formal_hybrid_official_priority_v1.json",
+    "why": "User rejects reducing official data/training. Use exact author SFT conversion route and full original official mini dataset, not self-designed subset. Old larger-data branch kept; not presented as identical to this recipe."
+  }
+}

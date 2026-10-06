@@ -1,0 +1,2 @@
+{"event": "checkpoint", "kind": "periodic", "step": 1, "epoch": 0, "cursor": 8, "tokens": 3444, "bytes": 2381236683, "seconds": 18.032464027404785, "time": 1790964732.4619083}
+{"event": "checkpoint", "kind": "final", "step": 3, "epoch": 0, "cursor": 24, "tokens": 10243, "bytes": 2381236683, "seconds": 20.873753547668457, "time": 1790964773.7496743}

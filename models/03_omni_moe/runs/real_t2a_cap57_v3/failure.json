@@ -1,0 +1,8 @@
+{
+  "error": "OutOfMemoryError('CUDA out of memory. Tried to allocate 14.00 MiB. GPU 0 has a total capacity of 8.00 GiB of which 489.52 MiB is free. 5.70 GiB allowed; Of the allocated memory 5.64 GiB is allocated by PyTorch, and 56.29 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)')",
+  "traceback": "Traceback (most recent call last):\n  File \"/mnt/d/minimind/lab/omni_train.py\", line 222, in main\n    r=forward(batch)\n  File \"/mnt/d/minimind/lab/omni_train.py\", line 158, in forward\n    result=omni_loss(out,labels,audio,diagnostics=diagnostics)\n  File \"/mnt/d/minimind/lab/omni_loss.py\", line 18, in omni_loss\n    raw=F.cross_entropy(logits.flatten(0,1),labels,reduction='none')\n  File \"/home/USER/.local/lib/python3.10/site-packages/torch/nn/functional.py\", line 3504, in cross_entropy\n    return torch._C._nn.cross_entropy_loss(\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 14.00 MiB. GPU 0 has a total capacity of 8.00 GiB of which 489.52 MiB is free. 5.70 GiB allowed; Of the allocated memory 5.64 GiB is allocated by PyTorch, and 56.29 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n",
+  "step": 1,
+  "epoch": 0,
+  "cursor": 2,
+  "time": 1790979041.871111
+}

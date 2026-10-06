@@ -1,0 +1,17 @@
+{
+  "scope": "Read only RNG, cursor and source metadata from CPU-mapped complete checkpoints; no GPU allocation or model tensor comparison",
+  "same_rng": {
+    "python": true,
+    "numpy": true,
+    "torch": true,
+    "cuda": true
+  },
+  "same_cursor": true,
+  "same_step": true,
+  "same_epoch": true,
+  "same_source_fingerprints": true,
+  "deterministic": [
+    false,
+    false
+  ]
+}

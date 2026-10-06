@@ -1,0 +1,38 @@
+{
+  "records": [
+    {
+      "id": "t2a_en_coffee",
+      "thinker_text": "To make a cup of coffee, you need a cup of coffee grounds, water, and a little bit of sugar or milk. First, measure out the coffee grounds and pour them into a cup. Next, add the water to the cup and let it steep for about four minutes. After steeping, stir the mixture thoroughly to ensure even coverage. The coffee grounds are typically mixed with water, creating a smooth, pour-over effect. Finally, stir the mixture gently to separate the grounds from the pour and cardamom. Your cup of coffee is ready to enjoy!",
+      "generation_reached_budget": false,
+      "asr_result": [
+        {
+          "key": "rand_key_2yW4Acq9GFz6Y",
+          "text": "<|en|><|NEUTRAL|><|Speech|><|withitn|>To make a cup of coffee, you need a cup of coffee, grounds, water, and a little bit of sugar or milk. First, measure out the coffee grounds and pour them into a cup. Next, add the water to the cup and let it steep for about 4 minutes. After steeping, stir the mixture thoroughly to ensure even coverage. The coffee grounds are typically mix with water, creating a smooth pour over effect."
+        }
+      ],
+      "transcript": "<|en|><|NEUTRAL|><|Speech|><|withitn|>To make a cup of coffee, you need a cup of coffee, grounds, water, and a little bit of sugar or milk. First, measure out the coffee grounds and pour them into a cup. Next, add the water to the cup and let it steep for about 4 minutes. After steeping, stir the mixture thoroughly to ensure even coverage. The coffee grounds are typically mix with water, creating a smooth pour over effect.",
+      "reference_normalized": "tomakeacupofcoffeeyouneedacupofcoffeegroundswaterandalittlebitofsugarormilkfirstmeasureoutthecoffeegroundsandpourthemintoacupnextaddthewatertothecupandletitsteepforaboutfourminutesaftersteepingstirthemixturethoroughlytoensureevencoveragethecoffeegroundsaretypicallymixedwithwatercreatingasmoothpourovereffectfinallystirthemixturegentlytoseparatethegroundsfromthepourandcardamomyourcupofcoffeeisreadytoenjoy",
+      "asr_normalized": "tomakeacupofcoffeeyouneedacupofcoffeegroundswaterandalittlebitofsugarormilkfirstmeasureoutthecoffeegroundsandpourthemintoacupnextaddthewatertothecupandletitsteepforabout4minutesaftersteepingstirthemixturethoroughlytoensureevencoveragethecoffeegroundsaretypicallymixwithwatercreatingasmoothpourovereffect",
+      "edit_distance": 104,
+      "reference_characters": 406,
+      "character_error_rate": 0.2561576354679803,
+      "wav_sha256": "733dd435916bc31c787572d861fd95f7f20cc6703478b71bd7f60569e47c247d",
+      "input_sample_rate": 24000,
+      "asr_samples": 372480,
+      "seconds": 1.5422794409969356
+    }
+  ],
+  "normalization": "Strip SenseVoice tags, Unicode NFKC, lowercase, keep only letters/numbers; English is character error, not word error",
+  "scope": "ASR proxy for generated speech versus generated text; not task correctness or naturalness; inspect budget truncation separately",
+  "preprocessing": "soundfile float32, mean to mono, torchaudio.functional.resample to16kHz, raw PCM input bypasses file backend",
+  "asr_verified_manifest": {
+    "name": "model.pt",
+    "sha256": "218811976815c1673e1b852dc383d78987b229268f78e7ebd0a1fe67229c83dd",
+    "bytes": 468291478,
+    "revision": "964f07d8f0e48309a5f37770ac9b5ed2cdca6b91",
+    "verified_unix": 1790968497.8634055
+  },
+  "source_evaluation_sha256": "c6684685bc79e6c3b03abfbb69d797a2b143dd71e5e54ffc34a4452dcb1eeeab",
+  "script_sha256": "5fc3fea6be5b4f46c7082a586496127a14dc5a7142d832f00c9e74fe9c6a439d",
+  "time": 1790983216.7813594
+}

@@ -1,0 +1,374 @@
+{
+  "records": [
+    {
+      "seed": 20261007,
+      "variant": "independent_strict",
+      "seconds": 0.4722747802734375
+    },
+    {
+      "seed": 20261007,
+      "variant": "fla_strict",
+      "seconds": 0.8643267154693604
+    },
+    {
+      "seed": 20261007,
+      "variant": "fla_torch_tf32",
+      "seconds": 0.021958589553833008
+    },
+    {
+      "seed": 20261008,
+      "variant": "independent_strict",
+      "seconds": 0.2502400875091553
+    },
+    {
+      "seed": 20261008,
+      "variant": "fla_strict",
+      "seconds": 0.016008615493774414
+    },
+    {
+      "seed": 20261008,
+      "variant": "fla_torch_tf32",
+      "seconds": 0.017758846282958984
+    }
+  ],
+  "comparisons": [
+    {
+      "seed": 20261007,
+      "candidate": "fla_strict",
+      "output": {
+        "reference_rms": 0.10870731621980667,
+        "error_rms": 1.8721653987086029e-06,
+        "relative_rms": 1.722207358079815e-05,
+        "max_absolute": 1.761317253112793e-05,
+        "finite": true
+      },
+      "input_gradient": {
+        "reference_rms": 1.2055004390276736e-06,
+        "error_rms": 2.0070450509890314e-11,
+        "relative_rms": 1.6649061136865813e-05,
+        "max_absolute": 1.3631051842821762e-10,
+        "finite": true
+      },
+      "gradients": {
+        "dt_bias": {
+          "reference_rms": 7.5010502769146115e-06,
+          "error_rms": 4.325863667276053e-09,
+          "relative_rms": 0.0005767010628617463,
+          "max_absolute": 8.23931145532697e-09,
+          "finite": true
+        },
+        "A_log": {
+          "reference_rms": 1.1187398740730714e-05,
+          "error_rms": 8.195470080352152e-09,
+          "relative_rms": 0.0007325626153391988,
+          "max_absolute": 1.5710462264451053e-08,
+          "finite": true
+        },
+        "conv1d.weight": {
+          "reference_rms": 1.731068368826527e-05,
+          "error_rms": 2.8589561273939523e-10,
+          "relative_rms": 1.651555870859109e-05,
+          "max_absolute": 4.547473508864641e-09,
+          "finite": true
+        },
+        "norm.weight": {
+          "reference_rms": 2.7659980332828127e-05,
+          "error_rms": 4.25298601891555e-10,
+          "relative_rms": 1.537595460206424e-05,
+          "max_absolute": 1.2250893632881343e-09,
+          "finite": true
+        },
+        "out_proj.weight": {
+          "reference_rms": 1.5323448678827845e-05,
+          "error_rms": 2.618500416495806e-10,
+          "relative_rms": 1.708819255624711e-05,
+          "max_absolute": 6.426489562727511e-09,
+          "finite": true
+        },
+        "in_proj_qkv.weight": {
+          "reference_rms": 1.7005075278575532e-05,
+          "error_rms": 2.8072877356066783e-10,
+          "relative_rms": 1.6508528716385884e-05,
+          "max_absolute": 7.1158865466713905e-09,
+          "finite": true
+        },
+        "in_proj_z.weight": {
+          "reference_rms": 1.5874304153840058e-05,
+          "error_rms": 2.567274726139601e-10,
+          "relative_rms": 1.617251818574087e-05,
+          "max_absolute": 4.794856067746878e-09,
+          "finite": true
+        },
+        "in_proj_b.weight": {
+          "reference_rms": 2.6765668735606596e-05,
+          "error_rms": 7.066640606012697e-10,
+          "relative_rms": 2.640188323264976e-05,
+          "max_absolute": 6.1281753005459905e-09,
+          "finite": true
+        },
+        "in_proj_a.weight": {
+          "reference_rms": 6.656080586253665e-06,
+          "error_rms": 4.869649683492128e-10,
+          "relative_rms": 7.316091835710451e-05,
+          "max_absolute": 2.409049848495215e-09,
+          "finite": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "seed": 20261007,
+      "candidate": "fla_torch_tf32",
+      "output": {
+        "reference_rms": 0.10870731621980667,
+        "error_rms": 7.660852133994922e-05,
+        "relative_rms": 0.0007047227730748724,
+        "max_absolute": 0.0005110949277877808,
+        "finite": true
+      },
+      "input_gradient": {
+        "reference_rms": 1.2055004390276736e-06,
+        "error_rms": 8.936708595363996e-10,
+        "relative_rms": 0.0007413276931339918,
+        "max_absolute": 4.848743628826924e-09,
+        "finite": true
+      },
+      "gradients": {
+        "dt_bias": {
+          "reference_rms": 7.5010502769146115e-06,
+          "error_rms": 1.3872353044064312e-08,
+          "relative_rms": 0.0018493880899263073,
+          "max_absolute": 3.771856427192688e-08,
+          "finite": true
+        },
+        "A_log": {
+          "reference_rms": 1.1187398740730714e-05,
+          "error_rms": 2.56716692348391e-08,
+          "relative_rms": 0.0022946951145465595,
+          "max_absolute": 7.01511453371495e-08,
+          "finite": true
+        },
+        "conv1d.weight": {
+          "reference_rms": 1.731068368826527e-05,
+          "error_rms": 1.2885056577260912e-08,
+          "relative_rms": 0.0007443412871090444,
+          "max_absolute": 7.262224244186655e-08,
+          "finite": true
+        },
+        "norm.weight": {
+          "reference_rms": 2.7659980332828127e-05,
+          "error_rms": 1.796818338561934e-08,
+          "relative_rms": 0.0006496094056977286,
+          "max_absolute": 5.222318577580154e-08,
+          "finite": true
+        },
+        "out_proj.weight": {
+          "reference_rms": 1.5323448678827845e-05,
+          "error_rms": 1.074416022817104e-08,
+          "relative_rms": 0.0007011581043773826,
+          "max_absolute": 1.0168014341616072e-07,
+          "finite": true
+        },
+        "in_proj_qkv.weight": {
+          "reference_rms": 1.7005075278575532e-05,
+          "error_rms": 1.2713988972734569e-08,
+          "relative_rms": 0.0007476584939763691,
+          "max_absolute": 1.3175304047763348e-07,
+          "finite": true
+        },
+        "in_proj_z.weight": {
+          "reference_rms": 1.5874304153840058e-05,
+          "error_rms": 1.1134893895814457e-08,
+          "relative_rms": 0.0007014413852666973,
+          "max_absolute": 9.389873412146699e-08,
+          "finite": true
+        },
+        "in_proj_b.weight": {
+          "reference_rms": 2.6765668735606596e-05,
+          "error_rms": 2.292445344664884e-08,
+          "relative_rms": 0.0008564872289610402,
+          "max_absolute": 1.5006662579253316e-07,
+          "finite": true
+        },
+        "in_proj_a.weight": {
+          "reference_rms": 6.656080586253665e-06,
+          "error_rms": 5.3417585910153775e-09,
+          "relative_rms": 0.000802538148658737,
+          "max_absolute": 3.297827788628638e-08,
+          "finite": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "seed": 20261008,
+      "candidate": "fla_strict",
+      "output": {
+        "reference_rms": 0.10174309462308884,
+        "error_rms": 1.339832209623637e-07,
+        "relative_rms": 1.3168777837818836e-06,
+        "max_absolute": 4.76837158203125e-06,
+        "finite": true
+      },
+      "input_gradient": {
+        "reference_rms": 1.1117010672023753e-06,
+        "error_rms": 2.1906268032195753e-12,
+        "relative_rms": 1.970517855786848e-06,
+        "max_absolute": 1.6541434888495132e-11,
+        "finite": true
+      },
+      "gradients": {
+        "dt_bias": {
+          "reference_rms": 6.199766630743397e-06,
+          "error_rms": 2.5660789049197774e-09,
+          "relative_rms": 0.0004138992735944459,
+          "max_absolute": 6.035410393678831e-09,
+          "finite": true
+        },
+        "A_log": {
+          "reference_rms": 1.1090131920354906e-05,
+          "error_rms": 4.735214442774804e-09,
+          "relative_rms": 0.0004269754838609051,
+          "max_absolute": 1.10498792338376e-08,
+          "finite": true
+        },
+        "conv1d.weight": {
+          "reference_rms": 1.5569008610327728e-05,
+          "error_rms": 1.2682690835041921e-11,
+          "relative_rms": 8.146113315544599e-07,
+          "max_absolute": 1.9826984498649836e-10,
+          "finite": true
+        },
+        "norm.weight": {
+          "reference_rms": 2.7352611141395755e-05,
+          "error_rms": 1.9711147644652094e-11,
+          "relative_rms": 7.206312970545257e-07,
+          "max_absolute": 8.640199666842818e-11,
+          "finite": true
+        },
+        "out_proj.weight": {
+          "reference_rms": 1.4307327546703164e-05,
+          "error_rms": 1.8625902903357527e-11,
+          "relative_rms": 1.301843607239529e-06,
+          "max_absolute": 1.4115357771515846e-09,
+          "finite": true
+        },
+        "in_proj_qkv.weight": {
+          "reference_rms": 1.5591975170536898e-05,
+          "error_rms": 1.2348961263286551e-11,
+          "relative_rms": 7.920074992565116e-07,
+          "max_absolute": 3.624336386565119e-10,
+          "finite": true
+        },
+        "in_proj_z.weight": {
+          "reference_rms": 1.4564838238584343e-05,
+          "error_rms": 1.3152137365302075e-11,
+          "relative_rms": 9.030060718738488e-07,
+          "max_absolute": 4.729372449219227e-10,
+          "finite": true
+        },
+        "in_proj_b.weight": {
+          "reference_rms": 2.2175618141773157e-05,
+          "error_rms": 2.6510247122524255e-11,
+          "relative_rms": 1.1954682369185359e-06,
+          "max_absolute": 1.8530954548623413e-10,
+          "finite": true
+        },
+        "in_proj_a.weight": {
+          "reference_rms": 7.379652288364014e-06,
+          "error_rms": 5.509802059044944e-10,
+          "relative_rms": 7.466208221941044e-05,
+          "max_absolute": 4.536556019729687e-09,
+          "finite": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "seed": 20261008,
+      "candidate": "fla_torch_tf32",
+      "output": {
+        "reference_rms": 0.10174309462308884,
+        "error_rms": 7.336750422837213e-05,
+        "relative_rms": 0.0007211054912391336,
+        "max_absolute": 0.0004958026111125946,
+        "finite": true
+      },
+      "input_gradient": {
+        "reference_rms": 1.1117010672023753e-06,
+        "error_rms": 8.505741111441978e-10,
+        "relative_rms": 0.0007651104566128462,
+        "max_absolute": 4.691173671744764e-09,
+        "finite": true
+      },
+      "gradients": {
+        "dt_bias": {
+          "reference_rms": 6.199766630743397e-06,
+          "error_rms": 6.305084010449491e-09,
+          "relative_rms": 0.001016987313552069,
+          "max_absolute": 9.843915904639289e-09,
+          "finite": true
+        },
+        "A_log": {
+          "reference_rms": 1.1090131920354906e-05,
+          "error_rms": 1.0679277018255107e-08,
+          "relative_rms": 0.0009629531095707064,
+          "max_absolute": 1.7862490153675026e-08,
+          "finite": true
+        },
+        "conv1d.weight": {
+          "reference_rms": 1.5569008610327728e-05,
+          "error_rms": 1.2084942824230893e-08,
+          "relative_rms": 0.0007762178778817249,
+          "max_absolute": 5.959736881777644e-08,
+          "finite": true
+        },
+        "norm.weight": {
+          "reference_rms": 2.7352611141395755e-05,
+          "error_rms": 1.6037889238873504e-08,
+          "relative_rms": 0.0005863385091817278,
+          "max_absolute": 3.9825863495934755e-08,
+          "finite": true
+        },
+        "out_proj.weight": {
+          "reference_rms": 1.4307327546703164e-05,
+          "error_rms": 1.0326774102509262e-08,
+          "relative_rms": 0.0007217821825075124,
+          "max_absolute": 9.848736226558685e-08,
+          "finite": true
+        },
+        "in_proj_qkv.weight": {
+          "reference_rms": 1.5591975170536898e-05,
+          "error_rms": 1.2076228905755215e-08,
+          "relative_rms": 0.0007745156578093357,
+          "max_absolute": 1.2573582353070378e-07,
+          "finite": true
+        },
+        "in_proj_z.weight": {
+          "reference_rms": 1.4564838238584343e-05,
+          "error_rms": 1.0650176740512052e-08,
+          "relative_rms": 0.0007312251990755522,
+          "max_absolute": 1.072912709787488e-07,
+          "finite": true
+        },
+        "in_proj_b.weight": {
+          "reference_rms": 2.2175618141773157e-05,
+          "error_rms": 1.9460314248931354e-08,
+          "relative_rms": 0.0008775545341968678,
+          "max_absolute": 7.222115527838469e-08,
+          "finite": true
+        },
+        "in_proj_a.weight": {
+          "reference_rms": 7.379652288364014e-06,
+          "error_rms": 6.388969353565699e-09,
+          "relative_rms": 0.0008657547949297842,
+          "max_absolute": 5.5700184020679444e-08,
+          "finite": true
+        }
+      },
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "scope": "Two full-width initializations; output <2%, input and every parameter gradient <3%; not yet a full-model training/throughput/resume check."
+}

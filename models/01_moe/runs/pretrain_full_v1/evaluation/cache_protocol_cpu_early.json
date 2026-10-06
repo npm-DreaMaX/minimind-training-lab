@@ -1,0 +1,61 @@
+{
+  "scope": "Full 198M trained checkpoint on CPU, full-sequence vs token-by-token cached logits; not a quality score",
+  "weight": "models/01_moe/runs/pretrain_full_v1/checkpoints/best_validation.pth",
+  "weight_sha256": "a658bc2b3173b372649507cbbdf3f7272b9223226a2d54fac3073865d924a56e",
+  "tests": [
+    {
+      "text": "中国的首都是北京。",
+      "bos": false,
+      "shape": [
+        1,
+        6,
+        6400
+      ],
+      "max_absolute_error": 5.0067901611328125e-06,
+      "relative_rms": 4.4048130121154827e-07,
+      "same_argmax": true,
+      "passed": true
+    },
+    {
+      "text": "中国的首都是北京。",
+      "bos": true,
+      "shape": [
+        1,
+        7,
+        6400
+      ],
+      "max_absolute_error": 4.291534423828125e-06,
+      "relative_rms": 3.0892968538864807e-07,
+      "same_argmax": true,
+      "passed": true
+    },
+    {
+      "text": "人工智能的主要应用包括自然语言处理、计算机视觉。",
+      "bos": false,
+      "shape": [
+        1,
+        9,
+        6400
+      ],
+      "max_absolute_error": 4.082918167114258e-06,
+      "relative_rms": 4.0255824274026963e-07,
+      "same_argmax": true,
+      "passed": true
+    },
+    {
+      "text": "人工智能的主要应用包括自然语言处理、计算机视觉。",
+      "bos": true,
+      "shape": [
+        1,
+        10,
+        6400
+      ],
+      "max_absolute_error": 4.76837158203125e-06,
+      "relative_rms": 3.1027494173940795e-07,
+      "same_argmax": true,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "time": 1790972462.4406831
+}

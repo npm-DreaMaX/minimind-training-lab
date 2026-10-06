@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+*.pt
+*.pth
+*.safetensors
+data/raw/
+data/processed/
+data/cache/
+*.tmp

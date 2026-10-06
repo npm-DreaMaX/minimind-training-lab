@@ -1,0 +1,26 @@
+{
+  "step": 500,
+  "epoch": 0,
+  "trained_tokens": 16338872,
+  "validation_ce": 3.5487141478162942,
+  "validation_tokens": 123368,
+  "validation_rows": 512,
+  "final": false,
+  "generation": [
+    {
+      "prompt": "人工智能的主要应用包括",
+      "continuation": "诊断诊断、治疗治疗、药物研发等方面。<|im_end|>"
+    },
+    {
+      "prompt": "中国的首都是",
+      "continuation": "中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国"
+    },
+    {
+      "prompt": "水的三种状态是",
+      "continuation": "最好的选择。<|im_end|>"
+    }
+  ],
+  "time": 1790968146.3021452,
+  "validation_selection_sha256": "35a38ff957d0d37bf7a0ef4bd07dbd57a42a599826796aaa853fd82c2b8abbc7",
+  "validation_selection": "fixed seeded sample across the full held-out split"
+}

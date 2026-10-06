@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "first_step_peak_gib": 9.100547313690186,
+  "later_peak_gib": 11.446652889251709,
+  "predicted_fp32_two_moment_gib": 2.3460979610681534,
+  "observed_peak_increase_gib": 2.3461055755615234,
+  "measured_steps": [
+    {
+      "step": 1,
+      "loss": 17.136990547180176,
+      "seconds": 14.313255394343287,
+      "samples_per_second": 8.942759454329769,
+      "grad_norm": 5.222952365875244
+    },
+    {
+      "step": 2,
+      "loss": 17.042848825454712,
+      "seconds": 14.037487380206585,
+      "samples_per_second": 9.118440966898754,
+      "grad_norm": 5.167975425720215
+    },
+    {
+      "step": 3,
+      "loss": 16.900068521499634,
+      "seconds": 14.396494944114238,
+      "samples_per_second": 8.891053030399641,
+      "grad_norm": 4.931087017059326
+    }
+  ],
+  "scope": "Independent server runtime preflight, full315M, B16 accumulation8, random initialization, not formal training or converged quality"
+}

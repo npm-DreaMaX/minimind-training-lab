@@ -1,0 +1,121 @@
+{
+  "corpus": "data/processed/sft_t2a_shards_v1",
+  "rows_sha256": "f9721cd51d969065994a35323e28607a8b843fdfc169688bb8121595447d3f96",
+  "script_sha256": "17b83549cfd992684ea58b37eacc1b8c7bcefb2a26da9ec875bcf47252e3d7de",
+  "summaries": {
+    "768/epoch0": {
+      "rows": 2048,
+      "zero_text_rows": 2,
+      "zero_audio_rows": 2,
+      "zero_both_rows": 2,
+      "rows_with_all_eight_stops": 2035,
+      "rows_with_any_missing_stop": 13,
+      "supervised_text_tokens": 202490,
+      "supervised_audio_codes": 3740135,
+      "audio_labels_per_head": [
+        467550,
+        467541,
+        467532,
+        467523,
+        467513,
+        467503,
+        467492,
+        467481
+      ],
+      "head0_target_percentiles": {
+        "0": 0.0,
+        "50": 239.0,
+        "90": 397.29999999999995,
+        "99": 491.05999999999995,
+        "100": 659.0
+      },
+      "text_input_padding_fraction": 0.7827320322685789
+    },
+    "768/epoch1": {
+      "rows": 2048,
+      "zero_text_rows": 2,
+      "zero_audio_rows": 2,
+      "zero_both_rows": 2,
+      "rows_with_all_eight_stops": 2032,
+      "rows_with_any_missing_stop": 16,
+      "supervised_text_tokens": 202029,
+      "supervised_audio_codes": 3739568,
+      "audio_labels_per_head": [
+        467495,
+        467481,
+        467467,
+        467453,
+        467439,
+        467425,
+        467411,
+        467397
+      ],
+      "head0_target_percentiles": {
+        "0": 0.0,
+        "50": 240.0,
+        "90": 399.0,
+        "99": 495.0,
+        "100": 650.0
+      },
+      "text_input_padding_fraction": 0.7816835326352672
+    },
+    "1536/epoch0": {
+      "rows": 2048,
+      "zero_text_rows": 0,
+      "zero_audio_rows": 0,
+      "zero_both_rows": 0,
+      "rows_with_all_eight_stops": 2048,
+      "rows_with_any_missing_stop": 0,
+      "supervised_text_tokens": 202651,
+      "supervised_audio_codes": 3746192,
+      "audio_labels_per_head": [
+        468274,
+        468274,
+        468274,
+        468274,
+        468274,
+        468274,
+        468274,
+        468274
+      ],
+      "head0_target_percentiles": {
+        "0": 6.0,
+        "50": 239.0,
+        "90": 398.0,
+        "99": 495.0,
+        "100": 659.0
+      },
+      "text_input_padding_fraction": 0.8909615482491857
+    },
+    "1536/epoch1": {
+      "rows": 2048,
+      "zero_text_rows": 0,
+      "zero_audio_rows": 0,
+      "zero_both_rows": 0,
+      "rows_with_all_eight_stops": 2047,
+      "rows_with_any_missing_stop": 1,
+      "supervised_text_tokens": 202221,
+      "supervised_audio_codes": 3747548,
+      "audio_labels_per_head": [
+        468447,
+        468446,
+        468445,
+        468444,
+        468443,
+        468442,
+        468441,
+        468440
+      ],
+      "head0_target_percentiles": {
+        "0": 7.0,
+        "50": 239.5,
+        "90": 400.29999999999995,
+        "99": 497.1199999999999,
+        "100": 659.0
+      },
+      "text_input_padding_fraction": 0.8899773513843648
+    }
+  },
+  "scope": "Uniform full-training-split sample; exact official per-epoch turn selection and label construction via reproducible wrapper; not full-corpus exact totals",
+  "elapsed_s": 44.24970555305481
+}

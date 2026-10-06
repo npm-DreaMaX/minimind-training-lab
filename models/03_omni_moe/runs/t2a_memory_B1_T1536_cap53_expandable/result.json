@@ -1,0 +1,62 @@
+{
+  "args": {
+    "seq_len": 1536,
+    "batch_size": 1,
+    "steps": 3,
+    "max_process_gib": 5.3,
+    "out": "models/03_omni_moe/runs/t2a_memory_B1_T1536_cap53_expandable"
+  },
+  "scope": "Synthetic T2A, full model, no input encoders used; explicit allocator cap",
+  "status": "failed",
+  "pid": 338283,
+  "torch": "2.11.0+cu128",
+  "steps": [
+    {
+      "step": 1,
+      "loss": 16.809736251831055,
+      "text_ce": 8.913371086120605,
+      "audio_ce": 7.889414310455322,
+      "grad_norm": 4.772217273712158,
+      "seconds": 0.8235411643981934,
+      "memory": {
+        "before_forward": {
+          "allocated": 1310109696,
+          "reserved": 1314914304,
+          "peak_allocated": 1310109696,
+          "peak_reserved": 1314914304
+        },
+        "after_forward": {
+          "allocated": 3329295872,
+          "reserved": 3361734656,
+          "peak_allocated": 3329614848,
+          "peak_reserved": 3361734656
+        },
+        "after_backward": {
+          "allocated": 2659326976,
+          "reserved": 3382706176,
+          "peak_allocated": 3342266368,
+          "peak_reserved": 3382706176
+        },
+        "after_optimizer": {
+          "allocated": 5178439168,
+          "reserved": 5375000576,
+          "peak_allocated": 5217760768,
+          "peak_reserved": 5375000576
+        }
+      }
+    }
+  ],
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "allocator_cap_bytes": 5690831667,
+  "parameters": 314887938,
+  "parameter_bytes": 1259551752,
+  "theoretical_fp32_parameter_gradient_adam_bytes": 5038207008,
+  "exception": "OutOfMemoryError('CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 8.00 GiB of which 908.87 MiB is free. 5.30 GiB allowed; Of the allocated memory 5.26 GiB is allocated by PyTorch, and 39.12 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)')",
+  "traceback": "Traceback (most recent call last):\n  File \"/mnt/d/minimind/tools/omni_memory_probe.py\", line 54, in main\n    result=model(ids,spk_emb=spk)\n  File \"/home/USER/.local/lib/python3.10/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n  File \"/home/USER/.local/lib/python3.10/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"/mnt/d/minimind/sources/minimind-o/model/model_omni.py\", line 312, in forward\n    audio_logits = self.talker.lm_head(h_talker[:, slice_indices, :])\n  File \"/home/USER/.local/lib/python3.10/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n  File \"/home/USER/.local/lib/python3.10/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"/mnt/d/minimind/sources/minimind-o/model/model_omni.py\", line 65, in forward\n    return [base_out + adapter(x) for adapter in self.adapters]\n  File \"/mnt/d/minimind/sources/minimind-o/model/model_omni.py\", line 65, in <listcomp>\n    return [base_out + adapter(x) for adapter in self.adapters]\n  File \"/home/USER/.local/lib/python3.10/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n  File \"/home/USER/.local/lib/python3.10/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"/home/USER/.local/lib/python3.10/site-packages/torch/nn/modules/container.py\", line 253, in forward\n    input = module(input)\n  File \"/home/USER/.local/lib/python3.10/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n  File \"/home/USER/.local/lib/python3.10/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"/home/USER/.local/lib/python3.10/site-packages/torch/nn/modules/linear.py\", line 134, in forward\n    return F.linear(input, self.weight, self.bias)\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 8.00 GiB of which 908.87 MiB is free. 5.30 GiB allowed; Of the allocated memory 5.26 GiB is allocated by PyTorch, and 39.12 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n",
+  "memory": {
+    "allocated": 5587857920,
+    "reserved": 5687476224,
+    "peak_allocated": 5649893888,
+    "peak_reserved": 5687476224
+  }
+}

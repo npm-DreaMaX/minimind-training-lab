@@ -1,0 +1,73 @@
+{
+  "step": 13000,
+  "epoch": 0,
+  "trained_tokens": 424620985,
+  "validation_ce": 1.9757553276688462,
+  "validation_tokens": 123368,
+  "validation_rows": 512,
+  "final": false,
+  "generation": [
+    {
+      "prompt": "人工智能的主要应用包括",
+      "rendered_input": "<|im_start|>人工智能的主要应用包括",
+      "input_ids": [
+        1,
+        2225,
+        3669,
+        908,
+        898
+      ],
+      "continuation": "自然语言处理、机器学习和深度学习。人工智能的主要应用包括自然语言处理、机器学习和深度学习。自然语言处理是人工智能的一个重要分支，它使计算机能够理解、处理和生成人类语言。机器学习是人工智能的一个分支，它使计算机能够从数据中学习并改进性能。深度学习是机器学习的一种分支，它",
+      "output_tokens": 64,
+      "ended_with_eos": false,
+      "truncated_by_budget": true
+    },
+    {
+      "prompt": "中国的首都是",
+      "rendered_input": "<|im_start|>中国的首都是",
+      "input_ids": [
+        1,
+        1405,
+        296,
+        1408,
+        2462
+      ],
+      "continuation": "哪里？中国的首都是北京。<|im_end|>",
+      "output_tokens": 10,
+      "ended_with_eos": true,
+      "truncated_by_budget": false
+    },
+    {
+      "prompt": "水的三种状态是",
+      "rendered_input": "<|im_start|>水的三种状态是",
+      "input_ids": [
+        1,
+        952,
+        296,
+        1441,
+        604,
+        2341,
+        357
+      ],
+      "continuation": "由水分子的三种相互作用形成的。水的三种状态是由水分子的三种相互作用形成的。\n水的三种状态是由水分子的三种相互作用形成的。水分子的三种相互作用形成的，即水分子的三种相互作用",
+      "output_tokens": 64,
+      "ended_with_eos": false,
+      "truncated_by_budget": true
+    }
+  ],
+  "time": 1791278304.4809804,
+  "validation_selection_sha256": "35a38ff957d0d37bf7a0ef4bd07dbd57a42a599826796aaa853fd82c2b8abbc7",
+  "validation_selection": "fixed seeded sample across the full held-out split",
+  "generation_protocol": {
+    "version": 2,
+    "pretrain_prefix": "explicit tokenizer BOS",
+    "sft_prefix": "official chat template",
+    "dtype": "BF16 autocast",
+    "do_sample": false,
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "top_k": 0,
+    "repetition_penalty": 1.0,
+    "max_new_tokens": 64
+  }
+}

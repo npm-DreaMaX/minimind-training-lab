@@ -1,0 +1,14 @@
+{
+  "scope": "Early trained weights, 160 total sampled records from a uniform full-cache view; steady statistics use steps 3..10, not a long-run guarantee",
+  "steps": 8,
+  "samples_per_second": 13.038048647864434,
+  "valid_tokens_per_second": 6799.24051010624,
+  "mean_step_seconds": 1.227177504251813,
+  "peak_allocated": 5232572928,
+  "estimated_full_training_days": 4.529147849871867,
+  "extra_costs_excluded": [
+    "evaluation",
+    "checkpoint saving",
+    "long-run load and desktop variation"
+  ]
+}

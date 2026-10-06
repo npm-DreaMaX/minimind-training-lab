@@ -1,0 +1,46 @@
+{
+  "repo": "jingyaogong/SenseVoiceSmall",
+  "revision": "964f07d8f0e48309a5f37770ac9b5ed2cdca6b91",
+  "files": {
+    ".gitattributes": {
+      "bytes": 1519,
+      "sha256": null,
+      "git_blob_id": "a6344aac8c09253b3b630fb776ae94478aa0275b"
+    },
+    "README.md": {
+      "bytes": 890,
+      "sha256": null,
+      "git_blob_id": "0003f7cb10775ca09e27adfa9bec51c1c0947ace"
+    },
+    "am.mvn": {
+      "bytes": 11203,
+      "sha256": null,
+      "git_blob_id": "681910cd1ab6458b61474cdbf0d1ac5e810f7b0d"
+    },
+    "chn_jpn_yue_eng_ko_spectok.bpe.model": {
+      "bytes": 377341,
+      "sha256": "aa87f86064c3730d799ddf7af3c04659151102cba548bce325cf06ba4da4e6a8",
+      "git_blob_id": "72734d2b95d9bf34a2df2018846cf87edac3332d"
+    },
+    "config.yaml": {
+      "bytes": 1855,
+      "sha256": null,
+      "git_blob_id": "26bb9d3d20a09ff389c1ddb24865771d2312fc0f"
+    },
+    "configuration.json": {
+      "bytes": 396,
+      "sha256": null,
+      "git_blob_id": "264d8171d2d6bfebf3c48d04bd325b34d9be1d9a"
+    },
+    "model.pt": {
+      "bytes": 468291478,
+      "sha256": "218811976815c1673e1b852dc383d78987b229268f78e7ebd0a1fe67229c83dd",
+      "git_blob_id": "76c924a05a8a09adf9516c26faa9d435107611f5"
+    },
+    "tokens.json": {
+      "bytes": 352064,
+      "sha256": null,
+      "git_blob_id": "bc0021233d7c0891e2885233ef7ce16ba80be86d"
+    }
+  }
+}

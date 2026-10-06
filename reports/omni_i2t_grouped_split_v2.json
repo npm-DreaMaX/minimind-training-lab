@@ -1,0 +1,52 @@
+{
+  "rows": 2904511,
+  "train_rows": 2901800,
+  "val_rows": 2711,
+  "counts": {
+    "missing_user": 0,
+    "missing_assistant": 0,
+    "answer_turn_count_mismatch": 0,
+    "rows_with_answer_audio": 0,
+    "rows_with_question_audio": 0,
+    "rows_with_image": 2904511,
+    "rows_with_speaker": 0
+  },
+  "full_answer_codes": 0,
+  "full_answer_hours": 0.0,
+  "answer_frames_percentiles": {
+    "50": 0.0,
+    "90": 0.0,
+    "95": 0.0,
+    "99": 0.0,
+    "100": 0.0
+  },
+  "last_answer_frames_percentiles": {
+    "50": 0.0,
+    "90": 0.0,
+    "95": 0.0,
+    "99": 0.0,
+    "100": 0.0
+  },
+  "unique_conversation_hashes": 2902339,
+  "extra_exact_conversation_duplicates": 2172,
+  "max_multiplicity": 2,
+  "split": "Connected components of exact encoded image SHA256 for user-image rows plus all exact conversation hash64 groups; canonical hash of minimum raw-row representative modulo1000 <1 is held out",
+  "limitations": "Exact assets only, no perceptual/semantic deduplication; text-only rows have no visual marker and their unused thumbnail is not an input asset; language pretraining/SFT may contain related knowledge",
+  "corpus_index_sha256": "c058d31f5880afbf390ac811bef7a84e5c2f26da26ee1799f8c8cb0d0e55736e",
+  "script_sha256": "89c6776c6b75f75bc63da16e7f8e68d51f434c65bf5e60e5aeefab3773c31424",
+  "elapsed_s": 74.14324593544006,
+  "visual_train_rows": 2671732,
+  "visual_val_rows": 2513,
+  "train_visual_assets": 645185,
+  "val_visual_assets": 606,
+  "shared_visual_assets": 0,
+  "shared_conversation_hashes": 0,
+  "components": 876001,
+  "largest_component": 1368,
+  "image_union_edges": 2028454,
+  "conversation_union_edges": 2172,
+  "changed_from_original_val_membership": 4020,
+  "original_split": "audit_v1 unchanged; old preflights and original held-out scores remain tied to that split",
+  "seconds": 5.619130620994838,
+  "peak_rss_kib": 551672
+}

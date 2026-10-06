@@ -1,0 +1,56 @@
+{
+  "真实更新": {
+    "event": "train",
+    "step": 56542,
+    "epoch": 1,
+    "cursor": 16,
+    "loss": 1.7572840400971472,
+    "ce_loss": 1.7532635927200317,
+    "aux_loss": 0.004020447377115488,
+    "grad_norm": 2.7071940898895264,
+    "learning_rate": 5.500000000000001e-06,
+    "valid_tokens": 6646,
+    "tokens_trained": 367923613,
+    "nominal_tokens": 12288,
+    "nonpad_input_tokens": 7693,
+    "input_padding_fraction": 0.37394205729166663,
+    "unsupervised_fraction": 0.45914713541666663,
+    "step_seconds": 1.6676316270022653,
+    "valid_tokens_per_second": 3985.2926104231124,
+    "nominal_tokens_per_second": 7368.533794294192,
+    "cuda_allocated": 2509707264,
+    "cuda_reserved": 5073010688,
+    "cuda_peak_allocated": 4834460672,
+    "wall_seconds": 87907.30520224571,
+    "time": 1791097459.876425
+  },
+  "此前最近保存的评估": {
+    "path": "models/02_hybrid_moe/runs/hybrid_sft_official_mini_2ep_v1/evaluation/step_0056500.json",
+    "step": 56500,
+    "ce": 1.764286744951167,
+    "rows": 512,
+    "generation": [
+      {
+        "prompt": "你好，请介绍一下自己。",
+        "continuation": "你好！我叫minimind，是一个小巧的AI。我需要让用户了解我的定位：一个开源的小型语言模型，追求轻量化但不牺牲实用性。\n</think>\n\n你好！我是minimind，一个轻量级的AI助手。我虽然"
+      },
+      {
+        "prompt": "为什么天空是蓝色的？",
+        "continuation": "天空是由多种因素共同作用的结果，包括地理位置、气候条件、地形特征、地形特征等。以下是一些主要原因：\n\n1. **地形特征**：天空是由多种地形特征组成的，包括地形、地形、地形、地质、"
+      },
+      {
+        "prompt": "计算 17 加 25。",
+        "continuation": "要计算17加 25，我们可以使用以下公式：\n\n\\[ 17 + 25 = 17 \\]\n\n其中：\n- \\(17 + 25 = 17 \\)\n- \\(25 = 17 \\)\n- \\(25 = 17 \\)\n- \\(25 = 17 \\)\n- \\(25 = 17 \\)\n- \\("
+      }
+    ]
+  },
+  "解释": {
+    "loss": "ce_loss + aux_loss",
+    "grad_norm": "裁剪前范数；阈值1",
+    "cursor": "当前epoch已消费的训练记录数；epoch从0开始",
+    "valid_tokens": "本次有效右移标签数，不是B*T",
+    "cuda_peak_allocated": "本次进程启动以来高水位，不是每步重置",
+    "generation": "来自评估保存步，不能假装每一步都有生成样例"
+  },
+  "这是历史重放": true
+}

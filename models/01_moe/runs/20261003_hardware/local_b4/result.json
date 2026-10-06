@@ -1,0 +1,74 @@
+{
+  "status": "passed",
+  "args": {
+    "model_file": "upstream/model/model_minimind.py",
+    "out": "models/01_moe/runs/20261003_hardware/local_b4",
+    "physical_gpu": "0",
+    "batch_size": 4,
+    "seq_len": 512,
+    "warmup": 3,
+    "steps": 12,
+    "resume_check": false
+  },
+  "pid": 305830,
+  "hostname": "localhost",
+  "python": "3.10.12",
+  "torch": "2.11.0+cu128",
+  "transformers": "4.57.6",
+  "cuda_build": "12.8",
+  "started_unix": 1790960521.8310754,
+  "model_sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+  "scope": "Synthetic fixed tokens; full 198M architecture; tiny training verification, not learned quality",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "capability": [
+    8,
+    9
+  ],
+  "memory_before_model": {
+    "allocated_bytes": 0,
+    "reserved_bytes": 0,
+    "device_free_bytes": 7440695296,
+    "device_total_bytes": 8585216000,
+    "peak_allocated_bytes": 0,
+    "peak_reserved_bytes": 0
+  },
+  "parameter_count": 198416640,
+  "parameter_bytes": 793666560,
+  "parameter_dtype": "torch.float32",
+  "initial_parameter_probe_sha256": "9044618a7bb051d210d381258ae408b14c870fd7655ac5269cdeae41a127261a",
+  "input_sha256": "b0b587f85cdb9a9561f0836abc441632b2a142cc9d5ec60c3939c8c5542800a7",
+  "input_shape": [
+    4,
+    512
+  ],
+  "labels_shape": [
+    4,
+    512
+  ],
+  "supervised_tokens_per_step": 2044,
+  "optimizer": {
+    "name": "AdamW",
+    "lr": 0.0001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "weight_decay": 0.01,
+    "foreach": false
+  },
+  "memory_after_steps": {
+    "allocated_bytes": 3250272256,
+    "reserved_bytes": 4464836608,
+    "device_free_bytes": 2936012800,
+    "device_total_bytes": 8585216000,
+    "peak_allocated_bytes": 3964494848,
+    "peak_reserved_bytes": 4464836608
+  },
+  "gradient_bytes": 793666560,
+  "optimizer_tensor_bytes": 1587333800,
+  "seconds_per_step_median": 0.1610393915034365,
+  "input_tokens_per_second": 12660.151952428883,
+  "supervised_tokens_per_second": 12635.425093146796,
+  "timed_steps": 12,
+  "finished_unix": 1790960528.916233
+}

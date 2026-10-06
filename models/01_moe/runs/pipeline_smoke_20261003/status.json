@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "step": 4,
+  "trained_tokens": 6562,
+  "validation": {
+    "step": 4,
+    "epoch": 0,
+    "trained_tokens": 6562,
+    "validation_ce": 8.113765119089537,
+    "validation_tokens": 1178,
+    "validation_rows": 5,
+    "final": true,
+    "generation": [
+      {
+        "prompt": "人工智能的主要应用包括",
+        "continuation": " determ數數填填】的态度(-(-like非常有设置设置和 k和和 conversation conversation conversation conversation conversation和和和和和和和和和和和和和。。。。。。。。。。。。。。。。。。。。。。。。。。。。。"
+      },
+      {
+        "prompt": "中国的首都是",
+        "continuation": "比如比如比如 product感和感和感和感和感和感和感和感和感和感和感和感和感和感和感和感和感和感和感和感和感和感和感和感和感和感和感和感和感和感和感和感和感和����������������������华��华�"
+      },
+      {
+        "prompt": "水的三种状态是",
+        "continuation": "。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。"
+      }
+    ],
+    "time": 1790961991.959237
+  }
+}

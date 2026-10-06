@@ -1,0 +1,42 @@
+{
+  "model": {
+    "hidden_size": 768,
+    "num_hidden_layers": 8,
+    "use_moe": true,
+    "require_fla": true
+  },
+  "strict_init": true,
+  "epochs": 1,
+  "num_workers": 2,
+  "cpu_threads": 4,
+  "deterministic": false,
+  "validation_samples": 512,
+  "warmup_steps": 100,
+  "eval_interval": 1000,
+  "save_interval": 1000,
+  "log_interval": 50,
+  "milestone_interval": 10000,
+  "early_checkpoint_steps": [
+    10,
+    100
+  ],
+  "plot_on_save": true,
+  "allocator_conf": "expandable_segments:True",
+  "allocator_gib": 5.3,
+  "purpose": "formal",
+  "model_file": "models/02_hybrid_moe/src/model_hybrid.py",
+  "run_dir": "models/02_hybrid_moe/runs/hybrid_sft_official_full_v1",
+  "init_weight": "models/02_hybrid_moe/runs/hybrid_continue_official_full_v1/checkpoints/best_validation.pth",
+  "stage": "sft",
+  "corpus": "data/processed/sft_t2t_full_v1",
+  "batch_size": 4,
+  "accumulation_steps": 4,
+  "seq_len": 1536,
+  "checkpointing": true,
+  "learning_rate": 1e-05,
+  "seed": 20261004,
+  "validation_seed": 21261007,
+  "recipe_status": "Priority branch from SHA-verified official AR pretrained weights. Complete 205623072-parameter architecture. Original adaptation/full continuation/full SFT budgets preserved. No claim of completion by 18:00 or of training this base from scratch. Original own-AR branch remains separate.",
+  "triton_f32_default": "tf32x3",
+  "train_only_linear": false
+}

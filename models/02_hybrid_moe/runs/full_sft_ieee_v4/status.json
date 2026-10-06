@@ -1,0 +1,31 @@
+{
+  "status": "complete",
+  "step": 10,
+  "trained_tokens": 10423,
+  "validation": {
+    "step": 10,
+    "epoch": 0,
+    "trained_tokens": 10423,
+    "validation_ce": 8.11832289509689,
+    "validation_tokens": 21093,
+    "validation_rows": 32,
+    "final": true,
+    "generation": [
+      {
+        "prompt": "你好，请介绍一下自己。",
+        "continuation": "\n m elt \n。: gaa\n给给题，，，想头s用的<|im_end|>"
+      },
+      {
+        "prompt": "为什么天空是蓝色的？",
+        "continuation": "ins�.2<|im_end|>"
+      },
+      {
+        "prompt": "计算 17 加 25。",
+        "continuation": "ds的T ss2小微<|im_end|>"
+      }
+    ],
+    "time": 1790981553.5898767,
+    "validation_selection_sha256": "bcc9bcfc670935c6018dc26a74956a373b655f8930dd55ab074d816d7d233780",
+    "validation_selection": "full split"
+  }
+}

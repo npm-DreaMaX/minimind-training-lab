@@ -1,0 +1,42 @@
+{
+  "run_dir": "models/03_omni_moe/runs/real_a2a_long_L3072_v2",
+  "purpose": "preflight",
+  "device": "cuda",
+  "model": {
+    "hidden_size": 768,
+    "num_hidden_layers": 8,
+    "use_moe": true
+  },
+  "modality": "a2a",
+  "mode": "all",
+  "corpus": "data/processed/sft_a2a_shards_v1",
+  "init_weight": "models/03_omni_moe/runs/transfer_preflight_early_ar/initialized_fp32.pth",
+  "max_length": 3072,
+  "batch_size": 1,
+  "accumulation_steps": 2,
+  "epochs": 1,
+  "max_steps": 2,
+  "learning_rate": 1e-05,
+  "warmup_steps": 1,
+  "seed": 20261006,
+  "cpu_threads": 4,
+  "num_workers": 2,
+  "deterministic": false,
+  "checkpointing": true,
+  "allocator_gib": 5.7,
+  "eval_interval": 50,
+  "save_interval": 50,
+  "validation_samples": 3,
+  "log_interval": 1,
+  "recipe_status": "Preflight: test longest usable inputs retained at L3072, same full315M and frozen SenseVoice, not formal data budget",
+  "audio_encoder": "data/frozen_models/SenseVoiceSmall",
+  "train_indices_override": [
+    186694,
+    41812,
+    90106,
+    138400
+  ],
+  "optimizer_state_offload": true,
+  "memory_debug": true,
+  "inspect_first_batches": 4
+}

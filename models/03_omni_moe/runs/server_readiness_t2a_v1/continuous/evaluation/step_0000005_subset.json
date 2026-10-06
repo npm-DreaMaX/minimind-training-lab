@@ -1,0 +1,53 @@
+{
+  "step": 5,
+  "final": false,
+  "validation_rows": 3,
+  "text_ce": 8.35122267503916,
+  "audio_codebook_ce": [
+    7.995877436108808,
+    7.930373171614253,
+    7.9044554461017515,
+    7.936510763404226,
+    7.938130277626927,
+    7.961160629461174,
+    7.96072111871133,
+    7.978952571275799
+  ],
+  "audio_ce": 7.950772676788034,
+  "selection_score": 16.301995351827195,
+  "text_labels": 644,
+  "audio_labels": [
+    849,
+    849,
+    849,
+    849,
+    849,
+    849,
+    849,
+    849
+  ],
+  "stop_count": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+  ],
+  "stop_correct": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+  ],
+  "time": 1790989162.1178222,
+  "per_record_metrics": "runs/t2a_resume_and_resource_v1/continuous/evaluation/step_0000005_subset_rows.jsonl",
+  "validation_raw_rows_sha256": "06e27c44ff8b2a70aeaae50c1b2e35ae3ca0360dfd256a4adb1a95b880151b73",
+  "protocol": "fixed per-record augmented inputs; scheduled_sampling=0; CE globally token-weighted within each head; no aux in selection score"
+}

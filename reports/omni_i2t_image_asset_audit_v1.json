@@ -1,0 +1,33 @@
+{
+  "corpus": "data/processed/sft_i2t_shards_v1",
+  "rows": 2904511,
+  "counts": {
+    "image_rows": 2904511,
+    "encoded_image_bytes_with_repetition": 18843260534,
+    "unique_encoded_image_bytes": 4516515343
+  },
+  "formats": {
+    "JPEG": 2904511
+  },
+  "unique_assets": 645791,
+  "train_assets": 645776,
+  "validation_assets": 2717,
+  "shared_assets": 2702,
+  "validation_image_rows": 2929,
+  "validation_unseen_asset_rows": 15,
+  "header_errors": [],
+  "observed_width_height_min": [
+    8,
+    8
+  ],
+  "observed_width_height_max": [
+    256,
+    256
+  ],
+  "seconds": 268.51766959999804,
+  "peak_rss_kib": 392932,
+  "scope": "Exact encoded image SHA256 and headers, not perceptual deduplication or full pixel decode; preserves original conversation split",
+  "index_sha256": "c058d31f5880afbf390ac811bef7a84e5c2f26da26ee1799f8c8cb0d0e55736e",
+  "script_sha256": "3f57431f011d2cfa56c0331878b052b5155ec25ea92d46b89d69a80d45885cbc",
+  "artifacts": "data/processed/sft_i2t_shards_v1/image_audit_v1"
+}

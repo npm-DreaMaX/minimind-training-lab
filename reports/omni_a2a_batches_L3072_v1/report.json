@@ -1,0 +1,35 @@
+{
+  "max_length": 3072,
+  "records": 128,
+  "uniform_row_count": 48,
+  "tail_row_count": 16,
+  "zero_supervision_draws": 0,
+  "no_audio_marker_draws": 39,
+  "random_gpu_preflight_rows": [
+    25281,
+    30467,
+    45202,
+    48109,
+    52018,
+    58074,
+    74426,
+    78581,
+    97868,
+    101590,
+    109319,
+    117004,
+    128406,
+    139412,
+    146201,
+    147924
+  ],
+  "long_gpu_preflight_rows": [
+    186694,
+    41812,
+    90106,
+    138400
+  ],
+  "maximum_observed_fbank_length": 2192,
+  "scope": "Full-source uniform sample plus deliberately selected long tail, two epochs of actual official augmentation; only CPU frontend, no encoder or LLM forward; tail mixture is not a population estimate",
+  "elapsed_s": 18.854432106018066
+}

@@ -1,0 +1,9 @@
+{
+  "last_step": 3,
+  "plotted_steps": 3,
+  "total_text_labels": 50702,
+  "total_audio_labels_across_eight_heads": 654400,
+  "last_metric_time": 1791001879.2865338,
+  "generated": 1791003025.9665892,
+  "note": "Audio label count sums eight codebooks; do not equate it with independent text tokens. GPU allocated/reserved exclude other processes and driver context."
+}

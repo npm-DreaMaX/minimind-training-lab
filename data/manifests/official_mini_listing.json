@@ -1,0 +1,30 @@
+{
+  "url": "https://huggingface.co/api/datasets/jingyaogong/minimind_dataset/tree/312afb4f76391145c6902f765bb51691c09a12f5?recursive=false&expand=false",
+  "revision": "312afb4f76391145c6902f765bb51691c09a12f5",
+  "files": [
+    {
+      "type": "file",
+      "oid": "5db75dee60959914b5d2ce8bb1299381daa10809",
+      "size": 1241043656,
+      "lfs": {
+        "oid": "6dd6716c84ab36897bdbfc7f88e04f4441c48c1ab7ecee88ce0b0e7d4685560c",
+        "size": 1241043656,
+        "pointerSize": 135
+      },
+      "xetHash": "7761133c94a2c55a41f4aecbf6b251f71c6c09b8b34aab3fbc4130971ad2a2f6",
+      "path": "pretrain_t2t_mini.jsonl"
+    },
+    {
+      "type": "file",
+      "oid": "544ebd9f79664e0afd68bd35650c5dc12a0d0b53",
+      "size": 1739201170,
+      "lfs": {
+        "oid": "abb1e76b2056e14728beb78db96b7b3c491a0bef1ed3e34a9b381b28f29fa518",
+        "size": 1739201170,
+        "pointerSize": 135
+      },
+      "xetHash": "005a5ef69f1c5b7c4ca0fee21c45c552811869797f81315ef36962082858a025",
+      "path": "sft_t2t_mini.jsonl"
+    }
+  ]
+}

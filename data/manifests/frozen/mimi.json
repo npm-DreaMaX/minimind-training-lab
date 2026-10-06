@@ -1,0 +1,31 @@
+{
+  "repo": "jingyaogong/mimi",
+  "revision": "b4e362bbfbba9444b162de486da40af6639e0b98",
+  "files": {
+    ".gitattributes": {
+      "bytes": 1519,
+      "sha256": null,
+      "git_blob_id": "a6344aac8c09253b3b630fb776ae94478aa0275b"
+    },
+    "README.md": {
+      "bytes": 883,
+      "sha256": null,
+      "git_blob_id": "51667f09a9c1636cfc45f940f138797bc1551fca"
+    },
+    "config.json": {
+      "bytes": 1117,
+      "sha256": null,
+      "git_blob_id": "e6ffa7ee897f3b12d9518dee8ca15cf55cf8e583"
+    },
+    "model.safetensors": {
+      "bytes": 192346842,
+      "sha256": "7542ee039d3025d5089cf227d21df64b6b8eff08fcd376a11a1fbd178dd9d3f5",
+      "git_blob_id": "4fd490621db02924cca29793d2459c70561061b1"
+    },
+    "preprocessor_config.json": {
+      "bytes": 234,
+      "sha256": null,
+      "git_blob_id": "ba40914f4f49ab98a8ca545d4892ef7291a39592"
+    }
+  }
+}

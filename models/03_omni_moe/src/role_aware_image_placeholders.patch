@@ -1,0 +1,47 @@
+--- a/dataset/omni_dataset.py
++++ b/models/03_omni_moe/src/omni_dataset_role_aware.py
+@@ -152,7 +152,7 @@
+         if hasattr(inputs, 'keys'): return {k: v for k, v in inputs.items()}
+         return inputs.pixel_values
+ 
+-    def create_chat_prompt(self, conversations, audio_features_length=0):
++    def create_chat_prompt(self, conversations, audio_features_length=0, expand_user_images=False):
+         conversations = pre_processing_chat(conversations)
+         messages = []
+         is_last_user = lambda i: i == max(j for j, t in enumerate(conversations) if t['role'] == 'user')
+@@ -167,10 +167,14 @@
+                 else: content = content + '\n\n' + ap
+             if '<image>' in content:
+                 r = random.random()
+-                if r < 0.2: content = '<image>\n' + content.replace('<image>', '').strip()
+-                elif r < 0.4: content = '<image>\n\n' + content.replace('<image>', '').strip()
+-                elif r < 0.6: content = content.replace('<image>', '').strip() + '\n' + '<image>'
+-                else: content = content.replace('<image>', '').strip() + '\n\n' + '<image>'
++                # Keep the RNG draw, but only user placeholders denote inputs.
++                # Assistant prose such as "the <image> shows ..." stays literal.
++                if role == 'user':
++                    if r < 0.2: content = '<image>\n' + content.replace('<image>', '').strip()
++                    elif r < 0.4: content = '<image>\n\n' + content.replace('<image>', '').strip()
++                    elif r < 0.6: content = content.replace('<image>', '').strip() + '\n' + '<image>'
++                    else: content = content.replace('<image>', '').strip() + '\n\n' + '<image>'
++                    if expand_user_images: content = content.replace('<image>', self.image_token)
+             messages.append({"role": role, "content": content})
+         prompt = self.tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=False)
+         return post_processing_chat(prompt)
+@@ -266,8 +270,7 @@
+                 last_audio_codes = audio_codes_8layers
+         
+         # 生成prompt (text input_ids)
+-        prompt = self.create_chat_prompt(conversations, audio_features_length)
+-        if pixel_values is not None: prompt = prompt.replace('<image>', self.image_token)
++        prompt = self.create_chat_prompt(conversations, audio_features_length, expand_user_images=pixel_values is not None)
+         input_ids = self.tokenizer(prompt).input_ids[:self.max_length]
+         
+         # PAD input_ids到max_length
+@@ -342,4 +345,4 @@
+         print(f'  User: {user_msg["content"][:50]}...')
+         print(f'  Asst: {asst_msg.get("content", "")[:50]}...')
+         if answer_audios:
+-            print(f'  answer_audios: {len(answer_audios)}轮, 首轮{len(answer_audios[0])}tokens')
+\ No newline at end of file
++            print(f'  answer_audios: {len(answer_audios)}轮, 首轮{len(answer_audios[0])}tokens')

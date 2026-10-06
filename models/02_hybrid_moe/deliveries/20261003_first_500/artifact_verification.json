@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "step": 500,
+  "parameter_count": 205623072,
+  "keys": 189,
+  "linear_tensor_keys_actually_changed": 54,
+  "unchanged_keys": 135,
+  "frozen_weights_bitwise_unchanged": true,
+  "inference_export_matches_half_of_resume": true,
+  "tied_embedding_values_match": true,
+  "source_shapes_and_keys_match": true,
+  "checkpoint_evaluation_step": 500,
+  "time": 1791006638.4795058,
+  "scope": "CPU-only artifact integrity and actual update check; no claim of trained model quality"
+}

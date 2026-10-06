@@ -1,0 +1,43 @@
+{
+  "purpose": "preflight",
+  "device": "cuda",
+  "model": {
+    "hidden_size": 768,
+    "num_hidden_layers": 8,
+    "use_moe": true,
+    "dropout": 0.1
+  },
+  "modality": "t2a",
+  "mode": "all",
+  "corpus": "artifacts/omni_validation/t2a_shards_v1",
+  "train_indices_override": [
+    0,
+    7,
+    8,
+    9,
+    10,
+    12,
+    32,
+    44
+  ],
+  "max_length": 1536,
+  "batch_size": 1,
+  "accumulation_steps": 2,
+  "epochs": 2,
+  "max_steps": 5,
+  "learning_rate": 0.0001,
+  "warmup_steps": 1,
+  "seed": 20261006,
+  "cpu_threads": 4,
+  "num_workers": 2,
+  "deterministic": true,
+  "checkpointing": true,
+  "eval_interval": 2,
+  "save_interval": 2,
+  "validation_samples": 3,
+  "log_interval": 1,
+  "allocator_gib": 13.5,
+  "inspect_first_batches": 2,
+  "optimizer_state_offload": false,
+  "run_dir": "runs/t2a_resume_and_resource_v1/resumed"
+}

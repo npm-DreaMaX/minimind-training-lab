@@ -1,0 +1,60 @@
+{
+  "status": "complete",
+  "step": 3,
+  "text_tokens": 924,
+  "audio_tokens": 26568,
+  "validation": {
+    "step": 3,
+    "final": true,
+    "validation_rows": 16,
+    "text_ce": 8.867006704955386,
+    "audio_codebook_ce": [
+      8.258765907838457,
+      8.260740178242488,
+      8.243535444280301,
+      8.31401183441658,
+      8.28561593995628,
+      8.264790151437698,
+      8.274819377183054,
+      8.273183524135218
+    ],
+    "audio_ce": 8.27193279468626,
+    "selection_score": 17.138939499641644,
+    "text_labels": 821,
+    "audio_labels": [
+      2770,
+      2770,
+      2770,
+      2770,
+      2770,
+      2770,
+      2770,
+      2770
+    ],
+    "stop_count": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16
+    ],
+    "stop_correct": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "time": 1790990966.7078862,
+    "per_record_metrics": "runs/real_inputs_all_modes_v1/a2a_audio_proj_long/evaluation/step_0000003_full_rows.jsonl",
+    "validation_raw_rows_sha256": "eb307d921bb862a1f75e9ef3ca5700ea47db138973962741a8fe30b0df038226",
+    "protocol": "fixed per-record augmented inputs; scheduled_sampling=0; CE globally token-weighted within each head; no aux in selection score"
+  },
+  "purpose": "preflight"
+}

@@ -1,0 +1,16 @@
+{
+  "repo": "jingyaogong/minimind-3-pytorch",
+  "revision": "edba70ec15e06bc4280fbb96ac3383d73a7eab91",
+  "repo_type": "model",
+  "purpose": "Official references for architecture and evaluation calibration only; never substitute for our from-scratch formal weights",
+  "files": {
+    "full_sft_768_moe.pth": {
+      "bytes": 406719725,
+      "sha256": "a050020ea6d1b9e824693d0db525b1a0a8b40f36a934ea8d89da161368f20cc1"
+    },
+    "pretrain_768_moe.pth": {
+      "bytes": 406720610,
+      "sha256": "ccc0542230cb0dd936521bf18b38940fa3dbd3ed4d3f1b1ecb8b8dac71bbeedf"
+    }
+  }
+}

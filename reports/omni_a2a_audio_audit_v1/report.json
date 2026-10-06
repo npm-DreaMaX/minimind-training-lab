@@ -1,0 +1,147 @@
+{
+  "corpus": "data/processed/sft_a2a_shards_v1",
+  "rows": 414024,
+  "rows_with_nonempty_input_audio": 350762,
+  "decoded_headers": 500569,
+  "unique_exact_audio_assets": 245837,
+  "asset_identity": "SHA256 first uint64 LE of exact encoded bytes; no perceptual/audio-semantic matching",
+  "exact_assets_present_in_both_splits": 12,
+  "unique_validation_assets": 249,
+  "validation_assets_also_in_train": 12,
+  "input_seconds_percentiles": {
+    "50": 3.968416690826416,
+    "90": 8.40999984741211,
+    "95": 10.51866626739502,
+    "99": 15.68808364868164,
+    "99.9": 21.857250213623047,
+    "100": 92.30400085449219
+  },
+  "rows_exceeding_seconds": {
+    "10": 20832,
+    "30": 31,
+    "60": 5,
+    "90": 5,
+    "120": 0
+  },
+  "longest_rows": [
+    {
+      "row": 186694,
+      "max_input_seconds": 92.30400085449219,
+      "split": "train"
+    },
+    {
+      "row": 90106,
+      "max_input_seconds": 92.30400085449219,
+      "split": "train"
+    },
+    {
+      "row": 234988,
+      "max_input_seconds": 92.30400085449219,
+      "split": "train"
+    },
+    {
+      "row": 138400,
+      "max_input_seconds": 92.30400085449219,
+      "split": "train"
+    },
+    {
+      "row": 41812,
+      "max_input_seconds": 92.30400085449219,
+      "split": "train"
+    },
+    {
+      "row": 113433,
+      "max_input_seconds": 40.08391571044922,
+      "split": "train"
+    },
+    {
+      "row": 65139,
+      "max_input_seconds": 40.08391571044922,
+      "split": "train"
+    },
+    {
+      "row": 16845,
+      "max_input_seconds": 40.08391571044922,
+      "split": "train"
+    },
+    {
+      "row": 210021,
+      "max_input_seconds": 40.08391571044922,
+      "split": "train"
+    },
+    {
+      "row": 161727,
+      "max_input_seconds": 40.08391571044922,
+      "split": "train"
+    },
+    {
+      "row": 140415,
+      "max_input_seconds": 39.84391784667969,
+      "split": "train"
+    },
+    {
+      "row": 188709,
+      "max_input_seconds": 39.84391784667969,
+      "split": "train"
+    },
+    {
+      "row": 43827,
+      "max_input_seconds": 39.84391784667969,
+      "split": "train"
+    },
+    {
+      "row": 237003,
+      "max_input_seconds": 39.84391784667969,
+      "split": "train"
+    },
+    {
+      "row": 92121,
+      "max_input_seconds": 39.84391784667969,
+      "split": "train"
+    },
+    {
+      "row": 121774,
+      "max_input_seconds": 34.35591506958008,
+      "split": "train"
+    },
+    {
+      "row": 73480,
+      "max_input_seconds": 34.35591506958008,
+      "split": "train"
+    },
+    {
+      "row": 218362,
+      "max_input_seconds": 34.35591506958008,
+      "split": "train"
+    },
+    {
+      "row": 170068,
+      "max_input_seconds": 34.35591506958008,
+      "split": "train"
+    },
+    {
+      "row": 25186,
+      "max_input_seconds": 34.35591506958008,
+      "split": "train"
+    }
+  ],
+  "sample_rates": {
+    "12000": 318415,
+    "24000": 31298,
+    "16000": 150856
+  },
+  "formats": {
+    "MP3": 349713,
+    "OGG": 150856
+  },
+  "speaker_length_counts": {
+    "192": 304732,
+    "0": 109292
+  },
+  "nonfinite_speaker_values": 0,
+  "incomplete_reference_frames": 0,
+  "header_errors": 0,
+  "scope": "Full stored input-audio headers, not post-augmentation lengths or full waveform-decoding validation; shared input assets may occur in different conversations",
+  "script_sha256": "54ebc02603bbee6a12eb80b7b93d175773c88c3c159529dfbe56dd950370f276",
+  "elapsed_s": 72.31060671806335
+}

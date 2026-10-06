@@ -1,0 +1,24 @@
+{
+  "stage": "sft",
+  "corpus": "artifacts/pipeline_validation/sft_tokens_v2",
+  "training_index": 0,
+  "original_cache_row": 0,
+  "input_shape": [
+    1,
+    1536
+  ],
+  "labels_shape": [
+    1,
+    1536
+  ],
+  "logits_shape_if_model_runs": [
+    1,
+    1536,
+    6400
+  ],
+  "input_dtype": "torch.int64",
+  "input_nonpadding": 555,
+  "supervised_next_tokens": 502,
+  "decoded_nonpad_input": "<|im_start|>system\n你是一个知识丰富的AI，尽力为用户提供准确的信息。<|im_end|>\n<|im_start|>user\nWhat is the primary function of the Domain Name System (DNS) in the internet?<|im_end|>\n<|im_start|>assistant\nThe primary function of the Domain Name System (DNS) is to translate human-readable domain names (such as www.example.com) into IP addresses (such as 192.0.2.1) that computers use to identify each other on the internet. This translation is crucial because while domain names are easy for humans to remember and use, computers and other network devices communicate with each other using numerical IP addresses.\n\nHere are some key points about how DNS works and its importance:\n\n1. **Translation Service**: DNS acts as a translator between domain names and IP addresses, facilitating communication between users and internet resources.\n\n2. **Hierarchical Structure**: DNS is organized in a hierarchical structure, which allows for efficient and scalable management of domain names. This structure includes root servers, top-level domain (TLD) servers, and authoritative name servers.\n\n3. **Caching**: DNS servers cache information to improve response times and reduce the load on the system. When a DNS query is made, the server checks its cache first before querying other servers, which can significantly speed up the process.\n\n4. **Redundancy and Reliability**: DNS is designed with redundancy to ensure reliability. Multiple servers are available to handle queries, and if one server fails, others can take over, ensuring that the internet remains accessible.\n\n5. **Security**: DNS also plays a role in internet security through mechanisms like DNSSEC (DNS Security Extensions), which help protect against certain types of attacks, such as cache poisoning.\n\nOverall, DNS is a critical component of the internet infrastructure, enabling users to access web services and resources efficiently and reliably.<|im_end|>\n",
+  "note": "CSV position t predicts labels[t+1]; -100 masks direct CE, not the entire computation graph. Raw BPE tokens are not necessarily whole Chinese characters."
+}

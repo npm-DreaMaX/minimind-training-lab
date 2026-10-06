@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "errors": {
+    "text_ce": 1.907348590179936e-08,
+    "audio_ce": 7.566263349190194e-08,
+    "selection_score": 9.473612294641498e-08
+  },
+  "row_metrics_after_resume_byte_identical": true
+}

@@ -1,0 +1,91 @@
+{
+  "file": "sft_t2a.parquet",
+  "revision": "d6588e12ac2ac8ced65eb58a7d7b3eef4aa220de",
+  "scope": "first row group, not a representative whole-file sample",
+  "rows": 3702,
+  "network_bytes": 10310954,
+  "min_code": 0,
+  "max_code": 2047,
+  "total_audio_codes": 6317160,
+  "answer_turns_percentiles": {
+    "50": 1.0,
+    "90": 1.0,
+    "100": 1.0
+  },
+  "audio_hours_if_8_codebooks_12_5_hz": 17.547666666666665,
+  "audio_hours_if_8_codebooks_75_hz": 2.924611111111111,
+  "examples": [
+    {
+      "index": 0,
+      "conversation_turns": 2,
+      "answer_audio_turns": 1,
+      "audio_code_lengths": [
+        2400
+      ],
+      "last_assistant_text": "Sure! Here are three tips for staying healthy:   1. Eat a balanced diet rich in fruits, vegetables, lean proteins, and whole grains. This helps ensure your body"
+    },
+    {
+      "index": 1,
+      "conversation_turns": 2,
+      "answer_audio_turns": 1,
+      "audio_code_lengths": [
+        2376
+      ],
+      "last_assistant_text": "An atom is composed of three main particles: protons, neutrons, and electrons. Protons and neutrons are located in the nucleus at the center of the atom. The nu"
+    },
+    {
+      "index": 2,
+      "conversation_turns": 2,
+      "answer_audio_turns": 1,
+      "audio_code_lengths": [
+        2520
+      ],
+      "last_assistant_text": "Reducing air pollution requires a combination of individual actions and systemic changes. We can start by using public transportation, biking, or walking instea"
+    },
+    {
+      "index": 3,
+      "conversation_turns": 2,
+      "answer_audio_turns": 1,
+      "audio_code_lengths": [
+        2288
+      ],
+      "last_assistant_text": "There was a time when I had to choose between moving to a new city for a great job opportunity and staying in my hometown to support my family. It was a challen"
+    },
+    {
+      "index": 4,
+      "conversation_turns": 2,
+      "answer_audio_turns": 1,
+      "audio_code_lengths": [
+        1840
+      ],
+      "last_assistant_text": "Jane had always been passionate about art, but her parents had insisted on a more practical path. With a degree in business, she landed a stable job at a reputa"
+    },
+    {
+      "index": 5,
+      "conversation_turns": 2,
+      "answer_audio_turns": 1,
+      "audio_code_lengths": [
+        2416
+      ],
+      "last_assistant_text": "I am a voice assistant and cannot write code. To render a 3D model of a house, first, you need to decide on the software or programming environment you want to "
+    },
+    {
+      "index": 6,
+      "conversation_turns": 2,
+      "answer_audio_turns": 1,
+      "audio_code_lengths": [
+        2512
+      ],
+      "last_assistant_text": "Julius Caesar was assassinated. He was stabbed to death by a group of Roman senators on the Ides of March, which is March 15, in 44 BC. The assassination took p"
+    },
+    {
+      "index": 7,
+      "conversation_turns": 2,
+      "answer_audio_turns": 1,
+      "audio_code_lengths": [
+        208
+      ],
+      "last_assistant_text": "The capital of France is Paris."
+    }
+  ]
+}

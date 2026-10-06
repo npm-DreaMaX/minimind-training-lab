@@ -1,0 +1,4 @@
+{"event": "checkpoint", "kind": "paused", "step": 1, "epoch": 0, "cursor": 2, "bytes": 3779077085, "seconds": 30.713128089904785, "time": 1790977116.8402169}
+{"event": "checkpoint", "kind": "periodic", "step": 2, "epoch": 0, "cursor": 4, "bytes": 3779077085, "seconds": 25.808507680892944, "time": 1790977203.0135977}
+{"event": "checkpoint", "kind": "periodic", "step": 4, "epoch": 0, "cursor": 8, "bytes": 3779077085, "seconds": 26.750033378601074, "time": 1790977237.5974011}
+{"event": "checkpoint", "kind": "final", "step": 5, "epoch": 1, "cursor": 2, "bytes": 3779077085, "seconds": 31.366109132766724, "time": 1790977275.982673}

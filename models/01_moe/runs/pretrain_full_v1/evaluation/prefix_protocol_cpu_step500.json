@@ -1,0 +1,89 @@
+{
+  "weight": "models/01_moe/runs/pretrain_full_v1/checkpoints/best_validation.pth",
+  "sha256": "900016e51ce7f42fef36da0d726298071f60b982d8de9bd940dd9a884ea679ab",
+  "source": "/mnt/d/minimind/models/01_moe/runs/pretrain_full_v1/checkpoints/best_validation.json",
+  "device": "CPU",
+  "parameter_dtype": "FP32 loaded from FP16 export",
+  "purpose": "Within-CPU controlled input-prefix comparison; not a bitwise comparison against BF16 GPU decoding",
+  "results": [
+    {
+      "prompt": "人工智能的主要应用包括",
+      "prepend_bos": false,
+      "input_ids": [
+        2225,
+        3669,
+        908,
+        898
+      ],
+      "continuation": "诊断诊断、治疗治疗、药物研发等方面。<|im_end|>",
+      "seconds": 0.19221806526184082
+    },
+    {
+      "prompt": "人工智能的主要应用包括",
+      "prepend_bos": true,
+      "input_ids": [
+        1,
+        2225,
+        3669,
+        908,
+        898
+      ],
+      "continuation": "：1. 自动化自动化：人工智能可以帮助自动化自动化流程，提高效率，提高效率，提高效率，提高效率。2. 自动化自动化：人工智能可以帮助自动化自动化流程，提高效率，提高效率，提高效率，提高效率。3. 自动化自动化：人工智能可以帮助自动化自动化任务，提高效率，",
+      "seconds": 1.0686893463134766
+    },
+    {
+      "prompt": "中国的首都是",
+      "prepend_bos": false,
+      "input_ids": [
+        1405,
+        296,
+        1408,
+        2462
+      ],
+      "continuation": "中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国",
+      "seconds": 0.9718339443206787
+    },
+    {
+      "prompt": "中国的首都是",
+      "prepend_bos": true,
+      "input_ids": [
+        1,
+        1405,
+        296,
+        1408,
+        2462
+      ],
+      "continuation": "中国古代的中国古代，中国的中国古代的中国古代的中国古代，中国古代的中国古代中国古代的中国古代，中国古代中国古代中国古代中国古代中国古代中国古代中国古代中国古代中国古代中国古代中国古代中国古代中国古代中国古代中国古代中国古代中国古代中国古代",
+      "seconds": 0.9432108402252197
+    },
+    {
+      "prompt": "水的三种状态是",
+      "prepend_bos": false,
+      "input_ids": [
+        952,
+        296,
+        1441,
+        604,
+        2341,
+        357
+      ],
+      "continuation": "最好的选择。<|im_end|>",
+      "seconds": 0.08809614181518555
+    },
+    {
+      "prompt": "水的三种状态是",
+      "prepend_bos": true,
+      "input_ids": [
+        1,
+        952,
+        296,
+        1441,
+        604,
+        2341,
+        357
+      ],
+      "continuation": "多少？水的重量是多少？水的重量是多少？水的重量是多少？水的重量是1. 水的重量是1. 水的重量。水的重量是1. 水的重量是1. 水的重量",
+      "seconds": 0.964799165725708
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "evaluated_rows": 3,
+  "requested_rows": 3,
+  "missing_rows": 0,
+  "complete_cohort": true,
+  "text_ce": 8.757818603515625,
+  "audio_codebook_ce": [
+    7.88640453197338,
+    7.916190218763287,
+    7.920454831467461,
+    7.832288530137804,
+    7.786693050986842,
+    7.856327354485262,
+    7.842607176859319,
+    7.841622615206068
+  ],
+  "audio_ce": 7.860323538734928,
+  "selection_score": 16.618142142250555,
+  "text_labels": 300,
+  "audio_labels": [
+    297,
+    294,
+    291,
+    288,
+    285,
+    282,
+    279,
+    276
+  ],
+  "stop_count": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "stop_correct": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "evaluation": "models/03_omni_moe/runs/trainer_cpu_per_record_v3/continuous/evaluation/step_0000005_full_rows.jsonl",
+  "evaluation_sha256": "8652f4568c7a31a90fd164e270e212aeaa6ee8d1756e6fdcb0231340a5342191",
+  "indices": "artifacts/omni_validation/t2a_shards_v1/audit_v1/val.npy",
+  "indices_sha256": "51bfa038ccf105dc7da6657643b04afb7e903f2a51dc8297f90ff03e0a1f6bb8",
+  "protocol": "Sum per-record NLL numerator and valid label counts, then divide within each head; audio STOP weighted 10x; no aux; same forward pass as original evaluation",
+  "limitation": "Teacher-forced augmented inputs, not clean generation or task accuracy"
+}

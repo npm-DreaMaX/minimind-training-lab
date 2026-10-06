@@ -1,0 +1,18 @@
+{
+  "source_sha256": "cf83fb3f054b3dc9fc1da055a68cbc21ec973a6f63b1615ebc66c761bee8c503",
+  "parameter_count": 205623072,
+  "trainable_parameters": 205623072,
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "train_rows": 512,
+  "validation_rows": 32,
+  "triton_f32_default": "ieee",
+  "filtered_zero_target_train_rows": 0,
+  "total_steps": 10,
+  "effective_batch_samples": 2,
+  "started_unix": 1790981534.0833178,
+  "pid": 448469,
+  "git_commit": "9fdb075807d6945e9519b6b0c2f333a4b4a75c29",
+  "loss_reduction": "CE weighted by valid labels over accumulation group; auxiliary loss averaged over nonempty microbatches"
+}

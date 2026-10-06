@@ -1,0 +1,124 @@
+{
+  "summaries": {
+    "768/epoch0": {
+      "rows": 256,
+      "zero_supervision": 0,
+      "missing_image_markers": 21,
+      "empty_pixels": 0,
+      "text_labels": 55673,
+      "rows_filling_context": 0,
+      "label_percentiles": {
+        "50": 194.0,
+        "90": 399.5,
+        "99": 560.0,
+        "100": 702.0
+      }
+    },
+    "768/epoch1": {
+      "rows": 256,
+      "zero_supervision": 0,
+      "missing_image_markers": 21,
+      "empty_pixels": 0,
+      "text_labels": 55727,
+      "rows_filling_context": 0,
+      "label_percentiles": {
+        "50": 195.0,
+        "90": 396.5,
+        "99": 560.0,
+        "100": 702.0
+      }
+    },
+    "1536/epoch0": {
+      "rows": 256,
+      "zero_supervision": 0,
+      "missing_image_markers": 21,
+      "empty_pixels": 0,
+      "text_labels": 55673,
+      "rows_filling_context": 0,
+      "label_percentiles": {
+        "50": 194.0,
+        "90": 399.5,
+        "99": 560.0,
+        "100": 702.0
+      }
+    },
+    "1536/epoch1": {
+      "rows": 256,
+      "zero_supervision": 0,
+      "missing_image_markers": 21,
+      "empty_pixels": 0,
+      "text_labels": 55727,
+      "rows_filling_context": 0,
+      "label_percentiles": {
+        "50": 195.0,
+        "90": 396.5,
+        "99": 560.0,
+        "100": 702.0
+      }
+    },
+    "3072/epoch0": {
+      "rows": 256,
+      "zero_supervision": 0,
+      "missing_image_markers": 22,
+      "empty_pixels": 0,
+      "text_labels": 55673,
+      "rows_filling_context": 0,
+      "label_percentiles": {
+        "50": 194.0,
+        "90": 399.5,
+        "99": 560.0,
+        "100": 702.0
+      }
+    },
+    "3072/epoch1": {
+      "rows": 256,
+      "zero_supervision": 0,
+      "missing_image_markers": 21,
+      "empty_pixels": 0,
+      "text_labels": 55727,
+      "rows_filling_context": 0,
+      "label_percentiles": {
+        "50": 195.0,
+        "90": 396.5,
+        "99": 560.0,
+        "100": 702.0
+      }
+    }
+  },
+  "random_gpu_preflight_rows": [
+    13169,
+    35318,
+    35857,
+    52254,
+    56279,
+    67180,
+    73203,
+    105796,
+    119737,
+    120173,
+    125843,
+    165026,
+    174049,
+    175248,
+    185571,
+    189785,
+    214222,
+    248166,
+    275011,
+    277168,
+    278386,
+    288757,
+    314503,
+    341217,
+    366417,
+    384445,
+    384985,
+    391321,
+    395632,
+    408185,
+    408740,
+    413320
+  ],
+  "seconds": 21.124989217001712,
+  "scope": "Uniform train rows, two deterministic augmentations, actual image decoding/processor/labels; no encoder or LLM forward; sampled coverage only"
+}

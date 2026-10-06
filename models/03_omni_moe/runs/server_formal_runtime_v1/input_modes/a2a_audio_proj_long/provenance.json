@@ -1,0 +1,35 @@
+{
+  "pid": 4626,
+  "parameters": 314887938,
+  "trainable_parameters": 985600,
+  "fingerprints": {
+    "lab/omni_train.py": "d4cbc99a141680eabc899ffeeecf47c1a98816e0492f1fe435bd05ee7d71615f",
+    "lab/omni_loss.py": "3549f694c53497761f74fc3d19ae77f60dfc02eb4ead45a88b531df7cf6330f5",
+    "lab/omni_data.py": "e5523f3ec3b9cc19756fae6fd968df0dc9edf9f45a43b477152ccb65aab96359",
+    "lab/omni_table.py": "d3c979c368074b5b224416b4f6cc48ee4d9aa04450f32f3085c31ef4d0dc770c",
+    "lab/omni_batch.py": "4038ffeac77dbbd2251275708cb456f754f47afd30a49785d765cdd67b10b5eb",
+    "lab/checkpointing.py": "36809f843d94bc728278f4f5141387fc22e73429503f52769bde1349dd9f52ae",
+    "lab/train.py": "2a25783ebe72087ec8b3f26c6008fdd05a08b8066e76d9be354bbc7c54aa0834",
+    "lab/data.py": "b06bda98ac443510b4d92e3ef1c1060d4826b7d41e392595aa6d9003ea363602",
+    "sources/minimind-o/model/model_omni.py": "9a0de2b438b8927a170fe12636e01c00dbfec463ea5c4a81efdfc1cca6a6696c",
+    "sources/minimind-o/model/model_minimind.py": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+    "sources/minimind-o/dataset/omni_dataset.py": "06c305bf010dc47dcbe812b0b01316563e10537c32b61efdfa37ad7065fdff56",
+    "sources/minimind-o/trainer/train_sft_omni.py": "886f12d2024ad3ec7c8cf5526af487b693fd34fc26414cf6a40a07b8ad41b7c1",
+    "tools/monitor_host_resources.py": "7f8ee4ac53745b41c67b0c372dab2b03a396f689a411cce2dc3a38de1be61398"
+  },
+  "torch": "2.6.0+cu124",
+  "device": "cuda",
+  "train_rows": 4,
+  "val_rows": 16,
+  "total_steps": 3,
+  "loss_reduction": "Official per-microbatch text CE plus mean of eight STOP-weighted audio CEs plus aux; accumulated microbatches equally weighted",
+  "purpose": "preflight",
+  "corpus_audit": {
+    "rows": 68,
+    "train_rows": 52,
+    "val_rows": 16,
+    "scope": "fixture",
+    "source_split": "data/processed/sft_a2a_shards_v1/audit_v1"
+  },
+  "time": 1791002054.035678
+}

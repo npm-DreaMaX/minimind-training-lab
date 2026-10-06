@@ -1,0 +1,78 @@
+{
+  "status": "complete",
+  "step": 12,
+  "trained_tokens": 66053,
+  "validation": {
+    "step": 12,
+    "epoch": 0,
+    "trained_tokens": 66053,
+    "validation_ce": 8.220612143833568,
+    "validation_tokens": 8089,
+    "validation_rows": 32,
+    "final": true,
+    "generation": [
+      {
+        "prompt": "人工智能的主要应用包括",
+        "rendered_input": "<|im_start|>人工智能的主要应用包括",
+        "input_ids": [
+          1,
+          2225,
+          3669,
+          908,
+          898
+        ],
+        "continuation": "斯风，的，， ��大上的的力动。，中�动，，�，，，在，士��、�人、，�时成的，哉、�，，�，人，这，的是，带。最气��，\n",
+        "output_tokens": 64,
+        "ended_with_eos": false,
+        "truncated_by_budget": true
+      },
+      {
+        "prompt": "中国的首都是",
+        "rendered_input": "<|im_start|>中国的首都是",
+        "input_ids": [
+          1,
+          1405,
+          296,
+          1408,
+          2462
+        ],
+        "continuation": "\n�。。上.. -海  .xa  的7中A����iitus R 1gs. O-,s，D，， \n offul cc���。�，\ni\n明--，子。、",
+        "output_tokens": 64,
+        "ended_with_eos": false,
+        "truncated_by_budget": true
+      },
+      {
+        "prompt": "水的三种状态是",
+        "rendered_input": "<|im_start|>水的三种状态是",
+        "input_ids": [
+          1,
+          952,
+          296,
+          1441,
+          604,
+          2341,
+          357
+        ],
+        "continuation": "盆，里发物o,明� ,,.>有\n白色 <|im_end|>",
+        "output_tokens": 21,
+        "ended_with_eos": true,
+        "truncated_by_budget": false
+      }
+    ],
+    "time": 1790989046.0179327,
+    "validation_selection_sha256": "bcc9bcfc670935c6018dc26a74956a373b655f8930dd55ab074d816d7d233780",
+    "validation_selection": "full split",
+    "generation_protocol": {
+      "version": 2,
+      "pretrain_prefix": "explicit tokenizer BOS",
+      "sft_prefix": "official chat template",
+      "dtype": "BF16 autocast",
+      "do_sample": false,
+      "temperature": 1.0,
+      "top_p": 1.0,
+      "top_k": 0,
+      "repetition_penalty": 1.0,
+      "max_new_tokens": 64
+    }
+  }
+}

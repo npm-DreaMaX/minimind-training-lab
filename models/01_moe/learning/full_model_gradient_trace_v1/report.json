@@ -1,0 +1,53 @@
+{
+  "scope": "One short held-out record selected to illustrate padding; full198M CPU FP32 forward and selected gradients. Not representative quality and not a formal optimizer update.",
+  "weights": "models/01_moe/runs/pretrain_full_v1/checkpoints/model_step_0003502.pth",
+  "weights_sha256": "355dc917cdc400a7523e50ccaeb3b44f183c2751730b4176d876512d2fc920b9",
+  "source_sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+  "script_sha256": "cf97d212466daa45aa60402cb1e670def3e9592138908cf626727a9c75c91448",
+  "corpus_position": 2,
+  "raw_row": 5765,
+  "selection": "First of first100 held-out records with34..130 non-PAD input tokens",
+  "parameters": 198416640,
+  "ids_shape": [
+    1,
+    512
+  ],
+  "logits_shape": [
+    1,
+    512,
+    6400
+  ],
+  "embedding_shape": [
+    1,
+    512,
+    768
+  ],
+  "router_shape": [
+    4,
+    768
+  ],
+  "nonpad_tokens": 91,
+  "valid_next_token_labels": 90,
+  "ce": 2.3367276191711426,
+  "aux": 0.004609608557075262,
+  "valid_position_top1_accuracy": 0.4444444477558136,
+  "router_ce_gradient_norm": 0.19886960089206696,
+  "router_aux_gradient_norm": 0.006043406203389168,
+  "router_total_gradient_norm": 0.199027419090271,
+  "router_gradient_addition_max_error": 1.8051878214464523e-08,
+  "pad_embedding_ce_max_norm": 0.0,
+  "pad_embedding_aux_max_norm": 8.307948155561462e-05,
+  "isolated_adam": {
+    "lr": 0.0003,
+    "weight_decay": 0.01,
+    "eps": 1e-08,
+    "step": 1.0,
+    "formula_max_error": 3.725290298461914e-09,
+    "moment1_max_error": 0.0,
+    "moment2_max_error": 2.842170943040401e-14,
+    "actual_parameter_update_max": 0.00030028820037841797,
+    "loaded_model_unchanged": true,
+    "limitation": "Router copy only, new zero moments, no full-model clipping or accumulation; not equivalent to a formal resumed AdamW step"
+  },
+  "seconds": 10.416762708991882
+}

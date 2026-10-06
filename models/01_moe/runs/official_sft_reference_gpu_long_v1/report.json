@@ -1,0 +1,45 @@
+{
+  "scope": "Small prospective learning probes, not a standard benchmark or evidence of unseen knowledge. Arithmetic scoring measures exact answer-format compliance as well as correctness.",
+  "protocol": {
+    "stage": "sft",
+    "device": "cuda",
+    "parameter_dtype": "float32",
+    "autocast": "bfloat16",
+    "pretrain_prefix": "explicit tokenizer BOS",
+    "sft_prefix": "official chat template with generation prompt",
+    "do_sample": false,
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "top_k": 0,
+    "repetition_penalty": 1.0,
+    "use_cache": true,
+    "generation_budget_floor": 256
+  },
+  "config_path": "models/01_moe/configs/eval_official_sft_v1.json",
+  "config": {
+    "purpose": "evaluation_only",
+    "model_file": "upstream/model/model_minimind.py",
+    "model": {
+      "hidden_size": 768,
+      "num_hidden_layers": 8,
+      "use_moe": true
+    },
+    "stage": "sft",
+    "weights": "data/reference_models/minimind_3_moe/full_sft_768_moe.pth",
+    "weights_sha256": "a050020ea6d1b9e824693d0db525b1a0a8b40f36a934ea8d89da161368f20cc1",
+    "scope": "Official AR initialization reference for identical generation probes; not a matched extra-training control and not our self-trained AR model."
+  },
+  "weights": "data/reference_models/minimind_3_moe/full_sft_768_moe.pth",
+  "weights_sha256": "a050020ea6d1b9e824693d0db525b1a0a8b40f36a934ea8d89da161368f20cc1",
+  "model_sha256": "548f1203282dccb3be43227b11463f469b976afbab614df52828bdd246c3786f",
+  "suite_sha256": "8e79bfc096f451c34bc87471194ca50c3e0eca1d6a97b2f8014ed686e76dd66b",
+  "script_sha256": "f9d7863dac49ad03190aadacf94d31fd10a4c60e066578ed56f66e0ecc8ccb76",
+  "tokenizer_sha256": "71f32c68cf63a15355a8fc171b7594b3d41870fe0ddb54fc6aefa55f73a4a668",
+  "complete": true,
+  "partial_suite": false,
+  "cases": 16,
+  "scored_cases": 10,
+  "exact_or_json_passes": 0,
+  "parameters": 198416640,
+  "time": 1791267516.6118135
+}

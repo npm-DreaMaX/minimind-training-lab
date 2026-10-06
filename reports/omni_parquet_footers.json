@@ -1,0 +1,141 @@
+{
+  "sft_t2a.parquet": {
+    "name": "sft_t2a.parquet",
+    "revision": "d6588e12ac2ac8ced65eb58a7d7b3eef4aa220de",
+    "rows": 1248923,
+    "row_groups": 251,
+    "schema": "conversations: string\nquestion_audios: list<element: binary>\n  child 0, element: binary\nanswer_audios: list<element: list<element: int64>>\n  child 0, element: list<element: int64>\n      child 0, element: int64",
+    "columns": {
+      "conversations": {
+        "physical_type": "BYTE_ARRAY",
+        "encoded_values": 1248923,
+        "encoded_uncompressed_bytes": 902297073,
+        "compressed_bytes": 477312357,
+        "null_values_recorded": 0,
+        "groups_with_null_statistics": 251,
+        "numeric_min": null,
+        "numeric_max": null
+      },
+      "question_audios.list.element": {
+        "physical_type": "BYTE_ARRAY",
+        "encoded_values": 1248923,
+        "encoded_uncompressed_bytes": 13052,
+        "compressed_bytes": 13805,
+        "null_values_recorded": 1248923,
+        "groups_with_null_statistics": 251,
+        "numeric_min": null,
+        "numeric_max": null
+      },
+      "answer_audios.list.element.list.element": {
+        "physical_type": "INT64",
+        "encoded_values": 3533787080,
+        "encoded_uncompressed_bytes": 4882383578,
+        "compressed_bytes": 4875256507,
+        "null_values_recorded": 0,
+        "groups_with_null_statistics": 251,
+        "numeric_min": 0,
+        "numeric_max": 2047
+      }
+    },
+    "largest_row_group_encoded_bytes": 42210499,
+    "footer_network_bytes": 457216,
+    "file_bytes": 5352974361,
+    "limits": "Remote footer only, not whole-file checksum validation. Encoded uncompressed sizes and nested num_values are not exact Arrow RAM or non-null audio-code counts."
+  },
+  "sft_a2a.parquet": {
+    "name": "sft_a2a.parquet",
+    "revision": "d6588e12ac2ac8ced65eb58a7d7b3eef4aa220de",
+    "rows": 414024,
+    "row_groups": 1,
+    "schema": "conversations: string\nanswer_audios: list<element: list<element: int64>>\n  child 0, element: list<element: int64>\n      child 0, element: int64\nquestion_audios: list<element: binary>\n  child 0, element: binary\nref_audios: list<element: int64>\n  child 0, element: int64\nspk_emb: list<element: double>\n  child 0, element: double",
+    "columns": {
+      "conversations": {
+        "physical_type": "BYTE_ARRAY",
+        "encoded_values": 414024,
+        "encoded_uncompressed_bytes": 205115103,
+        "compressed_bytes": 106546877,
+        "null_values_recorded": 0,
+        "groups_with_null_statistics": 1,
+        "numeric_min": null,
+        "numeric_max": null
+      },
+      "answer_audios.list.element.list.element": {
+        "physical_type": "INT64",
+        "encoded_values": 914546656,
+        "encoded_uncompressed_bytes": 1262823281,
+        "compressed_bytes": 1226276902,
+        "null_values_recorded": 0,
+        "groups_with_null_statistics": 1,
+        "numeric_min": 0,
+        "numeric_max": 2047
+      },
+      "question_audios.list.element": {
+        "physical_type": "BYTE_ARRAY",
+        "encoded_values": 563831,
+        "encoded_uncompressed_bytes": 3703237710,
+        "compressed_bytes": 3587709262,
+        "null_values_recorded": 63262,
+        "groups_with_null_statistics": 1,
+        "numeric_min": null,
+        "numeric_max": null
+      },
+      "ref_audios.list.element": {
+        "physical_type": "INT64",
+        "encoded_values": 357561028,
+        "encoded_uncompressed_bytes": 493787777,
+        "compressed_bytes": 474270252,
+        "null_values_recorded": 109292,
+        "groups_with_null_statistics": 1,
+        "numeric_min": 0,
+        "numeric_max": 2047
+      },
+      "spk_emb.list.element": {
+        "physical_type": "DOUBLE",
+        "encoded_values": 58617836,
+        "encoded_uncompressed_bytes": 469904655,
+        "compressed_bytes": 359339670,
+        "null_values_recorded": 109292,
+        "groups_with_null_statistics": 1,
+        "numeric_min": -18.222599029541016,
+        "numeric_max": 19.1912841796875
+      }
+    },
+    "largest_row_group_encoded_bytes": 6134868526,
+    "footer_network_bytes": 65536,
+    "file_bytes": 5754147166,
+    "limits": "Remote footer only, not whole-file checksum validation. Encoded uncompressed sizes and nested num_values are not exact Arrow RAM or non-null audio-code counts."
+  },
+  "sft_i2t.parquet": {
+    "name": "sft_i2t.parquet",
+    "revision": "d6588e12ac2ac8ced65eb58a7d7b3eef4aa220de",
+    "rows": 2904511,
+    "row_groups": 581,
+    "schema": "conversations: large_string\nimage_bytes: large_binary",
+    "columns": {
+      "conversations": {
+        "physical_type": "BYTE_ARRAY",
+        "encoded_values": 2904511,
+        "encoded_uncompressed_bytes": 2788903866,
+        "compressed_bytes": 918767462,
+        "null_values_recorded": 0,
+        "groups_with_null_statistics": 581,
+        "numeric_min": null,
+        "numeric_max": null
+      },
+      "image_bytes": {
+        "physical_type": "BYTE_ARRAY",
+        "encoded_values": 2904511,
+        "encoded_uncompressed_bytes": 4525778766,
+        "compressed_bytes": 4014851014,
+        "null_values_recorded": 0,
+        "groups_with_null_statistics": 581,
+        "numeric_min": null,
+        "numeric_max": null
+      }
+    },
+    "largest_row_group_encoded_bytes": 13305429,
+    "footer_network_bytes": 1334152,
+    "file_bytes": 4934887104,
+    "limits": "Remote footer only, not whole-file checksum validation. Encoded uncompressed sizes and nested num_values are not exact Arrow RAM or non-null audio-code counts."
+  }
+}

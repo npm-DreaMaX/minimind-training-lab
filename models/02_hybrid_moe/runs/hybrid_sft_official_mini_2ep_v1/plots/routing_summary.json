@@ -1,0 +1,171 @@
+{
+  "scope": "First microbatch non-padding token routing at recorded steps; sampled diagnostic, not whole-corpus expert load",
+  "observations": 2262,
+  "latest_step": 113051,
+  "recent_window_steps": [
+    112601,
+    112651,
+    112701,
+    112751,
+    112801,
+    112851,
+    112901,
+    112951,
+    113001,
+    113051
+  ],
+  "layers": {
+    "0": {
+      "recent_sampled_tokens": 76450,
+      "recent_token_weighted_share": [
+        0.3339175931981687,
+        0.1780640941792021,
+        0.19884892086330935,
+        0.2891693917593198
+      ],
+      "latest": {
+        "tokens_per_expert": [
+          1812,
+          1225,
+          1383,
+          1784
+        ],
+        "mean_probability_entropy": 1.3722177743911743,
+        "max_expert_share": 0.2920696437358856
+      }
+    },
+    "1": {
+      "recent_sampled_tokens": 76450,
+      "recent_token_weighted_share": [
+        0.23880967952910398,
+        0.20630477436232833,
+        0.45017658600392413,
+        0.10470896010464356
+      ],
+      "latest": {
+        "tokens_per_expert": [
+          1903,
+          1245,
+          2275,
+          781
+        ],
+        "mean_probability_entropy": 1.2061443328857422,
+        "max_expert_share": 0.36669889092445374
+      }
+    },
+    "2": {
+      "recent_sampled_tokens": 76450,
+      "recent_token_weighted_share": [
+        0.06913015042511446,
+        0.25990843688685417,
+        0.1236102027468934,
+        0.547351209941138
+      ],
+      "latest": {
+        "tokens_per_expert": [
+          455,
+          1566,
+          715,
+          3468
+        ],
+        "mean_probability_entropy": 0.9173542261123657,
+        "max_expert_share": 0.5589941740036011
+      }
+    },
+    "3": {
+      "recent_sampled_tokens": 76450,
+      "recent_token_weighted_share": [
+        0.206160889470242,
+        0.2543361674296926,
+        0.2654676258992806,
+        0.27403531720078483
+      ],
+      "latest": {
+        "tokens_per_expert": [
+          869,
+          2156,
+          1364,
+          1815
+        ],
+        "mean_probability_entropy": 0.6914012432098389,
+        "max_expert_share": 0.347517728805542
+      }
+    },
+    "4": {
+      "recent_sampled_tokens": 76450,
+      "recent_token_weighted_share": [
+        0.13068672334859385,
+        0.15815565729234793,
+        0.33301504251144537,
+        0.3781425768476128
+      ],
+      "latest": {
+        "tokens_per_expert": [
+          714,
+          696,
+          1935,
+          2859
+        ],
+        "mean_probability_entropy": 0.43710434436798096,
+        "max_expert_share": 0.46083173155784607
+      }
+    },
+    "5": {
+      "recent_sampled_tokens": 76450,
+      "recent_token_weighted_share": [
+        0.22022236756049707,
+        0.26278613472858076,
+        0.21687377370830607,
+        0.3001177240026161
+      ],
+      "latest": {
+        "tokens_per_expert": [
+          1097,
+          1425,
+          1565,
+          2117
+        ],
+        "mean_probability_entropy": 0.5044243931770325,
+        "max_expert_share": 0.34123146533966064
+      }
+    },
+    "6": {
+      "recent_sampled_tokens": 76450,
+      "recent_token_weighted_share": [
+        0.09798561151079137,
+        0.4445650752125572,
+        0.009941137998691955,
+        0.44750817527795944
+      ],
+      "latest": {
+        "tokens_per_expert": [
+          284,
+          2560,
+          85,
+          3275
+        ],
+        "mean_probability_entropy": 0.702093780040741,
+        "max_expert_share": 0.5278852581977844
+      }
+    },
+    "7": {
+      "recent_sampled_tokens": 76450,
+      "recent_token_weighted_share": [
+        0.03942446043165468,
+        0.15393067364290386,
+        0.3032701111837802,
+        0.5033747547416613
+      ],
+      "latest": {
+        "tokens_per_expert": [
+          283,
+          1076,
+          1817,
+          3028
+        ],
+        "mean_probability_entropy": 0.36439695954322815,
+        "max_expert_share": 0.4880722165107727
+      }
+    }
+  }
+}

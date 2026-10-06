@@ -1,0 +1,598 @@
+{
+  "checked_at": "2026-10-04T16:19:39.298278+08:00",
+  "scope": "Read-only inventory of existing configs and current trainer defaults, not a new schedule or proof that pending stages ran. No config mutations.",
+  "records": [
+    {
+      "config_path": "models/01_moe/configs/pretrain_full_v1.json",
+      "sha256": "749107d72787a0a3c7b107a44a39c92f7983d4bd39fb0a33ade9ae4e3978556f",
+      "config": {
+        "run_dir": "models/01_moe/runs/pretrain_full_v1",
+        "model_file": "upstream/model/model_minimind.py",
+        "model": {
+          "hidden_size": 768,
+          "num_hidden_layers": 8,
+          "use_moe": true
+        },
+        "corpus": "data/processed/pretrain_t2t_full_v1",
+        "stage": "pretrain",
+        "seq_len": 512,
+        "batch_size": 6,
+        "accumulation_steps": 24,
+        "epochs": 1,
+        "learning_rate": 0.0003,
+        "warmup_steps": 100,
+        "seed": 20261003,
+        "num_workers": 2,
+        "cpu_threads": 4,
+        "deterministic": false,
+        "validation_samples": 512,
+        "eval_interval": 500,
+        "save_interval": 500,
+        "log_interval": 10,
+        "milestone_interval": 5000,
+        "early_checkpoint_steps": [
+          10,
+          100
+        ],
+        "plot_on_save": true,
+        "recipe_status": "B6 T512 accumulation24 real-data probe passed; our longer-context recipe (pinned upstream default is 340); full-corpus statistics retained"
+      },
+      "effective_samples_per_update": 144,
+      "trainer_defaults": {
+        "optimizer": "AdamW",
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.01,
+        "gradient_clip_norm": 1.0,
+        "scheduler": "linear warmup if configured, then cosine to 0.1 * peak",
+        "parameter_and_adam_dtype": "FP32",
+        "autocast": "BF16 on CUDA"
+      }
+    },
+    {
+      "config_path": "models/01_moe/configs/sft_full_v1.json",
+      "sha256": "c0dc1d9d3ed0f0798462ea3a95326dc27027f70cd64fe2bbc58f639a9f73086e",
+      "config": {
+        "run_dir": "models/01_moe/runs/sft_full_v1",
+        "model_file": "upstream/model/model_minimind.py",
+        "model": {
+          "hidden_size": 768,
+          "num_hidden_layers": 8,
+          "use_moe": true
+        },
+        "init_weight": "models/01_moe/runs/pretrain_full_v1/checkpoints/best_validation.pth",
+        "strict_init": true,
+        "corpus": "data/processed/sft_t2t_full_v1",
+        "stage": "sft",
+        "seq_len": 1536,
+        "batch_size": 2,
+        "accumulation_steps": 8,
+        "epochs": 1,
+        "learning_rate": 1e-05,
+        "warmup_steps": 100,
+        "seed": 20261004,
+        "num_workers": 2,
+        "cpu_threads": 4,
+        "deterministic": false,
+        "validation_samples": 512,
+        "eval_interval": 2000,
+        "save_interval": 2000,
+        "log_interval": 100,
+        "milestone_interval": 20000,
+        "early_checkpoint_steps": [
+          10,
+          100
+        ],
+        "plot_on_save": true,
+        "recipe_status": "Full corpus and uniform random full-cache B2 T1536 accumulation8 preflight passed; await completed pretrain. Allocator and memory cap match measured preflight. One full epoch remains planned.",
+        "allocator_conf": "expandable_segments:True",
+        "allocator_gib": 5.3
+      },
+      "effective_samples_per_update": 16,
+      "trainer_defaults": {
+        "optimizer": "AdamW",
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.01,
+        "gradient_clip_norm": 1.0,
+        "scheduler": "linear warmup if configured, then cosine to 0.1 * peak",
+        "parameter_and_adam_dtype": "FP32",
+        "autocast": "BF16 on CUDA"
+      }
+    },
+    {
+      "config_path": "models/02_hybrid_moe/configs/hybrid_sft_official_mini_2ep_v1.json",
+      "sha256": "7589e8967d0b36222bbd28f1239b2e237f5dfdd961507d7bbe3b9d01e016008f",
+      "config": {
+        "model": {
+          "hidden_size": 768,
+          "num_hidden_layers": 8,
+          "use_moe": true,
+          "require_fla": true
+        },
+        "strict_init": true,
+        "epochs": 2,
+        "num_workers": 2,
+        "cpu_threads": 4,
+        "deterministic": false,
+        "validation_samples": 512,
+        "warmup_steps": 0,
+        "eval_interval": 500,
+        "save_interval": 500,
+        "log_interval": 25,
+        "milestone_interval": 5000,
+        "early_checkpoint_steps": [
+          10,
+          100
+        ],
+        "plot_on_save": true,
+        "allocator_conf": "expandable_segments:True",
+        "allocator_gib": 5.3,
+        "purpose": "formal",
+        "model_file": "models/02_hybrid_moe/src/model_hybrid.py",
+        "run_dir": "models/02_hybrid_moe/runs/hybrid_sft_official_mini_2ep_v1",
+        "init_weight": "models/02_hybrid_moe/runs/transfer_official_sft_today_v1/initialized_fp32.pth",
+        "stage": "sft",
+        "corpus": "data/processed/sft_t2t_mini_full_v1",
+        "batch_size": 16,
+        "accumulation_steps": 1,
+        "seq_len": 768,
+        "checkpointing": true,
+        "learning_rate": 1e-05,
+        "seed": 20261019,
+        "validation_seed": 21261007,
+        "recipe_status": "Author-style SFT conversion from verified official full_sft AR base; complete205623072 parameters all trainable. Entire pinned official sft_t2t_mini file processed, no custom sampling or short-dialog selection; content-hash heldout1066 records,8 zero-target-at-officialT768 records audited. Two full epochs; no max_steps cap, no deadline early stop. PhysicalB16,T768,accum1,peakLR1e-5,no warmup match official defaults; activation checkpointing and audited TF32x3 are engineering choices. Augmentation fixed offline instead of fresh each epoch is an explicit recipe difference. Original14GB extended research branch preserved separately.",
+        "triton_f32_default": "tf32x3",
+        "train_only_linear": false
+      },
+      "effective_samples_per_update": 16,
+      "trainer_defaults": {
+        "optimizer": "AdamW",
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.01,
+        "gradient_clip_norm": 1.0,
+        "scheduler": "linear warmup if configured, then cosine to 0.1 * peak",
+        "parameter_and_adam_dtype": "FP32",
+        "autocast": "BF16 on CUDA"
+      }
+    },
+    {
+      "config_path": "models/03_omni_moe/configs/omni_01_t2a_all_full_v1.json",
+      "sha256": "ffa3ab95c109e9d5bab7bfac3c70b9983d2aafad9d6e1abaff764ef35de8187b",
+      "config": {
+        "run_dir": "models/03_omni_moe/runs/omni_01_t2a_all_full_v1",
+        "purpose": "formal",
+        "device": "cuda",
+        "model": {
+          "hidden_size": 768,
+          "num_hidden_layers": 8,
+          "use_moe": true
+        },
+        "modality": "t2a",
+        "mode": "all",
+        "corpus": "data/processed/sft_t2a_shards_v1",
+        "init_weight": "models/03_omni_moe/runs/transfer_formal_v1/initialized_fp32.pth",
+        "max_length": 1536,
+        "batch_size": 16,
+        "accumulation_steps": 8,
+        "epochs": 6,
+        "learning_rate": 0.0005,
+        "warmup_steps": 100,
+        "seed": 20261018,
+        "cpu_threads": 4,
+        "num_workers": 2,
+        "prefetch_factor": 1,
+        "deterministic": false,
+        "checkpointing": true,
+        "allocator_gib": 13.5,
+        "allocator_conf": "expandable_segments:True",
+        "optimizer_state_offload": false,
+        "eval_interval": 250,
+        "save_interval": 250,
+        "milestone_interval": 5000,
+        "early_checkpoint_steps": [
+          10,
+          100
+        ],
+        "validation_samples": 256,
+        "log_interval": 10,
+        "inspect_first_batches": 2,
+        "recipe_status": "Full pinned author seven-stage epochs/LRs and effective sample batch128. Single-GPU accumulation is not identical to four GPU microbatch32 MoE routing. Our longer speech contexts, holdout splits, warmup, loss-preserving harness and stage checkpoint selection are explicit recipe differences."
+      },
+      "effective_samples_per_update": 128,
+      "trainer_defaults": {
+        "optimizer": "AdamW",
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.01,
+        "gradient_clip_norm": 1.0,
+        "scheduler": "linear warmup if configured, then cosine to 0.1 * peak",
+        "parameter_and_adam_dtype": "FP32",
+        "autocast": "BF16 on CUDA"
+      }
+    },
+    {
+      "config_path": "models/03_omni_moe/configs/omni_02_a2a_audio_proj_full_v1.json",
+      "sha256": "789b65aaaf57fc4385c8875821cb8a3ab84ea5778230a29481fe7864afdcc860",
+      "config": {
+        "run_dir": "models/03_omni_moe/runs/omni_02_a2a_audio_proj_full_v1",
+        "purpose": "formal",
+        "device": "cuda",
+        "model": {
+          "hidden_size": 768,
+          "num_hidden_layers": 8,
+          "use_moe": true
+        },
+        "modality": "a2a",
+        "mode": "audio_proj",
+        "corpus": "data/processed/sft_a2a_shards_v1",
+        "init_weight": "models/03_omni_moe/runs/omni_01_t2a_all_full_v1/checkpoints/best_validation.pth",
+        "max_length": 3072,
+        "batch_size": 2,
+        "accumulation_steps": 64,
+        "epochs": 1,
+        "learning_rate": 0.0005,
+        "warmup_steps": 100,
+        "seed": 20261019,
+        "cpu_threads": 4,
+        "num_workers": 2,
+        "prefetch_factor": 1,
+        "deterministic": false,
+        "checkpointing": true,
+        "allocator_gib": 13.5,
+        "allocator_conf": "expandable_segments:True",
+        "optimizer_state_offload": false,
+        "eval_interval": 250,
+        "save_interval": 250,
+        "milestone_interval": 5000,
+        "early_checkpoint_steps": [
+          10,
+          100
+        ],
+        "validation_samples": 256,
+        "log_interval": 10,
+        "inspect_first_batches": 2,
+        "recipe_status": "Full pinned author seven-stage epochs/LRs and effective sample batch128. Single-GPU accumulation is not identical to four GPU microbatch32 MoE routing. Our longer speech contexts, holdout splits, warmup, loss-preserving harness and stage checkpoint selection are explicit recipe differences.",
+        "audio_encoder": "data/frozen_models/SenseVoiceSmall"
+      },
+      "effective_samples_per_update": 128,
+      "trainer_defaults": {
+        "optimizer": "AdamW",
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.01,
+        "gradient_clip_norm": 1.0,
+        "scheduler": "linear warmup if configured, then cosine to 0.1 * peak",
+        "parameter_and_adam_dtype": "FP32",
+        "autocast": "BF16 on CUDA"
+      }
+    },
+    {
+      "config_path": "models/03_omni_moe/configs/omni_03_a2a_all_full_v1.json",
+      "sha256": "53591645ce32004487c36cf16a9ad6953be98bde8af1ca84a66b59edd3ef8b24",
+      "config": {
+        "run_dir": "models/03_omni_moe/runs/omni_03_a2a_all_full_v1",
+        "purpose": "formal",
+        "device": "cuda",
+        "model": {
+          "hidden_size": 768,
+          "num_hidden_layers": 8,
+          "use_moe": true
+        },
+        "modality": "a2a",
+        "mode": "all",
+        "corpus": "data/processed/sft_a2a_shards_v1",
+        "init_weight": "models/03_omni_moe/runs/omni_02_a2a_audio_proj_full_v1/checkpoints/best_validation.pth",
+        "max_length": 3072,
+        "batch_size": 2,
+        "accumulation_steps": 64,
+        "epochs": 3,
+        "learning_rate": 5e-05,
+        "warmup_steps": 100,
+        "seed": 20261020,
+        "cpu_threads": 4,
+        "num_workers": 2,
+        "prefetch_factor": 1,
+        "deterministic": false,
+        "checkpointing": true,
+        "allocator_gib": 13.5,
+        "allocator_conf": "expandable_segments:True",
+        "optimizer_state_offload": false,
+        "eval_interval": 250,
+        "save_interval": 250,
+        "milestone_interval": 5000,
+        "early_checkpoint_steps": [
+          10,
+          100
+        ],
+        "validation_samples": 256,
+        "log_interval": 10,
+        "inspect_first_batches": 2,
+        "recipe_status": "Full pinned author seven-stage epochs/LRs and effective sample batch128. Single-GPU accumulation is not identical to four GPU microbatch32 MoE routing. Our longer speech contexts, holdout splits, warmup, loss-preserving harness and stage checkpoint selection are explicit recipe differences.",
+        "audio_encoder": "data/frozen_models/SenseVoiceSmall"
+      },
+      "effective_samples_per_update": 128,
+      "trainer_defaults": {
+        "optimizer": "AdamW",
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.01,
+        "gradient_clip_norm": 1.0,
+        "scheduler": "linear warmup if configured, then cosine to 0.1 * peak",
+        "parameter_and_adam_dtype": "FP32",
+        "autocast": "BF16 on CUDA"
+      }
+    },
+    {
+      "config_path": "models/03_omni_moe/configs/omni_04_i2t_vision_proj_full_v1.json",
+      "sha256": "d3bc3bf5c43d700ba66328029c58681e3d4e81ba8d99fce86af0755e81a14922",
+      "config": {
+        "run_dir": "models/03_omni_moe/runs/omni_04_i2t_vision_proj_full_v1",
+        "purpose": "formal",
+        "device": "cuda",
+        "model": {
+          "hidden_size": 768,
+          "num_hidden_layers": 8,
+          "use_moe": true
+        },
+        "modality": "i2t",
+        "mode": "vision_proj",
+        "corpus": "data/processed/sft_i2t_shards_v1",
+        "init_weight": "models/03_omni_moe/runs/omni_03_a2a_all_full_v1/checkpoints/best_validation.pth",
+        "max_length": 768,
+        "batch_size": 16,
+        "accumulation_steps": 8,
+        "epochs": 1,
+        "learning_rate": 5e-05,
+        "warmup_steps": 100,
+        "seed": 20261021,
+        "cpu_threads": 4,
+        "num_workers": 2,
+        "prefetch_factor": 1,
+        "deterministic": false,
+        "checkpointing": true,
+        "allocator_gib": 13.5,
+        "allocator_conf": "expandable_segments:True",
+        "optimizer_state_offload": false,
+        "eval_interval": 250,
+        "save_interval": 250,
+        "milestone_interval": 5000,
+        "early_checkpoint_steps": [
+          10,
+          100
+        ],
+        "validation_samples": 256,
+        "log_interval": 10,
+        "inspect_first_batches": 2,
+        "recipe_status": "Full pinned author seven-stage epochs/LRs and effective sample batch128. Single-GPU accumulation is not identical to four GPU microbatch32 MoE routing. Our longer speech contexts, holdout splits, warmup, loss-preserving harness and stage checkpoint selection are explicit recipe differences.",
+        "vision_encoder": "data/frozen_models/siglip2-base-p32-256-ve",
+        "split_subdir": "split_image_v2",
+        "train_index_name": "visual_train.npy",
+        "val_index_name": "visual_val.npy",
+        "image_placeholder_policy": "user_only"
+      },
+      "effective_samples_per_update": 128,
+      "trainer_defaults": {
+        "optimizer": "AdamW",
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.01,
+        "gradient_clip_norm": 1.0,
+        "scheduler": "linear warmup if configured, then cosine to 0.1 * peak",
+        "parameter_and_adam_dtype": "FP32",
+        "autocast": "BF16 on CUDA"
+      }
+    },
+    {
+      "config_path": "models/03_omni_moe/configs/omni_05_i2t_all_full_v1.json",
+      "sha256": "a1097b5313c64389a6d5328c35456db4bacbff60491ac4ebfbb04167a8ef6155",
+      "config": {
+        "run_dir": "models/03_omni_moe/runs/omni_05_i2t_all_full_v1",
+        "purpose": "formal",
+        "device": "cuda",
+        "model": {
+          "hidden_size": 768,
+          "num_hidden_layers": 8,
+          "use_moe": true
+        },
+        "modality": "i2t",
+        "mode": "all",
+        "corpus": "data/processed/sft_i2t_shards_v1",
+        "init_weight": "models/03_omni_moe/runs/omni_04_i2t_vision_proj_full_v1/checkpoints/best_validation.pth",
+        "max_length": 768,
+        "batch_size": 4,
+        "accumulation_steps": 32,
+        "epochs": 1,
+        "learning_rate": 5e-06,
+        "warmup_steps": 100,
+        "seed": 20261022,
+        "cpu_threads": 4,
+        "num_workers": 2,
+        "prefetch_factor": 1,
+        "deterministic": false,
+        "checkpointing": true,
+        "allocator_gib": 13.5,
+        "allocator_conf": "expandable_segments:True",
+        "optimizer_state_offload": false,
+        "eval_interval": 250,
+        "save_interval": 250,
+        "milestone_interval": 5000,
+        "early_checkpoint_steps": [
+          10,
+          100
+        ],
+        "validation_samples": 256,
+        "log_interval": 10,
+        "inspect_first_batches": 2,
+        "recipe_status": "Full pinned author seven-stage epochs/LRs and effective sample batch128. Single-GPU accumulation is not identical to four GPU microbatch32 MoE routing. Our longer speech contexts, holdout splits, warmup, loss-preserving harness and stage checkpoint selection are explicit recipe differences.",
+        "vision_encoder": "data/frozen_models/siglip2-base-p32-256-ve",
+        "split_subdir": "split_image_v2",
+        "train_index_name": "train.npy",
+        "val_index_name": "val.npy",
+        "image_placeholder_policy": "user_only"
+      },
+      "effective_samples_per_update": 128,
+      "trainer_defaults": {
+        "optimizer": "AdamW",
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.01,
+        "gradient_clip_norm": 1.0,
+        "scheduler": "linear warmup if configured, then cosine to 0.1 * peak",
+        "parameter_and_adam_dtype": "FP32",
+        "autocast": "BF16 on CUDA"
+      }
+    },
+    {
+      "config_path": "models/03_omni_moe/configs/omni_06_a2a_all_full_v1.json",
+      "sha256": "6e5689c2a0b753d0701263f1cfd0689876de3367da396e35d6a730e5a86059f0",
+      "config": {
+        "run_dir": "models/03_omni_moe/runs/omni_06_a2a_all_full_v1",
+        "purpose": "formal",
+        "device": "cuda",
+        "model": {
+          "hidden_size": 768,
+          "num_hidden_layers": 8,
+          "use_moe": true
+        },
+        "modality": "a2a",
+        "mode": "all",
+        "corpus": "data/processed/sft_a2a_shards_v1",
+        "init_weight": "models/03_omni_moe/runs/omni_05_i2t_all_full_v1/checkpoints/best_validation.pth",
+        "max_length": 3072,
+        "batch_size": 2,
+        "accumulation_steps": 64,
+        "epochs": 1,
+        "learning_rate": 5e-06,
+        "warmup_steps": 100,
+        "seed": 20261023,
+        "cpu_threads": 4,
+        "num_workers": 2,
+        "prefetch_factor": 1,
+        "deterministic": false,
+        "checkpointing": true,
+        "allocator_gib": 13.5,
+        "allocator_conf": "expandable_segments:True",
+        "optimizer_state_offload": false,
+        "eval_interval": 250,
+        "save_interval": 250,
+        "milestone_interval": 5000,
+        "early_checkpoint_steps": [
+          10,
+          100
+        ],
+        "validation_samples": 256,
+        "log_interval": 10,
+        "inspect_first_batches": 2,
+        "recipe_status": "Full pinned author seven-stage epochs/LRs and effective sample batch128. Single-GPU accumulation is not identical to four GPU microbatch32 MoE routing. Our longer speech contexts, holdout splits, warmup, loss-preserving harness and stage checkpoint selection are explicit recipe differences.",
+        "audio_encoder": "data/frozen_models/SenseVoiceSmall"
+      },
+      "effective_samples_per_update": 128,
+      "trainer_defaults": {
+        "optimizer": "AdamW",
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.01,
+        "gradient_clip_norm": 1.0,
+        "scheduler": "linear warmup if configured, then cosine to 0.1 * peak",
+        "parameter_and_adam_dtype": "FP32",
+        "autocast": "BF16 on CUDA"
+      }
+    },
+    {
+      "config_path": "models/03_omni_moe/configs/omni_07_i2t_vision_proj_full_v1.json",
+      "sha256": "d6e855cb40f9e45b026c403fe02654e3e5a793e8f1ef15e95970e9256604bc0e",
+      "config": {
+        "run_dir": "models/03_omni_moe/runs/omni_07_i2t_vision_proj_full_v1",
+        "purpose": "formal",
+        "device": "cuda",
+        "model": {
+          "hidden_size": 768,
+          "num_hidden_layers": 8,
+          "use_moe": true
+        },
+        "modality": "i2t",
+        "mode": "vision_proj",
+        "corpus": "data/processed/sft_i2t_shards_v1",
+        "init_weight": "models/03_omni_moe/runs/omni_06_a2a_all_full_v1/checkpoints/best_validation.pth",
+        "max_length": 768,
+        "batch_size": 16,
+        "accumulation_steps": 8,
+        "epochs": 1,
+        "learning_rate": 5e-06,
+        "warmup_steps": 100,
+        "seed": 20261024,
+        "cpu_threads": 4,
+        "num_workers": 2,
+        "prefetch_factor": 1,
+        "deterministic": false,
+        "checkpointing": true,
+        "allocator_gib": 13.5,
+        "allocator_conf": "expandable_segments:True",
+        "optimizer_state_offload": false,
+        "eval_interval": 250,
+        "save_interval": 250,
+        "milestone_interval": 5000,
+        "early_checkpoint_steps": [
+          10,
+          100
+        ],
+        "validation_samples": 256,
+        "log_interval": 10,
+        "inspect_first_batches": 2,
+        "recipe_status": "Full pinned author seven-stage epochs/LRs and effective sample batch128. Single-GPU accumulation is not identical to four GPU microbatch32 MoE routing. Our longer speech contexts, holdout splits, warmup, loss-preserving harness and stage checkpoint selection are explicit recipe differences.",
+        "vision_encoder": "data/frozen_models/siglip2-base-p32-256-ve",
+        "split_subdir": "split_image_v2",
+        "train_index_name": "visual_train.npy",
+        "val_index_name": "visual_val.npy",
+        "image_placeholder_policy": "user_only"
+      },
+      "effective_samples_per_update": 128,
+      "trainer_defaults": {
+        "optimizer": "AdamW",
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.01,
+        "gradient_clip_norm": 1.0,
+        "scheduler": "linear warmup if configured, then cosine to 0.1 * peak",
+        "parameter_and_adam_dtype": "FP32",
+        "autocast": "BF16 on CUDA"
+      }
+    }
+  ],
+  "current_priority": "hybrid_sft_official_mini_2ep_v1",
+  "pending_research": [
+    "Matched Full Attention vs Hybrid control",
+    "64M Dense AR vs dLM",
+    "DPO",
+    "GRPO/CISPO",
+    "Agentic RL"
+  ],
+  "sources": {
+    "lab/train.py": "2a25783ebe72087ec8b3f26c6008fdd05a08b8066e76d9be354bbc7c54aa0834",
+    "lab/omni_train.py": "d4cbc99a141680eabc899ffeeecf47c1a98816e0492f1fe435bd05ee7d71615f",
+    "lab/omni_loss.py": "3549f694c53497761f74fc3d19ae77f60dfc02eb4ead45a88b531df7cf6330f5",
+    "sources/minimind-o/trainer/train.sh": "dc1758ddca19bcf3a78ab7367c3725b14c4027569c2e5df6117d28d1a3d0f8a4"
+  }
+}

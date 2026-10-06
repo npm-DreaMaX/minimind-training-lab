@@ -1,0 +1,7 @@
+{
+  "idle": true,
+  "recent_activity_rejected": true,
+  "existing_process_rejected": true,
+  "occupied_memory_rejected": true,
+  "insufficient_free_rejected": true
+}

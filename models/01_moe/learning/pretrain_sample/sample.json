@@ -1,0 +1,24 @@
+{
+  "stage": "pretrain",
+  "corpus": "data/processed/pretrain_t2t_full_v1",
+  "training_index": 0,
+  "original_cache_row": 0,
+  "input_shape": [
+    1,
+    512
+  ],
+  "labels_shape": [
+    1,
+    512
+  ],
+  "logits_shape_if_model_runs": [
+    1,
+    512,
+    6400
+  ],
+  "input_dtype": "torch.int64",
+  "input_nonpadding": 167,
+  "supervised_next_tokens": 166,
+  "decoded_nonpad_input": "<|im_start|>给定一段文本和关键词列表，删除文本中包含所有给定关键词的子字符串。\n文本：\"这是一个测试句子，目的是看看模型是否可以正确地从这个句子中删除关键词。\"\\n关键词列表：[‘测试’，‘模型’]删除包含所有给定关键词的子字符串后，文本变为：\"这是一个句子，目的是看看是否可以正确地从这个句子中删除关键词。\"好的。现在请你将这个文本中的所有的逗号都替换成空格。好的，请稍等一下，现在我会将文本中的所有逗号替换为空格。处理后文本为：\"这是一个句子 目的是看看是否可以正确地从这个句子中删除关键词。\"。处理结果如何？<|im_end|>",
+  "note": "CSV position t predicts labels[t+1]; -100 masks direct CE, not the entire computation graph. Raw BPE tokens are not necessarily whole Chinese characters."
+}

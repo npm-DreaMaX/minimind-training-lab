@@ -1,0 +1,59 @@
+{
+  "records": [
+    {
+      "id": "t2a_zh_spring",
+      "thinker_text": "春天是一年四季中最美好的季节之一。",
+      "generation_reached_budget": false,
+      "asr_result": [
+        {
+          "key": "rand_key_2yW4Acq9GFz6Y",
+          "text": "<|zh|><|NEUTRAL|><|Speech|><|withitn|>春天是一年四季中最美好的季节之一。"
+        }
+      ],
+      "transcript": "<|zh|><|NEUTRAL|><|Speech|><|withitn|>春天是一年四季中最美好的季节之一。",
+      "reference_normalized": "春天是一年四季中最美好的季节之一",
+      "asr_normalized": "春天是一年四季中最美好的季节之一",
+      "edit_distance": 0,
+      "reference_characters": 16,
+      "character_error_rate": 0.0,
+      "wav_sha256": "7d329e0231e5dbc79c6c3e6bcc65148729b3e8ecb4e229dbdee1d57475d405c9",
+      "input_sample_rate": 24000,
+      "asr_samples": 58880,
+      "seconds": 0.4503270419954788
+    },
+    {
+      "id": "t2a_en_coffee",
+      "thinker_text": "To make a cup of coffee, you need a cup of coffee grounds, water, and a little bit of sugar or milk. First, measure out the coffee grounds and pour them into a cup. Next, add the water to the cup and let it steep for about four minutes. After steeping, stir the mixture thoroughly to ensure even coverage. The coffee grounds are typically mixed with water, creating a smooth, pour-over effect. Finally, stir the mixture gently to separate the grounds from the pour and cardamom. Your cup of coffee is ready to enjoy!",
+      "generation_reached_budget": true,
+      "asr_result": [
+        {
+          "key": "rand_key_1t9EwL56nGisi",
+          "text": "<|en|><|NEUTRAL|><|Speech|><|withitn|>To make a cup of coffee, you need a cup of coffee, grounds, water, and a little bit of sugar or milk. First, measure out the coffee grounds and pour them into a cup. Next, add the water to the cup and let it steep for about 4 minutes. After steeping, stir the mixture thoroughly to in even coverage. the coffee grounds are typically mixed."
+        }
+      ],
+      "transcript": "<|en|><|NEUTRAL|><|Speech|><|withitn|>To make a cup of coffee, you need a cup of coffee, grounds, water, and a little bit of sugar or milk. First, measure out the coffee grounds and pour them into a cup. Next, add the water to the cup and let it steep for about 4 minutes. After steeping, stir the mixture thoroughly to in even coverage. the coffee grounds are typically mixed.",
+      "reference_normalized": "tomakeacupofcoffeeyouneedacupofcoffeegroundswaterandalittlebitofsugarormilkfirstmeasureoutthecoffeegroundsandpourthemintoacupnextaddthewatertothecupandletitsteepforaboutfourminutesaftersteepingstirthemixturethoroughlytoensureevencoveragethecoffeegroundsaretypicallymixedwithwatercreatingasmoothpourovereffectfinallystirthemixturegentlytoseparatethegroundsfromthepourandcardamomyourcupofcoffeeisreadytoenjoy",
+      "asr_normalized": "tomakeacupofcoffeeyouneedacupofcoffeegroundswaterandalittlebitofsugarormilkfirstmeasureoutthecoffeegroundsandpourthemintoacupnextaddthewatertothecupandletitsteepforabout4minutesaftersteepingstirthemixturethoroughlytoinevencoveragethecoffeegroundsaretypicallymixed",
+      "edit_distance": 145,
+      "reference_characters": 406,
+      "character_error_rate": 0.35714285714285715,
+      "wav_sha256": "3facfee6a57319c15aa8c603990a2ee5d4ffca64fcb20707cb810f2be3cf1f31",
+      "input_sample_rate": 24000,
+      "asr_samples": 317440,
+      "seconds": 1.319463245003135
+    }
+  ],
+  "normalization": "Strip SenseVoice tags, Unicode NFKC, lowercase, keep only letters/numbers; English is character error, not word error",
+  "scope": "ASR proxy for generated speech versus generated text; not task correctness or naturalness; inspect budget truncation separately",
+  "preprocessing": "soundfile float32, mean to mono, torchaudio.functional.resample to16kHz, raw PCM input bypasses file backend",
+  "asr_verified_manifest": {
+    "name": "model.pt",
+    "sha256": "218811976815c1673e1b852dc383d78987b229268f78e7ebd0a1fe67229c83dd",
+    "bytes": 468291478,
+    "revision": "964f07d8f0e48309a5f37770ac9b5ed2cdca6b91",
+    "verified_unix": 1790968497.8634055
+  },
+  "source_evaluation_sha256": "b4c798fc5ad074af4fbebf36def860948ac755be81f643ace556ac46dd06b303",
+  "script_sha256": "5fc3fea6be5b4f46c7082a586496127a14dc5a7142d832f00c9e74fe9c6a439d",
+  "time": 1790982994.6531599
+}

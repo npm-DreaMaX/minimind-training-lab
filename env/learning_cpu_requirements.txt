@@ -1,0 +1,5 @@
+# Minimal packages for the read-only sample / full-model CPU exercises.
+# Plot regeneration and actual CUDA training need their additional dependencies.
+torch==2.11.0
+transformers==4.57.6
+numpy==2.2.6

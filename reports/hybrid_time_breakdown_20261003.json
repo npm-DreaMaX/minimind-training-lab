@@ -1,0 +1,118 @@
+{
+  "checked_at": "2026-10-03T21:47:19.175065+08:00",
+  "scope": "Read-only existing profile and live-log review. No new GPU workload, recipe or running-code change.",
+  "official_reference": {
+    "commit": "f659b55761b754d306bd140573493a6543cafd7f",
+    "url": "https://github.com/jingyaogong/minimind/blob/f659b55761b754d306bd140573493a6543cafd7f/README.md",
+    "gpu": "RTX3090",
+    "dense_parameters": 64000000,
+    "moe_parameters": 198416640,
+    "dense_mini_pretrain_plus_sft_one_epoch_each_hours": 2.31,
+    "moe_mini_pretrain_plus_sft_one_epoch_each_hours": 3.23,
+    "moe_sft_single_epoch_hours": 1.54,
+    "scope": "Author experience estimates, not this205M Hybrid benchmark; full benchmark command/environment not established"
+  },
+  "current": {
+    "parameters": 205623072,
+    "gpu": "RTX4060 Laptop8GB",
+    "epochs": 2,
+    "batch_size": 16,
+    "seq_len": 768,
+    "accumulation": 1,
+    "steps_per_epoch": 56541,
+    "steps_total": 113082,
+    "nominal_input_positions_total": 1389551616,
+    "supervised_tokens_total": 735833934,
+    "activation_checkpointing": true,
+    "linear_precision": "FP32; validated Triton tf32x3",
+    "outer_autocast": "BF16"
+  },
+  "recent_window": {
+    "from_step_exclusive": 13526,
+    "through_step": 16526,
+    "mean_update_perf_s": 1.50178372684807,
+    "median_update_perf_s": 1.4914353174972348,
+    "mean_periodic_boundary_gap_s": 39.01463314187034,
+    "periodic_boundaries": [
+      {
+        "step": 14001,
+        "wall_interval_s": 42.49270009994507,
+        "update_perf_counter_s": 1.8433333839930128,
+        "gap_s": 40.649366715952056
+      },
+      {
+        "step": 14501,
+        "wall_interval_s": 37.5860276222229,
+        "update_perf_counter_s": 1.7342561200202908,
+        "gap_s": 35.85177150220261
+      },
+      {
+        "step": 15001,
+        "wall_interval_s": 44.141918420791626,
+        "update_perf_counter_s": 1.7505932030035183,
+        "gap_s": 42.39132521778811
+      },
+      {
+        "step": 15501,
+        "wall_interval_s": 41.268495082855225,
+        "update_perf_counter_s": 1.7909310199902393,
+        "gap_s": 39.477564062864985
+      },
+      {
+        "step": 16001,
+        "wall_interval_s": 42.824028968811035,
+        "update_perf_counter_s": 1.9228083979978692,
+        "gap_s": 40.901220570813166
+      },
+      {
+        "step": 16501,
+        "wall_interval_s": 36.91898012161255,
+        "update_perf_counter_s": 2.10242934001144,
+        "gap_s": 34.81655078160111
+      }
+    ],
+    "nonpad_input_fraction": 0.6378682725694444,
+    "rough_two_epoch_hours": 49.624559135925395,
+    "scope": "Update timer includes batch acquisition, transfers, forward/backward and optimizer; boundary wall-clock gaps approximate eval/save/plot costs and are vulnerable to clock adjustments. Not an exact additive timing partition."
+  },
+  "profile": {
+    "second_unprofiled_update_s": 1.581502510001883,
+    "kernel_events": 6961,
+    "largest_kernel": {
+      "name": "chunk_bwd_kernel_dqkwg",
+      "duration_us": 336591.636,
+      "kernel_duration_fraction": 0.22377876951836295
+    },
+    "caveat": "Category durations are sums, not a partition of wall time. CPU operations nest, CUDA annotations overlap kernels, and concurrent kernels may overlap each other. Memory-allocation totals in the operator table are not peak live VRAM. Normal throughput is measured outside the profiler."
+  },
+  "clock_caveat": {
+    "backward_timestamp_pairs": [
+      {
+        "step": 14157,
+        "wall_interval_s": -0.5868518352508545,
+        "update_perf_counter_s": 1.5707013770006597,
+        "gap_s": -2.157553212251514
+      },
+      {
+        "step": 14290,
+        "wall_interval_s": -1.2508666515350342,
+        "update_perf_counter_s": 1.4883928950002883,
+        "gap_s": -2.7392595465353224
+      },
+      {
+        "step": 15837,
+        "wall_interval_s": -0.10109686851501465,
+        "update_perf_counter_s": 1.4669488159997854,
+        "gap_s": -1.5680456845148
+      },
+      {
+        "step": 16273,
+        "wall_interval_s": -0.16812920570373535,
+        "update_perf_counter_s": 1.4585874030017294,
+        "gap_s": -1.6267166087054648
+      }
+    ],
+    "observed": true,
+    "interpretation": "time.time timestamps are non-monotonic in live logs. Update durations use monotonic perf_counter. Negative wall-clock intervals are clock evidence, not negative GPU compute. Root cause not determined; do not infer exact save/eval percentages from wall minus summed step time."
+  }
+}

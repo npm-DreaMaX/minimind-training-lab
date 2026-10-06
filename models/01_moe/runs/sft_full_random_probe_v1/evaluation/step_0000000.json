@@ -1,0 +1,26 @@
+{
+  "step": 0,
+  "epoch": 0,
+  "trained_tokens": 0,
+  "validation_ce": 2.692656200414824,
+  "validation_tokens": 9394,
+  "validation_rows": 16,
+  "final": false,
+  "generation": [
+    {
+      "prompt": "你好，请介绍一下自己。",
+      "continuation": "Premise: \"A man in a brown dog in a brown dog.\"\nHypothesis: \"A man in a brown dog in a brown dog.\"\nDo we know that the hypothesis entailed by the"
+    },
+    {
+      "prompt": "为什么天空是蓝色的？",
+      "continuation": "Investing\n\nWhat are the benefits of using a daily lifestyle in a healthcare? Your response should contain at least 3 sentences. Highlight at least 2 sections in your answer with markdown, i.e. *highlighted"
+    },
+    {
+      "prompt": "计算 17 加 25。",
+      "continuation": "Input:\n\nThe sum of the first two terms is:\n\n$$\n\\text{Numerator}\\}\n$$\n\n---\n\n### **Step 1: Compute the sum of the first two terms**\n\nWe are given the following equations:"
+    }
+  ],
+  "time": 1790977328.0306299,
+  "validation_selection_sha256": "dcb1253fb5ecd8709b146a6a47fb8dca0a566224b505dc7c60135f33f45e87da",
+  "validation_selection": "fixed seeded sample across the full held-out split"
+}

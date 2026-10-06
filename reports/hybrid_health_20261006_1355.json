@@ -1,0 +1,239 @@
+{
+  "checked_at": "2026-10-06T13:56:00.659625+08:00",
+  "step": 112553,
+  "percent": 99.53219787410906,
+  "tokens": 732409328,
+  "remaining_steps": 529,
+  "eta_minutes": 13.715767152445965,
+  "mean_step_seconds": 1.4647521541356303,
+  "median_500_step_overhead_seconds": 45.455708515131846,
+  "new_long_gaps": [
+    {
+      "after_step": 105485,
+      "next_step": 105486,
+      "start": "2026-10-06T00:01:13.093930+08:00",
+      "end": "2026-10-06T03:01:23.525748+08:00",
+      "gap_seconds": 10810.431818008423,
+      "next_step_seconds": 8.137918283056933
+    },
+    {
+      "after_step": 105492,
+      "next_step": 105493,
+      "start": "2026-10-06T03:01:32.945496+08:00",
+      "end": "2026-10-06T10:50:03.344813+08:00",
+      "gap_seconds": 28110.399317502975,
+      "next_step_seconds": 3.6083725949865766
+    }
+  ],
+  "all_steps_contiguous": true,
+  "tokens_match": true,
+  "nonfinite_steps": [],
+  "failure_exists": false,
+  "last_checkpoint": {
+    "event": "checkpoint",
+    "kind": "periodic",
+    "step": 112500,
+    "epoch": 1,
+    "cursor": 895344,
+    "tokens": 732059471,
+    "bytes": 2467735019,
+    "seconds": 24.932771921157837,
+    "time": 1791266067.4937732
+  },
+  "last_eval": {
+    "step": 112500,
+    "epoch": 1,
+    "trained_tokens": 732059471,
+    "validation_ce": 1.6651719732341153,
+    "validation_tokens": 191220,
+    "validation_rows": 512,
+    "final": false,
+    "generation": [
+      {
+        "prompt": "你好，请介绍一下自己。",
+        "rendered_input": "<|im_start|>user\n你好，请介绍一下自己。<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+        "input_ids": [
+          1,
+          832,
+          311,
+          234,
+          1968,
+          294,
+          960,
+          2919,
+          2360,
+          1153,
+          302,
+          2,
+          234,
+          1,
+          1388,
+          570,
+          811,
+          234,
+          25,
+          234,
+          234,
+          26,
+          234,
+          234
+        ],
+        "continuation": "你好！我叫minimind，是一个小巧的AI。我需要让用户了解我的定位：一个开源的小型语言模型，追求轻量化但不牺牲实用性。\n</think>\n\n你好！我是minimind，一个开源的小型语言模型。我虽然",
+        "output_tokens": 64,
+        "ended_with_eos": false,
+        "truncated_by_budget": true
+      },
+      {
+        "prompt": "为什么天空是蓝色的？",
+        "rendered_input": "<|im_start|>user\n为什么天空是蓝色的？<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+        "input_ids": [
+          1,
+          832,
+          311,
+          234,
+          4568,
+          993,
+          1273,
+          357,
+          3961,
+          930,
+          296,
+          776,
+          2,
+          234,
+          1,
+          1388,
+          570,
+          811,
+          234,
+          25,
+          234,
+          234,
+          26,
+          234,
+          234
+        ],
+        "continuation": "天空是由多种因素引起的，包括大气、海洋、海洋和陆地等。以下是几个主要原因：\n\n1. **大气层**：大气层中含有大量的二氧化碳（CO2）和氧气（O2）组成。这些气",
+        "output_tokens": 64,
+        "ended_with_eos": false,
+        "truncated_by_budget": true
+      },
+      {
+        "prompt": "计算 17 加 25。",
+        "rendered_input": "<|im_start|>user\n计算 17 加 25。<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+        "input_ids": [
+          1,
+          832,
+          311,
+          234,
+          895,
+          4515,
+          256,
+          595,
+          3331,
+          302,
+          2,
+          234,
+          1,
+          1388,
+          570,
+          811,
+          234,
+          25,
+          234,
+          234,
+          26,
+          234,
+          234
+        ],
+        "continuation": "要计算17加 25，我们可以将17加上25的结果。\n\n17加 25 的结果是：\n\n17 + 25 = 227\n\n所以，17加 25 的结果是 227。<|im_end|>",
+        "output_tokens": 47,
+        "ended_with_eos": true,
+        "truncated_by_budget": false
+      }
+    ],
+    "time": 1791266039.3692667,
+    "validation_selection_sha256": "e5f2872a99d8f485970b59088e9a333814ddcfba04a6538310dd6ce812b72fcb",
+    "validation_selection": "fixed seeded sample across the full held-out split",
+    "generation_protocol": {
+      "version": 2,
+      "pretrain_prefix": "explicit tokenizer BOS",
+      "sft_prefix": "official chat template",
+      "dtype": "BF16 autocast",
+      "do_sample": false,
+      "temperature": 1.0,
+      "top_p": 1.0,
+      "top_k": 0,
+      "repetition_penalty": 1.0,
+      "max_new_tokens": 64
+    }
+  },
+  "recent_mean_grad_norm": 2.8098745730717978,
+  "integrity_checked_through_step": 112500,
+  "projected_budget_end": "2026-10-06T14:09:43.605654+08:00",
+  "windows_power": {
+    "events": [
+      {
+        "id": 107,
+        "time": "2026-10-06T03:01:39.0318155+08:00",
+        "message": "The system has resumed from sleep."
+      },
+      {
+        "id": 42,
+        "time": "2026-10-06T03:01:24.9629124+08:00",
+        "message": "The system is entering sleep.\r\n\r\nSleep Reason: Hibernate from Sleep - Fixed Timeout"
+      },
+      {
+        "id": 107,
+        "time": "2026-10-06T00:01:42.8535502+08:00",
+        "message": "The system has resumed from sleep."
+      },
+      {
+        "id": 42,
+        "time": "2026-10-06T00:01:12.6686812+08:00",
+        "message": "The system is entering sleep.\r\n\r\nSleep Reason: System Idle"
+      },
+      {
+        "id": 107,
+        "time": "2026-10-05T00:59:21.3631536+08:00",
+        "message": "The system has resumed from sleep."
+      },
+      {
+        "id": 42,
+        "time": "2026-10-05T00:59:07.0159370+08:00",
+        "message": "The system is entering sleep.\r\n\r\nSleep Reason: Battery"
+      }
+    ],
+    "power_line": "Online",
+    "battery_percent": 99.00000095367432
+  },
+  "training_status": {
+    "status": "training",
+    "event": "train",
+    "step": 112553,
+    "epoch": 1,
+    "cursor": 896192,
+    "loss": 1.7336145010776818,
+    "ce_loss": 1.7294788360595703,
+    "aux_loss": 0.004135665018111467,
+    "grad_norm": 2.643866777420044,
+    "learning_rate": 1.0004877970779811e-06,
+    "valid_tokens": 7543,
+    "tokens_trained": 732409328,
+    "nominal_tokens": 12288,
+    "nonpad_input_tokens": 8427,
+    "input_padding_fraction": 0.314208984375,
+    "unsupervised_fraction": 0.38614908854166663,
+    "step_seconds": 1.5113235070020892,
+    "valid_tokens_per_second": 4990.989662406921,
+    "nominal_tokens_per_second": 8130.621897342733,
+    "cuda_allocated": 2509707264,
+    "cuda_reserved": 5073010688,
+    "cuda_peak_allocated": 4834460672,
+    "wall_seconds": 256606.58335280418,
+    "time": 1791266159.1545756
+  },
+  "quality_approved": false,
+  "scope": "Saved logs/evaluation and process review; no new inference, no training or OS power-policy changes. Final validation and expanded generation remain pending.",
+  "time_caveat": "Windows sleep events are corroborating evidence. Wall-clock anomalies preclude equating all observed log-gap duration to exact time asleep."
+}

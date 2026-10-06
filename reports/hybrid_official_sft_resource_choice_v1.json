@@ -1,0 +1,25 @@
+{
+  "probes": [
+    {
+      "run": "models/02_hybrid_moe/runs/today_sft_B2_T768_probe_v1",
+      "samples_per_second": 10.519699628570908,
+      "peak_gib": 4.601809501647949,
+      "steady_step_seconds": 1.5209559744980652
+    },
+    {
+      "run": "models/02_hybrid_moe/runs/today_sft_B16_T768_RC_probe_v1",
+      "samples_per_second": 10.14686467290519,
+      "peak_gib": 4.502429008483887,
+      "steady_step_seconds": 1.576841764996061
+    },
+    {
+      "run": "models/02_hybrid_moe/runs/today_sft_B16_T768_RC_torch_tf32_probe_v1",
+      "samples_per_second": 10.654890469757536,
+      "peak_gib": 4.502429962158203,
+      "steady_step_seconds": 1.5016578579961788
+    }
+  ],
+  "selected": "B16_T768_RC",
+  "reason": "Match official physical batch16 and accumulation1; checkpointing required for memory. PyTorch TF32 candidate gives only a small short-test gain and is not adopted. Full structure and official dataset unchanged.",
+  "scope": "Eight-step resource tests only; not formal training or quality evidence."
+}

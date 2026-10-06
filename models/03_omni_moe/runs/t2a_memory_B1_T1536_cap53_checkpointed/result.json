@@ -1,0 +1,150 @@
+{
+  "args": {
+    "seq_len": 1536,
+    "batch_size": 1,
+    "steps": 3,
+    "max_process_gib": 5.3,
+    "out": "models/03_omni_moe/runs/t2a_memory_B1_T1536_cap53_checkpointed",
+    "checkpointing": true
+  },
+  "scope": "Synthetic T2A, full model, no input encoders used; explicit allocator cap",
+  "status": "passed",
+  "pid": 339195,
+  "torch": "2.11.0+cu128",
+  "steps": [
+    {
+      "step": 1,
+      "loss": 16.809736251831055,
+      "text_ce": 8.913371086120605,
+      "audio_ce": 7.889414310455322,
+      "grad_norm": 4.772805213928223,
+      "seconds": 0.8100554943084717,
+      "memory": {
+        "before_forward": {
+          "allocated": 1310109696,
+          "reserved": 1314914304,
+          "peak_allocated": 1310109696,
+          "peak_reserved": 1314914304
+        },
+        "after_forward": {
+          "allocated": 1759922688,
+          "reserved": 2384461824,
+          "peak_allocated": 2340702208,
+          "peak_reserved": 2384461824
+        },
+        "after_backward": {
+          "allocated": 2659326976,
+          "reserved": 2845835264,
+          "peak_allocated": 2726700032,
+          "peak_reserved": 2845835264
+        },
+        "after_optimizer": {
+          "allocated": 5178439168,
+          "reserved": 5261754368,
+          "peak_allocated": 5217760768,
+          "peak_reserved": 5261754368
+        }
+      }
+    },
+    {
+      "step": 2,
+      "loss": 16.558141708374023,
+      "text_ce": 8.702534675598145,
+      "audio_ce": 7.848653316497803,
+      "grad_norm": 4.678923606872559,
+      "seconds": 0.3647174835205078,
+      "memory": {
+        "before_forward": {
+          "allocated": 3853804032,
+          "reserved": 5261754368,
+          "peak_allocated": 5217760768,
+          "peak_reserved": 5261754368
+        },
+        "after_forward": {
+          "allocated": 4287554560,
+          "reserved": 5284823040,
+          "peak_allocated": 5217760768,
+          "peak_reserved": 5284823040
+        },
+        "after_backward": {
+          "allocated": 5178439168,
+          "reserved": 5389680640,
+          "peak_allocated": 5245812224,
+          "peak_reserved": 5389680640
+        },
+        "after_optimizer": {
+          "allocated": 5178439168,
+          "reserved": 5410652160,
+          "peak_allocated": 5245812224,
+          "peak_reserved": 5410652160
+        }
+      }
+    },
+    {
+      "step": 3,
+      "loss": 16.352916717529297,
+      "text_ce": 8.5272216796875,
+      "audio_ce": 7.8187994956970215,
+      "grad_norm": 4.880502700805664,
+      "seconds": 0.34629130363464355,
+      "memory": {
+        "before_forward": {
+          "allocated": 3853804032,
+          "reserved": 5410652160,
+          "peak_allocated": 5245812224,
+          "peak_reserved": 5410652160
+        },
+        "after_forward": {
+          "allocated": 4287554560,
+          "reserved": 5410652160,
+          "peak_allocated": 5245812224,
+          "peak_reserved": 5410652160
+        },
+        "after_backward": {
+          "allocated": 5178439168,
+          "reserved": 5410652160,
+          "peak_allocated": 5245812224,
+          "peak_reserved": 5410652160
+        },
+        "after_optimizer": {
+          "allocated": 5178439168,
+          "reserved": 5410652160,
+          "peak_allocated": 5245812224,
+          "peak_reserved": 5410652160
+        }
+      }
+    }
+  ],
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "allocator_cap_bytes": 5690831667,
+  "parameters": 314887938,
+  "parameter_bytes": 1259551752,
+  "theoretical_fp32_parameter_gradient_adam_bytes": 5038207008,
+  "active_step": 3,
+  "active_phases": {
+    "before_forward": {
+      "allocated": 3853804032,
+      "reserved": 5410652160,
+      "peak_allocated": 5245812224,
+      "peak_reserved": 5410652160
+    },
+    "after_forward": {
+      "allocated": 4287554560,
+      "reserved": 5410652160,
+      "peak_allocated": 5245812224,
+      "peak_reserved": 5410652160
+    },
+    "after_backward": {
+      "allocated": 5178439168,
+      "reserved": 5410652160,
+      "peak_allocated": 5245812224,
+      "peak_reserved": 5410652160
+    },
+    "after_optimizer": {
+      "allocated": 5178439168,
+      "reserved": 5410652160,
+      "peak_allocated": 5245812224,
+      "peak_reserved": 5410652160
+    }
+  }
+}

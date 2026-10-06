@@ -1,0 +1,93 @@
+{
+  "corpus": "data/processed/sft_t2t_mini_full_v1",
+  "time": 1791010044.819899,
+  "files": {
+    "tokens.bin": {
+      "bytes": 894260638,
+      "sha256": "4b1b85f488dc7dc79a8a14e09c40d7f51aad7ee7e4d7b9ddcb8b9ce8c8f32fb7"
+    },
+    "labels.bin": {
+      "bytes": 894260638,
+      "sha256": "a41332f31a9818b2df46ea1ea8d59f81f8fa5de2f590e622e671bc150ab76cfc"
+    },
+    "offsets.npy": {
+      "bytes": 7245880,
+      "sha256": "c1623df365961c3764a1082c5f95555e0042e4e47f342665d4b90b5d6adef46f"
+    },
+    "train.npy": {
+      "bytes": 7237344,
+      "sha256": "02aa9850a1ee192a1d11b0ce507826c2842ddacc1f10e50da0f661642724a1a1"
+    },
+    "val.npy": {
+      "bytes": 8656,
+      "sha256": "750ba7bf2d9ea5dca64996d7144d953ddcbd5c026d68116d17bd483a1bbcc99c"
+    },
+    "lengths.npy": {
+      "bytes": 3623000,
+      "sha256": "c222a35543094dd9a8f0f2fa5fe3c2065d9469788fe94b22de25633e9a3b2b38"
+    },
+    "first_targets.npy": {
+      "bytes": 3623000,
+      "sha256": "8ea77cd21b4ae66dc926e62e8fe340021d832bebdb823967caeaa2ca37410183"
+    },
+    "content_hash64.npy": {
+      "bytes": 7245872,
+      "sha256": "a66b88bfbf282a5c67d7810d60024970445587b2cd6d6aeb2b55afa076d18648"
+    },
+    "metadata.json": {
+      "bytes": 1895,
+      "sha256": "4a5b658398649f3bcc103b1f3c7a9b34e2bb27c7e6589a92b3fea87cdb9bae95"
+    }
+  },
+  "zero_target_at_T768": [
+    {
+      "cache_row": 88236,
+      "raw_line": 88237,
+      "first_supervised_position": 1081,
+      "full_length": 1132
+    },
+    {
+      "cache_row": 157495,
+      "raw_line": 157496,
+      "first_supervised_position": 1058,
+      "full_length": 1116
+    },
+    {
+      "cache_row": 539926,
+      "raw_line": 539927,
+      "first_supervised_position": 816,
+      "full_length": 1307
+    },
+    {
+      "cache_row": 545980,
+      "raw_line": 545981,
+      "first_supervised_position": 771,
+      "full_length": 1028
+    },
+    {
+      "cache_row": 546167,
+      "raw_line": 546168,
+      "first_supervised_position": 892,
+      "full_length": 1150
+    },
+    {
+      "cache_row": 546482,
+      "raw_line": 546483,
+      "first_supervised_position": 811,
+      "full_length": 1694
+    },
+    {
+      "cache_row": 548409,
+      "raw_line": 548410,
+      "first_supervised_position": 810,
+      "full_length": 1025
+    },
+    {
+      "cache_row": 548493,
+      "raw_line": 548494,
+      "first_supervised_position": 826,
+      "full_length": 1043
+    }
+  ],
+  "note": "Whole original file, no rejected/empty raw rows. These8 valid conversations have no assistant targets in the official768-token prefix; original and complete cached sequences retained."
+}

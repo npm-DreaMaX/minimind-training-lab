@@ -1,0 +1,33 @@
+{
+  "model_file": "models/02_hybrid_moe/src/model_hybrid.py",
+  "model": {
+    "hidden_size": 768,
+    "num_hidden_layers": 8,
+    "use_moe": true,
+    "require_fla": true,
+    "linear_precision": "bfloat16"
+  },
+  "init_weight": "models/02_hybrid_moe/runs/transfer_preflight_early_ar/initialized_fp32.pth",
+  "strict_init": true,
+  "stage": "sft",
+  "seq_len": 1536,
+  "batch_size": 1,
+  "accumulation_steps": 2,
+  "epochs": 1,
+  "max_steps": 3,
+  "learning_rate": 1e-05,
+  "warmup_steps": 1,
+  "seed": 20261005,
+  "num_workers": 2,
+  "cpu_threads": 4,
+  "deterministic": false,
+  "validation_samples": 8,
+  "eval_interval": 50,
+  "save_interval": 50,
+  "log_interval": 1,
+  "allocator_gib": 5.3,
+  "purpose": "preflight",
+  "recipe_status": "Prepared candidate only; requires GPU precision gate before full-model test; no formal recipe selection yet",
+  "corpus": "artifacts/pipeline_validation/sft_tokens_v2",
+  "run_dir": "models/02_hybrid_moe/runs/real_sft_B1_T1536_bf16_projection"
+}

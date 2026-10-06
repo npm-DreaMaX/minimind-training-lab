@@ -1,0 +1,7 @@
+{
+  "package_version": "0.6.0",
+  "executable": "/home/USER/.venvs/minimind-omni/lib/python3.10/site-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v7.0.2",
+  "symlink": "/home/USER/.venvs/minimind-omni/bin/ffmpeg",
+  "binary_sha256": "e7e7fb30477f717e6f55f9180a70386c62677ef8a4d4d1a5d948f4098aa3eb99",
+  "version": "ffmpeg version 7.0.2-static https://johnvansickle.com/ffmpeg/  Copyright (c) 2000-2024 the FFmpeg developers"
+}

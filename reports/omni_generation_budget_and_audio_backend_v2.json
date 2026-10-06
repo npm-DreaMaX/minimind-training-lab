@@ -1,0 +1,10 @@
+{
+  "identical_original_audio_code_prefix": true,
+  "identical_text_ids": true,
+  "original_frames": 248,
+  "extended_frames": 291,
+  "original_text_has_eos": true,
+  "extended_reached_budget": false,
+  "ffmpeg_fallback_loader_passed": true,
+  "decoded_16k_samples": 58880
+}

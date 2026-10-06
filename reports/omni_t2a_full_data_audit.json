@@ -1,0 +1,38 @@
+{
+  "rows": 1248923,
+  "train_rows": 1247657,
+  "val_rows": 1266,
+  "counts": {
+    "missing_user": 0,
+    "missing_assistant": 0,
+    "answer_turn_count_mismatch": 0,
+    "rows_with_answer_audio": 1248923,
+    "rows_with_question_audio": 0,
+    "rows_with_image": 0,
+    "rows_with_speaker": 0
+  },
+  "full_answer_codes": 3533787080,
+  "full_answer_hours": 9816.075222222222,
+  "answer_frames_percentiles": {
+    "50": 277.0,
+    "90": 758.0,
+    "95": 940.0,
+    "99": 1293.0,
+    "100": 3208.0
+  },
+  "last_answer_frames_percentiles": {
+    "50": 240.0,
+    "90": 403.0,
+    "95": 445.0,
+    "99": 500.0,
+    "100": 747.0
+  },
+  "unique_conversation_hashes": 1238525,
+  "extra_exact_conversation_duplicates": 10398,
+  "max_multiplicity": 539,
+  "split": "Same canonical JSON and SHA256 first uint64 LE modulo1000 <1 as text SFT; shared conversations are held out together",
+  "limitations": "Exact conversation grouping only; no claim of semantic decontamination or unseen answer knowledge",
+  "corpus_index_sha256": "7f824aaff9741fe7cd528292c12af6d87124e01ed2cebcfc6a45e9db5dcb8e16",
+  "script_sha256": "68a3141df1285871e68b38f6a5904d2529d081377e8612e960fd1a3e345a085b",
+  "elapsed_s": 33.15574049949646
+}
