@@ -61,6 +61,7 @@ python tools/study_minimind.py trace --index 51023 --length 128 \
 只读学习不需要这一步。若要检查任意数据行或准备复现实验：
 
 ```bash
+python -m pip install datasets==3.6.0
 python tools/fetch_learning_assets.py raw-data
 python tools/prepare_tokens.py --raw data/raw/minimind/sft_t2t_mini.jsonl \
   --out data/processed/sft_t2t_mini_full_v1 --stage sft
