@@ -8,8 +8,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3567,
-      "sha256": "75a7bd80354b39a8ce5cd95ead4fecf9febcab2969060f099192a042ee09cad3"
+      "bytes": 3802,
+      "sha256": "d4a7f139777bcfcc5e97c15408febf4a0b747d6fbbae0345dbdd806ce977dc2e"
     },
     {
       "path": "SHARING_GUIDE.md",
@@ -7197,6 +7197,21 @@
       "sha256": "416e37f85526be10ab8ed1ff59db1b35b402684aa602d549610c3da9d3a9fb13"
     },
     {
+      "path": "models/03_omni_moe/runs/server_formal_runtime_v1/input_modes.log",
+      "bytes": 2972,
+      "sha256": "098edc13b81125f9aa16fa5338c47af96b5f272e8cf3b2d9f77768054d316e74"
+    },
+    {
+      "path": "models/03_omni_moe/runs/server_formal_runtime_v1/input_modes/a2a_all_long.json",
+      "bytes": 989,
+      "sha256": "8a97db31651e51f845de6c79fd7d5cdfc8b62261b4a54424ec64d83c63c2e868"
+    },
+    {
+      "path": "models/03_omni_moe/runs/server_formal_runtime_v1/input_modes/a2a_all_long.log",
+      "bytes": 6550,
+      "sha256": "fdb69e06382848c96ae6c8947780a0ea5b0c032ace51d7cacaf91cc3df7f8919"
+    },
+    {
       "path": "models/03_omni_moe/runs/server_formal_runtime_v1/input_modes/a2a_all_long/checkpoint_progress.jsonl",
       "bytes": 154,
       "sha256": "5d669fbe6f189dd748625b694c45c62f20dc7f77f3cf52100ed2d6310ca95a3b"
@@ -7347,14 +7362,14 @@
       "sha256": "59a559d3c0d0ff543fe95683b434ccc9ee442afaf695918b10be299f84b859fa"
     },
     {
-      "path": "models/03_omni_moe/runs/server_formal_runtime_v1/input_modes/a2a_all_long.json",
-      "bytes": 989,
-      "sha256": "8a97db31651e51f845de6c79fd7d5cdfc8b62261b4a54424ec64d83c63c2e868"
+      "path": "models/03_omni_moe/runs/server_formal_runtime_v1/input_modes/a2a_audio_proj_long.json",
+      "bytes": 917,
+      "sha256": "0b3d86e93e4acd791c1a5a9ca6ff4f44b112c862ca5abfef68559db26b16f298"
     },
     {
-      "path": "models/03_omni_moe/runs/server_formal_runtime_v1/input_modes/a2a_all_long.log",
-      "bytes": 6550,
-      "sha256": "fdb69e06382848c96ae6c8947780a0ea5b0c032ace51d7cacaf91cc3df7f8919"
+      "path": "models/03_omni_moe/runs/server_formal_runtime_v1/input_modes/a2a_audio_proj_long.log",
+      "bytes": 4548,
+      "sha256": "895d04700bbf59599fe88d255e33a51c7f6046246df3d79615b3bb55cbca7c99"
     },
     {
       "path": "models/03_omni_moe/runs/server_formal_runtime_v1/input_modes/a2a_audio_proj_long/checkpoint_progress.jsonl",
@@ -7507,16 +7522,6 @@
       "sha256": "684428ecc75cc461dd8ec26e70bdd63965b042d73ea1a1a26634f73e5dc29292"
     },
     {
-      "path": "models/03_omni_moe/runs/server_formal_runtime_v1/input_modes/a2a_audio_proj_long.json",
-      "bytes": 917,
-      "sha256": "0b3d86e93e4acd791c1a5a9ca6ff4f44b112c862ca5abfef68559db26b16f298"
-    },
-    {
-      "path": "models/03_omni_moe/runs/server_formal_runtime_v1/input_modes/a2a_audio_proj_long.log",
-      "bytes": 4548,
-      "sha256": "895d04700bbf59599fe88d255e33a51c7f6046246df3d79615b3bb55cbca7c99"
-    },
-    {
       "path": "models/03_omni_moe/runs/server_formal_runtime_v1/input_modes/events.jsonl",
       "bytes": 29300,
       "sha256": "49e119eac6281e2bb84b60170c027c816b7191e44b2ea734eaa39e68585762cd"
@@ -7525,6 +7530,16 @@
       "path": "models/03_omni_moe/runs/server_formal_runtime_v1/input_modes/gpu_guard_source.py",
       "bytes": 1503,
       "sha256": "4de00eda2a14d8ca213d557c2b59f7f7fcad947e6a57812f676ff4f63e0b4da7"
+    },
+    {
+      "path": "models/03_omni_moe/runs/server_formal_runtime_v1/input_modes/i2t_all.json",
+      "bytes": 883,
+      "sha256": "ab3eb4247bf22958d79389ad524754566a37c29c3f03661e6061ce3ba3bf6e20"
+    },
+    {
+      "path": "models/03_omni_moe/runs/server_formal_runtime_v1/input_modes/i2t_all.log",
+      "bytes": 4272,
+      "sha256": "ac38fd8fbe17337c784c753d7c60159fd6632ad3a3eed0439f3409d35bd40d42"
     },
     {
       "path": "models/03_omni_moe/runs/server_formal_runtime_v1/input_modes/i2t_all/checkpoint_progress.jsonl",
@@ -7682,14 +7697,14 @@
       "sha256": "0897509b365394466a931b86db8fe5c97361ef96d86cfa140d80194cf101bb8f"
     },
     {
-      "path": "models/03_omni_moe/runs/server_formal_runtime_v1/input_modes/i2t_all.json",
-      "bytes": 883,
-      "sha256": "ab3eb4247bf22958d79389ad524754566a37c29c3f03661e6061ce3ba3bf6e20"
+      "path": "models/03_omni_moe/runs/server_formal_runtime_v1/input_modes/i2t_vision_proj.json",
+      "bytes": 900,
+      "sha256": "8975eec1044693b9e42d3b63f14e27297f24cc40f8ed6891558f8056c2ada975"
     },
     {
-      "path": "models/03_omni_moe/runs/server_formal_runtime_v1/input_modes/i2t_all.log",
-      "bytes": 4272,
-      "sha256": "ac38fd8fbe17337c784c753d7c60159fd6632ad3a3eed0439f3409d35bd40d42"
+      "path": "models/03_omni_moe/runs/server_formal_runtime_v1/input_modes/i2t_vision_proj.log",
+      "bytes": 5271,
+      "sha256": "9831fc676bf5f129e60a883a4ca18155a4f3e2b65350f44187f3bae727dd5ca6"
     },
     {
       "path": "models/03_omni_moe/runs/server_formal_runtime_v1/input_modes/i2t_vision_proj/checkpoint_progress.jsonl",
@@ -7847,16 +7862,6 @@
       "sha256": "cfb6ab2d8195a95756b58a45050db5d0921151ebeffc9d23fbb294b03a2711ea"
     },
     {
-      "path": "models/03_omni_moe/runs/server_formal_runtime_v1/input_modes/i2t_vision_proj.json",
-      "bytes": 900,
-      "sha256": "8975eec1044693b9e42d3b63f14e27297f24cc40f8ed6891558f8056c2ada975"
-    },
-    {
-      "path": "models/03_omni_moe/runs/server_formal_runtime_v1/input_modes/i2t_vision_proj.log",
-      "bytes": 5271,
-      "sha256": "9831fc676bf5f129e60a883a4ca18155a4f3e2b65350f44187f3bae727dd5ca6"
-    },
-    {
       "path": "models/03_omni_moe/runs/server_formal_runtime_v1/input_modes/result.json",
       "bytes": 46500,
       "sha256": "c719197d165ce5f3de05185dab3737d5e2f1d6f74fecdb23f0bd81b6c1c4c9dc"
@@ -7865,6 +7870,16 @@
       "path": "models/03_omni_moe/runs/server_formal_runtime_v1/input_modes/source.py",
       "bytes": 6815,
       "sha256": "142ac68ed15f12d5a8bb4e67c1072dae57fd1b7dfc3dfd4425f3833bcd3d8a2f"
+    },
+    {
+      "path": "models/03_omni_moe/runs/server_formal_runtime_v1/input_modes/t2a_B16_recompute.json",
+      "bytes": 780,
+      "sha256": "a6afbcdb0b7bd56e8903b4a84ca6a985086d69a02313d678aa8ffee9e81652cc"
+    },
+    {
+      "path": "models/03_omni_moe/runs/server_formal_runtime_v1/input_modes/t2a_B16_recompute.log",
+      "bytes": 15356,
+      "sha256": "359c25c6d4a7570d83ab30d55e8b70c57914d7ca4b43b72b9581c6f51dd589fb"
     },
     {
       "path": "models/03_omni_moe/runs/server_formal_runtime_v1/input_modes/t2a_B16_recompute/checkpoint_progress.jsonl",
@@ -8017,24 +8032,9 @@
       "sha256": "ac7d417bac162435ac7164b0fa02743a6cc408637a2e389f1dd7aa68dd40228e"
     },
     {
-      "path": "models/03_omni_moe/runs/server_formal_runtime_v1/input_modes/t2a_B16_recompute.json",
-      "bytes": 780,
-      "sha256": "a6afbcdb0b7bd56e8903b4a84ca6a985086d69a02313d678aa8ffee9e81652cc"
-    },
-    {
-      "path": "models/03_omni_moe/runs/server_formal_runtime_v1/input_modes/t2a_B16_recompute.log",
-      "bytes": 15356,
-      "sha256": "359c25c6d4a7570d83ab30d55e8b70c57914d7ca4b43b72b9581c6f51dd589fb"
-    },
-    {
       "path": "models/03_omni_moe/runs/server_formal_runtime_v1/input_modes/verified_assets.json",
       "bytes": 8142,
       "sha256": "617d3e396ec3dc2634cbdbc19687c6b9985d8f7e8ede9afb1fc449067df3df9e"
-    },
-    {
-      "path": "models/03_omni_moe/runs/server_formal_runtime_v1/input_modes.log",
-      "bytes": 2972,
-      "sha256": "098edc13b81125f9aa16fa5338c47af96b5f272e8cf3b2d9f77768054d316e74"
     },
     {
       "path": "models/03_omni_moe/runs/server_formal_runtime_v1/remote_checkpoint_inventory.json",
@@ -8050,6 +8050,16 @@
       "path": "models/03_omni_moe/runs/server_formal_runtime_v1/source.py",
       "bytes": 2567,
       "sha256": "84dff233fda73dbc1e3ffec878b2f237860c5fa1faa0d91af4b4887f22b7626e"
+    },
+    {
+      "path": "models/03_omni_moe/runs/server_formal_runtime_v1/t2a_B16_acc8.json",
+      "bytes": 765,
+      "sha256": "7a54ce1ff6025717583a2fb10f6d7894d38e5746d17759b649daa9533782e04b"
+    },
+    {
+      "path": "models/03_omni_moe/runs/server_formal_runtime_v1/t2a_B16_acc8.log",
+      "bytes": 6046,
+      "sha256": "1815f929af354716f51378c895b06aa96b0d8040c9e91f353a1692c0823b5286"
     },
     {
       "path": "models/03_omni_moe/runs/server_formal_runtime_v1/t2a_B16_acc8/checkpoint_progress.jsonl",
@@ -8212,16 +8222,6 @@
       "sha256": "a0d4a1702be418dce3758963ab907ba6b7268c1bc4a6fb106e5af287775e3be5"
     },
     {
-      "path": "models/03_omni_moe/runs/server_formal_runtime_v1/t2a_B16_acc8.json",
-      "bytes": 765,
-      "sha256": "7a54ce1ff6025717583a2fb10f6d7894d38e5746d17759b649daa9533782e04b"
-    },
-    {
-      "path": "models/03_omni_moe/runs/server_formal_runtime_v1/t2a_B16_acc8.log",
-      "bytes": 6046,
-      "sha256": "1815f929af354716f51378c895b06aa96b0d8040c9e91f353a1692c0823b5286"
-    },
-    {
       "path": "models/03_omni_moe/runs/server_readiness_inputs_v1/README.md",
       "bytes": 2510,
       "sha256": "5911926c83d59726a46431515c4bca591e5f3375071d3b3613aa4b80444074a7"
@@ -8230,6 +8230,16 @@
       "path": "models/03_omni_moe/runs/server_readiness_inputs_v1/environment_freeze.txt",
       "bytes": 3382,
       "sha256": "82d25cd9250968015308d3504aaf8e40aeb7b686238e667f0c6e8bc33b117176"
+    },
+    {
+      "path": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_all_modes_v1/a2a_all_long.json",
+      "bytes": 974,
+      "sha256": "47338fb32a97ee8a5b806a93e282326674d82155f003577738f7d1a526d0c847"
+    },
+    {
+      "path": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_all_modes_v1/a2a_all_long.log",
+      "bytes": 6553,
+      "sha256": "d23aec17227be67ab20076e1e67c861f35acadd6f24140225ea0c20bf56d3313"
     },
     {
       "path": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_all_modes_v1/a2a_all_long/checkpoint_progress.jsonl",
@@ -8377,14 +8387,14 @@
       "sha256": "f44d1d82a6a057654297b9a9ca5aa3d1856b3989b2340a93fdf1043c6514fdae"
     },
     {
-      "path": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_all_modes_v1/a2a_all_long.json",
-      "bytes": 974,
-      "sha256": "47338fb32a97ee8a5b806a93e282326674d82155f003577738f7d1a526d0c847"
+      "path": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_all_modes_v1/a2a_audio_proj_long.json",
+      "bytes": 902,
+      "sha256": "902cc5a0f43dfe5bb9f197f4c5f2e1fcd00841a712f72a03e3f03e14eec387b4"
     },
     {
-      "path": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_all_modes_v1/a2a_all_long.log",
-      "bytes": 6553,
-      "sha256": "d23aec17227be67ab20076e1e67c861f35acadd6f24140225ea0c20bf56d3313"
+      "path": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_all_modes_v1/a2a_audio_proj_long.log",
+      "bytes": 4545,
+      "sha256": "13d06b15b84aa6967f8bfee3e24bdf8622e09f44d7f29f9e2505b8a9c6d41fe9"
     },
     {
       "path": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_all_modes_v1/a2a_audio_proj_long/checkpoint_progress.jsonl",
@@ -8532,16 +8542,6 @@
       "sha256": "0da8d1965f889b4d8558e58696f0fad56f2113b188235f054ef1083ad817762c"
     },
     {
-      "path": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_all_modes_v1/a2a_audio_proj_long.json",
-      "bytes": 902,
-      "sha256": "902cc5a0f43dfe5bb9f197f4c5f2e1fcd00841a712f72a03e3f03e14eec387b4"
-    },
-    {
-      "path": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_all_modes_v1/a2a_audio_proj_long.log",
-      "bytes": 4545,
-      "sha256": "13d06b15b84aa6967f8bfee3e24bdf8622e09f44d7f29f9e2505b8a9c6d41fe9"
-    },
-    {
       "path": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_all_modes_v1/events.jsonl",
       "bytes": 14650,
       "sha256": "38c28156201f59fc68c2f3321973c142e88897b11e2842b554ea4542e53e70b7"
@@ -8555,6 +8555,16 @@
       "path": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_all_modes_v1/source.py",
       "bytes": 6468,
       "sha256": "9b4227c4f1aa4fd6ad79336cfc7fb3831c56a1a94407ddce75a5c0515cebd987"
+    },
+    {
+      "path": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_all_modes_v1/t2a_B16_recompute.json",
+      "bytes": 765,
+      "sha256": "c4a0c905b6d47aaaa2f2e1524efeca892a39619ce1fc3fd697b457280e0a60a7"
+    },
+    {
+      "path": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_all_modes_v1/t2a_B16_recompute.log",
+      "bytes": 15358,
+      "sha256": "42921665d440c1f0e32ef43da69911df7dea00146a4bc8b9b821db60e426f007"
     },
     {
       "path": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_all_modes_v1/t2a_B16_recompute/checkpoint_progress.jsonl",
@@ -8702,16 +8712,6 @@
       "sha256": "f3013b8f2914571fe0f0f0f0ed8dd1ad65b29d0912f07311d54746924a3b3ee3"
     },
     {
-      "path": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_all_modes_v1/t2a_B16_recompute.json",
-      "bytes": 765,
-      "sha256": "c4a0c905b6d47aaaa2f2e1524efeca892a39619ce1fc3fd697b457280e0a60a7"
-    },
-    {
-      "path": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_all_modes_v1/t2a_B16_recompute.log",
-      "bytes": 15358,
-      "sha256": "42921665d440c1f0e32ef43da69911df7dea00146a4bc8b9b821db60e426f007"
-    },
-    {
       "path": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_all_modes_v1/verified_assets.json",
       "bytes": 8142,
       "sha256": "617d3e396ec3dc2634cbdbc19687c6b9985d8f7e8ede9afb1fc449067df3df9e"
@@ -8725,6 +8725,16 @@
       "path": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_visual_v2/gpu_guard_source.py",
       "bytes": 1503,
       "sha256": "4de00eda2a14d8ca213d557c2b59f7f7fcad947e6a57812f676ff4f63e0b4da7"
+    },
+    {
+      "path": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_visual_v2/i2t_all.json",
+      "bytes": 865,
+      "sha256": "fee5bbc490bc70ef01cb31ff61a8bd938f81307f4fc16a4dc9571d940f9c1e05"
+    },
+    {
+      "path": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_visual_v2/i2t_all.log",
+      "bytes": 4275,
+      "sha256": "5b11f9706d1709042d42ed0f93411588a326470147ba8813410693b3aefbf156"
     },
     {
       "path": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_visual_v2/i2t_all/checkpoint_progress.jsonl",
@@ -8877,14 +8887,14 @@
       "sha256": "96b437dd5cbf926e294c5fa6e72f70ef583b938d20b95943cac49985c5b4230a"
     },
     {
-      "path": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_visual_v2/i2t_all.json",
-      "bytes": 865,
-      "sha256": "fee5bbc490bc70ef01cb31ff61a8bd938f81307f4fc16a4dc9571d940f9c1e05"
+      "path": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_visual_v2/i2t_vision_proj.json",
+      "bytes": 882,
+      "sha256": "d231044fa94e86a7a41afe548917fc0df8b3d2e8197da45bc2d5a14a0ffb8ad2"
     },
     {
-      "path": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_visual_v2/i2t_all.log",
-      "bytes": 4275,
-      "sha256": "5b11f9706d1709042d42ed0f93411588a326470147ba8813410693b3aefbf156"
+      "path": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_visual_v2/i2t_vision_proj.log",
+      "bytes": 5272,
+      "sha256": "576996dafac827568ab4424d95ecd31b2005e6b4f15cf63d4fda39cd3268841b"
     },
     {
       "path": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_visual_v2/i2t_vision_proj/checkpoint_progress.jsonl",
@@ -9037,16 +9047,6 @@
       "sha256": "3c28b2f4f31cedb0479f7944fe0dd24d74914d3237e4d85314cbee8e3dccd399"
     },
     {
-      "path": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_visual_v2/i2t_vision_proj.json",
-      "bytes": 882,
-      "sha256": "d231044fa94e86a7a41afe548917fc0df8b3d2e8197da45bc2d5a14a0ffb8ad2"
-    },
-    {
-      "path": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_visual_v2/i2t_vision_proj.log",
-      "bytes": 5272,
-      "sha256": "576996dafac827568ab4424d95ecd31b2005e6b4f15cf63d4fda39cd3268841b"
-    },
-    {
       "path": "models/03_omni_moe/runs/server_readiness_inputs_v1/real_inputs_visual_v2/result.json",
       "bytes": 20179,
       "sha256": "28fffb5971e08c20960cd00fa65c46b1cdfe8dca76928393a4081de4e9cf3e76"
@@ -9085,6 +9085,11 @@
       "path": "models/03_omni_moe/runs/server_readiness_t2a_v1/command_3.log",
       "bytes": 14021,
       "sha256": "394a29e72bf2a24906896d3c0667da329f743ce129bde978b5f0a3c83ccdcf54"
+    },
+    {
+      "path": "models/03_omni_moe/runs/server_readiness_t2a_v1/continuous.json",
+      "bytes": 847,
+      "sha256": "b9a66c7319cdf61f4f2f6fed55172ad19095ca8a09d3658ae1017af9b63400b3"
     },
     {
       "path": "models/03_omni_moe/runs/server_readiness_t2a_v1/continuous/checkpoint_progress.jsonl",
@@ -9252,11 +9257,6 @@
       "sha256": "18a29f38d732d775350b9f7c3135be74c588419b1973bdef00fd26320e75383d"
     },
     {
-      "path": "models/03_omni_moe/runs/server_readiness_t2a_v1/continuous.json",
-      "bytes": 847,
-      "sha256": "b9a66c7319cdf61f4f2f6fed55172ad19095ca8a09d3658ae1017af9b63400b3"
-    },
-    {
       "path": "models/03_omni_moe/runs/server_readiness_t2a_v1/environment_freeze.txt",
       "bytes": 2895,
       "sha256": "3b937e1a71894da41d1e72a5593eb1e2b89b39ec88c91be15420a7f064952eea"
@@ -9265,6 +9265,11 @@
       "path": "models/03_omni_moe/runs/server_readiness_t2a_v1/remote_checkpoint_inventory.json",
       "bytes": 3114,
       "sha256": "7af3e76df678940b5a9a9550f4ce79955ef64eaa6d6a56d8bc14adc800b3f76b"
+    },
+    {
+      "path": "models/03_omni_moe/runs/server_readiness_t2a_v1/resource_B4_recompute.json",
+      "bytes": 746,
+      "sha256": "31b323962371a5236e4fbf1d001d749e719321abbc43f61abf27cafcd9bcdc2e"
     },
     {
       "path": "models/03_omni_moe/runs/server_readiness_t2a_v1/resource_B4_recompute/checkpoint_progress.jsonl",
@@ -9412,14 +9417,14 @@
       "sha256": "fa15bd416590185cd3be7fb21eed7da838e1818dea18d4cb805cd1189bd16618"
     },
     {
-      "path": "models/03_omni_moe/runs/server_readiness_t2a_v1/resource_B4_recompute.json",
-      "bytes": 746,
-      "sha256": "31b323962371a5236e4fbf1d001d749e719321abbc43f61abf27cafcd9bcdc2e"
-    },
-    {
       "path": "models/03_omni_moe/runs/server_readiness_t2a_v1/result.json",
       "bytes": 2538,
       "sha256": "37ce83dc8498c1af0e0db11d6ef82f74a53566f71bc279f1e596000e39e666a5"
+    },
+    {
+      "path": "models/03_omni_moe/runs/server_readiness_t2a_v1/resumed.json",
+      "bytes": 844,
+      "sha256": "32e447e79eb194190fa14bcb8171fb32e6105de5140bdc772fdab3f3b0f601ef"
     },
     {
       "path": "models/03_omni_moe/runs/server_readiness_t2a_v1/resumed/checkpoint_progress.jsonl",
@@ -9667,11 +9672,6 @@
       "sha256": "16bd286e5237915bc5c81f87e227dd7c4a76b5a6014bd80f02b191c5b5cb99bd"
     },
     {
-      "path": "models/03_omni_moe/runs/server_readiness_t2a_v1/resumed.json",
-      "bytes": 844,
-      "sha256": "32e447e79eb194190fa14bcb8171fb32e6105de5140bdc772fdab3f3b0f601ef"
-    },
-    {
       "path": "models/03_omni_moe/runs/server_readiness_t2a_v1/source.py",
       "bytes": 6363,
       "sha256": "fbf8da309ae2c3d0a67d3ce739fc80d427670ffe111474f8d0daa20c29f02596"
@@ -9730,6 +9730,11 @@
       "path": "models/03_omni_moe/runs/trainer_cpu_per_record_v3/command_2.log",
       "bytes": 4120,
       "sha256": "d153c902bb409163fe179fad2aebb9301baae3fa1a5cbe76e326aeafcd7a7b8e"
+    },
+    {
+      "path": "models/03_omni_moe/runs/trainer_cpu_per_record_v3/continuous.json",
+      "bytes": 836,
+      "sha256": "0bb64f906ba90cc2c90ba53ddc0344c193d60e5b91248cb5850f09b230899584"
     },
     {
       "path": "models/03_omni_moe/runs/trainer_cpu_per_record_v3/continuous/checkpoint_progress.jsonl",
@@ -9882,14 +9887,14 @@
       "sha256": "d47e639afbd1f596b04f04820c1af3d914b1aab7ea8c457645cc10a1878872b1"
     },
     {
-      "path": "models/03_omni_moe/runs/trainer_cpu_per_record_v3/continuous.json",
-      "bytes": 836,
-      "sha256": "0bb64f906ba90cc2c90ba53ddc0344c193d60e5b91248cb5850f09b230899584"
-    },
-    {
       "path": "models/03_omni_moe/runs/trainer_cpu_per_record_v3/result.json",
       "bytes": 425,
       "sha256": "f19f8c8a0e70a70336c6b02a2bfe7ff311e2823f1612bd3f2bf4664f45ffc15d"
+    },
+    {
+      "path": "models/03_omni_moe/runs/trainer_cpu_per_record_v3/resumed.json",
+      "bytes": 833,
+      "sha256": "8b1e799437d5b325ff490a9f420732d4e37fe21d8f6031fb329ff9df047c9f2b"
     },
     {
       "path": "models/03_omni_moe/runs/trainer_cpu_per_record_v3/resumed/checkpoint_progress.jsonl",
@@ -10112,11 +10117,6 @@
       "sha256": "cc63f6a489f6d2d042526ab3068a735febd354f422946c513ff12f83fd9741c6"
     },
     {
-      "path": "models/03_omni_moe/runs/trainer_cpu_per_record_v3/resumed.json",
-      "bytes": 833,
-      "sha256": "8b1e799437d5b325ff490a9f420732d4e37fe21d8f6031fb329ff9df047c9f2b"
-    },
-    {
       "path": "models/03_omni_moe/runs/trainer_cpu_resume_v1/command_0.log",
       "bytes": 913,
       "sha256": "acee282f7ec44926acb47816af124c353a4b4a87f90d604992f57095d079db61"
@@ -10145,6 +10145,11 @@
       "path": "models/03_omni_moe/runs/trainer_cpu_resume_v2/command_2.log",
       "bytes": 3105,
       "sha256": "761a4e39702c0a81b5442ec5551569ec3942e53fc85f71cd9a894705ffeebcbe"
+    },
+    {
+      "path": "models/03_omni_moe/runs/trainer_cpu_resume_v2/continuous.json",
+      "bytes": 832,
+      "sha256": "f81da8a593b1c1a7476175d3b06e45c36450f1614643c03b2a03de7cbb01ef2f"
     },
     {
       "path": "models/03_omni_moe/runs/trainer_cpu_resume_v2/continuous/checkpoint_progress.jsonl",
@@ -10267,14 +10272,14 @@
       "sha256": "86612a0630a95edcf1317eb8c8ff0e216bca2d7d80b01c60f888deadf4d81699"
     },
     {
-      "path": "models/03_omni_moe/runs/trainer_cpu_resume_v2/continuous.json",
-      "bytes": 832,
-      "sha256": "f81da8a593b1c1a7476175d3b06e45c36450f1614643c03b2a03de7cbb01ef2f"
-    },
-    {
       "path": "models/03_omni_moe/runs/trainer_cpu_resume_v2/result.json",
       "bytes": 425,
       "sha256": "384abd2a1270379a7b54e549f5b8a68da165356dd6e500a0cbc34e6caad1406c"
+    },
+    {
+      "path": "models/03_omni_moe/runs/trainer_cpu_resume_v2/resumed.json",
+      "bytes": 829,
+      "sha256": "f028ce32e4286feb800ff48db178192647e1fe2bfce0a181481fcd1b8719fb9b"
     },
     {
       "path": "models/03_omni_moe/runs/trainer_cpu_resume_v2/resumed/checkpoint_progress.jsonl",
@@ -10462,11 +10467,6 @@
       "sha256": "493de33088de2b2d5a953e0ec93459b811e10d7ca14760bcf9c5982cb996827b"
     },
     {
-      "path": "models/03_omni_moe/runs/trainer_cpu_resume_v2/resumed.json",
-      "bytes": 829,
-      "sha256": "f028ce32e4286feb800ff48db178192647e1fe2bfce0a181481fcd1b8719fb9b"
-    },
-    {
       "path": "models/03_omni_moe/runs/trainer_cpu_resume_v3_mmap/command_0.log",
       "bytes": 3756,
       "sha256": "46994f8f040bfc9f3859763c7ebc95778775bed9b1bffbba2e13ee64de69bff3"
@@ -10480,6 +10480,11 @@
       "path": "models/03_omni_moe/runs/trainer_cpu_resume_v3_mmap/command_2.log",
       "bytes": 3107,
       "sha256": "cbb6f931bfd1356d7df4d54a5674a7ffe83570da91c9b37d1b3d31a188468cca"
+    },
+    {
+      "path": "models/03_omni_moe/runs/trainer_cpu_resume_v3_mmap/continuous.json",
+      "bytes": 837,
+      "sha256": "659ad7eb8aa7296b1c350e092fcd1f3a4db1e761e83ba45952272c402bea6ef9"
     },
     {
       "path": "models/03_omni_moe/runs/trainer_cpu_resume_v3_mmap/continuous/checkpoint_progress.jsonl",
@@ -10602,14 +10607,14 @@
       "sha256": "8d11a2c809d910af2239febbb3b53de69816fa8d21702d6a6b37705329af60d5"
     },
     {
-      "path": "models/03_omni_moe/runs/trainer_cpu_resume_v3_mmap/continuous.json",
-      "bytes": 837,
-      "sha256": "659ad7eb8aa7296b1c350e092fcd1f3a4db1e761e83ba45952272c402bea6ef9"
-    },
-    {
       "path": "models/03_omni_moe/runs/trainer_cpu_resume_v3_mmap/result.json",
       "bytes": 425,
       "sha256": "4fb654d118e4631a55011834bf84bf05169c0065f04d2fc1c3741a3ceeb6116b"
+    },
+    {
+      "path": "models/03_omni_moe/runs/trainer_cpu_resume_v3_mmap/resumed.json",
+      "bytes": 834,
+      "sha256": "bba310b41af5e0791c83701b61fa8b306103a2b7aefb1926e1f5e13e7ed726c8"
     },
     {
       "path": "models/03_omni_moe/runs/trainer_cpu_resume_v3_mmap/resumed/checkpoint_progress.jsonl",
@@ -10797,11 +10802,6 @@
       "sha256": "158860df6bc24269f7f696c56065f92479ecfc176f260c0e9108a5d1a93796d4"
     },
     {
-      "path": "models/03_omni_moe/runs/trainer_cpu_resume_v3_mmap/resumed.json",
-      "bytes": 834,
-      "sha256": "bba310b41af5e0791c83701b61fa8b306103a2b7aefb1926e1f5e13e7ed726c8"
-    },
-    {
       "path": "models/03_omni_moe/runs/trainer_cpu_resume_v4_optional_offload/command_0.log",
       "bytes": 3754,
       "sha256": "62bb79ad4c4f652b0da5dee698bd5446ae42b1c896a26acb8fb85ef9b6639f8f"
@@ -10815,6 +10815,11 @@
       "path": "models/03_omni_moe/runs/trainer_cpu_resume_v4_optional_offload/command_2.log",
       "bytes": 3105,
       "sha256": "b6713fd7009e69b8d8a3be00f2e5e80d1fe7365f815abf6fdf0bc3b11f0e8e1d"
+    },
+    {
+      "path": "models/03_omni_moe/runs/trainer_cpu_resume_v4_optional_offload/continuous.json",
+      "bytes": 849,
+      "sha256": "6c30282ebd158a25ea82e42bbe810fd969aad10b0e2b427c75b1fd6e154558cd"
     },
     {
       "path": "models/03_omni_moe/runs/trainer_cpu_resume_v4_optional_offload/continuous/checkpoint_progress.jsonl",
@@ -10937,14 +10942,14 @@
       "sha256": "033d0f00e0d5be577d004b1a97cfe2c59670c70e8a50a947c72ae6928ee15c93"
     },
     {
-      "path": "models/03_omni_moe/runs/trainer_cpu_resume_v4_optional_offload/continuous.json",
-      "bytes": 849,
-      "sha256": "6c30282ebd158a25ea82e42bbe810fd969aad10b0e2b427c75b1fd6e154558cd"
-    },
-    {
       "path": "models/03_omni_moe/runs/trainer_cpu_resume_v4_optional_offload/result.json",
       "bytes": 425,
       "sha256": "1c7d0011d724b116baa8ee044a8b05f4c5c3b5285599f1130fbe18eb7670c8a0"
+    },
+    {
+      "path": "models/03_omni_moe/runs/trainer_cpu_resume_v4_optional_offload/resumed.json",
+      "bytes": 846,
+      "sha256": "c2b9ab237efa2fa96c51dc91d458df8a348281fd7b91292f39af0978872ddbec"
     },
     {
       "path": "models/03_omni_moe/runs/trainer_cpu_resume_v4_optional_offload/resumed/checkpoint_progress.jsonl",
@@ -11132,14 +11137,14 @@
       "sha256": "a754eb297a5c87f8f22518ab57320b6e1c0d66189d4c297ea93a3bd17d8985a4"
     },
     {
-      "path": "models/03_omni_moe/runs/trainer_cpu_resume_v4_optional_offload/resumed.json",
-      "bytes": 846,
-      "sha256": "c2b9ab237efa2fa96c51dc91d458df8a348281fd7b91292f39af0978872ddbec"
-    },
-    {
       "path": "models/03_omni_moe/runs/trainer_gpu_resume_v1/command_0.log",
       "bytes": 3950,
       "sha256": "4780732da60757d31373998935ef38bc629cea9d923085b283263921302d645f"
+    },
+    {
+      "path": "models/03_omni_moe/runs/trainer_gpu_resume_v1/continuous.json",
+      "bytes": 887,
+      "sha256": "b7a9b349602ad82ff22a487fa1c8db7fa3a4fcf02b040a6beeecad0953837b5b"
     },
     {
       "path": "models/03_omni_moe/runs/trainer_gpu_resume_v1/continuous/checkpoints/best_validation.json",
@@ -11247,11 +11252,6 @@
       "sha256": "0099bb52981063b703899105023ea90e291782c1738dace8a32f3449a2c9e331"
     },
     {
-      "path": "models/03_omni_moe/runs/trainer_gpu_resume_v1/continuous.json",
-      "bytes": 887,
-      "sha256": "b7a9b349602ad82ff22a487fa1c8db7fa3a4fcf02b040a6beeecad0953837b5b"
-    },
-    {
       "path": "models/03_omni_moe/runs/trainer_gpu_resume_v1/resumed.json",
       "bytes": 884,
       "sha256": "3f517802aeafd81f2a3f0fcd645d8c80fa096c4569f426052f970883dd4fb1ac"
@@ -11270,6 +11270,11 @@
       "path": "models/03_omni_moe/runs/trainer_gpu_resume_v2_offload/command_2.log",
       "bytes": 11520,
       "sha256": "c55e87941466cb1c02369176e045da007900afc33d35a873aa36ef60666713b8"
+    },
+    {
+      "path": "models/03_omni_moe/runs/trainer_gpu_resume_v2_offload/continuous.json",
+      "bytes": 954,
+      "sha256": "dbe21c467a801b891a6f6d869b636c8cb70add196c2602e3b9547185b48dcf82"
     },
     {
       "path": "models/03_omni_moe/runs/trainer_gpu_resume_v2_offload/continuous/checkpoint_progress.jsonl",
@@ -11402,14 +11407,14 @@
       "sha256": "685888d3263ab625096f3413c378fca7cd56cd800faad191860306007de31d74"
     },
     {
-      "path": "models/03_omni_moe/runs/trainer_gpu_resume_v2_offload/continuous.json",
-      "bytes": 954,
-      "sha256": "dbe21c467a801b891a6f6d869b636c8cb70add196c2602e3b9547185b48dcf82"
-    },
-    {
       "path": "models/03_omni_moe/runs/trainer_gpu_resume_v2_offload/result.json",
       "bytes": 528,
       "sha256": "d1cd06e354cd6d912ecc97fbd436f115fd81858176773716c68e265b6d65b022"
+    },
+    {
+      "path": "models/03_omni_moe/runs/trainer_gpu_resume_v2_offload/resumed.json",
+      "bytes": 951,
+      "sha256": "cf2a8342db9dd9eb96be62ad73fa968ce596eef9435116515030cb15d397c52c"
     },
     {
       "path": "models/03_omni_moe/runs/trainer_gpu_resume_v2_offload/resumed/checkpoint_progress.jsonl",
@@ -11610,11 +11615,6 @@
       "path": "models/03_omni_moe/runs/trainer_gpu_resume_v2_offload/resumed/status.json",
       "bytes": 1059,
       "sha256": "198fcab99442df38bd7729525678dcb1e91346a6618739881f84ad2522e5c57f"
-    },
-    {
-      "path": "models/03_omni_moe/runs/trainer_gpu_resume_v2_offload/resumed.json",
-      "bytes": 951,
-      "sha256": "cf2a8342db9dd9eb96be62ad73fa968ce596eef9435116515030cb15d397c52c"
     },
     {
       "path": "models/03_omni_moe/runs/transfer_preflight_early_ar/transfer.json",
@@ -17108,8 +17108,8 @@
     },
     {
       "path": "学习手册/02_数据到Batch.md",
-      "bytes": 4693,
-      "sha256": "90c576c638d728e391a40ae6e9e537f5b0e970f90126e4b86082843afd996390"
+      "bytes": 28850,
+      "sha256": "55377014b20e373e5a24a6e0f84935894fd5cf9a170daac6270a36c9235bfacd"
     },
     {
       "path": "学习手册/03_Hybrid和MoE原理.md",
@@ -17153,8 +17153,8 @@
     },
     {
       "path": "学习手册/README.md",
-      "bytes": 5007,
-      "sha256": "bed5234533e84534c2ab3a03527cb4d577ee3475a623fabc2259fe2b245413c0"
+      "bytes": 5076,
+      "sha256": "002a24361782a1100b7a1bb75f75cb5a9c0b99c297bb71c748456eb0a9d886b7"
     },
     {
       "path": "学习手册/图表/01_模型和训练数据流.png",
@@ -17270,6 +17270,11 @@
       "path": "学习手册/实操输出/完整Hybrid梯度检查_v2/trace.json",
       "bytes": 60248,
       "sha256": "c16a78a209e70591b5c037470c47b426d492bddd5948a87dad823424985974a3"
+    },
+    {
+      "path": "学习手册/实操输出/数据入门_v1/短问答逐位置.json",
+      "bytes": 6899,
+      "sha256": "47fddd841d3bb530d1d0aa75d48f7dd8bba5c5e3f409a2dcf4b5d9d38791b97b"
     },
     {
       "path": "学习手册/实操输出/最终权重推理_v1/generation.json",
@@ -18572,5 +18577,5 @@
     "quality_approved": false
   },
   "public_portability_guide": "SHARING_GUIDE.md",
-  "total_file_bytes": 196586530
+  "total_file_bytes": 196617890
 }
