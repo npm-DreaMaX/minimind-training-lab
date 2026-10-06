@@ -11693,8 +11693,8 @@
     },
     {
       "path": "reports/course_revision_v2/validation.json",
-      "bytes": 3918,
-      "sha256": "a8d89e47dec77521d653d5894547dda4d63e172f19a76ca594495d682d6598f8"
+      "bytes": 3964,
+      "sha256": "6051e665863a81132e83e1ce272914406c0e0a7c33b861c37f9f947e8bd2075d"
     },
     {
       "path": "reports/formal_progress_20261003_midday.json",
@@ -17123,13 +17123,13 @@
     },
     {
       "path": "学习手册/03_Hybrid和MoE原理.md",
-      "bytes": 15433,
-      "sha256": "ae191af4b6edd2a119b9dfc4750d67a5f21b9f6d24d7669dd94b1facdb879c59"
+      "bytes": 16302,
+      "sha256": "c7fdbd92bcbc1b56cde0693cee2559ea23370482ffdd831d4acda576fa7f7a3a"
     },
     {
       "path": "学习手册/04_Forward到Optimizer.md",
-      "bytes": 12184,
-      "sha256": "172a047bbaadad7ac49e220b44eff0d2a0467725766501ebfc5f5de97314393c"
+      "bytes": 12457,
+      "sha256": "f5f13789284fad81bbf97c42e555d6b4af9899cc48eace53d391faaeef5641a4"
     },
     {
       "path": "学习手册/05_显存效率和Recipe.md",
@@ -18597,5 +18597,5 @@
     "quality_approved": false
   },
   "public_portability_guide": "SHARING_GUIDE.md",
-  "total_file_bytes": 196723575
+  "total_file_bytes": 196724763
 }

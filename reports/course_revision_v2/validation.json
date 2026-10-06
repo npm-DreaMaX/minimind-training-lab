@@ -15,13 +15,13 @@
     },
     {
       "path": "学习手册/03_Hybrid和MoE原理.md",
-      "lines": 260,
-      "characters": 8010
+      "lines": 266,
+      "characters": 8385
     },
     {
       "path": "学习手册/04_Forward到Optimizer.md",
-      "lines": 223,
-      "characters": 6274
+      "lines": 225,
+      "characters": 6395
     },
     {
       "path": "学习手册/05_显存效率和Recipe.md",
@@ -118,5 +118,6 @@
     "Arithmetic examples are not validation of all full-model GPU kernels.",
     "Existing full205M trace is historical teaching evidence; not rerun as a new formal update.",
     "Reading the course does not establish experience with unperformed RL, distributed or complete Omni training."
-  ]
+  ],
+  "existing_output_overwrite_rejected": true
 }
